@@ -1,0 +1,862 @@
+[
+  {
+    "pattern": "he get",
+    "grammar": "present_simple",
+    "code": "GR001",
+    "errorType": "verb_conjugation",
+    "title": "Thiếu -s/-es với ngôi thứ ba số ít",
+    "message": "Chủ ngữ He/She/It cần động từ thêm -s/-es: \"get\" → \"gets\".",
+    "hint": "He / She / It + V(s/es).",
+    "recommendation": "g6_u1_present_simple"
+  },
+  {
+    "pattern": "she study",
+    "grammar": "present_simple",
+    "code": "GR001",
+    "errorType": "verb_conjugation",
+    "title": "Thiếu -s/-es với ngôi thứ ba số ít",
+    "message": "Chủ ngữ She cần động từ thêm -es: \"study\" → \"studies\".",
+    "hint": "Phụ âm + y → đổi y thành ies.",
+    "recommendation": "g6_u1_present_simple"
+  },
+  {
+    "pattern": "does he plays",
+    "grammar": "present_simple_q",
+    "code": "GR002",
+    "errorType": "wrong_form",
+    "title": "Sai dạng động từ sau Does",
+    "message": "Sau Does, động từ trở về nguyên thể: \"plays\" → \"play\".",
+    "hint": "Does + S + V (nguyên thể)?",
+    "recommendation": "g6_u1_present_simple_q"
+  },
+  {
+    "pattern": "there is two",
+    "grammar": "there_be",
+    "code": "GR009",
+    "errorType": "there_be_agreement",
+    "title": "Sai There is / There are",
+    "message": "Danh từ số nhiều phải dùng There are: \"There is two\" → \"There are two\".",
+    "hint": "There is + số ít; There are + số nhiều.",
+    "recommendation": "g6_u2_there_be"
+  },
+  {
+    "pattern": "there is three",
+    "grammar": "there_be",
+    "code": "GR009",
+    "errorType": "there_be_agreement",
+    "title": "Sai There is / There are",
+    "message": "Danh từ số nhiều phải dùng There are.",
+    "hint": "There is + số ít; There are + số nhiều.",
+    "recommendation": "g6_u2_there_be"
+  },
+  {
+    "pattern": "are play",
+    "grammar": "present_continuous",
+    "code": "GR010",
+    "errorType": "missing_ing",
+    "title": "Thiếu đuôi -ing",
+    "message": "Sau to be cần động từ thêm -ing: \"are play\" → \"are playing\".",
+    "hint": "S + am/is/are + V-ing.",
+    "recommendation": "g6_u3_present_continuous"
+  },
+  {
+    "pattern": "kinds",
+    "grammar": "adjective",
+    "code": "GR011",
+    "errorType": "adjective_form",
+    "title": "Tính từ không thêm -s",
+    "message": "Tính từ giữ nguyên dù danh từ số nhiều: \"kinds\" → \"kind\".",
+    "hint": "be + adj (không chia số nhiều).",
+    "recommendation": "g6_u3_adjectives"
+  },
+  {
+    "pattern": "more bigger",
+    "grammar": "comparative",
+    "code": "GR005",
+    "errorType": "comparative_form",
+    "title": "So sánh hơn bị lặp",
+    "message": "Không dùng đồng thời more và -er: chọn \"bigger\".",
+    "hint": "Tính từ ngắn + -er (không dùng more).",
+    "recommendation": "g6_u4_comparative"
+  },
+  {
+    "pattern": "more peacefuller",
+    "grammar": "comparative",
+    "code": "GR005",
+    "errorType": "comparative_form",
+    "title": "So sánh hơn bị lặp",
+    "message": "Tính từ dài chỉ dùng more: \"more peaceful\".",
+    "hint": "more + tính từ dài (không thêm -er).",
+    "recommendation": "g6_u4_comparative"
+  },
+  {
+    "pattern": "turn to left",
+    "grammar": "directions",
+    "code": "GR012",
+    "errorType": "direction_phrase",
+    "title": "Sai cụm chỉ đường",
+    "message": "Dùng \"turn left / turn right\" (không có to).",
+    "hint": "Go straight · Turn left · Turn right.",
+    "recommendation": "g6_u4_directions"
+  },
+  {
+    "pattern": "turn to right",
+    "grammar": "directions",
+    "code": "GR012",
+    "errorType": "direction_phrase",
+    "title": "Sai cụm chỉ đường",
+    "message": "Dùng \"turn right\" (không có to).",
+    "hint": "Turn left / Turn right.",
+    "recommendation": "g6_u4_directions"
+  },
+  {
+    "pattern": "much people",
+    "grammar": "countable",
+    "code": "GR013",
+    "errorType": "quantifier_error",
+    "title": "Sai lượng từ much/many",
+    "message": "people là danh từ đếm được số nhiều → dùng many: \"many people\".",
+    "hint": "many + đếm được; much + không đếm được.",
+    "recommendation": "g6_u5_countable"
+  },
+  {
+    "pattern": "is most",
+    "grammar": "superlative",
+    "code": "GR006",
+    "errorType": "missing_article",
+    "title": "Thiếu mạo từ the",
+    "message": "So sánh nhất cần the: \"is most\" → \"is the most\".",
+    "hint": "the most + tính từ dài.",
+    "recommendation": "g6_u5_superlative"
+  },
+  {
+    "pattern": "must to",
+    "grammar": "modal_must",
+    "code": "GR014",
+    "errorType": "modal_form",
+    "title": "Sai cấu trúc must",
+    "message": "Sau must là động từ nguyên thể, không có to: \"must to bring\" → \"must bring\".",
+    "hint": "S + must + V (nguyên thể).",
+    "recommendation": "g6_u5_must"
+  },
+  {
+    "pattern": "should visits",
+    "grammar": "modal_should",
+    "code": "GR014",
+    "errorType": "modal_form",
+    "title": "Sai cấu trúc should",
+    "message": "Sau should là động từ nguyên thể: \"should visits\" → \"should visit\".",
+    "hint": "S + should + V (nguyên thể).",
+    "recommendation": "g6_u6_should"
+  },
+  {
+    "pattern": "should to",
+    "grammar": "modal_should",
+    "code": "GR014",
+    "errorType": "modal_form",
+    "title": "Sai cấu trúc should",
+    "message": "Sau should không dùng to.",
+    "hint": "S + should + V (nguyên thể).",
+    "recommendation": "g6_u6_should"
+  },
+  {
+    "pattern": "have some money",
+    "grammar": "some_any",
+    "code": "GR015",
+    "errorType": "some_any_error",
+    "title": "Nhầm some/any",
+    "message": "Câu hỏi thường dùng any: \"some money\" → \"any money\".",
+    "hint": "some (+) · any (- ?).",
+    "recommendation": "g6_u6_some_any"
+  },
+  {
+    "pattern": "aren't some",
+    "grammar": "some_any",
+    "code": "GR015",
+    "errorType": "some_any_error",
+    "title": "Nhầm some/any",
+    "message": "Câu phủ định dùng any, không dùng some.",
+    "hint": "some (+) · any (- ?).",
+    "recommendation": "g6_u6_some_any"
+  },
+  {
+    "pattern": "film starts",
+    "grammar": "wh_question",
+    "code": "GR002",
+    "errorType": "wrong_form",
+    "title": "Sai dạng động từ sau does",
+    "message": "Sau does, động từ về nguyên thể: \"starts\" → \"start\".",
+    "hint": "Wh- + does + S + V (nguyên thể)?",
+    "recommendation": "g6_u7_wh"
+  },
+  {
+    "pattern": "didn't went",
+    "grammar": "past_simple",
+    "code": "GR002",
+    "errorType": "wrong_tense",
+    "title": "Sai dạng động từ sau didn't",
+    "message": "Sau didn't dùng động từ nguyên thể: \"didn't went\" → \"didn't go\".",
+    "hint": "did/didn't + V nguyên thể.",
+    "recommendation": "g6_u8_past_simple"
+  },
+  {
+    "pattern": "have went",
+    "grammar": "present_perfect",
+    "code": "GR016",
+    "errorType": "past_participle",
+    "title": "Sai phân từ hai",
+    "message": "Hiện tại hoàn thành dùng V3: \"have went\" → \"have gone\".",
+    "hint": "have/has + V3 (gone, seen, done).",
+    "recommendation": "g6_u9_present_perfect"
+  },
+  {
+    "pattern": "she have",
+    "grammar": "present_perfect",
+    "code": "GR017",
+    "errorType": "have_has_agreement",
+    "title": "Sai have/has",
+    "message": "He/She/It dùng has: \"she have\" → \"she has\".",
+    "hint": "He/She/It + has + V3.",
+    "recommendation": "g6_u9_present_perfect"
+  },
+  {
+    "pattern": "hers bag",
+    "grammar": "possessive_pronoun",
+    "code": "GR018",
+    "errorType": "possessive_pronoun_error",
+    "title": "Đại từ sở hữu đi kèm danh từ",
+    "message": "Đại từ sở hữu đứng một mình: \"hers bag\" → \"hers\".",
+    "hint": "her + bag = her bag; hers đứng một mình.",
+    "recommendation": "g6_u9_possessive_pronouns"
+  },
+  {
+    "pattern": "mine book",
+    "grammar": "possessive_pronoun",
+    "code": "GR018",
+    "errorType": "possessive_pronoun_error",
+    "title": "Đại từ sở hữu đi kèm danh từ",
+    "message": "Dùng \"my book\" hoặc \"mine\" (đứng một mình).",
+    "hint": "my + N; mine đứng một mình.",
+    "recommendation": "g6_u9_possessive_pronouns"
+  },
+  {
+    "pattern": "will helps",
+    "grammar": "future_will",
+    "code": "GR002",
+    "errorType": "wrong_form",
+    "title": "Sai dạng động từ sau will",
+    "message": "Sau will dùng động từ nguyên thể: \"will helps\" → \"will help\".",
+    "hint": "S + will + V (nguyên thể).",
+    "recommendation": "g6_u10_will"
+  },
+  {
+    "pattern": "might to",
+    "grammar": "modal_might",
+    "code": "GR014",
+    "errorType": "modal_form",
+    "title": "Sai cấu trúc might",
+    "message": "Sau might là động từ nguyên thể, không có to.",
+    "hint": "S + might + V (nguyên thể).",
+    "recommendation": "g6_u10_might"
+  },
+  {
+    "pattern": "if we will",
+    "grammar": "conditional1",
+    "code": "GR019",
+    "errorType": "conditional_error",
+    "title": "Sai mệnh đề If",
+    "message": "Sau If dùng hiện tại đơn, không dùng will: \"If we plant ...\".",
+    "hint": "If + hiện tại đơn, ... will + V.",
+    "recommendation": "g6_u11_conditional1"
+  },
+  {
+    "pattern": "a apple",
+    "grammar": "article",
+    "code": "GR006",
+    "errorType": "article_error",
+    "title": "Sai mạo từ a/an",
+    "message": "Trước âm nguyên âm dùng an: \"a apple\" → \"an apple\".",
+    "hint": "an + a/e/i/o/u.",
+    "recommendation": "g6_u11_articles"
+  },
+  {
+    "pattern": "a honest",
+    "grammar": "article",
+    "code": "GR006",
+    "errorType": "article_error",
+    "title": "Sai mạo từ a/an",
+    "message": "honest có h câm, đọc như nguyên âm → an honest.",
+    "hint": "Xét âm đọc, không xét chữ cái.",
+    "recommendation": "g6_u11_articles"
+  },
+  {
+    "pattern": "a umbrella",
+    "grammar": "article",
+    "code": "GR006",
+    "errorType": "article_error",
+    "title": "Sai mạo từ a/an",
+    "message": "umbrella bắt đầu bằng nguyên âm → an umbrella.",
+    "hint": "an + âm nguyên âm.",
+    "recommendation": "g6_u11_articles"
+  },
+  {
+    "pattern": "could moved",
+    "grammar": "modal_could",
+    "code": "GR014",
+    "errorType": "modal_form",
+    "title": "Sai cấu trúc could",
+    "message": "Sau could là động từ nguyên thể: \"could moved\" → \"could move\".",
+    "hint": "S + could + V (nguyên thể).",
+    "recommendation": "g6_u12_could"
+  },
+  {
+    "pattern": "able to talks",
+    "grammar": "future_able",
+    "code": "GR014",
+    "errorType": "modal_form",
+    "title": "Sai cấu trúc will be able to",
+    "message": "Sau to là động từ nguyên thể: \"to talks\" → \"to talk\".",
+    "hint": "will be able to + V (nguyên thể).",
+    "recommendation": "g6_u12_will_be_able"
+  },
+  {
+    "pattern": "likes swim",
+    "grammar": "verb_liking",
+    "code": "GR020",
+    "errorType": "gerund_error",
+    "title": "Thiếu V-ing sau động từ chỉ sở thích",
+    "message": "Sau like/love/enjoy dùng V-ing: \"likes swim\" → \"likes swimming\".",
+    "hint": "like/love/enjoy/hate + V-ing.",
+    "recommendation": "g7_u1_verbs_liking"
+  },
+  {
+    "pattern": "enjoy read",
+    "grammar": "verb_liking",
+    "code": "GR020",
+    "errorType": "gerund_error",
+    "title": "Thiếu V-ing sau enjoy",
+    "message": "Sau enjoy dùng V-ing: \"enjoy read\" → \"enjoy reading\".",
+    "hint": "enjoy + V-ing.",
+    "recommendation": "g7_u1_verbs_liking"
+  },
+  {
+    "pattern": "did you joined",
+    "grammar": "past_question",
+    "code": "GR002",
+    "errorType": "wrong_form",
+    "title": "Sai dạng động từ sau Did",
+    "message": "Sau Did, động từ về nguyên thể: \"joined\" → \"join\".",
+    "hint": "Did + S + V (nguyên thể)?",
+    "recommendation": "g7_u3_past_questions"
+  },
+  {
+    "pattern": "as popularer",
+    "grammar": "as_as",
+    "code": "GR021",
+    "errorType": "as_as_form",
+    "title": "Sai cấu trúc as...as",
+    "message": "Giữa hai as dùng tính từ nguyên cấp: \"as popularer\" → \"as popular\".",
+    "hint": "as + adj nguyên cấp + as.",
+    "recommendation": "g7_u4_as_as"
+  },
+  {
+    "pattern": "different with",
+    "grammar": "like_different",
+    "code": "GR022",
+    "errorType": "preposition_error",
+    "title": "Sai giới từ với different",
+    "message": "Dùng different from, không dùng different with.",
+    "hint": "different from.",
+    "recommendation": "g7_u4_like_different"
+  },
+  {
+    "pattern": "same with",
+    "grammar": "like_different",
+    "code": "GR022",
+    "errorType": "preposition_error",
+    "title": "Sai giới từ với the same",
+    "message": "Dùng the same as, không dùng the same with.",
+    "hint": "the same as.",
+    "recommendation": "g7_u4_like_different"
+  },
+  {
+    "pattern": "a lots of",
+    "grammar": "quantifier",
+    "code": "GR023",
+    "errorType": "quantifier_error",
+    "title": "Sai lượng từ a lot of",
+    "message": "Viết a lot of (không có 's'): \"a lots of\" → \"a lot of\".",
+    "hint": "a lot of = lots of.",
+    "recommendation": "g7_u5_quantifiers"
+  },
+  {
+    "pattern": "how many milk",
+    "grammar": "how_many_much",
+    "code": "GR013",
+    "errorType": "quantifier_error",
+    "title": "Sai How many / How much",
+    "message": "milk không đếm được → How much milk.",
+    "hint": "many + đếm được; much + không đếm được.",
+    "recommendation": "g7_u5_how_many_much"
+  },
+  {
+    "pattern": "how many water",
+    "grammar": "how_many_much",
+    "code": "GR013",
+    "errorType": "quantifier_error",
+    "title": "Sai How many / How much",
+    "message": "water không đếm được → How much water.",
+    "hint": "many + đếm được; much + không đếm được.",
+    "recommendation": "g7_u5_how_many_much"
+  },
+  {
+    "pattern": "in 7 p.m",
+    "grammar": "prep_time",
+    "code": "GR024",
+    "errorType": "preposition_error",
+    "title": "Sai giới từ thời gian",
+    "message": "Dùng at với giờ cụ thể: \"in 7 p.m\" → \"at 7 p.m\".",
+    "hint": "at + giờ; on + ngày; in + tháng/năm.",
+    "recommendation": "g7_u6_prep_time"
+  },
+  {
+    "pattern": "at the shelf",
+    "grammar": "prep_place",
+    "code": "GR024",
+    "errorType": "preposition_error",
+    "title": "Sai giới từ nơi chốn",
+    "message": "Dùng on với bề mặt: \"at the shelf\" → \"on the shelf\".",
+    "hint": "on + bề mặt; in + không gian; at + vị trí cụ thể.",
+    "recommendation": "g7_u6_prep_place"
+  },
+  {
+    "pattern": "there is 5 km",
+    "grammar": "it_distance",
+    "code": "GR025",
+    "errorType": "it_distance_error",
+    "title": "Sai chủ ngữ chỉ khoảng cách",
+    "message": "Khoảng cách dùng It is, không dùng There is.",
+    "hint": "It is + khoảng cách + from A to B.",
+    "recommendation": "g7_u7_it_distance"
+  },
+  {
+    "pattern": "although long",
+    "grammar": "although",
+    "code": "GR026",
+    "errorType": "clause_error",
+    "title": "Thiếu mệnh đề sau Although",
+    "message": "Sau Although phải là mệnh đề đủ chủ ngữ + động từ: \"Although it was long\".",
+    "hint": "Although + S + V, + S + V.",
+    "recommendation": "g7_u8_although"
+  },
+  {
+    "pattern": "however she",
+    "grammar": "however",
+    "code": "GR027",
+    "errorType": "punctuation_error",
+    "title": "Thiếu dấu phẩy sau However",
+    "message": "However đứng đầu câu cần dấu phẩy theo sau: \"However, she ...\".",
+    "hint": "Câu 1. However, câu 2.",
+    "recommendation": "g7_u8_however"
+  },
+  {
+    "pattern": "does tet takes",
+    "grammar": "yesno_question",
+    "code": "GR002",
+    "errorType": "wrong_form",
+    "title": "Sai dạng động từ sau Does",
+    "message": "Sau Does, động từ về nguyên thể: \"takes\" → \"take\".",
+    "hint": "Does + S + V (nguyên thể)?",
+    "recommendation": "g7_u9_yesno"
+  },
+  {
+    "pattern": "will flies",
+    "grammar": "future_will",
+    "code": "GR002",
+    "errorType": "wrong_form",
+    "title": "Sai dạng động từ sau will",
+    "message": "Sau will dùng động từ nguyên thể: \"will flies\" → \"will fly\".",
+    "hint": "S + will + V (nguyên thể).",
+    "recommendation": "g7_u11_future_simple"
+  },
+  {
+    "pattern": "a elephant",
+    "grammar": "article",
+    "code": "GR006",
+    "errorType": "article_error",
+    "title": "Sai mạo từ a/an",
+    "message": "elephant bắt đầu bằng nguyên âm → an elephant.",
+    "hint": "an + âm nguyên âm.",
+    "recommendation": "g7_u12_articles"
+  },
+  {
+    "pattern": "fancies watch",
+    "grammar": "verb_liking",
+    "code": "GR020",
+    "errorType": "gerund_error",
+    "title": "Thiếu V-ing sau fancy",
+    "message": "Sau fancy dùng V-ing: \"fancies watch\" → \"fancies watching\".",
+    "hint": "enjoy/fancy/detest + V-ing.",
+    "recommendation": "g8_u1_gerunds"
+  },
+  {
+    "pattern": "to reading",
+    "grammar": "gerund_toinf",
+    "code": "GR028",
+    "errorType": "verb_pattern",
+    "title": "Sai dạng động từ sau to",
+    "message": "Sau to dùng động từ nguyên thể: \"to reading\" → \"to read\".",
+    "hint": "like + V-ing hoặc to + V nguyên thể.",
+    "recommendation": "g8_u1_gerund_toinf"
+  },
+  {
+    "pattern": "beautifuller",
+    "grammar": "comparative_adverb",
+    "code": "GR005",
+    "errorType": "comparative_form",
+    "title": "Sai so sánh hơn của trạng từ",
+    "message": "Trạng từ tận cùng -ly dùng more: \"beautifuller\" → \"more beautifully\".",
+    "hint": "more + trạng từ -ly + than.",
+    "recommendation": "g8_u2_comparative_adverbs"
+  },
+  {
+    "pattern": "so went",
+    "grammar": "compound_sentence",
+    "code": "GR029",
+    "errorType": "missing_subject",
+    "title": "Thiếu chủ ngữ trong mệnh đề ghép",
+    "message": "Mỗi mệnh đề trong câu ghép cần chủ ngữ riêng: \"so went\" → \"so I went\".",
+    "hint": "S + V, so + S + V.",
+    "recommendation": "g8_u3_simple_compound"
+  },
+  {
+    "pattern": "people lives",
+    "grammar": "question_forms",
+    "code": "GR002",
+    "errorType": "wrong_form",
+    "title": "Sai dạng động từ sau do",
+    "message": "Sau do, động từ về nguyên thể: \"people lives\" → \"people live\".",
+    "hint": "Wh- + do + S + V (nguyên thể)?",
+    "recommendation": "g8_u4_questions"
+  },
+  {
+    "pattern": "many rice",
+    "grammar": "countable",
+    "code": "GR013",
+    "errorType": "quantifier_error",
+    "title": "Sai lượng từ many/much",
+    "message": "rice không đếm được → dùng much: \"many rice\" → \"much rice\".",
+    "hint": "many + đếm được; much + không đếm được.",
+    "recommendation": "g8_u4_countable"
+  },
+  {
+    "pattern": "love the music",
+    "grammar": "zero_article",
+    "code": "GR030",
+    "errorType": "article_error",
+    "title": "Thừa mạo từ the",
+    "message": "Nói chung về music không dùng the: \"love the music\" → \"love music\".",
+    "hint": "Danh từ nói chung/trừu tượng → không mạo từ.",
+    "recommendation": "g8_u5_zero_article"
+  },
+  {
+    "pattern": "will lives",
+    "grammar": "future_will",
+    "code": "GR002",
+    "errorType": "wrong_form",
+    "title": "Sai dạng động từ sau will",
+    "message": "Sau will dùng động từ nguyên thể: \"will lives\" → \"will live\".",
+    "hint": "S + will + V (nguyên thể).",
+    "recommendation": "g8_u6_future_simple"
+  },
+  {
+    "pattern": "if you will",
+    "grammar": "conditional1",
+    "code": "GR019",
+    "errorType": "conditional_error",
+    "title": "Sai mệnh đề If",
+    "message": "Sau If dùng hiện tại đơn, không dùng will: \"If you eat ...\".",
+    "hint": "If + hiện tại đơn, ... will + V.",
+    "recommendation": "g8_u6_conditional1"
+  },
+  {
+    "pattern": "before leave",
+    "grammar": "adverbial_time",
+    "code": "GR031",
+    "errorType": "clause_error",
+    "title": "Thiếu chủ ngữ trong mệnh đề thời gian",
+    "message": "Mệnh đề thời gian cần đủ chủ ngữ + động từ: \"before leave\" → \"before we leave\".",
+    "hint": "before/after/when/while + S + V.",
+    "recommendation": "g8_u7_adverbial_time"
+  },
+  {
+    "pattern": "will leaves",
+    "grammar": "present_for_future",
+    "code": "GR032",
+    "errorType": "wrong_tense",
+    "title": "Lịch trình dùng hiện tại đơn",
+    "message": "Lịch trình cố định dùng hiện tại đơn, bỏ will: \"will leaves\" → \"leaves\".",
+    "hint": "Lịch trình/thời khóa biểu → hiện tại đơn.",
+    "recommendation": "g8_u8_present_for_future"
+  },
+  {
+    "pattern": "checks always",
+    "grammar": "adverbs_frequency",
+    "code": "GR033",
+    "errorType": "word_order",
+    "title": "Sai vị trí trạng từ tần suất",
+    "message": "Trạng từ tần suất đứng trước động từ thường: \"checks always\" → \"always checks\".",
+    "hint": "always/usually/often/sometimes/never + trước V.",
+    "recommendation": "g8_u8_adverbs_frequency"
+  },
+  {
+    "pattern": "never is",
+    "grammar": "adverbs_frequency",
+    "code": "GR033",
+    "errorType": "word_order",
+    "title": "Sai vị trí trạng từ sau to be",
+    "message": "Sau to be, trạng từ tần suất đứng sau: \"never is\" → \"is never\".",
+    "hint": "S + am/is/are + adv.",
+    "recommendation": "g8_u8_adverbs_frequency"
+  },
+  {
+    "pattern": "were cook",
+    "grammar": "past_continuous",
+    "code": "GR010",
+    "errorType": "missing_ing",
+    "title": "Thiếu đuôi -ing",
+    "message": "Quá khứ tiếp diễn cần V-ing: \"were cook\" → \"were cooking\".",
+    "hint": "S + was/were + V-ing.",
+    "recommendation": "g8_u9_past_continuous"
+  },
+  {
+    "pattern": "in 7 p.m",
+    "grammar": "prep_place",
+    "code": "GR024",
+    "errorType": "preposition_error",
+    "title": "Sai giới từ thời gian",
+    "message": "Giờ cụ thể dùng at: \"in 7 p.m\" → \"at 7 p.m\".",
+    "hint": "at + giờ; on + ngày; in + tháng/năm.",
+    "recommendation": "g8_u10_prep_time_place"
+  },
+  {
+    "pattern": "said that she is",
+    "grammar": "reported_statement",
+    "code": "GR033",
+    "errorType": "backshift_error",
+    "title": "Quên lùi thì",
+    "message": "Tường thuật cần lùi thì: \"said that she is\" → \"said that she was\".",
+    "hint": "is → was; will → would; now → then.",
+    "recommendation": "g8_u11_reported_statements"
+  },
+  {
+    "pattern": "where did i",
+    "grammar": "reported_question",
+    "code": "GR034",
+    "errorType": "reported_question_error",
+    "title": "Sai trật tự câu hỏi tường thuật",
+    "message": "Câu hỏi tường thuật dùng trật tự khẳng định, bỏ did: \"where did I live\" → \"where I lived\".",
+    "hint": "asked + (if/Wh-) + S + V (không đảo ngữ).",
+    "recommendation": "g8_u12_reported_questions"
+  },
+  {
+    "pattern": "what buy",
+    "grammar": "wh_toinf",
+    "code": "GR035",
+    "errorType": "infinitive_error",
+    "title": "Thiếu to sau Wh-word",
+    "message": "Wh-word + to + V: \"what buy\" → \"what to buy\".",
+    "hint": "what/how/where/when + to + V.",
+    "recommendation": "g9_u1_wh_toinf"
+  },
+  {
+    "pattern": "how operate",
+    "grammar": "wh_toinf",
+    "code": "GR035",
+    "errorType": "infinitive_error",
+    "title": "Thiếu to-infinitive",
+    "message": "how + to + V nguyên thể.",
+    "hint": "how to + V.",
+    "recommendation": "g9_u1_wh_toinf"
+  },
+  {
+    "pattern": "most tall",
+    "grammar": "comparative",
+    "code": "GR005",
+    "errorType": "comparative_form",
+    "title": "Sai so sánh nhất",
+    "message": "Tính từ ngắn dùng -est: \"most tall\" → \"tallest\".",
+    "hint": "short adj → -est.",
+    "recommendation": "g9_u2_comparisons"
+  },
+  {
+    "pattern": "will go jogging tomorrow",
+    "grammar": "reported_statement",
+    "code": "GR034",
+    "errorType": "reported_tense",
+    "title": "Chưa lùi thì khi tường thuật",
+    "message": "will → would; tomorrow → the next day.",
+    "hint": "Lùi thì và đổi trạng từ thời gian.",
+    "recommendation": "g9_u3_reported_statements"
+  },
+  {
+    "pattern": "should getting",
+    "grammar": "modal_should",
+    "code": "GR002",
+    "errorType": "wrong_form",
+    "title": "Sai dạng sau should",
+    "message": "should + V nguyên thể.",
+    "hint": "should/shouldn't + V.",
+    "recommendation": "g9_u3_should"
+  },
+  {
+    "pattern": "was read when",
+    "grammar": "past_continuous",
+    "code": "GR010",
+    "errorType": "missing_ing",
+    "title": "Thiếu -ing",
+    "message": "was/were + V-ing.",
+    "hint": "S + was/were + V-ing.",
+    "recommendation": "g9_u4_past_continuous"
+  },
+  {
+    "pattern": "wishes he was",
+    "grammar": "wish_past",
+    "code": "GR036",
+    "errorType": "wish_error",
+    "title": "Sai be sau wish",
+    "message": "Sau wish, be → were: \"was\" → \"were\".",
+    "hint": "wish + S + were/V2.",
+    "recommendation": "g9_u4_wish"
+  },
+  {
+    "pattern": "have never try",
+    "grammar": "present_perfect",
+    "code": "GR011",
+    "errorType": "wrong_form",
+    "title": "Sai V3 sau have",
+    "message": "have + V3: try → tried.",
+    "hint": "have/has + V3.",
+    "recommendation": "g9_u5_present_perfect"
+  },
+  {
+    "pattern": "enjoys play",
+    "grammar": "verb_liking",
+    "code": "GR020",
+    "errorType": "gerund_error",
+    "title": "Thiếu V-ing",
+    "message": "enjoy + V-ing.",
+    "hint": "enjoy/mind/avoid + V-ing.",
+    "recommendation": "g9_u6_gerund"
+  },
+  {
+    "pattern": "decided moving",
+    "grammar": "to_infinitive",
+    "code": "GR028",
+    "errorType": "verb_pattern",
+    "title": "Sai dạng sau decide",
+    "message": "decide + to-V.",
+    "hint": "want/decide/hope + to + V.",
+    "recommendation": "g9_u6_toinf"
+  },
+  {
+    "pattern": "whether had i",
+    "grammar": "reported_question",
+    "code": "GR034",
+    "errorType": "reported_question_error",
+    "title": "Sai trật tự tường thuật",
+    "message": "whether + S + V (không đảo ngữ).",
+    "hint": "asked + if/whether + S + V.",
+    "recommendation": "g9_u7_reported_yesno"
+  },
+  {
+    "pattern": "it believes that",
+    "grammar": "impersonal_passive",
+    "code": "GR037",
+    "errorType": "passive_form",
+    "title": "Sai bị động khách quan",
+    "message": "It is + V3 + that…",
+    "hint": "It is believed/said that…",
+    "recommendation": "g9_u7_impersonal_passive"
+  },
+  {
+    "pattern": "site who is",
+    "grammar": "relative_clause",
+    "code": "GR038",
+    "errorType": "relative_pronoun",
+    "title": "Sai đại từ quan hệ",
+    "message": "Vật → which/that, không dùng who.",
+    "hint": "person → who; thing → which.",
+    "recommendation": "g9_u8_relative_clauses"
+  },
+  {
+    "pattern": "if it will rain",
+    "grammar": "conditional1",
+    "code": "GR039",
+    "errorType": "conditional_error",
+    "title": "Sai mệnh đề If loại 1",
+    "message": "Mệnh đề If dùng hiện tại đơn, không will.",
+    "hint": "If + V(s), S + will + V.",
+    "recommendation": "g9_u9_conditional1"
+  },
+  {
+    "pattern": "if you was",
+    "grammar": "conditional2",
+    "code": "GR039",
+    "errorType": "conditional_error",
+    "title": "Sai be trong loại 2",
+    "message": "If + were (loại 2).",
+    "hint": "If + S + were/V2, S + would + V.",
+    "recommendation": "g9_u10_conditional2"
+  },
+  {
+    "pattern": "has forgotten to charge",
+    "grammar": "past_perfect",
+    "code": "GR040",
+    "errorType": "wrong_tense",
+    "title": "Cần quá khứ hoàn thành",
+    "message": "Hành động trước trong quá khứ → had + V3.",
+    "hint": "S + had + V3.",
+    "recommendation": "g9_u11_past_perfect"
+  },
+  {
+    "pattern": "is speak",
+    "grammar": "passive_present",
+    "code": "GR007",
+    "errorType": "passive_form",
+    "title": "Sai dạng bị động",
+    "message": "is + V3 (speak → spoken).",
+    "hint": "to be + V3.",
+    "recommendation": "g9_u11_passive_present"
+  },
+  {
+    "pattern": "houses was built",
+    "grammar": "passive_past",
+    "code": "GR008",
+    "errorType": "subject_verb_agreement",
+    "title": "Sai was/were",
+    "message": "Số nhiều → were + V3.",
+    "hint": "was/were + V3.",
+    "recommendation": "g9_u11_passive_past"
+  },
+  {
+    "pattern": "what job did i",
+    "grammar": "reported_wh",
+    "code": "GR034",
+    "errorType": "reported_question_error",
+    "title": "Sai câu hỏi Wh- tường thuật",
+    "message": "Bỏ did, lùi thì: \"did I want\" → \"I wanted\".",
+    "hint": "asked + Wh- + S + V.",
+    "recommendation": "g9_u12_reported_wh"
+  },
+  {
+    "pattern": "job who i",
+    "grammar": "relative_defining",
+    "code": "GR038",
+    "errorType": "relative_pronoun",
+    "title": "Sai who/that",
+    "message": "job (vật) → that/which.",
+    "hint": "N + who/which/that + V.",
+    "recommendation": "g9_u12_relative_defining"
+  }
+]

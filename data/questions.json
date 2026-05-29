@@ -1,0 +1,3309 @@
+[
+  {
+    "id": "q_g6_u1_present_simple_1",
+    "skill": "g6_u1_present_simple",
+    "grammar": "present_simple",
+    "type": "multiple_choice",
+    "question": "My father ___ in a hospital.",
+    "choices": [
+      "work",
+      "works",
+      "working",
+      "worked"
+    ],
+    "answer": "works",
+    "hint": "My father là ngôi thứ ba số ít."
+  },
+  {
+    "id": "q_g6_u1_present_simple_2",
+    "skill": "g6_u1_present_simple",
+    "grammar": "present_simple",
+    "type": "error_detection",
+    "question": "He get up at six o'clock.",
+    "prompt": "He get up at six o'clock.",
+    "answer": "He gets up at six o'clock.",
+    "hint": "He + V(s/es): get → gets."
+  },
+  {
+    "id": "q_g6_u1_present_simple_3",
+    "skill": "g6_u1_present_simple",
+    "grammar": "present_simple",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "I",
+      "go",
+      "to",
+      "school",
+      "by",
+      "bike"
+    ],
+    "answer": "I go to school by bike",
+    "hint": "S + V + trạng từ phương tiện."
+  },
+  {
+    "id": "q_g6_u1_present_simple_q_1",
+    "skill": "g6_u1_present_simple_q",
+    "grammar": "present_simple_q",
+    "type": "multiple_choice",
+    "question": "___ your sister like pop music?",
+    "choices": [
+      "Do",
+      "Does",
+      "Is",
+      "Are"
+    ],
+    "answer": "Does",
+    "hint": "Chủ ngữ số ít dùng Does."
+  },
+  {
+    "id": "q_g6_u1_present_simple_q_2",
+    "skill": "g6_u1_present_simple_q",
+    "grammar": "present_simple_q",
+    "type": "error_detection",
+    "question": "Does he plays football?",
+    "prompt": "Does he plays football?",
+    "answer": "Does he play football?",
+    "hint": "Sau Does, động từ về nguyên thể."
+  },
+  {
+    "id": "q_g6_u1_present_simple_q_3",
+    "skill": "g6_u1_present_simple_q",
+    "grammar": "present_simple_q",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu hỏi đúng:",
+    "tokens": [
+      "Do",
+      "you",
+      "live",
+      "near",
+      "here"
+    ],
+    "answer": "Do you live near here",
+    "hint": "Do + S + V + ...?"
+  },
+  {
+    "id": "q_g6_u2_there_be_1",
+    "skill": "g6_u2_there_be",
+    "grammar": "there_be",
+    "type": "multiple_choice",
+    "question": "___ a sofa in the living room.",
+    "choices": [
+      "There is",
+      "There are",
+      "There be",
+      "There have"
+    ],
+    "answer": "There is",
+    "hint": "a sofa là số ít."
+  },
+  {
+    "id": "q_g6_u2_there_be_2",
+    "skill": "g6_u2_there_be",
+    "grammar": "there_be",
+    "type": "error_detection",
+    "question": "There is two beds in the room.",
+    "prompt": "There is two beds in the room.",
+    "answer": "There are two beds in the room.",
+    "hint": "Số nhiều dùng There are."
+  },
+  {
+    "id": "q_g6_u2_there_be_3",
+    "skill": "g6_u2_there_be",
+    "grammar": "there_be",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "There",
+      "are",
+      "four",
+      "windows",
+      "in",
+      "the",
+      "house"
+    ],
+    "answer": "There are four windows in the house",
+    "hint": "There are + danh từ số nhiều."
+  },
+  {
+    "id": "q_g6_u2_prepositions_1",
+    "skill": "g6_u2_prepositions",
+    "grammar": "prepositions",
+    "type": "multiple_choice",
+    "question": "The cat is ___ the table (ở gầm bàn).",
+    "choices": [
+      "on",
+      "in",
+      "under",
+      "behind"
+    ],
+    "answer": "under",
+    "hint": "under = phía dưới."
+  },
+  {
+    "id": "q_g6_u2_prepositions_2",
+    "skill": "g6_u2_prepositions",
+    "grammar": "prepositions",
+    "type": "input",
+    "question": "Điền giới từ: The ball is ___ the box (bên trong).",
+    "answer": "in",
+    "hint": "in = bên trong."
+  },
+  {
+    "id": "q_g6_u2_prepositions_3",
+    "skill": "g6_u2_prepositions",
+    "grammar": "prepositions",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "The",
+      "books",
+      "are",
+      "on",
+      "the",
+      "shelf"
+    ],
+    "answer": "The books are on the shelf",
+    "hint": "on = ở trên bề mặt."
+  },
+  {
+    "id": "q_g6_u3_present_continuous_1",
+    "skill": "g6_u3_present_continuous",
+    "grammar": "present_continuous",
+    "type": "multiple_choice",
+    "question": "Listen! The baby ___.",
+    "choices": [
+      "cries",
+      "is crying",
+      "crying",
+      "cry"
+    ],
+    "answer": "is crying",
+    "hint": "Listen! là dấu hiệu hiện tại tiếp diễn."
+  },
+  {
+    "id": "q_g6_u3_present_continuous_2",
+    "skill": "g6_u3_present_continuous",
+    "grammar": "present_continuous",
+    "type": "error_detection",
+    "question": "They are play games now.",
+    "prompt": "They are play games now.",
+    "answer": "They are playing games now.",
+    "hint": "Sau to be là động từ thêm -ing."
+  },
+  {
+    "id": "q_g6_u3_present_continuous_3",
+    "skill": "g6_u3_present_continuous",
+    "grammar": "present_continuous",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "She",
+      "is",
+      "reading",
+      "a",
+      "book"
+    ],
+    "answer": "She is reading a book",
+    "hint": "S + is + V-ing."
+  },
+  {
+    "id": "q_g6_u3_adjectives_1",
+    "skill": "g6_u3_adjectives",
+    "grammar": "adjective",
+    "type": "multiple_choice",
+    "question": "My best friend is very ___.",
+    "choices": [
+      "friendly",
+      "friend",
+      "friendlies",
+      "friends"
+    ],
+    "answer": "friendly",
+    "hint": "Sau very cần một tính từ."
+  },
+  {
+    "id": "q_g6_u3_adjectives_2",
+    "skill": "g6_u3_adjectives",
+    "grammar": "adjective",
+    "type": "error_detection",
+    "question": "My friends are kinds.",
+    "prompt": "My friends are kinds.",
+    "answer": "My friends are kind.",
+    "hint": "Tính từ không thêm -s."
+  },
+  {
+    "id": "q_g6_u3_adjectives_3",
+    "skill": "g6_u3_adjectives",
+    "grammar": "adjective",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "He",
+      "is",
+      "tall",
+      "and",
+      "friendly"
+    ],
+    "answer": "He is tall and friendly",
+    "hint": "S + be + adj and adj."
+  },
+  {
+    "id": "q_g6_u4_comparative_1",
+    "skill": "g6_u4_comparative",
+    "grammar": "comparative",
+    "type": "multiple_choice",
+    "question": "The city is ___ than the village.",
+    "choices": [
+      "big",
+      "bigger",
+      "biggest",
+      "more big"
+    ],
+    "answer": "bigger",
+    "hint": "Tính từ ngắn: gấp đôi phụ âm + er."
+  },
+  {
+    "id": "q_g6_u4_comparative_2",
+    "skill": "g6_u4_comparative",
+    "grammar": "comparative",
+    "type": "error_detection",
+    "question": "My house is more bigger than yours.",
+    "prompt": "My house is more bigger than yours.",
+    "answer": "My house is bigger than yours.",
+    "hint": "Không dùng đồng thời more và -er."
+  },
+  {
+    "id": "q_g6_u4_comparative_3",
+    "skill": "g6_u4_comparative",
+    "grammar": "comparative",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "Today",
+      "is",
+      "hotter",
+      "than",
+      "yesterday"
+    ],
+    "answer": "Today is hotter than yesterday",
+    "hint": "S + adj-er + than + N."
+  },
+  {
+    "id": "q_g6_u4_directions_1",
+    "skill": "g6_u4_directions",
+    "grammar": "directions",
+    "type": "multiple_choice",
+    "question": "Go ___ and turn left at the bank.",
+    "choices": [
+      "straight",
+      "strange",
+      "strong",
+      "street"
+    ],
+    "answer": "straight",
+    "hint": "go straight = đi thẳng."
+  },
+  {
+    "id": "q_g6_u4_directions_2",
+    "skill": "g6_u4_directions",
+    "grammar": "directions",
+    "type": "error_detection",
+    "question": "Turn to left at the school.",
+    "prompt": "Turn to left at the school.",
+    "answer": "Turn left at the school.",
+    "hint": "turn left / turn right (không có to)."
+  },
+  {
+    "id": "q_g6_u4_directions_3",
+    "skill": "g6_u4_directions",
+    "grammar": "directions",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu chỉ đường:",
+    "tokens": [
+      "Turn",
+      "right",
+      "at",
+      "the",
+      "corner"
+    ],
+    "answer": "Turn right at the corner",
+    "hint": "Động từ nguyên thể đầu câu."
+  },
+  {
+    "id": "q_g6_u5_countable_1",
+    "skill": "g6_u5_countable",
+    "grammar": "countable",
+    "type": "multiple_choice",
+    "question": "How ___ water do you drink every day?",
+    "choices": [
+      "many",
+      "much",
+      "some",
+      "a"
+    ],
+    "answer": "much",
+    "hint": "water là danh từ không đếm được."
+  },
+  {
+    "id": "q_g6_u5_countable_2",
+    "skill": "g6_u5_countable",
+    "grammar": "countable",
+    "type": "error_detection",
+    "question": "There are much people here.",
+    "prompt": "There are much people here.",
+    "answer": "There are many people here.",
+    "hint": "people đếm được → many."
+  },
+  {
+    "id": "q_g6_u5_countable_3",
+    "skill": "g6_u5_countable",
+    "grammar": "countable",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "There",
+      "is",
+      "much",
+      "rice",
+      "here"
+    ],
+    "answer": "There is much rice here",
+    "hint": "rice không đếm được → much."
+  },
+  {
+    "id": "q_g6_u5_superlative_1",
+    "skill": "g6_u5_superlative",
+    "grammar": "superlative",
+    "type": "multiple_choice",
+    "question": "Fansipan is the ___ mountain in Viet Nam.",
+    "choices": [
+      "high",
+      "higher",
+      "highest",
+      "most high"
+    ],
+    "answer": "highest",
+    "hint": "Tính từ ngắn + -est."
+  },
+  {
+    "id": "q_g6_u5_superlative_2",
+    "skill": "g6_u5_superlative",
+    "grammar": "superlative",
+    "type": "error_detection",
+    "question": "It is most beautiful beach in Viet Nam.",
+    "prompt": "It is most beautiful beach in Viet Nam.",
+    "answer": "It is the most beautiful beach in Viet Nam.",
+    "hint": "Thiếu mạo từ the trước so sánh nhất."
+  },
+  {
+    "id": "q_g6_u5_superlative_3",
+    "skill": "g6_u5_superlative",
+    "grammar": "superlative",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "She",
+      "is",
+      "the",
+      "best",
+      "student"
+    ],
+    "answer": "She is the best student",
+    "hint": "good → the best."
+  },
+  {
+    "id": "q_g6_u5_must_1",
+    "skill": "g6_u5_must",
+    "grammar": "modal_must",
+    "type": "multiple_choice",
+    "question": "You ___ wear a helmet when cycling.",
+    "choices": [
+      "must",
+      "musts",
+      "must to",
+      "musting"
+    ],
+    "answer": "must",
+    "hint": "must + động từ nguyên thể."
+  },
+  {
+    "id": "q_g6_u5_must_2",
+    "skill": "g6_u5_must",
+    "grammar": "modal_must",
+    "type": "error_detection",
+    "question": "You must to bring some water.",
+    "prompt": "You must to bring some water.",
+    "answer": "You must bring some water.",
+    "hint": "Sau must không dùng to."
+  },
+  {
+    "id": "q_g6_u5_must_3",
+    "skill": "g6_u5_must",
+    "grammar": "modal_must",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "We",
+      "mustn't",
+      "feed",
+      "the",
+      "animals"
+    ],
+    "answer": "We mustn't feed the animals",
+    "hint": "mustn't = điều cấm."
+  },
+  {
+    "id": "q_g6_u6_should_1",
+    "skill": "g6_u6_should",
+    "grammar": "modal_should",
+    "type": "multiple_choice",
+    "question": "You ___ eat too much candy at Tet.",
+    "choices": [
+      "should",
+      "shouldn't",
+      "should to",
+      "shoulds"
+    ],
+    "answer": "shouldn't",
+    "hint": "Lời khuyên không nên → shouldn't."
+  },
+  {
+    "id": "q_g6_u6_should_2",
+    "skill": "g6_u6_should",
+    "grammar": "modal_should",
+    "type": "error_detection",
+    "question": "We should visits our grandparents.",
+    "prompt": "We should visits our grandparents.",
+    "answer": "We should visit our grandparents.",
+    "hint": "Sau should là động từ nguyên thể."
+  },
+  {
+    "id": "q_g6_u6_should_3",
+    "skill": "g6_u6_should",
+    "grammar": "modal_should",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "You",
+      "should",
+      "clean",
+      "your",
+      "room"
+    ],
+    "answer": "You should clean your room",
+    "hint": "S + should + V."
+  },
+  {
+    "id": "q_g6_u6_some_any_1",
+    "skill": "g6_u6_some_any",
+    "grammar": "some_any",
+    "type": "multiple_choice",
+    "question": "There aren't ___ oranges in the fridge.",
+    "choices": [
+      "some",
+      "any",
+      "much",
+      "a"
+    ],
+    "answer": "any",
+    "hint": "Câu phủ định dùng any."
+  },
+  {
+    "id": "q_g6_u6_some_any_2",
+    "skill": "g6_u6_some_any",
+    "grammar": "some_any",
+    "type": "error_detection",
+    "question": "Do you have some money?",
+    "prompt": "Do you have some money?",
+    "answer": "Do you have any money?",
+    "hint": "Câu hỏi thường dùng any."
+  },
+  {
+    "id": "q_g6_u6_some_any_3",
+    "skill": "g6_u6_some_any",
+    "grammar": "some_any",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "I",
+      "have",
+      "some",
+      "books"
+    ],
+    "answer": "I have some books",
+    "hint": "Câu khẳng định dùng some."
+  },
+  {
+    "id": "q_g6_u7_wh_1",
+    "skill": "g6_u7_wh",
+    "grammar": "wh_question",
+    "type": "multiple_choice",
+    "question": "___ do you live? - In Hue.",
+    "choices": [
+      "What",
+      "When",
+      "Where",
+      "Who"
+    ],
+    "answer": "Where",
+    "hint": "Hỏi nơi chốn dùng Where."
+  },
+  {
+    "id": "q_g6_u7_wh_2",
+    "skill": "g6_u7_wh",
+    "grammar": "wh_question",
+    "type": "error_detection",
+    "question": "What time does the film starts?",
+    "prompt": "What time does the film starts?",
+    "answer": "What time does the film start?",
+    "hint": "Sau does, động từ về nguyên thể."
+  },
+  {
+    "id": "q_g6_u7_wh_3",
+    "skill": "g6_u7_wh",
+    "grammar": "wh_question",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu hỏi đúng:",
+    "tokens": [
+      "What",
+      "does",
+      "she",
+      "like"
+    ],
+    "answer": "What does she like",
+    "hint": "Wh- + does + S + V?"
+  },
+  {
+    "id": "q_g6_u7_conjunctions_1",
+    "skill": "g6_u7_conjunctions",
+    "grammar": "conjunction",
+    "type": "multiple_choice",
+    "question": "I like cartoons ___ they are funny.",
+    "choices": [
+      "so",
+      "but",
+      "because",
+      "and"
+    ],
+    "answer": "because",
+    "hint": "because chỉ nguyên nhân."
+  },
+  {
+    "id": "q_g6_u7_conjunctions_2",
+    "skill": "g6_u7_conjunctions",
+    "grammar": "conjunction",
+    "type": "input",
+    "question": "Nối câu chỉ kết quả: It rained, ___ we stayed at home.",
+    "answer": "so",
+    "hint": "so = vì vậy (kết quả)."
+  },
+  {
+    "id": "q_g6_u7_conjunctions_3",
+    "skill": "g6_u7_conjunctions",
+    "grammar": "conjunction",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "I",
+      "like",
+      "tea",
+      "but",
+      "I",
+      "don't",
+      "like",
+      "coffee"
+    ],
+    "answer": "I like tea but I don't like coffee",
+    "hint": "but = nhưng (tương phản)."
+  },
+  {
+    "id": "q_g6_u8_past_simple_1",
+    "skill": "g6_u8_past_simple",
+    "grammar": "past_simple",
+    "type": "multiple_choice",
+    "question": "We ___ football last Sunday.",
+    "choices": [
+      "play",
+      "plays",
+      "played",
+      "playing"
+    ],
+    "answer": "played",
+    "hint": "last Sunday → quá khứ đơn."
+  },
+  {
+    "id": "q_g6_u8_past_simple_2",
+    "skill": "g6_u8_past_simple",
+    "grammar": "past_simple",
+    "type": "error_detection",
+    "question": "She go to the gym yesterday.",
+    "prompt": "She go to the gym yesterday.",
+    "answer": "She went to the gym yesterday.",
+    "hint": "go → went (bất quy tắc)."
+  },
+  {
+    "id": "q_g6_u8_past_simple_3",
+    "skill": "g6_u8_past_simple",
+    "grammar": "past_simple",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "They",
+      "watched",
+      "a",
+      "match",
+      "last",
+      "night"
+    ],
+    "answer": "They watched a match last night",
+    "hint": "S + V-ed + O + trạng từ."
+  },
+  {
+    "id": "q_g6_u8_imperatives_1",
+    "skill": "g6_u8_imperatives",
+    "grammar": "imperative",
+    "type": "multiple_choice",
+    "question": "___ run near the swimming pool.",
+    "choices": [
+      "Don't",
+      "Doesn't",
+      "Not",
+      "No"
+    ],
+    "answer": "Don't",
+    "hint": "Mệnh lệnh phủ định: Don't + V."
+  },
+  {
+    "id": "q_g6_u8_imperatives_2",
+    "skill": "g6_u8_imperatives",
+    "grammar": "imperative",
+    "type": "error_detection",
+    "question": "You pass the ball to me.",
+    "prompt": "You pass the ball to me.",
+    "answer": "Pass the ball to me.",
+    "hint": "Câu mệnh lệnh bỏ chủ ngữ You."
+  },
+  {
+    "id": "q_g6_u8_imperatives_3",
+    "skill": "g6_u8_imperatives",
+    "grammar": "imperative",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu mệnh lệnh:",
+    "tokens": [
+      "Don't",
+      "touch",
+      "the",
+      "ball"
+    ],
+    "answer": "Don't touch the ball",
+    "hint": "Don't + V + O."
+  },
+  {
+    "id": "q_g6_u9_present_perfect_1",
+    "skill": "g6_u9_present_perfect",
+    "grammar": "present_perfect",
+    "type": "multiple_choice",
+    "question": "She ___ visited London twice.",
+    "choices": [
+      "have",
+      "has",
+      "is",
+      "was"
+    ],
+    "answer": "has",
+    "hint": "He/She/It + has + V3."
+  },
+  {
+    "id": "q_g6_u9_present_perfect_2",
+    "skill": "g6_u9_present_perfect",
+    "grammar": "present_perfect",
+    "type": "error_detection",
+    "question": "I have went to Da Nang.",
+    "prompt": "I have went to Da Nang.",
+    "answer": "I have gone to Da Nang.",
+    "hint": "go → gone (phân từ hai)."
+  },
+  {
+    "id": "q_g6_u9_present_perfect_3",
+    "skill": "g6_u9_present_perfect",
+    "grammar": "present_perfect",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "They",
+      "have",
+      "seen",
+      "this",
+      "film"
+    ],
+    "answer": "They have seen this film",
+    "hint": "S + have + V3."
+  },
+  {
+    "id": "q_g6_u9_possessive_pronouns_1",
+    "skill": "g6_u9_possessive_pronouns",
+    "grammar": "possessive_pronoun",
+    "type": "multiple_choice",
+    "question": "This pen is ___.",
+    "choices": [
+      "my",
+      "mine",
+      "me",
+      "I"
+    ],
+    "answer": "mine",
+    "hint": "Đại từ sở hữu đứng một mình: mine."
+  },
+  {
+    "id": "q_g6_u9_possessive_pronouns_2",
+    "skill": "g6_u9_possessive_pronouns",
+    "grammar": "possessive_pronoun",
+    "type": "error_detection",
+    "question": "This bag is hers bag.",
+    "prompt": "This bag is hers bag.",
+    "answer": "This bag is hers.",
+    "hint": "hers không đi kèm danh từ."
+  },
+  {
+    "id": "q_g6_u9_possessive_pronouns_3",
+    "skill": "g6_u9_possessive_pronouns",
+    "grammar": "possessive_pronoun",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "That",
+      "house",
+      "is",
+      "theirs"
+    ],
+    "answer": "That house is theirs",
+    "hint": "their → theirs."
+  },
+  {
+    "id": "q_g6_u10_will_1",
+    "skill": "g6_u10_will",
+    "grammar": "future_will",
+    "type": "multiple_choice",
+    "question": "Houses ___ have robots in the future.",
+    "choices": [
+      "will",
+      "wills",
+      "is",
+      "are"
+    ],
+    "answer": "will",
+    "hint": "Dự đoán tương lai dùng will + V."
+  },
+  {
+    "id": "q_g6_u10_will_2",
+    "skill": "g6_u10_will",
+    "grammar": "future_will",
+    "type": "error_detection",
+    "question": "He will helps you tomorrow.",
+    "prompt": "He will helps you tomorrow.",
+    "answer": "He will help you tomorrow.",
+    "hint": "Sau will là động từ nguyên thể."
+  },
+  {
+    "id": "q_g6_u10_will_3",
+    "skill": "g6_u10_will",
+    "grammar": "future_will",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "We",
+      "will",
+      "live",
+      "on",
+      "the",
+      "moon"
+    ],
+    "answer": "We will live on the moon",
+    "hint": "S + will + V + ..."
+  },
+  {
+    "id": "q_g6_u10_might_1",
+    "skill": "g6_u10_might",
+    "grammar": "modal_might",
+    "type": "multiple_choice",
+    "question": "It ___ rain this afternoon.",
+    "choices": [
+      "might",
+      "might to",
+      "mights",
+      "maybe"
+    ],
+    "answer": "might",
+    "hint": "might + động từ nguyên thể."
+  },
+  {
+    "id": "q_g6_u10_might_2",
+    "skill": "g6_u10_might",
+    "grammar": "modal_might",
+    "type": "error_detection",
+    "question": "They might to come to the party.",
+    "prompt": "They might to come to the party.",
+    "answer": "They might come to the party.",
+    "hint": "Sau might không dùng to."
+  },
+  {
+    "id": "q_g6_u10_might_3",
+    "skill": "g6_u10_might",
+    "grammar": "modal_might",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "We",
+      "might",
+      "have",
+      "robot",
+      "helpers"
+    ],
+    "answer": "We might have robot helpers",
+    "hint": "might = có lẽ."
+  },
+  {
+    "id": "q_g6_u11_conditional1_1",
+    "skill": "g6_u11_conditional1",
+    "grammar": "conditional1",
+    "type": "multiple_choice",
+    "question": "If we recycle, we ___ the Earth.",
+    "choices": [
+      "save",
+      "will save",
+      "saved",
+      "saves"
+    ],
+    "answer": "will save",
+    "hint": "Mệnh đề chính dùng will + V."
+  },
+  {
+    "id": "q_g6_u11_conditional1_2",
+    "skill": "g6_u11_conditional1",
+    "grammar": "conditional1",
+    "type": "error_detection",
+    "question": "If we will plant trees, the air will be cleaner.",
+    "prompt": "If we will plant trees, the air will be cleaner.",
+    "answer": "If we plant trees, the air will be cleaner.",
+    "hint": "Sau If dùng hiện tại đơn, không dùng will."
+  },
+  {
+    "id": "q_g6_u11_conditional1_3",
+    "skill": "g6_u11_conditional1",
+    "grammar": "conditional1",
+    "type": "input",
+    "question": "Chia động từ: If it ___ (rain), we will stay home.",
+    "answer": "rains",
+    "hint": "Mệnh đề If dùng hiện tại đơn (it → rains)."
+  },
+  {
+    "id": "q_g6_u11_articles_1",
+    "skill": "g6_u11_articles",
+    "grammar": "article",
+    "type": "multiple_choice",
+    "question": "It is ___ apple.",
+    "choices": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "answer": "an",
+    "hint": "apple bắt đầu bằng nguyên âm → an."
+  },
+  {
+    "id": "q_g6_u11_articles_2",
+    "skill": "g6_u11_articles",
+    "grammar": "article",
+    "type": "error_detection",
+    "question": "She is a honest girl.",
+    "prompt": "She is a honest girl.",
+    "answer": "She is an honest girl.",
+    "hint": "honest có h câm, đọc như nguyên âm → an."
+  },
+  {
+    "id": "q_g6_u11_articles_3",
+    "skill": "g6_u11_articles",
+    "grammar": "article",
+    "type": "input",
+    "question": "Điền mạo từ: I have ___ umbrella.",
+    "answer": "an",
+    "hint": "umbrella bắt đầu bằng nguyên âm."
+  },
+  {
+    "id": "q_g6_u12_could_1",
+    "skill": "g6_u12_could",
+    "grammar": "modal_could",
+    "type": "multiple_choice",
+    "question": "Old robots ___ talk to people.",
+    "choices": [
+      "could",
+      "couldn't",
+      "can",
+      "could to"
+    ],
+    "answer": "couldn't",
+    "hint": "Robot cũ chưa làm được → couldn't."
+  },
+  {
+    "id": "q_g6_u12_could_2",
+    "skill": "g6_u12_could",
+    "grammar": "modal_could",
+    "type": "error_detection",
+    "question": "The robot could moved slowly.",
+    "prompt": "The robot could moved slowly.",
+    "answer": "The robot could move slowly.",
+    "hint": "Sau could là động từ nguyên thể."
+  },
+  {
+    "id": "q_g6_u12_could_3",
+    "skill": "g6_u12_could",
+    "grammar": "modal_could",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "Robots",
+      "could",
+      "not",
+      "feel",
+      "pain"
+    ],
+    "answer": "Robots could not feel pain",
+    "hint": "could not + V."
+  },
+  {
+    "id": "q_g6_u12_will_be_able_1",
+    "skill": "g6_u12_will_be_able",
+    "grammar": "future_able",
+    "type": "multiple_choice",
+    "question": "Robots ___ to talk soon.",
+    "choices": [
+      "will be able",
+      "will able",
+      "can be able",
+      "will be"
+    ],
+    "answer": "will be able",
+    "hint": "Khả năng tương lai: will be able to + V."
+  },
+  {
+    "id": "q_g6_u12_will_be_able_2",
+    "skill": "g6_u12_will_be_able",
+    "grammar": "future_able",
+    "type": "error_detection",
+    "question": "They will be able to talks.",
+    "prompt": "They will be able to talks.",
+    "answer": "They will be able to talk.",
+    "hint": "Sau to là động từ nguyên thể."
+  },
+  {
+    "id": "q_g6_u12_will_be_able_3",
+    "skill": "g6_u12_will_be_able",
+    "grammar": "future_able",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "Robots",
+      "will",
+      "be",
+      "able",
+      "to",
+      "cook"
+    ],
+    "answer": "Robots will be able to cook",
+    "hint": "will be able to + V."
+  },
+  {
+    "id": "q_g7_u1_present_simple_1",
+    "skill": "g7_u1_present_simple",
+    "grammar": "present_simple",
+    "type": "multiple_choice",
+    "question": "My sister ___ stamps.",
+    "choices": [
+      "collect",
+      "collects",
+      "collecting",
+      "collected"
+    ],
+    "answer": "collects",
+    "hint": "My sister là ngôi thứ ba số ít."
+  },
+  {
+    "id": "q_g7_u1_present_simple_2",
+    "skill": "g7_u1_present_simple",
+    "grammar": "present_simple",
+    "type": "error_detection",
+    "question": "He play the guitar every day.",
+    "prompt": "He play the guitar every day.",
+    "answer": "He plays the guitar every day.",
+    "hint": "He + V(s/es): play → plays."
+  },
+  {
+    "id": "q_g7_u1_present_simple_3",
+    "skill": "g7_u1_present_simple",
+    "grammar": "present_simple",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "I",
+      "do",
+      "my",
+      "homework",
+      "every",
+      "evening"
+    ],
+    "answer": "I do my homework every evening",
+    "hint": "S + V + O + trạng từ."
+  },
+  {
+    "id": "q_g7_u1_verbs_liking_1",
+    "skill": "g7_u1_verbs_liking",
+    "grammar": "verb_liking",
+    "type": "multiple_choice",
+    "question": "I enjoy ___ books.",
+    "choices": [
+      "read",
+      "reads",
+      "reading",
+      "to read"
+    ],
+    "answer": "reading",
+    "hint": "Sau enjoy dùng V-ing."
+  },
+  {
+    "id": "q_g7_u1_verbs_liking_2",
+    "skill": "g7_u1_verbs_liking",
+    "grammar": "verb_liking",
+    "type": "error_detection",
+    "question": "She likes swim in summer.",
+    "prompt": "She likes swim in summer.",
+    "answer": "She likes swimming in summer.",
+    "hint": "like + V-ing: swim → swimming."
+  },
+  {
+    "id": "q_g7_u1_verbs_liking_3",
+    "skill": "g7_u1_verbs_liking",
+    "grammar": "verb_liking",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "They",
+      "love",
+      "playing",
+      "football"
+    ],
+    "answer": "They love playing football",
+    "hint": "love + V-ing."
+  },
+  {
+    "id": "q_g7_u2_simple_sentences_1",
+    "skill": "g7_u2_simple_sentences",
+    "grammar": "simple_sentence",
+    "type": "multiple_choice",
+    "question": "Đâu là câu đơn hoàn chỉnh?",
+    "choices": [
+      "We exercise every morning.",
+      "Every morning at home.",
+      "Exercise every morning we.",
+      "We every morning."
+    ],
+    "answer": "We exercise every morning.",
+    "hint": "Câu đơn cần đủ chủ ngữ và động từ."
+  },
+  {
+    "id": "q_g7_u2_simple_sentences_2",
+    "skill": "g7_u2_simple_sentences",
+    "grammar": "simple_sentence",
+    "type": "error_detection",
+    "question": "We morning exercises every day.",
+    "prompt": "We morning exercises every day.",
+    "answer": "We do morning exercises every day.",
+    "hint": "Câu thiếu động từ chính (do)."
+  },
+  {
+    "id": "q_g7_u2_simple_sentences_3",
+    "skill": "g7_u2_simple_sentences",
+    "grammar": "simple_sentence",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đơn đúng:",
+    "tokens": [
+      "She",
+      "eats",
+      "a",
+      "healthy",
+      "breakfast"
+    ],
+    "answer": "She eats a healthy breakfast",
+    "hint": "S + V + O."
+  },
+  {
+    "id": "q_g7_u3_past_simple_1",
+    "skill": "g7_u3_past_simple",
+    "grammar": "past_simple",
+    "type": "multiple_choice",
+    "question": "They ___ old people last summer.",
+    "choices": [
+      "help",
+      "helps",
+      "helped",
+      "helping"
+    ],
+    "answer": "helped",
+    "hint": "last summer → quá khứ đơn."
+  },
+  {
+    "id": "q_g7_u3_past_simple_2",
+    "skill": "g7_u3_past_simple",
+    "grammar": "past_simple",
+    "type": "error_detection",
+    "question": "We collect rubbish yesterday.",
+    "prompt": "We collect rubbish yesterday.",
+    "answer": "We collected rubbish yesterday.",
+    "hint": "yesterday → thêm -ed: collected."
+  },
+  {
+    "id": "q_g7_u3_past_simple_3",
+    "skill": "g7_u3_past_simple",
+    "grammar": "past_simple",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "She",
+      "planted",
+      "trees",
+      "last",
+      "weekend"
+    ],
+    "answer": "She planted trees last weekend",
+    "hint": "S + V-ed + O + trạng từ."
+  },
+  {
+    "id": "q_g7_u3_past_questions_1",
+    "skill": "g7_u3_past_questions",
+    "grammar": "past_question",
+    "type": "multiple_choice",
+    "question": "___ you join the activity yesterday?",
+    "choices": [
+      "Do",
+      "Does",
+      "Did",
+      "Was"
+    ],
+    "answer": "Did",
+    "hint": "Câu hỏi quá khứ dùng Did."
+  },
+  {
+    "id": "q_g7_u3_past_questions_2",
+    "skill": "g7_u3_past_questions",
+    "grammar": "past_question",
+    "type": "error_detection",
+    "question": "Did you joined the clean-up day?",
+    "prompt": "Did you joined the clean-up day?",
+    "answer": "Did you join the clean-up day?",
+    "hint": "Sau Did, động từ về nguyên thể."
+  },
+  {
+    "id": "q_g7_u3_past_questions_3",
+    "skill": "g7_u3_past_questions",
+    "grammar": "past_question",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu hỏi đúng:",
+    "tokens": [
+      "Did",
+      "they",
+      "help",
+      "the",
+      "children"
+    ],
+    "answer": "Did they help the children",
+    "hint": "Did + S + V (nguyên thể)?"
+  },
+  {
+    "id": "q_g7_u4_as_as_1",
+    "skill": "g7_u4_as_as",
+    "grammar": "as_as",
+    "type": "multiple_choice",
+    "question": "Pop is as ___ as rock.",
+    "choices": [
+      "popular",
+      "popularer",
+      "more popular",
+      "most popular"
+    ],
+    "answer": "popular",
+    "hint": "Giữa hai as là tính từ nguyên cấp."
+  },
+  {
+    "id": "q_g7_u4_as_as_2",
+    "skill": "g7_u4_as_as",
+    "grammar": "as_as",
+    "type": "error_detection",
+    "question": "Jazz is as popularer as pop.",
+    "prompt": "Jazz is as popularer as pop.",
+    "answer": "Jazz is as popular as pop.",
+    "hint": "as + adj nguyên cấp + as (không -er)."
+  },
+  {
+    "id": "q_g7_u4_as_as_3",
+    "skill": "g7_u4_as_as",
+    "grammar": "as_as",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "She",
+      "is",
+      "as",
+      "tall",
+      "as",
+      "her",
+      "sister"
+    ],
+    "answer": "She is as tall as her sister",
+    "hint": "S + as + adj + as + N."
+  },
+  {
+    "id": "q_g7_u4_like_different_1",
+    "skill": "g7_u4_like_different",
+    "grammar": "like_different",
+    "type": "multiple_choice",
+    "question": "Jazz is different ___ pop.",
+    "choices": [
+      "from",
+      "with",
+      "to",
+      "than"
+    ],
+    "answer": "from",
+    "hint": "different from (không dùng with)."
+  },
+  {
+    "id": "q_g7_u4_like_different_2",
+    "skill": "g7_u4_like_different",
+    "grammar": "like_different",
+    "type": "error_detection",
+    "question": "My hobby is the same with yours.",
+    "prompt": "My hobby is the same with yours.",
+    "answer": "My hobby is the same as yours.",
+    "hint": "the same as (không dùng with)."
+  },
+  {
+    "id": "q_g7_u4_like_different_3",
+    "skill": "g7_u4_like_different",
+    "grammar": "like_different",
+    "type": "input",
+    "question": "Điền giới từ: This song is different ___ that one.",
+    "answer": "from",
+    "hint": "different from."
+  },
+  {
+    "id": "q_g7_u5_quantifiers_1",
+    "skill": "g7_u5_quantifiers",
+    "grammar": "quantifier",
+    "type": "multiple_choice",
+    "question": "There is ___ rice in the bowl.",
+    "choices": [
+      "many",
+      "a lot of",
+      "lots",
+      "several"
+    ],
+    "answer": "a lot of",
+    "hint": "a lot of dùng cho danh từ không đếm được."
+  },
+  {
+    "id": "q_g7_u5_quantifiers_2",
+    "skill": "g7_u5_quantifiers",
+    "grammar": "quantifier",
+    "type": "error_detection",
+    "question": "There is a lots of milk.",
+    "prompt": "There is a lots of milk.",
+    "answer": "There is a lot of milk.",
+    "hint": "a lot of (không có 's')."
+  },
+  {
+    "id": "q_g7_u5_quantifiers_3",
+    "skill": "g7_u5_quantifiers",
+    "grammar": "quantifier",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "We",
+      "have",
+      "lots",
+      "of",
+      "fruit"
+    ],
+    "answer": "We have lots of fruit",
+    "hint": "lots of + danh từ."
+  },
+  {
+    "id": "q_g7_u5_how_many_much_1",
+    "skill": "g7_u5_how_many_much",
+    "grammar": "how_many_much",
+    "type": "multiple_choice",
+    "question": "How ___ water do you drink?",
+    "choices": [
+      "many",
+      "much",
+      "some",
+      "lots"
+    ],
+    "answer": "much",
+    "hint": "water không đếm được → How much."
+  },
+  {
+    "id": "q_g7_u5_how_many_much_2",
+    "skill": "g7_u5_how_many_much",
+    "grammar": "how_many_much",
+    "type": "error_detection",
+    "question": "How many milk do you need?",
+    "prompt": "How many milk do you need?",
+    "answer": "How much milk do you need?",
+    "hint": "milk không đếm được → How much."
+  },
+  {
+    "id": "q_g7_u5_how_many_much_3",
+    "skill": "g7_u5_how_many_much",
+    "grammar": "how_many_much",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu hỏi đúng:",
+    "tokens": [
+      "How",
+      "many",
+      "eggs",
+      "do",
+      "you",
+      "need"
+    ],
+    "answer": "How many eggs do you need",
+    "hint": "eggs đếm được → How many."
+  },
+  {
+    "id": "q_g7_u6_prep_time_1",
+    "skill": "g7_u6_prep_time",
+    "grammar": "prep_time",
+    "type": "multiple_choice",
+    "question": "We have English ___ Monday.",
+    "choices": [
+      "in",
+      "on",
+      "at",
+      "to"
+    ],
+    "answer": "on",
+    "hint": "on + thứ trong tuần."
+  },
+  {
+    "id": "q_g7_u6_prep_time_2",
+    "skill": "g7_u6_prep_time",
+    "grammar": "prep_time",
+    "type": "error_detection",
+    "question": "The party is in 7 p.m.",
+    "prompt": "The party is in 7 p.m.",
+    "answer": "The party is at 7 p.m.",
+    "hint": "at + giờ cụ thể."
+  },
+  {
+    "id": "q_g7_u6_prep_time_3",
+    "skill": "g7_u6_prep_time",
+    "grammar": "prep_time",
+    "type": "input",
+    "question": "Điền giới từ thời gian: I was born ___ July.",
+    "answer": "in",
+    "hint": "in + tháng."
+  },
+  {
+    "id": "q_g7_u6_prep_place_1",
+    "skill": "g7_u6_prep_place",
+    "grammar": "prep_place",
+    "type": "multiple_choice",
+    "question": "She is ___ school now.",
+    "choices": [
+      "in",
+      "on",
+      "at",
+      "to"
+    ],
+    "answer": "at",
+    "hint": "at + địa điểm cụ thể (school)."
+  },
+  {
+    "id": "q_g7_u6_prep_place_2",
+    "skill": "g7_u6_prep_place",
+    "grammar": "prep_place",
+    "type": "error_detection",
+    "question": "The books are at the shelf.",
+    "prompt": "The books are at the shelf.",
+    "answer": "The books are on the shelf.",
+    "hint": "on + bề mặt (shelf)."
+  },
+  {
+    "id": "q_g7_u6_prep_place_3",
+    "skill": "g7_u6_prep_place",
+    "grammar": "prep_place",
+    "type": "input",
+    "question": "Điền giới từ nơi chốn: We live ___ Ha Noi.",
+    "answer": "in",
+    "hint": "in + thành phố."
+  },
+  {
+    "id": "q_g7_u7_it_distance_1",
+    "skill": "g7_u7_it_distance",
+    "grammar": "it_distance",
+    "type": "multiple_choice",
+    "question": "___ is 5 km from my house to school.",
+    "choices": [
+      "It",
+      "There",
+      "This",
+      "That"
+    ],
+    "answer": "It",
+    "hint": "Dùng It để chỉ khoảng cách."
+  },
+  {
+    "id": "q_g7_u7_it_distance_2",
+    "skill": "g7_u7_it_distance",
+    "grammar": "it_distance",
+    "type": "error_detection",
+    "question": "There is 5 km from here to school.",
+    "prompt": "There is 5 km from here to school.",
+    "answer": "It is 5 km from here to school.",
+    "hint": "Khoảng cách dùng It is ..."
+  },
+  {
+    "id": "q_g7_u7_it_distance_3",
+    "skill": "g7_u7_it_distance",
+    "grammar": "it_distance",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "It",
+      "is",
+      "two",
+      "kilometres",
+      "to",
+      "the",
+      "park"
+    ],
+    "answer": "It is two kilometres to the park",
+    "hint": "It is + khoảng cách + to + nơi chốn."
+  },
+  {
+    "id": "q_g7_u7_should_1",
+    "skill": "g7_u7_should",
+    "grammar": "modal_should",
+    "type": "multiple_choice",
+    "question": "You ___ ride fast in the rain.",
+    "choices": [
+      "should",
+      "shouldn't",
+      "should to",
+      "shoulds"
+    ],
+    "answer": "shouldn't",
+    "hint": "Lời khuyên không nên → shouldn't."
+  },
+  {
+    "id": "q_g7_u7_should_2",
+    "skill": "g7_u7_should",
+    "grammar": "modal_should",
+    "type": "error_detection",
+    "question": "You should to stop at the red light.",
+    "prompt": "You should to stop at the red light.",
+    "answer": "You should stop at the red light.",
+    "hint": "Sau should không có to."
+  },
+  {
+    "id": "q_g7_u7_should_3",
+    "skill": "g7_u7_should",
+    "grammar": "modal_should",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "We",
+      "should",
+      "wear",
+      "a",
+      "helmet"
+    ],
+    "answer": "We should wear a helmet",
+    "hint": "S + should + V."
+  },
+  {
+    "id": "q_g7_u8_although_1",
+    "skill": "g7_u8_although",
+    "grammar": "although",
+    "type": "multiple_choice",
+    "question": "___ it was raining, we went out.",
+    "choices": [
+      "Although",
+      "However",
+      "But",
+      "So"
+    ],
+    "answer": "Although",
+    "hint": "Although nối hai ý trái ngược trong cùng câu."
+  },
+  {
+    "id": "q_g7_u8_although_2",
+    "skill": "g7_u8_although",
+    "grammar": "although",
+    "type": "error_detection",
+    "question": "Although long, the film was good.",
+    "prompt": "Although long, the film was good.",
+    "answer": "Although it was long, the film was good.",
+    "hint": "Sau Although phải là một mệnh đề đầy đủ."
+  },
+  {
+    "id": "q_g7_u8_although_3",
+    "skill": "g7_u8_although",
+    "grammar": "although",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "Although",
+      "he",
+      "was",
+      "tired",
+      "he",
+      "kept",
+      "working"
+    ],
+    "answer": "Although he was tired he kept working",
+    "hint": "Although + mệnh đề, + mệnh đề chính."
+  },
+  {
+    "id": "q_g7_u8_however_1",
+    "skill": "g7_u8_however",
+    "grammar": "however",
+    "type": "multiple_choice",
+    "question": "The plot was simple. ___, the acting was great.",
+    "choices": [
+      "However",
+      "Although",
+      "Because",
+      "And"
+    ],
+    "answer": "However",
+    "hint": "However nối hai câu trái ngược."
+  },
+  {
+    "id": "q_g7_u8_however_2",
+    "skill": "g7_u8_however",
+    "grammar": "however",
+    "type": "error_detection",
+    "question": "She was tired. However she kept smiling.",
+    "prompt": "She was tired. However she kept smiling.",
+    "answer": "She was tired. However, she kept smiling.",
+    "hint": "However đứng đầu câu có dấu phẩy theo sau."
+  },
+  {
+    "id": "q_g7_u8_however_3",
+    "skill": "g7_u8_however",
+    "grammar": "however",
+    "type": "input",
+    "question": "Điền liên từ (tuy nhiên): It was long. ___, it was fun.",
+    "answer": "however",
+    "hint": "However, ... (tuy nhiên)."
+  },
+  {
+    "id": "q_g7_u9_yesno_1",
+    "skill": "g7_u9_yesno",
+    "grammar": "yesno_question",
+    "type": "multiple_choice",
+    "question": "___ Tet take place in spring?",
+    "choices": [
+      "Do",
+      "Does",
+      "Is",
+      "Did"
+    ],
+    "answer": "Does",
+    "hint": "Tet số ít → Does."
+  },
+  {
+    "id": "q_g7_u9_yesno_2",
+    "skill": "g7_u9_yesno",
+    "grammar": "yesno_question",
+    "type": "error_detection",
+    "question": "Does Tet takes place in spring?",
+    "prompt": "Does Tet takes place in spring?",
+    "answer": "Does Tet take place in spring?",
+    "hint": "Sau Does, động từ về nguyên thể."
+  },
+  {
+    "id": "q_g7_u9_yesno_3",
+    "skill": "g7_u9_yesno",
+    "grammar": "yesno_question",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu hỏi đúng:",
+    "tokens": [
+      "Are",
+      "you",
+      "from",
+      "Viet",
+      "Nam"
+    ],
+    "answer": "Are you from Viet Nam",
+    "hint": "Are + S + ...?"
+  },
+  {
+    "id": "q_g7_u9_wh_1",
+    "skill": "g7_u9_wh",
+    "grammar": "wh_question",
+    "type": "multiple_choice",
+    "question": "___ does the festival start?",
+    "choices": [
+      "When",
+      "Who",
+      "Which",
+      "Whose"
+    ],
+    "answer": "When",
+    "hint": "Hỏi thời gian dùng When."
+  },
+  {
+    "id": "q_g7_u9_wh_2",
+    "skill": "g7_u9_wh",
+    "grammar": "wh_question",
+    "type": "error_detection",
+    "question": "When does the festival starts?",
+    "prompt": "When does the festival starts?",
+    "answer": "When does the festival start?",
+    "hint": "Sau does, động từ về nguyên thể."
+  },
+  {
+    "id": "q_g7_u9_wh_3",
+    "skill": "g7_u9_wh",
+    "grammar": "wh_question",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu hỏi đúng:",
+    "tokens": [
+      "Where",
+      "do",
+      "you",
+      "celebrate",
+      "Tet"
+    ],
+    "answer": "Where do you celebrate Tet",
+    "hint": "Wh- + do + S + V?"
+  },
+  {
+    "id": "q_g7_u10_present_continuous_1",
+    "skill": "g7_u10_present_continuous",
+    "grammar": "present_continuous",
+    "type": "multiple_choice",
+    "question": "People ___ more solar energy now.",
+    "choices": [
+      "use",
+      "uses",
+      "are using",
+      "used"
+    ],
+    "answer": "are using",
+    "hint": "now → hiện tại tiếp diễn."
+  },
+  {
+    "id": "q_g7_u10_present_continuous_2",
+    "skill": "g7_u10_present_continuous",
+    "grammar": "present_continuous",
+    "type": "error_detection",
+    "question": "People using more wind power.",
+    "prompt": "People using more wind power.",
+    "answer": "People are using more wind power.",
+    "hint": "Thiếu to be: are + V-ing."
+  },
+  {
+    "id": "q_g7_u10_present_continuous_3",
+    "skill": "g7_u10_present_continuous",
+    "grammar": "present_continuous",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "The",
+      "sun",
+      "is",
+      "providing",
+      "clean",
+      "energy"
+    ],
+    "answer": "The sun is providing clean energy",
+    "hint": "S + is + V-ing."
+  },
+  {
+    "id": "q_g7_u11_future_simple_1",
+    "skill": "g7_u11_future_simple",
+    "grammar": "future_will",
+    "type": "multiple_choice",
+    "question": "People ___ travel by flying cars.",
+    "choices": [
+      "will",
+      "wills",
+      "are",
+      "is"
+    ],
+    "answer": "will",
+    "hint": "Dự đoán tương lai dùng will + V."
+  },
+  {
+    "id": "q_g7_u11_future_simple_2",
+    "skill": "g7_u11_future_simple",
+    "grammar": "future_will",
+    "type": "error_detection",
+    "question": "Cars will flies in the future.",
+    "prompt": "Cars will flies in the future.",
+    "answer": "Cars will fly in the future.",
+    "hint": "Sau will là động từ nguyên thể."
+  },
+  {
+    "id": "q_g7_u11_future_simple_3",
+    "skill": "g7_u11_future_simple",
+    "grammar": "future_will",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "Robots",
+      "will",
+      "drive",
+      "our",
+      "cars"
+    ],
+    "answer": "Robots will drive our cars",
+    "hint": "S + will + V + O."
+  },
+  {
+    "id": "q_g7_u11_possessive_pronouns_1",
+    "skill": "g7_u11_possessive_pronouns",
+    "grammar": "possessive_pronoun",
+    "type": "multiple_choice",
+    "question": "This ticket is ___.",
+    "choices": [
+      "your",
+      "yours",
+      "you",
+      "yours"
+    ],
+    "answer": "yours",
+    "hint": "your → yours (đứng một mình)."
+  },
+  {
+    "id": "q_g7_u11_possessive_pronouns_2",
+    "skill": "g7_u11_possessive_pronouns",
+    "grammar": "possessive_pronoun",
+    "type": "error_detection",
+    "question": "This bag is hers bag.",
+    "prompt": "This bag is hers bag.",
+    "answer": "This bag is hers.",
+    "hint": "hers không đi kèm danh từ."
+  },
+  {
+    "id": "q_g7_u11_possessive_pronouns_3",
+    "skill": "g7_u11_possessive_pronouns",
+    "grammar": "possessive_pronoun",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "That",
+      "car",
+      "is",
+      "ours"
+    ],
+    "answer": "That car is ours",
+    "hint": "our → ours."
+  },
+  {
+    "id": "q_g7_u12_articles_1",
+    "skill": "g7_u12_articles",
+    "grammar": "article",
+    "type": "multiple_choice",
+    "question": "Australia is ___ English-speaking country.",
+    "choices": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "answer": "an",
+    "hint": "English bắt đầu bằng âm nguyên âm → an."
+  },
+  {
+    "id": "q_g7_u12_articles_2",
+    "skill": "g7_u12_articles",
+    "grammar": "article",
+    "type": "error_detection",
+    "question": "I saw a elephant at the zoo.",
+    "prompt": "I saw a elephant at the zoo.",
+    "answer": "I saw an elephant at the zoo.",
+    "hint": "elephant bắt đầu bằng nguyên âm → an."
+  },
+  {
+    "id": "q_g7_u12_articles_3",
+    "skill": "g7_u12_articles",
+    "grammar": "article",
+    "type": "input",
+    "question": "Điền mạo từ: He is ___ honest man.",
+    "answer": "an",
+    "hint": "honest có h câm → an."
+  },
+  {
+    "id": "q_g8_u1_gerunds_1",
+    "skill": "g8_u1_gerunds",
+    "grammar": "verb_liking",
+    "type": "multiple_choice",
+    "question": "She enjoys ___ badminton after school.",
+    "choices": [
+      "play",
+      "plays",
+      "playing",
+      "to play"
+    ],
+    "answer": "playing",
+    "hint": "enjoy + V-ing."
+  },
+  {
+    "id": "q_g8_u1_gerunds_2",
+    "skill": "g8_u1_gerunds",
+    "grammar": "verb_liking",
+    "type": "error_detection",
+    "question": "He fancies watch films at weekends.",
+    "prompt": "He fancies watch films at weekends.",
+    "answer": "He fancies watching films at weekends.",
+    "hint": "fancy + V-ing."
+  },
+  {
+    "id": "q_g8_u1_gerunds_3",
+    "skill": "g8_u1_gerunds",
+    "grammar": "verb_liking",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "I",
+      "detest",
+      "doing",
+      "homework"
+    ],
+    "answer": "I detest doing homework",
+    "hint": "detest + V-ing."
+  },
+  {
+    "id": "q_g8_u1_gerund_toinf_1",
+    "skill": "g8_u1_gerund_toinf",
+    "grammar": "gerund_toinf",
+    "type": "multiple_choice",
+    "question": "I like ___ comics in my free time.",
+    "choices": [
+      "reads",
+      "to reading",
+      "reading",
+      "read"
+    ],
+    "answer": "reading",
+    "hint": "like + V-ing hoặc to-V; ở đây chọn V-ing."
+  },
+  {
+    "id": "q_g8_u1_gerund_toinf_2",
+    "skill": "g8_u1_gerund_toinf",
+    "grammar": "gerund_toinf",
+    "type": "input",
+    "question": "Chia động từ (V-ing): They love ___ (swim) in summer.",
+    "answer": "swimming",
+    "hint": "love + V-ing; swim → swimming."
+  },
+  {
+    "id": "q_g8_u1_gerund_toinf_3",
+    "skill": "g8_u1_gerund_toinf",
+    "grammar": "gerund_toinf",
+    "type": "error_detection",
+    "question": "I like to reading books before bed.",
+    "prompt": "I like to reading books before bed.",
+    "answer": "I like to read books before bed.",
+    "hint": "to + động từ nguyên thể."
+  },
+  {
+    "id": "q_g8_u2_comparative_adverbs_1",
+    "skill": "g8_u2_comparative_adverbs",
+    "grammar": "comparative_adverb",
+    "type": "multiple_choice",
+    "question": "He runs ___ than me.",
+    "choices": [
+      "fast",
+      "faster",
+      "fastest",
+      "more fast"
+    ],
+    "answer": "faster",
+    "hint": "Trạng từ ngắn + -er + than."
+  },
+  {
+    "id": "q_g8_u2_comparative_adverbs_2",
+    "skill": "g8_u2_comparative_adverbs",
+    "grammar": "comparative_adverb",
+    "type": "error_detection",
+    "question": "She sings beautifuller than her sister.",
+    "prompt": "She sings beautifuller than her sister.",
+    "answer": "She sings more beautifully than her sister.",
+    "hint": "Trạng từ -ly dùng more + adv."
+  },
+  {
+    "id": "q_g8_u2_comparative_adverbs_3",
+    "skill": "g8_u2_comparative_adverbs",
+    "grammar": "comparative_adverb",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "They",
+      "work",
+      "harder",
+      "than",
+      "us"
+    ],
+    "answer": "They work harder than us",
+    "hint": "V + adv-er + than."
+  },
+  {
+    "id": "q_g8_u3_simple_compound_1",
+    "skill": "g8_u3_simple_compound",
+    "grammar": "compound_sentence",
+    "type": "multiple_choice",
+    "question": "I was tired, ___ I went to bed early.",
+    "choices": [
+      "and",
+      "but",
+      "so",
+      "or"
+    ],
+    "answer": "so",
+    "hint": "so chỉ kết quả."
+  },
+  {
+    "id": "q_g8_u3_simple_compound_2",
+    "skill": "g8_u3_simple_compound",
+    "grammar": "compound_sentence",
+    "type": "error_detection",
+    "question": "I was tired, so went to bed early.",
+    "prompt": "I was tired, so went to bed early.",
+    "answer": "I was tired, so I went to bed early.",
+    "hint": "Mỗi mệnh đề cần chủ ngữ riêng."
+  },
+  {
+    "id": "q_g8_u3_simple_compound_3",
+    "skill": "g8_u3_simple_compound",
+    "grammar": "compound_sentence",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu ghép đúng:",
+    "tokens": [
+      "She",
+      "is",
+      "smart",
+      "but",
+      "she",
+      "is",
+      "lazy"
+    ],
+    "answer": "She is smart but she is lazy",
+    "hint": "S + V + but + S + V."
+  },
+  {
+    "id": "q_g8_u4_questions_1",
+    "skill": "g8_u4_questions",
+    "grammar": "question_forms",
+    "type": "multiple_choice",
+    "question": "Where ___ the Tay people live?",
+    "choices": [
+      "does",
+      "do",
+      "is",
+      "are"
+    ],
+    "answer": "do",
+    "hint": "Chủ ngữ số nhiều dùng do."
+  },
+  {
+    "id": "q_g8_u4_questions_2",
+    "skill": "g8_u4_questions",
+    "grammar": "question_forms",
+    "type": "error_detection",
+    "question": "Where do the Tay people lives?",
+    "prompt": "Where do the Tay people lives?",
+    "answer": "Where do the Tay people live?",
+    "hint": "Sau do, động từ về nguyên thể."
+  },
+  {
+    "id": "q_g8_u4_questions_3",
+    "skill": "g8_u4_questions",
+    "grammar": "question_forms",
+    "type": "input",
+    "question": "Điền trợ động từ: ___ you like ethnic food?",
+    "answer": "Do",
+    "hint": "Chủ ngữ you dùng Do."
+  },
+  {
+    "id": "q_g8_u4_countable_1",
+    "skill": "g8_u4_countable",
+    "grammar": "countable",
+    "type": "multiple_choice",
+    "question": "There isn't ___ rice left.",
+    "choices": [
+      "many",
+      "much",
+      "a",
+      "an"
+    ],
+    "answer": "much",
+    "hint": "rice không đếm được → much."
+  },
+  {
+    "id": "q_g8_u4_countable_2",
+    "skill": "g8_u4_countable",
+    "grammar": "countable",
+    "type": "error_detection",
+    "question": "How many rice do you need?",
+    "prompt": "How many rice do you need?",
+    "answer": "How much rice do you need?",
+    "hint": "rice không đếm được → How much."
+  },
+  {
+    "id": "q_g8_u4_countable_3",
+    "skill": "g8_u4_countable",
+    "grammar": "countable",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "We",
+      "have",
+      "many",
+      "books"
+    ],
+    "answer": "We have many books",
+    "hint": "many + danh từ đếm được số nhiều."
+  },
+  {
+    "id": "q_g8_u5_zero_article_1",
+    "skill": "g8_u5_zero_article",
+    "grammar": "zero_article",
+    "type": "multiple_choice",
+    "question": "We learn about ___ at school.",
+    "choices": [
+      "history",
+      "the history",
+      "a history",
+      "an history"
+    ],
+    "answer": "history",
+    "hint": "Danh từ trừu tượng/nói chung → không mạo từ."
+  },
+  {
+    "id": "q_g8_u5_zero_article_2",
+    "skill": "g8_u5_zero_article",
+    "grammar": "zero_article",
+    "type": "error_detection",
+    "question": "I love the music very much.",
+    "prompt": "I love the music very much.",
+    "answer": "I love music very much.",
+    "hint": "Nói chung về music không dùng the."
+  },
+  {
+    "id": "q_g8_u5_zero_article_3",
+    "skill": "g8_u5_zero_article",
+    "grammar": "zero_article",
+    "type": "input",
+    "question": "Điền từ chỉ chung (không mạo từ): ___ is important to children. (giáo dục)",
+    "answer": "Education",
+    "hint": "Danh từ trừu tượng đứng một mình, không mạo từ."
+  },
+  {
+    "id": "q_g8_u6_future_simple_1",
+    "skill": "g8_u6_future_simple",
+    "grammar": "future_will",
+    "type": "multiple_choice",
+    "question": "People ___ healthier lives in the future.",
+    "choices": [
+      "will live",
+      "will lives",
+      "lives",
+      "live"
+    ],
+    "answer": "will live",
+    "hint": "will + V nguyên thể."
+  },
+  {
+    "id": "q_g8_u6_future_simple_2",
+    "skill": "g8_u6_future_simple",
+    "grammar": "future_will",
+    "type": "error_detection",
+    "question": "People will lives longer.",
+    "prompt": "People will lives longer.",
+    "answer": "People will live longer.",
+    "hint": "Sau will dùng động từ nguyên thể."
+  },
+  {
+    "id": "q_g8_u6_future_simple_3",
+    "skill": "g8_u6_future_simple",
+    "grammar": "future_will",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "Robots",
+      "will",
+      "help",
+      "us"
+    ],
+    "answer": "Robots will help us",
+    "hint": "S + will + V."
+  },
+  {
+    "id": "q_g8_u6_conditional1_1",
+    "skill": "g8_u6_conditional1",
+    "grammar": "conditional1",
+    "type": "multiple_choice",
+    "question": "If you eat well, you ___ healthy.",
+    "choices": [
+      "are",
+      "will be",
+      "would be",
+      "were"
+    ],
+    "answer": "will be",
+    "hint": "Mệnh đề chính dùng will + V."
+  },
+  {
+    "id": "q_g8_u6_conditional1_2",
+    "skill": "g8_u6_conditional1",
+    "grammar": "conditional1",
+    "type": "error_detection",
+    "question": "If you will eat well, you will be healthy.",
+    "prompt": "If you will eat well, you will be healthy.",
+    "answer": "If you eat well, you will be healthy.",
+    "hint": "Sau If dùng hiện tại đơn."
+  },
+  {
+    "id": "q_g8_u6_conditional1_3",
+    "skill": "g8_u6_conditional1",
+    "grammar": "conditional1",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu điều kiện loại 1:",
+    "tokens": [
+      "If",
+      "it",
+      "rains",
+      "we",
+      "will",
+      "stay",
+      "home"
+    ],
+    "answer": "If it rains we will stay home",
+    "hint": "If + hiện tại đơn, ... will + V."
+  },
+  {
+    "id": "q_g8_u7_adverbial_time_1",
+    "skill": "g8_u7_adverbial_time",
+    "grammar": "adverbial_time",
+    "type": "multiple_choice",
+    "question": "Turn off the lights ___ you leave the room.",
+    "choices": [
+      "so",
+      "but",
+      "before",
+      "and"
+    ],
+    "answer": "before",
+    "hint": "before chỉ hành động xảy ra trước."
+  },
+  {
+    "id": "q_g8_u7_adverbial_time_2",
+    "skill": "g8_u7_adverbial_time",
+    "grammar": "adverbial_time",
+    "type": "error_detection",
+    "question": "We turn off lights before leave.",
+    "prompt": "We turn off lights before leave.",
+    "answer": "We turn off lights before we leave.",
+    "hint": "Mệnh đề thời gian cần chủ ngữ + động từ."
+  },
+  {
+    "id": "q_g8_u7_adverbial_time_3",
+    "skill": "g8_u7_adverbial_time",
+    "grammar": "adverbial_time",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "I",
+      "read",
+      "while",
+      "she",
+      "cooks"
+    ],
+    "answer": "I read while she cooks",
+    "hint": "while + S + V."
+  },
+  {
+    "id": "q_g8_u8_present_for_future_1",
+    "skill": "g8_u8_present_for_future",
+    "grammar": "present_for_future",
+    "type": "multiple_choice",
+    "question": "The shop ___ at 8 a.m. tomorrow.",
+    "choices": [
+      "will opens",
+      "opens",
+      "open",
+      "is open"
+    ],
+    "answer": "opens",
+    "hint": "Lịch trình cố định → hiện tại đơn."
+  },
+  {
+    "id": "q_g8_u8_present_for_future_2",
+    "skill": "g8_u8_present_for_future",
+    "grammar": "present_for_future",
+    "type": "error_detection",
+    "question": "The train will leaves at 6 p.m.",
+    "prompt": "The train will leaves at 6 p.m.",
+    "answer": "The train leaves at 6 p.m.",
+    "hint": "Lịch trình dùng hiện tại đơn, bỏ will."
+  },
+  {
+    "id": "q_g8_u8_present_for_future_3",
+    "skill": "g8_u8_present_for_future",
+    "grammar": "present_for_future",
+    "type": "input",
+    "question": "Chia động từ: The film ___ (start) at 7 tonight.",
+    "answer": "starts",
+    "hint": "Lịch chiếu cố định → hiện tại đơn, ngôi số ít thêm -s."
+  },
+  {
+    "id": "q_g8_u8_adverbs_frequency_1",
+    "skill": "g8_u8_adverbs_frequency",
+    "grammar": "adverbs_frequency",
+    "type": "multiple_choice",
+    "question": "My mother ___ goes to the supermarket on Sundays.",
+    "choices": [
+      "always",
+      "goes always",
+      "always goes",
+      "go always"
+    ],
+    "answer": "always",
+    "hint": "Trạng từ tần suất đứng trước động từ thường."
+  },
+  {
+    "id": "q_g8_u8_adverbs_frequency_2",
+    "skill": "g8_u8_adverbs_frequency",
+    "grammar": "adverbs_frequency",
+    "type": "error_detection",
+    "question": "He never is late for shopping.",
+    "prompt": "He never is late for shopping.",
+    "answer": "He is never late for shopping.",
+    "hint": "Sau to be, trạng từ tần suất đứng sau is/are/am."
+  },
+  {
+    "id": "q_g8_u8_adverbs_frequency_3",
+    "skill": "g8_u8_adverbs_frequency",
+    "grammar": "adverbs_frequency",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "I",
+      "sometimes",
+      "buy",
+      "clothes",
+      "online"
+    ],
+    "answer": "I sometimes buy clothes online",
+    "hint": "sometimes + trước động từ buy."
+  },
+  {
+    "id": "q_g8_u9_past_continuous_1",
+    "skill": "g8_u9_past_continuous",
+    "grammar": "past_continuous",
+    "type": "multiple_choice",
+    "question": "They ___ dinner when the storm came.",
+    "choices": [
+      "cooked",
+      "were cooking",
+      "are cooking",
+      "cook"
+    ],
+    "answer": "were cooking",
+    "hint": "Hành động đang diễn ra → was/were + V-ing."
+  },
+  {
+    "id": "q_g8_u9_past_continuous_2",
+    "skill": "g8_u9_past_continuous",
+    "grammar": "past_continuous",
+    "type": "error_detection",
+    "question": "They were cook when the storm came.",
+    "prompt": "They were cook when the storm came.",
+    "answer": "They were cooking when the storm came.",
+    "hint": "was/were + V-ing."
+  },
+  {
+    "id": "q_g8_u9_past_continuous_3",
+    "skill": "g8_u9_past_continuous",
+    "grammar": "past_continuous",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "She",
+      "was",
+      "sleeping",
+      "then"
+    ],
+    "answer": "She was sleeping then",
+    "hint": "S + was + V-ing."
+  },
+  {
+    "id": "q_g8_u10_prep_time_place_1",
+    "skill": "g8_u10_prep_time_place",
+    "grammar": "prep_place",
+    "type": "multiple_choice",
+    "question": "We will meet ___ 7 p.m.",
+    "choices": [
+      "in",
+      "on",
+      "at",
+      "of"
+    ],
+    "answer": "at",
+    "hint": "Giờ cụ thể dùng at."
+  },
+  {
+    "id": "q_g8_u10_prep_time_place_2",
+    "skill": "g8_u10_prep_time_place",
+    "grammar": "prep_place",
+    "type": "error_detection",
+    "question": "We will meet in 7 p.m.",
+    "prompt": "We will meet in 7 p.m.",
+    "answer": "We will meet at 7 p.m.",
+    "hint": "at + giờ."
+  },
+  {
+    "id": "q_g8_u10_prep_time_place_3",
+    "skill": "g8_u10_prep_time_place",
+    "grammar": "prep_place",
+    "type": "input",
+    "question": "Điền giới từ: The book is ___ the table.",
+    "answer": "on",
+    "hint": "Bề mặt dùng on."
+  },
+  {
+    "id": "q_g8_u10_possessive_1",
+    "skill": "g8_u10_possessive",
+    "grammar": "possessive_pronoun",
+    "type": "multiple_choice",
+    "question": "This phone is ___.",
+    "choices": [
+      "my",
+      "mine",
+      "me",
+      "my phone"
+    ],
+    "answer": "mine",
+    "hint": "Đại từ sở hữu đứng một mình."
+  },
+  {
+    "id": "q_g8_u10_possessive_2",
+    "skill": "g8_u10_possessive",
+    "grammar": "possessive_pronoun",
+    "type": "error_detection",
+    "question": "This bag is hers bag.",
+    "prompt": "This bag is hers bag.",
+    "answer": "This bag is hers.",
+    "hint": "hers đứng một mình, không kèm danh từ."
+  },
+  {
+    "id": "q_g8_u10_possessive_3",
+    "skill": "g8_u10_possessive",
+    "grammar": "possessive_pronoun",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "The",
+      "red",
+      "car",
+      "is",
+      "theirs"
+    ],
+    "answer": "The red car is theirs",
+    "hint": "theirs đứng một mình."
+  },
+  {
+    "id": "q_g8_u11_reported_statements_1",
+    "skill": "g8_u11_reported_statements",
+    "grammar": "reported_statement",
+    "type": "multiple_choice",
+    "question": "She said she ___ tired.",
+    "choices": [
+      "is",
+      "was",
+      "will",
+      "are"
+    ],
+    "answer": "was",
+    "hint": "Lùi thì: is → was."
+  },
+  {
+    "id": "q_g8_u11_reported_statements_2",
+    "skill": "g8_u11_reported_statements",
+    "grammar": "reported_statement",
+    "type": "error_detection",
+    "question": "She said that she is tired.",
+    "prompt": "She said that she is tired.",
+    "answer": "She said that she was tired.",
+    "hint": "Lùi thì hiện tại đơn → quá khứ đơn."
+  },
+  {
+    "id": "q_g8_u11_reported_statements_3",
+    "skill": "g8_u11_reported_statements",
+    "grammar": "reported_statement",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu tường thuật đúng:",
+    "tokens": [
+      "He",
+      "said",
+      "he",
+      "was",
+      "busy"
+    ],
+    "answer": "He said he was busy",
+    "hint": "S + said + S + V (lùi thì)."
+  },
+  {
+    "id": "q_g8_u12_reported_questions_1",
+    "skill": "g8_u12_reported_questions",
+    "grammar": "reported_question",
+    "type": "multiple_choice",
+    "question": "He asked where I ___.",
+    "choices": [
+      "live",
+      "lived",
+      "do live",
+      "am living"
+    ],
+    "answer": "lived",
+    "hint": "Trật tự khẳng định + lùi thì."
+  },
+  {
+    "id": "q_g8_u12_reported_questions_2",
+    "skill": "g8_u12_reported_questions",
+    "grammar": "reported_question",
+    "type": "error_detection",
+    "question": "He asked where did I live.",
+    "prompt": "He asked where did I live.",
+    "answer": "He asked where I lived.",
+    "hint": "Câu hỏi tường thuật dùng trật tự khẳng định, bỏ did."
+  },
+  {
+    "id": "q_g8_u12_reported_questions_3",
+    "skill": "g8_u12_reported_questions",
+    "grammar": "reported_question",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu tường thuật đúng:",
+    "tokens": [
+      "She",
+      "asked",
+      "if",
+      "I",
+      "was",
+      "ready"
+    ],
+    "answer": "She asked if I was ready",
+    "hint": "Yes/No → asked + if + S + V."
+  },
+  {
+    "id": "q_g9_u1_wh_toinf_1",
+    "skill": "g9_u1_wh_toinf",
+    "grammar": "wh_toinf",
+    "type": "multiple_choice",
+    "question": "We don't know ___ as a souvenir.",
+    "choices": [
+      "what buy",
+      "what to buy",
+      "to buy what",
+      "buy what"
+    ],
+    "answer": "what to buy",
+    "hint": "Wh-word + to-V sau know."
+  },
+  {
+    "id": "q_g9_u1_wh_toinf_2",
+    "skill": "g9_u1_wh_toinf",
+    "grammar": "wh_toinf",
+    "type": "error_detection",
+    "question": "Can you show me how to operate this loom?",
+    "prompt": "Can you show me how operate this loom?",
+    "answer": "Can you show me how to operate this loom?",
+    "hint": "how + to + V nguyên thể."
+  },
+  {
+    "id": "q_g9_u1_wh_toinf_3",
+    "skill": "g9_u1_wh_toinf",
+    "grammar": "wh_toinf",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "She",
+      "decided",
+      "where",
+      "to",
+      "go"
+    ],
+    "answer": "She decided where to go",
+    "hint": "decided + where + to + V."
+  },
+  {
+    "id": "q_g9_u1_phrasal_verbs_1",
+    "skill": "g9_u1_phrasal_verbs",
+    "grammar": "phrasal_verbs",
+    "type": "multiple_choice",
+    "question": "This technique has been ___ through many generations.",
+    "choices": [
+      "passed down",
+      "passed on down",
+      "pass down",
+      "passing down"
+    ],
+    "answer": "passed down",
+    "hint": "pass down = truyền lại."
+  },
+  {
+    "id": "q_g9_u1_phrasal_verbs_2",
+    "skill": "g9_u1_phrasal_verbs",
+    "grammar": "phrasal_verbs",
+    "type": "error_detection",
+    "question": "They decided to set up a new workshop in the village.",
+    "prompt": "They decided to set a new workshop up it in the village.",
+    "answer": "They decided to set up a new workshop in the village.",
+    "hint": "set up = thành lập; không thêm it thừa."
+  },
+  {
+    "id": "q_g9_u1_phrasal_verbs_3",
+    "skill": "g9_u1_phrasal_verbs",
+    "grammar": "phrasal_verbs",
+    "type": "input",
+    "question": "Điền cụm động từ: Please ___ (turn) ___ the lights when you leave.",
+    "answer": "turn off",
+    "hint": "turn off = tắt đèn."
+  },
+  {
+    "id": "q_g9_u2_comparisons_1",
+    "skill": "g9_u2_comparisons",
+    "grammar": "comparative",
+    "type": "multiple_choice",
+    "question": "The air in the countryside is ___ than in the city.",
+    "choices": [
+      "good",
+      "better",
+      "best",
+      "more good"
+    ],
+    "answer": "better",
+    "hint": "good → better (so sánh hơn)."
+  },
+  {
+    "id": "q_g9_u2_comparisons_2",
+    "skill": "g9_u2_comparisons",
+    "grammar": "comparative",
+    "type": "error_detection",
+    "question": "This is the tallest building I have ever seen.",
+    "prompt": "This is the most tall building I have ever seen.",
+    "answer": "This is the tallest building I have ever seen.",
+    "hint": "tall → tallest (tính từ ngắn)."
+  },
+  {
+    "id": "q_g9_u2_comparisons_3",
+    "skill": "g9_u2_comparisons",
+    "grammar": "comparative",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "City",
+      "life",
+      "is",
+      "more",
+      "exciting",
+      "than",
+      "village",
+      "life"
+    ],
+    "answer": "City life is more exciting than village life",
+    "hint": "more + adj dài + than."
+  },
+  {
+    "id": "q_g9_u3_reported_statements_1",
+    "skill": "g9_u3_reported_statements",
+    "grammar": "reported_statement",
+    "type": "multiple_choice",
+    "question": "He said (that) he ___ stressed.",
+    "choices": [
+      "is",
+      "was",
+      "will be",
+      "has been"
+    ],
+    "answer": "was",
+    "hint": "am/is → was khi tường thuật."
+  },
+  {
+    "id": "q_g9_u3_reported_statements_2",
+    "skill": "g9_u3_reported_statements",
+    "grammar": "reported_statement",
+    "type": "error_detection",
+    "question": "She said she will go jogging tomorrow.",
+    "prompt": "She said she will go jogging tomorrow.",
+    "answer": "She said she would go jogging the next day.",
+    "hint": "will → would; tomorrow → the next day."
+  },
+  {
+    "id": "q_g9_u3_reported_statements_3",
+    "skill": "g9_u3_reported_statements",
+    "grammar": "reported_statement",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu tường thuật đúng:",
+    "tokens": [
+      "He",
+      "said",
+      "that",
+      "he",
+      "was",
+      "tired"
+    ],
+    "answer": "He said that he was tired",
+    "hint": "said + (that) + S + V (lùi thì)."
+  },
+  {
+    "id": "q_g9_u3_should_1",
+    "skill": "g9_u3_should",
+    "grammar": "modal_should",
+    "type": "multiple_choice",
+    "question": "Teens ___ skip breakfast if they want to stay focused.",
+    "choices": [
+      "should",
+      "shouldn't",
+      "must",
+      "might"
+    ],
+    "answer": "shouldn't",
+    "hint": "Lời khuyên phủ định: shouldn't."
+  },
+  {
+    "id": "q_g9_u3_should_2",
+    "skill": "g9_u3_should",
+    "grammar": "modal_should",
+    "type": "error_detection",
+    "question": "You should get at least 8 hours of sleep.",
+    "prompt": "You should getting at least 8 hours of sleep.",
+    "answer": "You should get at least 8 hours of sleep.",
+    "hint": "should + V nguyên thể."
+  },
+  {
+    "id": "q_g9_u3_should_3",
+    "skill": "g9_u3_should",
+    "grammar": "modal_should",
+    "type": "input",
+    "question": "Điền should/shouldn't: You ___ (drink) more water every day.",
+    "answer": "should drink",
+    "hint": "Lời khuyên tích cực → should + V."
+  },
+  {
+    "id": "q_g9_u4_past_continuous_1",
+    "skill": "g9_u4_past_continuous",
+    "grammar": "past_continuous",
+    "type": "multiple_choice",
+    "question": "At 9 p.m. last night, my family ___ TV.",
+    "choices": [
+      "watched",
+      "was watching",
+      "were watching",
+      "is watching"
+    ],
+    "answer": "was watching",
+    "hint": "my family số ít → was + V-ing."
+  },
+  {
+    "id": "q_g9_u4_past_continuous_2",
+    "skill": "g9_u4_past_continuous",
+    "grammar": "past_continuous",
+    "type": "error_detection",
+    "question": "My father was reading when the phone rang.",
+    "prompt": "My father was read when the phone rang.",
+    "answer": "My father was reading when the phone rang.",
+    "hint": "was + V-ing."
+  },
+  {
+    "id": "q_g9_u4_past_continuous_3",
+    "skill": "g9_u4_past_continuous",
+    "grammar": "past_continuous",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "They",
+      "were",
+      "playing",
+      "when",
+      "it",
+      "started",
+      "to",
+      "rain"
+    ],
+    "answer": "They were playing when it started to rain",
+    "hint": "were + V-ing + when + quá khứ đơn."
+  },
+  {
+    "id": "q_g9_u4_wish_1",
+    "skill": "g9_u4_wish",
+    "grammar": "wish_past",
+    "type": "multiple_choice",
+    "question": "I wish I ___ a new bicycle.",
+    "choices": [
+      "have",
+      "had",
+      "will have",
+      "has"
+    ],
+    "answer": "had",
+    "hint": "wish + quá khứ đơn (trái hiện tại)."
+  },
+  {
+    "id": "q_g9_u4_wish_2",
+    "skill": "g9_u4_wish",
+    "grammar": "wish_past",
+    "type": "error_detection",
+    "question": "He wishes he were taller.",
+    "prompt": "He wishes he was taller.",
+    "answer": "He wishes he were taller.",
+    "hint": "Sau wish, be → were cho mọi chủ ngữ."
+  },
+  {
+    "id": "q_g9_u4_wish_3",
+    "skill": "g9_u4_wish",
+    "grammar": "wish_past",
+    "type": "input",
+    "question": "Viết lại: I don't live near the sea. → I wish I ___ near the sea.",
+    "answer": "lived",
+    "hint": "live → lived sau wish."
+  },
+  {
+    "id": "q_g9_u5_present_perfect_1",
+    "skill": "g9_u5_present_perfect",
+    "grammar": "present_perfect",
+    "type": "multiple_choice",
+    "question": "Have you ever ___ Thai food?",
+    "choices": [
+      "eat",
+      "ate",
+      "eaten",
+      "eating"
+    ],
+    "answer": "eaten",
+    "hint": "have + V3 (eat → eaten)."
+  },
+  {
+    "id": "q_g9_u5_present_perfect_2",
+    "skill": "g9_u5_present_perfect",
+    "grammar": "present_perfect",
+    "type": "error_detection",
+    "question": "I have never tried scuba diving before.",
+    "prompt": "I have never try scuba diving before.",
+    "answer": "I have never tried scuba diving before.",
+    "hint": "have + V3 (try → tried)."
+  },
+  {
+    "id": "q_g9_u5_present_perfect_3",
+    "skill": "g9_u5_present_perfect",
+    "grammar": "present_perfect",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "She",
+      "has",
+      "never",
+      "visited",
+      "Ha",
+      "Long",
+      "Bay"
+    ],
+    "answer": "She has never visited Ha Long Bay",
+    "hint": "S + has + never + V3."
+  },
+  {
+    "id": "q_g9_u6_gerund_1",
+    "skill": "g9_u6_gerund",
+    "grammar": "verb_liking",
+    "type": "multiple_choice",
+    "question": "My grandfather enjoys ___ to folk music.",
+    "choices": [
+      "listen",
+      "listening",
+      "to listen",
+      "listens"
+    ],
+    "answer": "listening",
+    "hint": "enjoy + V-ing."
+  },
+  {
+    "id": "q_g9_u6_gerund_2",
+    "skill": "g9_u6_gerund",
+    "grammar": "verb_liking",
+    "type": "error_detection",
+    "question": "People now prefer texting rather than calling.",
+    "prompt": "People now prefer text rather than calling.",
+    "answer": "People now prefer texting rather than calling.",
+    "hint": "prefer + V-ing."
+  },
+  {
+    "id": "q_g9_u6_gerund_3",
+    "skill": "g9_u6_gerund",
+    "grammar": "verb_liking",
+    "type": "input",
+    "question": "Điền dạng đúng: She avoids ___ (eat) fast food.",
+    "answer": "eating",
+    "hint": "avoid + V-ing."
+  },
+  {
+    "id": "q_g9_u6_toinf_1",
+    "skill": "g9_u6_toinf",
+    "grammar": "to_infinitive",
+    "type": "multiple_choice",
+    "question": "We decided ___ to a quieter neighborhood.",
+    "choices": [
+      "move",
+      "moving",
+      "to move",
+      "moved"
+    ],
+    "answer": "to move",
+    "hint": "decide + to-V."
+  },
+  {
+    "id": "q_g9_u6_toinf_2",
+    "skill": "g9_u6_toinf",
+    "grammar": "to_infinitive",
+    "type": "error_detection",
+    "question": "She is trying to learn how to code.",
+    "prompt": "She is trying learning how to code.",
+    "answer": "She is trying to learn how to code.",
+    "hint": "try + to-V (cố gắng làm)."
+  },
+  {
+    "id": "q_g9_u6_toinf_3",
+    "skill": "g9_u6_toinf",
+    "grammar": "to_infinitive",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "They",
+      "hope",
+      "to",
+      "visit",
+      "Hoi",
+      "An",
+      "soon"
+    ],
+    "answer": "They hope to visit Hoi An soon",
+    "hint": "hope + to + V."
+  },
+  {
+    "id": "q_g9_u7_reported_yesno_1",
+    "skill": "g9_u7_reported_yesno",
+    "grammar": "reported_question",
+    "type": "multiple_choice",
+    "question": "He asked, \"Is this the way to the cave?\" → He asked if that ___ the way to the cave.",
+    "choices": [
+      "is",
+      "was",
+      "were",
+      "has been"
+    ],
+    "answer": "was",
+    "hint": "is → was khi tường thuật."
+  },
+  {
+    "id": "q_g9_u7_reported_yesno_2",
+    "skill": "g9_u7_reported_yesno",
+    "grammar": "reported_question",
+    "type": "error_detection",
+    "question": "She asked me whether I had visited that wonder.",
+    "prompt": "She asked me whether had I visited that wonder.",
+    "answer": "She asked me whether I had visited that wonder.",
+    "hint": "Trật tự khẳng định: whether + S + V."
+  },
+  {
+    "id": "q_g9_u7_reported_yesno_3",
+    "skill": "g9_u7_reported_yesno",
+    "grammar": "reported_question",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu tường thuật đúng:",
+    "tokens": [
+      "He",
+      "asked",
+      "if",
+      "I",
+      "was",
+      "ready"
+    ],
+    "answer": "He asked if I was ready",
+    "hint": "asked + if + S + V."
+  },
+  {
+    "id": "q_g9_u7_impersonal_passive_1",
+    "skill": "g9_u7_impersonal_passive",
+    "grammar": "impersonal_passive",
+    "type": "multiple_choice",
+    "question": "It is ___ that this place is haunted.",
+    "choices": [
+      "say",
+      "said",
+      "saying",
+      "says"
+    ],
+    "answer": "said",
+    "hint": "It is + V3 trong bị động khách quan."
+  },
+  {
+    "id": "q_g9_u7_impersonal_passive_2",
+    "skill": "g9_u7_impersonal_passive",
+    "grammar": "impersonal_passive",
+    "type": "error_detection",
+    "question": "It is believed that the rock formation is sacred.",
+    "prompt": "It believes that the rock formation is sacred.",
+    "answer": "It is believed that the rock formation is sacred.",
+    "hint": "It is + V3 + that + clause."
+  },
+  {
+    "id": "q_g9_u7_impersonal_passive_3",
+    "skill": "g9_u7_impersonal_passive",
+    "grammar": "impersonal_passive",
+    "type": "input",
+    "question": "Viết bị động khách quan: People say the lake is beautiful. → It ___ that the lake is beautiful.",
+    "answer": "is said",
+    "hint": "It is said that…"
+  },
+  {
+    "id": "q_g9_u8_relative_clauses_1",
+    "skill": "g9_u8_relative_clauses",
+    "grammar": "relative_clause",
+    "type": "multiple_choice",
+    "question": "The tour guide ___ showed us around was very knowledgeable.",
+    "choices": [
+      "who",
+      "which",
+      "where",
+      "whose"
+    ],
+    "answer": "who",
+    "hint": "Người → who."
+  },
+  {
+    "id": "q_g9_u8_relative_clauses_2",
+    "skill": "g9_u8_relative_clauses",
+    "grammar": "relative_clause",
+    "type": "error_detection",
+    "question": "We visited the site which is famous for its architecture.",
+    "prompt": "We visited the site who is famous for its architecture.",
+    "answer": "We visited the site which is famous for its architecture.",
+    "hint": "Vật → which, không dùng who."
+  },
+  {
+    "id": "q_g9_u8_relative_clauses_3",
+    "skill": "g9_u8_relative_clauses",
+    "grammar": "relative_clause",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "The",
+      "hotel",
+      "which",
+      "we",
+      "stayed",
+      "in",
+      "was",
+      "comfortable"
+    ],
+    "answer": "The hotel which we stayed in was comfortable",
+    "hint": "N + which + mệnh đề quan hệ."
+  },
+  {
+    "id": "q_g9_u9_conditional1_1",
+    "skill": "g9_u9_conditional1",
+    "grammar": "conditional1",
+    "type": "multiple_choice",
+    "question": "If you practice English every day, your skills ___ improve.",
+    "choices": [
+      "will",
+      "would",
+      "improve",
+      "improved"
+    ],
+    "answer": "will",
+    "hint": "Mệnh đề chính loại 1: will + V."
+  },
+  {
+    "id": "q_g9_u9_conditional1_2",
+    "skill": "g9_u9_conditional1",
+    "grammar": "conditional1",
+    "type": "error_detection",
+    "question": "If it rains, we will stay at home.",
+    "prompt": "If it will rain, we will stay at home.",
+    "answer": "If it rains, we will stay at home.",
+    "hint": "Mệnh đề If dùng hiện tại đơn, không dùng will."
+  },
+  {
+    "id": "q_g9_u9_conditional1_3",
+    "skill": "g9_u9_conditional1",
+    "grammar": "conditional1",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "If",
+      "you",
+      "study",
+      "hard",
+      "you",
+      "will",
+      "pass"
+    ],
+    "answer": "If you study hard you will pass",
+    "hint": "If + hiện tại đơn, will + V."
+  },
+  {
+    "id": "q_g9_u10_conditional2_1",
+    "skill": "g9_u10_conditional2",
+    "grammar": "conditional2",
+    "type": "multiple_choice",
+    "question": "If everyone recycled, we ___ reduce a lot of waste.",
+    "choices": [
+      "will",
+      "would",
+      "can",
+      "reduce"
+    ],
+    "answer": "would",
+    "hint": "Câu điều kiện loại 2: would + V."
+  },
+  {
+    "id": "q_g9_u10_conditional2_2",
+    "skill": "g9_u10_conditional2",
+    "grammar": "conditional2",
+    "type": "error_detection",
+    "question": "What would you do if you were the leader?",
+    "prompt": "What would you do if you was the leader?",
+    "answer": "What would you do if you were the leader?",
+    "hint": "Sau if (loại 2), be → were."
+  },
+  {
+    "id": "q_g9_u10_conditional2_3",
+    "skill": "g9_u10_conditional2",
+    "grammar": "conditional2",
+    "type": "input",
+    "question": "Điền dạng đúng: If I ___ (be) rich, I would help the poor.",
+    "answer": "were",
+    "hint": "If + were (loại 2)."
+  },
+  {
+    "id": "q_g9_u11_past_perfect_1",
+    "skill": "g9_u11_past_perfect",
+    "grammar": "past_perfect",
+    "type": "multiple_choice",
+    "question": "By the time I got home, my brother ___ already finished using the laptop.",
+    "choices": [
+      "has",
+      "had",
+      "have",
+      "was"
+    ],
+    "answer": "had",
+    "hint": "Hành động trước → had + V3."
+  },
+  {
+    "id": "q_g9_u11_past_perfect_2",
+    "skill": "g9_u11_past_perfect",
+    "grammar": "past_perfect",
+    "type": "error_detection",
+    "question": "He realized he had forgotten to charge his phone.",
+    "prompt": "He realized he has forgotten to charge his phone.",
+    "answer": "He realized he had forgotten to charge his phone.",
+    "hint": "Quá khứ → had + V3."
+  },
+  {
+    "id": "q_g9_u11_past_perfect_3",
+    "skill": "g9_u11_past_perfect",
+    "grammar": "past_perfect",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "She",
+      "had",
+      "left",
+      "before",
+      "I",
+      "arrived"
+    ],
+    "answer": "She had left before I arrived",
+    "hint": "had + V3 + before + quá khứ đơn."
+  },
+  {
+    "id": "q_g9_u11_passive_present_1",
+    "skill": "g9_u11_passive_present",
+    "grammar": "passive_present",
+    "type": "multiple_choice",
+    "question": "English ___ in many countries.",
+    "choices": [
+      "speaks",
+      "is spoken",
+      "speak",
+      "is speak"
+    ],
+    "answer": "is spoken",
+    "hint": "is + V3 (phân từ hai)."
+  },
+  {
+    "id": "q_g9_u11_passive_present_2",
+    "skill": "g9_u11_passive_present",
+    "grammar": "passive_present",
+    "type": "error_detection",
+    "question": "The room is cleaned every day.",
+    "prompt": "The room is clean every day.",
+    "answer": "The room is cleaned every day.",
+    "hint": "Cần phân từ hai cleaned."
+  },
+  {
+    "id": "q_g9_u11_passive_present_3",
+    "skill": "g9_u11_passive_present",
+    "grammar": "passive_present",
+    "type": "input",
+    "question": "Chuyển bị động: People grow rice here. → Rice ___ here.",
+    "answer": "is grown",
+    "hint": "Rice số ít: is + V3."
+  },
+  {
+    "id": "q_g9_u11_passive_past_1",
+    "skill": "g9_u11_passive_past",
+    "grammar": "passive_past",
+    "type": "multiple_choice",
+    "question": "The first telephone ___ by Alexander Graham Bell.",
+    "choices": [
+      "invented",
+      "was invented",
+      "is invented",
+      "was invent"
+    ],
+    "answer": "was invented",
+    "hint": "Quá khứ bị động: was + V3."
+  },
+  {
+    "id": "q_g9_u11_passive_past_2",
+    "skill": "g9_u11_passive_past",
+    "grammar": "passive_past",
+    "type": "error_detection",
+    "question": "The houses were built in 1990.",
+    "prompt": "The houses was built in 1990.",
+    "answer": "The houses were built in 1990.",
+    "hint": "Số nhiều → were + V3."
+  },
+  {
+    "id": "q_g9_u11_passive_past_3",
+    "skill": "g9_u11_passive_past",
+    "grammar": "passive_past",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu bị động đúng:",
+    "tokens": [
+      "This",
+      "app",
+      "is",
+      "downloaded",
+      "by",
+      "millions",
+      "of",
+      "users"
+    ],
+    "answer": "This app is downloaded by millions of users",
+    "hint": "S + is + V3 + by + O."
+  },
+  {
+    "id": "q_g9_u12_reported_wh_1",
+    "skill": "g9_u12_reported_wh",
+    "grammar": "reported_wh",
+    "type": "multiple_choice",
+    "question": "He asked, \"What job do you want?\" → He asked me what job I ___.",
+    "choices": [
+      "want",
+      "wanted",
+      "wants",
+      "am wanting"
+    ],
+    "answer": "wanted",
+    "hint": "want → wanted (lùi thì)."
+  },
+  {
+    "id": "q_g9_u12_reported_wh_2",
+    "skill": "g9_u12_reported_wh",
+    "grammar": "reported_wh",
+    "type": "error_detection",
+    "question": "She asked her father where he worked.",
+    "prompt": "She asked her father where did he work.",
+    "answer": "She asked her father where he worked.",
+    "hint": "Wh- tường thuật: bỏ did, lùi thì."
+  },
+  {
+    "id": "q_g9_u12_reported_wh_3",
+    "skill": "g9_u12_reported_wh",
+    "grammar": "reported_wh",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu tường thuật đúng:",
+    "tokens": [
+      "He",
+      "asked",
+      "what",
+      "time",
+      "the",
+      "meeting",
+      "started"
+    ],
+    "answer": "He asked what time the meeting started",
+    "hint": "asked + Wh- + S + V."
+  },
+  {
+    "id": "q_g9_u12_relative_defining_1",
+    "skill": "g9_u12_relative_defining",
+    "grammar": "relative_defining",
+    "type": "multiple_choice",
+    "question": "A surgeon is a doctor ___ performs operations.",
+    "choices": [
+      "who",
+      "which",
+      "where",
+      "whose"
+    ],
+    "answer": "who",
+    "hint": "doctor (người) → who/that."
+  },
+  {
+    "id": "q_g9_u12_relative_defining_2",
+    "skill": "g9_u12_relative_defining",
+    "grammar": "relative_defining",
+    "type": "error_detection",
+    "question": "The job that I applied for requires good IT skills.",
+    "prompt": "The job who I applied for requires good IT skills.",
+    "answer": "The job that I applied for requires good IT skills.",
+    "hint": "job (vật) → that/which, không dùng who."
+  },
+  {
+    "id": "q_g9_u12_relative_defining_3",
+    "skill": "g9_u12_relative_defining",
+    "grammar": "relative_defining",
+    "type": "word_order",
+    "question": "Sắp xếp thành câu đúng:",
+    "tokens": [
+      "The",
+      "teacher",
+      "who",
+      "taught",
+      "us",
+      "is",
+      "kind"
+    ],
+    "answer": "The teacher who taught us is kind",
+    "hint": "N + who + V + …"
+  }
+]

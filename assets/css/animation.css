@@ -1,0 +1,54 @@
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-7px);
+  }
+  75% {
+    transform: translateX(7px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.app-shell > * {
+  animation: fadeIn 0.28s ease;
+}
+
+.quiz-card.is-correct {
+  animation: bounce 0.42s ease;
+  border-color: rgba(32, 163, 107, 0.65);
+}
+
+.quiz-card.is-wrong {
+  animation: shake 0.34s ease;
+  border-color: rgba(223, 79, 95, 0.65);
+}
+
+.skill-card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.word-chip.placed {
+  animation: fadeIn 0.2s ease;
+}

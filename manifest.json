@@ -1,0 +1,10 @@
+{
+  "name": "EnglishFlow",
+  "short_name": "EnglishFlow",
+  "description": "Ứng dụng học tiếng Anh THCS theo hướng phân tích lỗi sai và trực quan hóa ngữ pháp.",
+  "start_url": "./index.html#/home",
+  "display": "standalone",
+  "background_color": "#f7fbff",
+  "theme_color": "#20a36b",
+  "icons": []
+}

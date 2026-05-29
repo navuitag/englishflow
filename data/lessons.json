@@ -1,0 +1,2990 @@
+[
+  {
+    "id": "g6_u1_present_simple",
+    "title": "Unit 1 · Present Simple",
+    "skill": "g6_u1_present_simple",
+    "chapter": "Unit 1: My new school",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng thì hiện tại đơn để nói về thói quen, thời khóa biểu và sự thật ở trường mới."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Với He/She/It, động từ thêm -s/-es. Với I/You/We/They giữ nguyên động từ.",
+        "visualization": "presentSimple",
+        "formula": "S + V(s/es) + O"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chủ ngữ ngôi thứ ba số ít hay bị quên thêm -s.",
+        "example": {
+          "correct": "She studies at Nguyen Du School.",
+          "wrong": "She study at Nguyen Du School."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "He/She/It + V(s/es). Dấu hiệu: every day, usually, always."
+      }
+    ]
+  },
+  {
+    "id": "g6_u1_present_simple_q",
+    "title": "Unit 1 · Câu hỏi do/does",
+    "skill": "g6_u1_present_simple_q",
+    "chapter": "Unit 1: My new school",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Đặt câu hỏi Yes/No và câu phủ định ở thì hiện tại đơn."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Dùng Does với He/She/It, Do với I/You/We/They; sau đó động từ về nguyên thể.",
+        "visualization": "formula",
+        "formula": "Do/Does + S + V?"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau Does/doesn't, động từ phải ở dạng nguyên thể.",
+        "example": {
+          "correct": "Does she go to school by bus?",
+          "wrong": "Does she goes to school by bus?"
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Does + S + V(nguyên thể)? · S + doesn't + V."
+      }
+    ]
+  },
+  {
+    "id": "g6_u2_there_be",
+    "title": "Unit 2 · There is / There are",
+    "skill": "g6_u2_there_be",
+    "chapter": "Unit 2: My house",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Mô tả số lượng đồ vật trong nhà với There is và There are."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "There is + danh từ số ít; There are + danh từ số nhiều.",
+        "visualization": "thereBe",
+        "formula": "There is/are + N"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Danh từ số nhiều phải đi với There are.",
+        "example": {
+          "correct": "There are four chairs in the kitchen.",
+          "wrong": "There is four chairs in the kitchen."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "There is = 1; There are = nhiều. Phủ định: There isn't / There aren't."
+      }
+    ]
+  },
+  {
+    "id": "g6_u2_prepositions",
+    "title": "Unit 2 · Giới từ nơi chốn",
+    "skill": "g6_u2_prepositions",
+    "chapter": "Unit 2: My house",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Chỉ vị trí của đồ vật trong phòng bằng giới từ nơi chốn."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "in (trong), on (trên), under (dưới), behind (sau), next to (cạnh), in front of (trước).",
+        "visualization": "formula",
+        "formula": "N + in/on/under/behind + N"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chọn đúng giới từ theo vị trí thực tế.",
+        "example": {
+          "correct": "The ball is under the table.",
+          "wrong": "The ball is on the table when it is below it."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "in / on / under / behind / next to / in front of / between."
+      }
+    ]
+  },
+  {
+    "id": "g6_u3_present_continuous",
+    "title": "Unit 3 · Present Continuous",
+    "skill": "g6_u3_present_continuous",
+    "chapter": "Unit 3: My friends",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Nói về việc bạn bè đang làm ngay lúc này bằng hiện tại tiếp diễn."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Luôn cần to be (am/is/are) trước động từ thêm -ing.",
+        "visualization": "presentContinuous",
+        "formula": "S + am/is/are + V-ing"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Lỗi phổ biến là thiếu to be hoặc quên -ing.",
+        "example": {
+          "correct": "Phong is wearing a blue T-shirt.",
+          "wrong": "Phong wearing a blue T-shirt."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Dấu hiệu: now, at the moment, Look!, Listen!"
+      }
+    ]
+  },
+  {
+    "id": "g6_u3_adjectives",
+    "title": "Unit 3 · Tính từ miêu tả",
+    "skill": "g6_u3_adjectives",
+    "chapter": "Unit 3: My friends",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng tính từ để miêu tả ngoại hình và tính cách của bạn bè."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Tính từ đứng sau to be hoặc trước danh từ: tall, friendly, kind, shy, funny.",
+        "visualization": "formula",
+        "formula": "S + be + adj"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Tính từ không thêm -s dù danh từ số nhiều.",
+        "example": {
+          "correct": "My friends are friendly.",
+          "wrong": "My friends are friendlies."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "be + adj (tính từ không chia số nhiều)."
+      }
+    ]
+  },
+  {
+    "id": "g6_u4_comparative",
+    "title": "Unit 4 · So sánh hơn",
+    "skill": "g6_u4_comparative",
+    "chapter": "Unit 4: My neighbourhood",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "So sánh hai khu phố, hai địa điểm bằng so sánh hơn."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Tính từ ngắn + -er; tính từ dài dùng more. Sau đó luôn có than.",
+        "visualization": "comparative",
+        "formula": "S + adj-er + than + N"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Không dùng đồng thời more và -er.",
+        "example": {
+          "correct": "The countryside is more peaceful than the city.",
+          "wrong": "The countryside is more peacefuller than the city."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "good → better, bad → worse. quiet → quieter."
+      }
+    ]
+  },
+  {
+    "id": "g6_u4_directions",
+    "title": "Unit 4 · Hỏi & chỉ đường",
+    "skill": "g6_u4_directions",
+    "chapter": "Unit 4: My neighbourhood",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Hỏi đường và chỉ đường đến một địa điểm trong khu phố."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Go straight, turn left/right, take the first turning, it's opposite/next to ...",
+        "visualization": "formula",
+        "formula": "Go straight / Turn left/right"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Câu mệnh lệnh chỉ đường bắt đầu bằng động từ nguyên thể.",
+        "example": {
+          "correct": "Turn left at the bookshop.",
+          "wrong": "You turning left at the bookshop."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "How can I get to ...? → Go straight / Turn left / It's on your right."
+      }
+    ]
+  },
+  {
+    "id": "g6_u5_countable",
+    "title": "Unit 5 · Danh từ đếm được",
+    "skill": "g6_u5_countable",
+    "chapter": "Unit 5: Natural wonders of Viet Nam",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Phân biệt danh từ đếm được và không đếm được khi nói về du lịch, thiên nhiên."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Đếm được: a/an, many, số nhiều thêm -s. Không đếm được: much, không thêm -s.",
+        "visualization": "formula",
+        "formula": "many + Ns / much + N"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Dùng many với danh từ đếm được số nhiều.",
+        "example": {
+          "correct": "There are many islands in Ha Long Bay.",
+          "wrong": "There are much islands in Ha Long Bay."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "many + đếm được; much + không đếm được (water, rice, sand)."
+      }
+    ]
+  },
+  {
+    "id": "g6_u5_superlative",
+    "title": "Unit 5 · So sánh nhất",
+    "skill": "g6_u5_superlative",
+    "chapter": "Unit 5: Natural wonders of Viet Nam",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Nói về kỳ quan vượt trội nhất bằng so sánh nhất."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Tính từ ngắn + -est; tính từ dài dùng the most. Luôn có the đứng trước.",
+        "visualization": "superlative",
+        "formula": "S + the + adj-est + N"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Đừng quên mạo từ the trước so sánh nhất.",
+        "example": {
+          "correct": "Fansipan is the highest mountain in Viet Nam.",
+          "wrong": "Fansipan is highest mountain in Viet Nam."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "the + adj-est / the most + adj. good → the best."
+      }
+    ]
+  },
+  {
+    "id": "g6_u5_must",
+    "title": "Unit 5 · must / mustn't",
+    "skill": "g6_u5_must",
+    "chapter": "Unit 5: Natural wonders of Viet Nam",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Nói về điều bắt buộc và điều cấm khi đi du lịch, khám phá thiên nhiên."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "must = phải; mustn't = không được phép. Sau must luôn là động từ nguyên thể.",
+        "visualization": "formula",
+        "formula": "S + must (not) + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau must không dùng to.",
+        "example": {
+          "correct": "You must bring a map.",
+          "wrong": "You must to bring a map."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "must + V; mustn't + V (điều cấm)."
+      }
+    ]
+  },
+  {
+    "id": "g6_u6_should",
+    "title": "Unit 6 · should / shouldn't",
+    "skill": "g6_u6_should",
+    "chapter": "Unit 6: Our Tet holiday",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Đưa ra lời khuyên nên hay không nên làm gì trong dịp Tết."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "should = nên; shouldn't = không nên. Sau should là động từ nguyên thể.",
+        "visualization": "formula",
+        "formula": "S + should (not) + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau should không thêm -s hay to.",
+        "example": {
+          "correct": "We should visit our grandparents at Tet.",
+          "wrong": "We should visits our grandparents at Tet."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "should + V (lời khuyên). Câu hỏi: Should + S + V?"
+      }
+    ]
+  },
+  {
+    "id": "g6_u6_some_any",
+    "title": "Unit 6 · some / any",
+    "skill": "g6_u6_some_any",
+    "chapter": "Unit 6: Our Tet holiday",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng some và any khi nói về thức ăn, đồ dùng ngày Tết."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "some dùng trong câu khẳng định; any dùng trong câu phủ định và nghi vấn.",
+        "visualization": "formula",
+        "formula": "some (+) / any (- ?)"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Câu phủ định dùng any, không dùng some.",
+        "example": {
+          "correct": "There aren't any candies left.",
+          "wrong": "There aren't some candies left."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "some → khẳng định; any → phủ định/nghi vấn."
+      }
+    ]
+  },
+  {
+    "id": "g6_u7_wh",
+    "title": "Unit 7 · Câu hỏi Wh-",
+    "skill": "g6_u7_wh",
+    "chapter": "Unit 7: Television",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Đặt câu hỏi lấy thông tin về chương trình truyền hình với từ để hỏi Wh-."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "What, When, Where, Who, Why, How + trợ động từ + chủ ngữ + động từ.",
+        "visualization": "formula",
+        "formula": "Wh- + do/does + S + V?"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau does, động từ về nguyên thể.",
+        "example": {
+          "correct": "What time does the film start?",
+          "wrong": "What time does the film starts?"
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "What = gì, When = khi nào, Where = ở đâu, Why = tại sao, How = như thế nào."
+      }
+    ]
+  },
+  {
+    "id": "g6_u7_conjunctions",
+    "title": "Unit 7 · Liên từ",
+    "skill": "g6_u7_conjunctions",
+    "chapter": "Unit 7: Television",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Nối các câu, các ý với and, but, so, because."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "and (và), but (nhưng), so (vì vậy), because (bởi vì).",
+        "visualization": "formula",
+        "formula": "S + V, and/but/so/because ..."
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "because chỉ nguyên nhân; so chỉ kết quả.",
+        "example": {
+          "correct": "I like cartoons because they are funny.",
+          "wrong": "I like cartoons so they are funny."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "nguyên nhân → because; kết quả → so; tương phản → but."
+      }
+    ]
+  },
+  {
+    "id": "g6_u8_past_simple",
+    "title": "Unit 8 · Past Simple",
+    "skill": "g6_u8_past_simple",
+    "chapter": "Unit 8: Sports and games",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Kể lại các hoạt động thể thao đã làm bằng thì quá khứ đơn."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Động từ có quy tắc thêm -ed; động từ bất quy tắc dùng cột V2.",
+        "visualization": "pastSimple",
+        "formula": "S + V2/V-ed + O"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau didn't, động từ về nguyên thể.",
+        "example": {
+          "correct": "We played badminton yesterday.",
+          "wrong": "We did played badminton yesterday."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Dấu hiệu: yesterday, last week, ago. go → went, play → played."
+      }
+    ]
+  },
+  {
+    "id": "g6_u8_imperatives",
+    "title": "Unit 8 · Câu mệnh lệnh",
+    "skill": "g6_u8_imperatives",
+    "chapter": "Unit 8: Sports and games",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Ra hướng dẫn, luật chơi bằng câu mệnh lệnh."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Câu mệnh lệnh bắt đầu bằng động từ nguyên thể; phủ định dùng Don't + V.",
+        "visualization": "formula",
+        "formula": "(Don't) + V + O"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Không thêm chủ ngữ trước động từ trong câu mệnh lệnh.",
+        "example": {
+          "correct": "Don't run near the pool.",
+          "wrong": "You don't run near the pool please."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Pass the ball! · Don't touch! · Let's play."
+      }
+    ]
+  },
+  {
+    "id": "g6_u9_present_perfect",
+    "title": "Unit 9 · Present Perfect",
+    "skill": "g6_u9_present_perfect",
+    "chapter": "Unit 9: Cities of the world",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Nói về trải nghiệm du lịch đã từng có bằng thì hiện tại hoàn thành."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "have/has + phân từ hai (V3). Has dùng cho He/She/It.",
+        "visualization": "presentPerfect",
+        "formula": "S + have/has + V3"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Dùng has với ngôi thứ ba số ít và phân từ hai.",
+        "example": {
+          "correct": "She has visited London.",
+          "wrong": "She have visited London."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Dấu hiệu: ever, never, already, yet, just. go → gone, see → seen."
+      }
+    ]
+  },
+  {
+    "id": "g6_u9_possessive_pronouns",
+    "title": "Unit 9 · Đại từ sở hữu",
+    "skill": "g6_u9_possessive_pronouns",
+    "chapter": "Unit 9: Cities of the world",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng đại từ sở hữu để tránh lặp lại danh từ."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "mine, yours, his, hers, ours, theirs đứng một mình, không kèm danh từ.",
+        "visualization": "formula",
+        "formula": "mine / yours / his / hers"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Đại từ sở hữu không đi cùng danh từ.",
+        "example": {
+          "correct": "This book is mine.",
+          "wrong": "This book is mine book."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "my → mine, your → yours, her → hers, our → ours, their → theirs."
+      }
+    ]
+  },
+  {
+    "id": "g6_u10_will",
+    "title": "Unit 10 · Future Simple (will)",
+    "skill": "g6_u10_will",
+    "chapter": "Unit 10: Our houses in the future",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dự đoán ngôi nhà tương lai bằng thì tương lai đơn với will."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Sau will luôn là động từ nguyên thể, dùng cho mọi chủ ngữ.",
+        "visualization": "futureSimple",
+        "formula": "S + will + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Đừng thêm -s hay -ed cho động từ sau will.",
+        "example": {
+          "correct": "Robots will help us at home.",
+          "wrong": "Robots will helps us at home."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Dấu hiệu: in the future, tomorrow, next year. Phủ định: won't + V."
+      }
+    ]
+  },
+  {
+    "id": "g6_u10_might",
+    "title": "Unit 10 · might",
+    "skill": "g6_u10_might",
+    "chapter": "Unit 10: Our houses in the future",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Diễn tả điều có thể xảy ra trong tương lai với might."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "might + động từ nguyên thể, dùng cho mọi chủ ngữ.",
+        "visualization": "formula",
+        "formula": "S + might + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau might không thêm to hay -s.",
+        "example": {
+          "correct": "We might have robot helpers.",
+          "wrong": "We might to have robot helpers."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "might = có lẽ (khả năng thấp hơn will)."
+      }
+    ]
+  },
+  {
+    "id": "g6_u11_conditional1",
+    "title": "Unit 11 · Câu điều kiện loại 1",
+    "skill": "g6_u11_conditional1",
+    "chapter": "Unit 11: Our greener world",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Nói về hệ quả của việc bảo vệ môi trường bằng câu điều kiện loại 1."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Mệnh đề If dùng hiện tại đơn; mệnh đề chính dùng will + V.",
+        "visualization": "formula",
+        "formula": "If + S + V(s), S + will + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau If không dùng will, dùng hiện tại đơn.",
+        "example": {
+          "correct": "If we recycle, we will save the Earth.",
+          "wrong": "If we will recycle, we will save the Earth."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "If + hiện tại đơn, ... will + V."
+      }
+    ]
+  },
+  {
+    "id": "g6_u11_articles",
+    "title": "Unit 11 · Mạo từ a/an/the",
+    "skill": "g6_u11_articles",
+    "chapter": "Unit 11: Our greener world",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng mạo từ a, an, the đúng ngữ cảnh."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "a + phụ âm, an + nguyên âm (a, e, i, o, u), the + danh từ đã xác định.",
+        "visualization": "formula",
+        "formula": "a / an / the + N"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Trước danh từ bắt đầu bằng nguyên âm dùng an.",
+        "example": {
+          "correct": "It is an apple.",
+          "wrong": "It is a apple."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "an + âm nguyên âm; a + âm phụ âm; the = xác định."
+      }
+    ]
+  },
+  {
+    "id": "g6_u12_could",
+    "title": "Unit 12 · could / couldn't",
+    "skill": "g6_u12_could",
+    "chapter": "Unit 12: Robots",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Diễn tả khả năng của robot trong quá khứ với could / couldn't."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "could / couldn't + động từ nguyên thể (khả năng quá khứ).",
+        "visualization": "formula",
+        "formula": "S + could (not) + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau could không thêm -ed hay to.",
+        "example": {
+          "correct": "Old robots could move slowly.",
+          "wrong": "Old robots could moved slowly."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "could = đã có thể; couldn't = đã không thể."
+      }
+    ]
+  },
+  {
+    "id": "g6_u12_will_be_able",
+    "title": "Unit 12 · will be able to",
+    "skill": "g6_u12_will_be_able",
+    "chapter": "Unit 12: Robots",
+    "source": "Bám sát SGK Tiếng Anh 6 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Diễn tả khả năng trong tương lai của robot với will be able to."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "will be able to + động từ nguyên thể (khả năng tương lai).",
+        "visualization": "formula",
+        "formula": "S + will be able to + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau to là động từ nguyên thể, không thêm -s.",
+        "example": {
+          "correct": "Robots will be able to talk.",
+          "wrong": "Robots will be able to talks."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "will be able to + V = sẽ có thể."
+      }
+    ]
+  },
+  {
+    "id": "g7_u1_present_simple",
+    "title": "Unit 1 · Present Simple",
+    "skill": "g7_u1_present_simple",
+    "chapter": "Unit 1: Hobbies",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Ôn thì hiện tại đơn để nói về sở thích và thói quen hằng ngày."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "He/She/It thêm -s/-es; các ngôi khác giữ nguyên động từ.",
+        "visualization": "presentSimple",
+        "formula": "S + V(s/es) + O"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Ngôi thứ ba số ít hay quên -s.",
+        "example": {
+          "correct": "My sister collects stamps.",
+          "wrong": "My sister collect stamps."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Dấu hiệu: every day, usually, often, always."
+      }
+    ]
+  },
+  {
+    "id": "g7_u1_verbs_liking",
+    "title": "Unit 1 · Động từ chỉ sở thích + V-ing",
+    "skill": "g7_u1_verbs_liking",
+    "chapter": "Unit 1: Hobbies",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Nói về sở thích với like, love, enjoy, hate, dislike + V-ing."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Sau các động từ chỉ sở thích, động từ chính thêm -ing.",
+        "visualization": "formula",
+        "formula": "like/love/enjoy/hate + V-ing"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Đừng dùng động từ nguyên thể sau enjoy.",
+        "example": {
+          "correct": "I enjoy reading books.",
+          "wrong": "I enjoy read books."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "love/like/enjoy/hate + V-ing (danh động từ)."
+      }
+    ]
+  },
+  {
+    "id": "g7_u2_simple_sentences",
+    "title": "Unit 2 · Câu đơn",
+    "skill": "g7_u2_simple_sentences",
+    "chapter": "Unit 2: Healthy living",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Viết câu đơn đúng: một chủ ngữ và một động từ chính cho một ý."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Câu đơn luôn cần đủ chủ ngữ và động từ.",
+        "visualization": "formula",
+        "formula": "S + V (+ O / Adv)"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Câu phải có động từ chính.",
+        "example": {
+          "correct": "We do morning exercises every day.",
+          "wrong": "We morning exercises every day."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Mỗi câu đơn = 1 chủ ngữ + 1 động từ chính."
+      }
+    ]
+  },
+  {
+    "id": "g7_u3_past_simple",
+    "title": "Unit 3 · Past Simple",
+    "skill": "g7_u3_past_simple",
+    "chapter": "Unit 3: Community service",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Kể lại hoạt động tình nguyện đã làm bằng thì quá khứ đơn."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Động từ quy tắc thêm -ed; bất quy tắc dùng cột V2.",
+        "visualization": "pastSimple",
+        "formula": "S + V2/V-ed + O"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Nhớ chia động từ sang quá khứ.",
+        "example": {
+          "correct": "They helped old people last summer.",
+          "wrong": "They help old people last summer."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Dấu hiệu: yesterday, last week, ago. go → went."
+      }
+    ]
+  },
+  {
+    "id": "g7_u3_past_questions",
+    "title": "Unit 3 · Câu hỏi quá khứ (did)",
+    "skill": "g7_u3_past_questions",
+    "chapter": "Unit 3: Community service",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Đặt câu hỏi và phủ định ở quá khứ với did/didn't."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Sau did/didn't, động từ luôn ở dạng nguyên thể.",
+        "visualization": "formula",
+        "formula": "Did + S + V?"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Không chia quá khứ động từ sau did.",
+        "example": {
+          "correct": "Did you join the clean-up day?",
+          "wrong": "Did you joined the clean-up day?"
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Did + S + V? · S + didn't + V."
+      }
+    ]
+  },
+  {
+    "id": "g7_u4_as_as",
+    "title": "Unit 4 · So sánh (not) as...as",
+    "skill": "g7_u4_as_as",
+    "chapter": "Unit 4: Music and arts",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "So sánh bằng và không bằng với cấu trúc as...as."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "as + tính từ + as (bằng); not as + tính từ + as (không bằng).",
+        "visualization": "comparative",
+        "formula": "S + (not) as + adj + as + N"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Giữa hai as là tính từ nguyên cấp, không thêm -er.",
+        "example": {
+          "correct": "Pop is as popular as rock.",
+          "wrong": "Pop is as popularer as rock."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "as + adj nguyên cấp + as."
+      }
+    ]
+  },
+  {
+    "id": "g7_u4_like_different",
+    "title": "Unit 4 · like / different from",
+    "skill": "g7_u4_like_different",
+    "chapter": "Unit 4: Music and arts",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Diễn tả giống và khác với the same as, like, different from."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "the same as / like (giống); different from (khác).",
+        "visualization": "formula",
+        "formula": "the same as / different from"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Dùng different from, không dùng different with.",
+        "example": {
+          "correct": "Jazz is different from pop.",
+          "wrong": "Jazz is different with pop."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "different from · the same as · like."
+      }
+    ]
+  },
+  {
+    "id": "g7_u5_quantifiers",
+    "title": "Unit 5 · some / a lot of / lots of",
+    "skill": "g7_u5_quantifiers",
+    "chapter": "Unit 5: Food and drink",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng some, a lot of, lots of khi nói về đồ ăn, thức uống."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "a lot of / lots of dùng cho cả đếm được và không đếm được.",
+        "visualization": "formula",
+        "formula": "some / a lot of / lots of + N"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "a lot of + danh từ (không dùng a lots of).",
+        "example": {
+          "correct": "There is a lot of rice.",
+          "wrong": "There is a lots of rice."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "a lot of = lots of; some trong câu khẳng định."
+      }
+    ]
+  },
+  {
+    "id": "g7_u5_how_many_much",
+    "title": "Unit 5 · How many / How much",
+    "skill": "g7_u5_how_many_much",
+    "chapter": "Unit 5: Food and drink",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Hỏi số lượng với How many và How much."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "How many + danh từ đếm được số nhiều; How much + danh từ không đếm được.",
+        "visualization": "formula",
+        "formula": "How many + Ns / How much + N"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "water không đếm được → How much.",
+        "example": {
+          "correct": "How much water do you drink?",
+          "wrong": "How many water do you drink?"
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "many + đếm được; much + không đếm được."
+      }
+    ]
+  },
+  {
+    "id": "g7_u6_prep_time",
+    "title": "Unit 6 · Giới từ thời gian",
+    "skill": "g7_u6_prep_time",
+    "chapter": "Unit 6: A visit to a school",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng in, on, at chỉ thời gian."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "in + tháng/năm/buổi; on + ngày/thứ; at + giờ.",
+        "visualization": "formula",
+        "formula": "in / on / at + time"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Dùng on với ngày trong tuần.",
+        "example": {
+          "correct": "We have English on Monday.",
+          "wrong": "We have English in Monday."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "at 7 a.m. · on Monday · in July."
+      }
+    ]
+  },
+  {
+    "id": "g7_u6_prep_place",
+    "title": "Unit 6 · Giới từ nơi chốn",
+    "skill": "g7_u6_prep_place",
+    "chapter": "Unit 6: A visit to a school",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng in, on, at chỉ nơi chốn."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "in + không gian lớn; on + bề mặt/tầng; at + vị trí cụ thể.",
+        "visualization": "formula",
+        "formula": "in / on / at + place"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Dùng at với địa điểm cụ thể.",
+        "example": {
+          "correct": "She is at school now.",
+          "wrong": "She is on school now."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "in the room · on the second floor · at school."
+      }
+    ]
+  },
+  {
+    "id": "g7_u7_it_distance",
+    "title": "Unit 7 · 'It' chỉ khoảng cách",
+    "skill": "g7_u7_it_distance",
+    "chapter": "Unit 7: Traffic",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng It để diễn tả khoảng cách giữa hai địa điểm."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "It is + khoảng cách + from A to B / to + nơi chốn.",
+        "visualization": "formula",
+        "formula": "It is + distance + from A to B"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Dùng It làm chủ ngữ giả chỉ khoảng cách.",
+        "example": {
+          "correct": "It is 5 km from my house to school.",
+          "wrong": "There is 5 km from my house to school."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "How far is it ...? → It is ... km."
+      }
+    ]
+  },
+  {
+    "id": "g7_u7_should",
+    "title": "Unit 7 · should / shouldn't",
+    "skill": "g7_u7_should",
+    "chapter": "Unit 7: Traffic",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Khuyên nên/không nên khi tham gia giao thông."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "should/shouldn't + động từ nguyên thể.",
+        "visualization": "formula",
+        "formula": "S + should (not) + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau should không có to.",
+        "example": {
+          "correct": "You should wear a helmet.",
+          "wrong": "You should to wear a helmet."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "should = nên; shouldn't = không nên."
+      }
+    ]
+  },
+  {
+    "id": "g7_u8_although",
+    "title": "Unit 8 · although / though",
+    "skill": "g7_u8_although",
+    "chapter": "Unit 8: Films",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Nối hai ý trái ngược trong một câu với although/though."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Although + mệnh đề, + mệnh đề chính.",
+        "visualization": "formula",
+        "formula": "Although + clause, + clause"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau although là cả mệnh đề (có chủ ngữ + động từ).",
+        "example": {
+          "correct": "Although the film was long, it was interesting.",
+          "wrong": "Although long, the film was interesting."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Although/Though = mặc dù (trong cùng câu)."
+      }
+    ]
+  },
+  {
+    "id": "g7_u8_however",
+    "title": "Unit 8 · however",
+    "skill": "g7_u8_however",
+    "chapter": "Unit 8: Films",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng however để nối hai câu trái ngược."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Câu 1. However, câu 2. (However theo sau là dấu phẩy).",
+        "visualization": "formula",
+        "formula": "Clause. However, + clause"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "However thường đứng đầu câu, có dấu phẩy theo sau.",
+        "example": {
+          "correct": "The plot was simple. However, the acting was great.",
+          "wrong": "The plot was simple however the acting was great."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "However = tuy nhiên (nối hai câu riêng)."
+      }
+    ]
+  },
+  {
+    "id": "g7_u9_yesno",
+    "title": "Unit 9 · Câu hỏi Yes/No",
+    "skill": "g7_u9_yesno",
+    "chapter": "Unit 9: Festivals around the world",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Đặt câu hỏi Yes/No về lễ hội."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Đảo trợ động từ/to be lên trước chủ ngữ.",
+        "visualization": "formula",
+        "formula": "Do/Does/Is/Are + S + ...?"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau Does, động từ về nguyên thể.",
+        "example": {
+          "correct": "Does Tet take place in spring?",
+          "wrong": "Does Tet takes place in spring?"
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Trả lời: Yes, S + do/does/is. · No, S + don't/doesn't/isn't."
+      }
+    ]
+  },
+  {
+    "id": "g7_u9_wh",
+    "title": "Unit 9 · Câu hỏi Wh-",
+    "skill": "g7_u9_wh",
+    "chapter": "Unit 9: Festivals around the world",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Hỏi thông tin về lễ hội với What, When, Where, Why, How."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Wh- + trợ động từ + chủ ngữ + động từ nguyên thể.",
+        "visualization": "formula",
+        "formula": "Wh- + do/does + S + V?"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau does, động từ về nguyên thể.",
+        "example": {
+          "correct": "When does the festival start?",
+          "wrong": "When does the festival starts?"
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "What/When/Where/Why/How + do/does + S + V?"
+      }
+    ]
+  },
+  {
+    "id": "g7_u10_present_continuous",
+    "title": "Unit 10 · Present Continuous",
+    "skill": "g7_u10_present_continuous",
+    "chapter": "Unit 10: Energy sources",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Nói về xu hướng năng lượng đang diễn ra bằng hiện tại tiếp diễn."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "to be (am/is/are) + động từ thêm -ing.",
+        "visualization": "presentContinuous",
+        "formula": "S + am/is/are + V-ing"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Đừng thiếu to be.",
+        "example": {
+          "correct": "People are using more solar energy.",
+          "wrong": "People using more solar energy."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Dấu hiệu: now, at present, these days."
+      }
+    ]
+  },
+  {
+    "id": "g7_u11_future_simple",
+    "title": "Unit 11 · Future Simple",
+    "skill": "g7_u11_future_simple",
+    "chapter": "Unit 11: Travelling in the future",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dự đoán phương tiện đi lại tương lai với will."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Sau will là động từ nguyên thể, dùng cho mọi chủ ngữ.",
+        "visualization": "futureSimple",
+        "formula": "S + will + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Đừng thêm -s cho động từ sau will.",
+        "example": {
+          "correct": "People will travel by flying cars.",
+          "wrong": "People will travels by flying cars."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Dấu hiệu: in 2050, in the future. Phủ định: won't + V."
+      }
+    ]
+  },
+  {
+    "id": "g7_u11_possessive_pronouns",
+    "title": "Unit 11 · Đại từ sở hữu",
+    "skill": "g7_u11_possessive_pronouns",
+    "chapter": "Unit 11: Travelling in the future",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng đại từ sở hữu để tránh lặp danh từ."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "mine, yours, his, hers, ours, theirs đứng một mình.",
+        "visualization": "formula",
+        "formula": "mine / yours / his / hers"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Đại từ sở hữu không kèm danh từ.",
+        "example": {
+          "correct": "This ticket is yours.",
+          "wrong": "This ticket is yours ticket."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "my → mine, your → yours, their → theirs."
+      }
+    ]
+  },
+  {
+    "id": "g7_u12_articles",
+    "title": "Unit 12 · Mạo từ a/an/the",
+    "skill": "g7_u12_articles",
+    "chapter": "Unit 12: English-speaking countries",
+    "source": "Bám sát SGK Tiếng Anh 7 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng a/an/the đúng ngữ cảnh khi nói về các quốc gia."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "a + phụ âm; an + nguyên âm; the + danh từ đã xác định/duy nhất.",
+        "visualization": "formula",
+        "formula": "a / an / the + N"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Trước âm nguyên âm dùng an.",
+        "example": {
+          "correct": "Australia is an English-speaking country.",
+          "wrong": "Australia is a English-speaking country."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "an + nguyên âm; the United Kingdom (tên có 'kingdom')."
+      }
+    ]
+  },
+  {
+    "id": "g8_u1_gerunds",
+    "title": "Unit 1 · Động từ chỉ sở thích + V-ing",
+    "skill": "g8_u1_gerunds",
+    "chapter": "Unit 1: Leisure time",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Nói về sở thích thời gian rảnh với enjoy, fancy, detest, dislike, mind + V-ing."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Các động từ này luôn theo sau bởi danh động từ (V-ing).",
+        "visualization": "formula",
+        "formula": "enjoy/fancy/detest + V-ing"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau enjoy dùng V-ing, không dùng nguyên thể.",
+        "example": {
+          "correct": "She enjoys playing badminton.",
+          "wrong": "She enjoys play badminton."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "enjoy/fancy/detest/dislike/mind + V-ing."
+      }
+    ]
+  },
+  {
+    "id": "g8_u1_gerund_toinf",
+    "title": "Unit 1 · V-ing hay to-V",
+    "skill": "g8_u1_gerund_toinf",
+    "chapter": "Unit 1: Leisure time",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Sau love, like, hate, prefer có thể dùng V-ing hoặc to-V mà nghĩa gần như nhau."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "love/like/hate/prefer + V-ing hoặc + to-V.",
+        "visualization": "formula",
+        "formula": "love/like/hate + V-ing / to-V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Dùng to + nguyên thể, không dùng to + V-ing.",
+        "example": {
+          "correct": "I like to read comics.",
+          "wrong": "I like to reading comics."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "like reading = like to read; nhưng enjoy chỉ + V-ing."
+      }
+    ]
+  },
+  {
+    "id": "g8_u2_comparative_adverbs",
+    "title": "Unit 2 · So sánh hơn của trạng từ",
+    "skill": "g8_u2_comparative_adverbs",
+    "chapter": "Unit 2: Life in the countryside",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "So sánh cách thực hiện hành động giữa hai đối tượng bằng trạng từ so sánh hơn."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Trạng từ ngắn + -er; trạng từ đuôi -ly dùng more. Theo sau là than.",
+        "visualization": "comparative",
+        "formula": "V + adv-er / more adv + than"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Trạng từ tận cùng -ly dùng more, không thêm -er.",
+        "example": {
+          "correct": "She sings more beautifully than her sister.",
+          "wrong": "She sings beautifuller than her sister."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "fast → faster; carefully → more carefully; well → better."
+      }
+    ]
+  },
+  {
+    "id": "g8_u3_simple_compound",
+    "title": "Unit 3 · Câu đơn & câu ghép",
+    "skill": "g8_u3_simple_compound",
+    "chapter": "Unit 3: Teenagers",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Phân biệt câu đơn (một mệnh đề) và câu ghép (hai mệnh đề nối bằng liên từ kết hợp)."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Câu ghép nối hai mệnh đề độc lập bằng and, but, or, so (thường có dấu phẩy).",
+        "visualization": "formula",
+        "formula": "S + V, and/but/or/so + S + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Liên từ kết hợp nối hai mệnh đề đầy đủ chủ ngữ – động từ.",
+        "example": {
+          "correct": "I was tired, so I went to bed early.",
+          "wrong": "I was tired, so went to bed early."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "FANBOYS: for, and, nor, but, or, yet, so."
+      }
+    ]
+  },
+  {
+    "id": "g8_u4_questions",
+    "title": "Unit 4 · Câu hỏi Yes/No & Wh-",
+    "skill": "g8_u4_questions",
+    "chapter": "Unit 4: Ethnic groups of Viet Nam",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Ôn cách đặt câu hỏi Yes/No và câu hỏi Wh- để hỏi về các dân tộc Việt Nam."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Câu hỏi bắt đầu bằng trợ động từ; Wh- đặt trước trợ động từ.",
+        "visualization": "formula",
+        "formula": "(Wh-) + aux + S + V?"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau Do/Does động từ trở về nguyên thể.",
+        "example": {
+          "correct": "Where do the Tay people live?",
+          "wrong": "Where do the Tay people lives?"
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Do/Does/Did + S + V? · Wh- + do/does + S + V?"
+      }
+    ]
+  },
+  {
+    "id": "g8_u4_countable",
+    "title": "Unit 4 · Danh từ đếm được & không đếm được",
+    "skill": "g8_u4_countable",
+    "chapter": "Unit 4: Ethnic groups of Viet Nam",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Phân biệt danh từ đếm được và không đếm được để chọn many/much, a/an đúng."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "many + danh từ đếm được số nhiều; much + danh từ không đếm được.",
+        "visualization": "formula",
+        "formula": "many + Ns / much + N"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "rice không đếm được → dùng much.",
+        "example": {
+          "correct": "There isn't much rice left.",
+          "wrong": "There aren't many rice left."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Đếm được: many/a few; không đếm được: much/a little."
+      }
+    ]
+  },
+  {
+    "id": "g8_u5_zero_article",
+    "title": "Unit 5 · Mạo từ rỗng (zero article)",
+    "skill": "g8_u5_zero_article",
+    "chapter": "Unit 5: Our customs and traditions",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Hiểu khi nào không dùng a/an/the (mạo từ rỗng) với danh từ chung và trừu tượng."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Không mạo từ với danh từ không đếm được, danh từ trừu tượng, câu nói chung.",
+        "visualization": "formula",
+        "formula": "Ø + danh từ chung/trừu tượng"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Nói chung về một loại không dùng the.",
+        "example": {
+          "correct": "Vietnamese people respect traditions.",
+          "wrong": "The Vietnamese people respect the traditions."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Danh từ trừu tượng/khái quát → không mạo từ."
+      }
+    ]
+  },
+  {
+    "id": "g8_u6_future_simple",
+    "title": "Unit 6 · Thì tương lai đơn",
+    "skill": "g8_u6_future_simple",
+    "chapter": "Unit 6: Lifestyles",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng will + V để dự đoán hoặc quyết định tức thì về lối sống tương lai."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "S + will + V (nguyên thể) cho mọi ngôi.",
+        "visualization": "futureSimple",
+        "formula": "S + will + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau will dùng động từ nguyên thể, không chia.",
+        "example": {
+          "correct": "People will live healthier lives.",
+          "wrong": "People will lives healthier lives."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "will + V cho mọi ngôi; phủ định won't + V."
+      }
+    ]
+  },
+  {
+    "id": "g8_u6_conditional1",
+    "title": "Unit 6 · Câu điều kiện loại 1",
+    "skill": "g8_u6_conditional1",
+    "chapter": "Unit 6: Lifestyles",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Diễn tả điều kiện có thật ở hiện tại/tương lai với câu điều kiện loại 1."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Mệnh đề If dùng hiện tại đơn, mệnh đề chính dùng will + V.",
+        "visualization": "formula",
+        "formula": "If + S + V(s), S + will + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Sau If không dùng will.",
+        "example": {
+          "correct": "If you eat well, you will be healthy.",
+          "wrong": "If you will eat well, you will be healthy."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "If + hiện tại đơn, ... will + V."
+      }
+    ]
+  },
+  {
+    "id": "g8_u7_adverbial_time",
+    "title": "Unit 7 · Mệnh đề trạng ngữ chỉ thời gian",
+    "skill": "g8_u7_adverbial_time",
+    "chapter": "Unit 7: Environmental protection",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Nối hai hành động theo thời gian với when, while, before, after, until."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Mệnh đề thời gian có thể đứng đầu (kèm dấu phẩy) hoặc cuối câu.",
+        "visualization": "formula",
+        "formula": "when/while/before/after + S + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Mệnh đề thời gian cần đủ chủ ngữ và động từ.",
+        "example": {
+          "correct": "We turn off lights before we leave.",
+          "wrong": "We turn off lights before leave."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "when/while/before/after/until + S + V."
+      }
+    ]
+  },
+  {
+    "id": "g8_u8_present_for_future",
+    "title": "Unit 8 · Hiện tại đơn chỉ tương lai",
+    "skill": "g8_u8_present_for_future",
+    "chapter": "Unit 8: Shopping",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng thì hiện tại đơn cho lịch trình, thời gian biểu cố định trong tương lai."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Hiện tại đơn + thời gian tương lai khi nói về lịch trình cố định.",
+        "visualization": "formula",
+        "formula": "S + V(s) + thời gian (lịch trình)"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Lịch trình dùng hiện tại đơn, không dùng will.",
+        "example": {
+          "correct": "The shop opens at 8 a.m. tomorrow.",
+          "wrong": "The shop will opens at 8 a.m. tomorrow."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Lịch trình/thời khóa biểu → hiện tại đơn."
+      }
+    ]
+  },
+  {
+    "id": "g8_u8_adverbs_frequency",
+    "title": "Unit 8 · Trạng từ chỉ tần suất",
+    "skill": "g8_u8_adverbs_frequency",
+    "chapter": "Unit 8: Shopping",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng trạng từ tần suất (always, usually, often, sometimes, never) khi nói về thói quen mua sắm."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Trạng từ tần suất đứng trước động từ thường hoặc sau to be.",
+        "visualization": "formula",
+        "formula": "S + adv + V / S + be + adv"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "always đứng trước động từ chính.",
+        "example": {
+          "correct": "She always checks the price.",
+          "wrong": "She checks always the price."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "always/usually/often/sometimes/never + trước V; sau am/is/are."
+      }
+    ]
+  },
+  {
+    "id": "g8_u9_past_continuous",
+    "title": "Unit 9 · Thì quá khứ tiếp diễn",
+    "skill": "g8_u9_past_continuous",
+    "chapter": "Unit 9: Natural disasters",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Mô tả hành động đang diễn ra tại một thời điểm trong quá khứ, thường bị xen vào."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "was (số ít) / were (số nhiều) + V-ing. Hành động xen vào dùng quá khứ đơn.",
+        "visualization": "pastContinuous",
+        "formula": "S + was/were + V-ing"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Dùng was/were + V-ing, không bỏ đuôi -ing.",
+        "example": {
+          "correct": "They were cooking when the storm came.",
+          "wrong": "They were cook when the storm came."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "while + quá khứ tiếp diễn; when + quá khứ đơn."
+      }
+    ]
+  },
+  {
+    "id": "g8_u10_prep_time_place",
+    "title": "Unit 10 · Giới từ thời gian & nơi chốn",
+    "skill": "g8_u10_prep_time_place",
+    "chapter": "Unit 10: Communication in the future",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng in/on/at chính xác cho thời gian và nơi chốn."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "at + giờ/điểm; on + ngày/bề mặt; in + tháng-năm/không gian lớn.",
+        "visualization": "formula",
+        "formula": "in / on / at + time/place"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Giờ cụ thể dùng at.",
+        "example": {
+          "correct": "We will meet at 7 p.m.",
+          "wrong": "We will meet in 7 p.m."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "at giờ · on ngày · in tháng/năm."
+      }
+    ]
+  },
+  {
+    "id": "g8_u10_possessive",
+    "title": "Unit 10 · Đại từ sở hữu",
+    "skill": "g8_u10_possessive",
+    "chapter": "Unit 10: Communication in the future",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 60,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng mine, yours, his, hers, ours, theirs thay cho tính từ sở hữu + danh từ."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Đại từ sở hữu đứng một mình, không kèm danh từ phía sau.",
+        "visualization": "formula",
+        "formula": "mine / yours / his / hers"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Đại từ sở hữu không đi kèm danh từ.",
+        "example": {
+          "correct": "This phone is mine.",
+          "wrong": "This phone is mine phone."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "my book = mine; your bag = yours."
+      }
+    ]
+  },
+  {
+    "id": "g8_u11_reported_statements",
+    "title": "Unit 11 · Câu tường thuật (trần thuật)",
+    "skill": "g8_u11_reported_statements",
+    "chapter": "Unit 11: Science and technology",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Thuật lại lời nói trần thuật của người khác bằng cách lùi thì và đổi đại từ."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "say/tell → said/told; động từ lùi một thì; đổi đại từ và trạng từ thời gian.",
+        "visualization": "reportedSpeech",
+        "formula": "S + said (that) + S + V (lùi thì)"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Hiện tại đơn lùi về quá khứ đơn.",
+        "example": {
+          "correct": "She said (that) she was tired.",
+          "wrong": "She said (that) she is tired."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "is → was; will → would; now → then; today → that day."
+      }
+    ]
+  },
+  {
+    "id": "g8_u12_reported_questions",
+    "title": "Unit 12 · Câu tường thuật (câu hỏi)",
+    "skill": "g8_u12_reported_questions",
+    "chapter": "Unit 12: Life on other planets",
+    "source": "Bám sát SGK Tiếng Anh 8 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Thuật lại câu hỏi: Yes/No dùng if/whether, Wh- giữ từ hỏi, trật tự khẳng định."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "asked + (if/whether hoặc từ hỏi) + S + V; bỏ trợ động từ do/does/did.",
+        "visualization": "reportedSpeech",
+        "formula": "S + asked + (if/Wh-) + S + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Câu hỏi tường thuật dùng trật tự khẳng định, không đảo ngữ.",
+        "example": {
+          "correct": "He asked where I lived.",
+          "wrong": "He asked where did I live."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Yes/No → if/whether; Wh- → giữ từ hỏi; bỏ do/does/did."
+      }
+    ]
+  },
+  {
+    "id": "g9_u1_wh_toinf",
+    "title": "Unit 1 · Wh-word + to-V",
+    "skill": "g9_u1_wh_toinf",
+    "chapter": "Unit 1: Local community",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Dùng what/where/how/when + to-V sau know, wonder, ask, tell, show, decide…"
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Dùng what/where/how/when + to-V sau know, wonder, ask, tell, show, decide…",
+        "visualization": "formula",
+        "formula": "S + V + Wh-word + to V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "We don't know what to buy.",
+          "wrong": "We don't know what buy."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "S + V + Wh-word + to V"
+      }
+    ]
+  },
+  {
+    "id": "g9_u1_phrasal_verbs",
+    "title": "Unit 1 · Cụm động từ",
+    "skill": "g9_u1_phrasal_verbs",
+    "chapter": "Unit 1: Local community",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Cụm động từ = động từ + tiểu từ/trạng từ (pass down, set up, look up, turn on…)."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Cụm động từ = động từ + tiểu từ/trạng từ (pass down, set up, look up, turn on…).",
+        "visualization": "formula",
+        "formula": "V + particle"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "They set up a new workshop.",
+          "wrong": "They set a workshop up in wrong order only when object is long — use: They set up a workshop."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "V + particle"
+      }
+    ]
+  },
+  {
+    "id": "g9_u2_comparisons",
+    "title": "Unit 2 · So sánh hơn & nhất",
+    "skill": "g9_u2_comparisons",
+    "chapter": "Unit 2: City life",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "So sánh hơn/nhất với tính từ và trạng từ ngắn (-er/-est) và dài (more/most)."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "So sánh hơn/nhất với tính từ và trạng từ ngắn (-er/-est) và dài (more/most).",
+        "visualization": "comparative",
+        "formula": "adj-er / the adj-est; more + adj + than"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "City life is more exciting than village life.",
+          "wrong": "City life is more exciting than village life is more exciting."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "adj-er / the adj-est; more + adj + than"
+      }
+    ]
+  },
+  {
+    "id": "g9_u3_reported_statements",
+    "title": "Unit 3 · Câu tường thuật (trần thuật)",
+    "skill": "g9_u3_reported_statements",
+    "chapter": "Unit 3: Healthy living for teens",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Tường thuật câu trần thuật: lùi thì, đổi đại từ và trạng từ thời gian/nơi chốn."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Tường thuật câu trần thuật: lùi thì, đổi đại từ và trạng từ thời gian/nơi chốn.",
+        "visualization": "reportedSpeech",
+        "formula": "S + said (that) + S + V (lùi thì)"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "He said he was feeling stressed.",
+          "wrong": "He said he is feeling stressed."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "S + said (that) + S + V (lùi thì)"
+      }
+    ]
+  },
+  {
+    "id": "g9_u3_should",
+    "title": "Unit 3 · should / shouldn't",
+    "skill": "g9_u3_should",
+    "chapter": "Unit 3: Healthy living for teens",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "should/shouldn't + V nguyên thể để đưa ra lời khuyên về sức khỏe."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "should/shouldn't + V nguyên thể để đưa ra lời khuyên về sức khỏe.",
+        "visualization": "formula",
+        "formula": "S + should/shouldn't + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "You should get enough sleep.",
+          "wrong": "You should getting enough sleep."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "S + should/shouldn't + V"
+      }
+    ]
+  },
+  {
+    "id": "g9_u4_past_continuous",
+    "title": "Unit 4 · Thì quá khứ tiếp diễn",
+    "skill": "g9_u4_past_continuous",
+    "chapter": "Unit 4: Remembering the past",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Quá khứ tiếp diễn mô tả hành động đang diễn ra tại thời điểm trong quá khứ hoặc bị xen vào."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Quá khứ tiếp diễn mô tả hành động đang diễn ra tại thời điểm trong quá khứ hoặc bị xen vào.",
+        "visualization": "pastContinuous",
+        "formula": "S + was/were + V-ing (+ when + S + V2)"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "My father was reading when the phone rang.",
+          "wrong": "My father was read when the phone rang."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "S + was/were + V-ing (+ when + S + V2)"
+      }
+    ]
+  },
+  {
+    "id": "g9_u4_wish",
+    "title": "Unit 4 · Wish + quá khứ đơn",
+    "skill": "g9_u4_wish",
+    "chapter": "Unit 4: Remembering the past",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "wish + S + V2/ed diễn tả ước muốn trái với sự thật hiện tại (be → were)."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "wish + S + V2/ed diễn tả ước muốn trái với sự thật hiện tại (be → were).",
+        "visualization": "formula",
+        "formula": "S + wish(es) + S + V2/ed"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "I wish I had a new bike.",
+          "wrong": "I wish I have a new bike."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "S + wish(es) + S + V2/ed"
+      }
+    ]
+  },
+  {
+    "id": "g9_u5_present_perfect",
+    "title": "Unit 5 · Thì hiện tại hoàn thành",
+    "skill": "g9_u5_present_perfect",
+    "chapter": "Unit 5: Our experiences",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Hiện tại hoàn thành diễn tả trải nghiệm đã/chưa từng xảy ra (ever/never)."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Hiện tại hoàn thành diễn tả trải nghiệm đã/chưa từng xảy ra (ever/never).",
+        "visualization": "presentPerfect",
+        "formula": "S + have/has + V3"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "I have never tried scuba diving.",
+          "wrong": "I have never try scuba diving."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "S + have/has + V3"
+      }
+    ]
+  },
+  {
+    "id": "g9_u6_gerund",
+    "title": "Unit 6 · Động từ + V-ing",
+    "skill": "g9_u6_gerund",
+    "chapter": "Unit 6: Vietnamese lifestyles: Then and now",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Sau enjoy, mind, avoid, hate… dùng danh động từ V-ing làm tân ngữ."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Sau enjoy, mind, avoid, hate… dùng danh động từ V-ing làm tân ngữ.",
+        "visualization": "formula",
+        "formula": "S + enjoy/mind/avoid + V-ing"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "She enjoys listening to music.",
+          "wrong": "She enjoys listen to music."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "S + enjoy/mind/avoid + V-ing"
+      }
+    ]
+  },
+  {
+    "id": "g9_u6_toinf",
+    "title": "Unit 6 · Động từ + to-V",
+    "skill": "g9_u6_toinf",
+    "chapter": "Unit 6: Vietnamese lifestyles: Then and now",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Sau want, decide, hope, expect, try… dùng to + V nguyên thể làm tân ngữ."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Sau want, decide, hope, expect, try… dùng to + V nguyên thể làm tân ngữ.",
+        "visualization": "formula",
+        "formula": "S + want/decide/hope + to V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "We decided to move.",
+          "wrong": "We decided moving."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "S + want/decide/hope + to V"
+      }
+    ]
+  },
+  {
+    "id": "g9_u7_reported_yesno",
+    "title": "Unit 7 · Tường thuật câu hỏi Yes/No",
+    "skill": "g9_u7_reported_yesno",
+    "chapter": "Unit 7: Natural wonders of the world",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Tường thuật câu hỏi Yes/No: asked + if/whether + S + V (lùi thì, không đảo ngữ)."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Tường thuật câu hỏi Yes/No: asked + if/whether + S + V (lùi thì, không đảo ngữ).",
+        "visualization": "reportedSpeech",
+        "formula": "S + asked + if/whether + S + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "He asked if that was the way.",
+          "wrong": "He asked if that is the way."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "S + asked + if/whether + S + V"
+      }
+    ]
+  },
+  {
+    "id": "g9_u7_impersonal_passive",
+    "title": "Unit 7 · Bị động khách quan",
+    "skill": "g9_u7_impersonal_passive",
+    "chapter": "Unit 7: Natural wonders of the world",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "It is/was + V3 + (that) + S + V… để tường thuật ý kiến/thông tin khách quan."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "It is/was + V3 + (that) + S + V… để tường thuật ý kiến/thông tin khách quan.",
+        "visualization": "passive",
+        "formula": "It + is/was + V3 + (that) + clause"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "It is said that the lake is beautiful.",
+          "wrong": "It says that the lake is beautiful."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "It + is/was + V3 + (that) + clause"
+      }
+    ]
+  },
+  {
+    "id": "g9_u8_relative_clauses",
+    "title": "Unit 8 · Mệnh đề quan hệ",
+    "skill": "g9_u8_relative_clauses",
+    "chapter": "Unit 8: Tourism",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "who (người) / which (vật) bổ nghĩa cho danh từ đứng ngay trước."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "who (người) / which (vật) bổ nghĩa cho danh từ đứng ngay trước.",
+        "visualization": "formula",
+        "formula": "N + who/which + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "The guide who showed us around was kind.",
+          "wrong": "The guide which showed us around was kind."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "N + who/which + V"
+      }
+    ]
+  },
+  {
+    "id": "g9_u9_conditional1",
+    "title": "Unit 9 · Câu điều kiện loại 1",
+    "skill": "g9_u9_conditional1",
+    "chapter": "Unit 9: World Englishes",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Câu điều kiện loại 1: điều kiện có thể xảy ra ở hiện tại/tương lai."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Câu điều kiện loại 1: điều kiện có thể xảy ra ở hiện tại/tương lai.",
+        "visualization": "formula",
+        "formula": "If + S + V(s), S + will/can + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "If you study hard, you will pass.",
+          "wrong": "If you will study hard, you will pass."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "If + S + V(s), S + will/can + V"
+      }
+    ]
+  },
+  {
+    "id": "g9_u10_conditional2",
+    "title": "Unit 10 · Câu điều kiện loại 2",
+    "skill": "g9_u10_conditional2",
+    "chapter": "Unit 10: Planet Earth",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Câu điều kiện loại 2: giả định trái với sự thật hiện tại."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Câu điều kiện loại 2: giả định trái với sự thật hiện tại.",
+        "visualization": "formula",
+        "formula": "If + S + V2/were, S + would/could + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "If I were rich, I would travel.",
+          "wrong": "If I was rich, I would travel."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "If + S + V2/were, S + would/could + V"
+      }
+    ]
+  },
+  {
+    "id": "g9_u11_past_perfect",
+    "title": "Unit 11 · Thì quá khứ hoàn thành",
+    "skill": "g9_u11_past_perfect",
+    "chapter": "Unit 11: Electronic devices",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Quá khứ hoàn thành diễn tả hành động xảy ra trước một hành động/mốc trong quá khứ."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Quá khứ hoàn thành diễn tả hành động xảy ra trước một hành động/mốc trong quá khứ.",
+        "visualization": "presentPerfect",
+        "formula": "S + had + V3"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "She had left before I arrived.",
+          "wrong": "She has left before I arrived."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "S + had + V3"
+      }
+    ]
+  },
+  {
+    "id": "g9_u11_passive_present",
+    "title": "Unit 11 · Câu bị động (hiện tại)",
+    "skill": "g9_u11_passive_present",
+    "chapter": "Unit 11: Electronic devices",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Bị động hiện tại đơn: am/is/are + V3 (+ by O)."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Bị động hiện tại đơn: am/is/are + V3 (+ by O).",
+        "visualization": "passive",
+        "formula": "S + am/is/are + V3 (+ by O)"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "English is spoken in many countries.",
+          "wrong": "English is speak in many countries."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "S + am/is/are + V3 (+ by O)"
+      }
+    ]
+  },
+  {
+    "id": "g9_u11_passive_past",
+    "title": "Unit 11 · Câu bị động (quá khứ)",
+    "skill": "g9_u11_passive_past",
+    "chapter": "Unit 11: Electronic devices",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Bị động quá khứ đơn: was/were + V3 (+ by O)."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Bị động quá khứ đơn: was/were + V3 (+ by O).",
+        "visualization": "passive",
+        "formula": "S + was/were + V3 (+ by O)"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "The phone was invented by Bell.",
+          "wrong": "The phone was invent by Bell."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "S + was/were + V3 (+ by O)"
+      }
+    ]
+  },
+  {
+    "id": "g9_u12_reported_wh",
+    "title": "Unit 12 · Tường thuật câu hỏi Wh-",
+    "skill": "g9_u12_reported_wh",
+    "chapter": "Unit 12: Career choices",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Tường thuật câu hỏi Wh-: asked + Wh-word + S + V (lùi thì, trật tự khẳng định)."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Tường thuật câu hỏi Wh-: asked + Wh-word + S + V (lùi thì, trật tự khẳng định).",
+        "visualization": "reportedSpeech",
+        "formula": "S + asked + Wh-word + S + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "He asked what job I wanted.",
+          "wrong": "He asked what job did I want."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "S + asked + Wh-word + S + V"
+      }
+    ]
+  },
+  {
+    "id": "g9_u12_relative_defining",
+    "title": "Unit 12 · MĐQH xác định",
+    "skill": "g9_u12_relative_defining",
+    "chapter": "Unit 12: Career choices",
+    "source": "Bám sát SGK Tiếng Anh 9 – Kết nối tri thức với cuộc sống (Global Success).",
+    "xp": 70,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu bài học",
+        "content": "Mệnh đề quan hệ xác định dùng who/which/that để làm rõ danh từ đứng trước."
+      },
+      {
+        "type": "visualization",
+        "title": "Cấu trúc trực quan",
+        "content": "Mệnh đề quan hệ xác định dùng who/which/that để làm rõ danh từ đứng trước.",
+        "visualization": "formula",
+        "formula": "N + who/which/that + V"
+      },
+      {
+        "type": "example",
+        "title": "Ví dụ và lỗi thường gặp",
+        "content": "Chú ý cấu trúc và dạng động từ đúng theo SGK.",
+        "example": {
+          "correct": "A surgeon is a doctor who performs operations.",
+          "wrong": "A surgeon is a doctor which performs operations."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "N + who/which/that + V"
+      }
+    ]
+  }
+]
