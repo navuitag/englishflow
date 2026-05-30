@@ -562,6 +562,210 @@
   display: none;
 }
 
+.vocab-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 14px;
+}
+
+.vocab-card {
+  background: #e7f8ef;
+  border: 1px solid #cfe9dd;
+  border-radius: 8px;
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px;
+}
+
+.vocab-en {
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.vocab-ipa {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.vocab-vi {
+  color: var(--green-dark);
+  font-weight: 800;
+}
+
+.vocab-example {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.5;
+  margin: 4px 0 0;
+}
+
+.vocab-lesson-note {
+  color: var(--green-dark);
+  font-size: 14px;
+  font-weight: 750;
+  margin: 8px 0 0;
+}
+
+.skill-card-vocab {
+  border-color: #cfe9dd;
+}
+
+.skill-card-vocab .tag {
+  color: var(--green-dark);
+}
+
+.skill-card-listening {
+  border-color: #c5daf5;
+}
+
+.skill-card-listening .tag {
+  color: var(--blue);
+}
+
+.skill-card-pronunciation {
+  border-color: #f4d889;
+}
+
+.skill-card-pronunciation .tag {
+  color: #8a6200;
+}
+
+.skill-lesson-note {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 750;
+  margin: 8px 0 0;
+}
+
+.listening-player,
+.pronunciation-guide {
+  margin-top: 14px;
+}
+
+.listen-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.listen-note,
+.listen-fallback {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.listen-transcript {
+  background: #f7fbff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.listen-transcript p {
+  margin: 0 0 8px;
+}
+
+.listen-transcript-hidden {
+  display: none;
+}
+
+.listen-transcript-hidden.is-visible {
+  display: block;
+  margin-top: 12px;
+}
+
+.pronunciation-guide {
+  background: #fff9eb;
+  border: 1px solid #f4d889;
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+
+.pron-focus {
+  color: #8a6200;
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.pron-points {
+  color: var(--text);
+  margin: 0 0 12px;
+  padding-left: 20px;
+}
+
+.pron-points li {
+  margin-bottom: 6px;
+}
+
+.pron-pairs,
+.pron-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pron-pair {
+  align-items: center;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px 12px;
+}
+
+.pron-vs {
+  color: var(--muted);
+  font-weight: 900;
+}
+
+.pron-speak,
+.pron-example {
+  align-items: center;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 44px;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.pron-speak:hover,
+.pron-example:hover {
+  border-color: var(--blue);
+}
+
+.pron-word {
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.pron-stress {
+  color: var(--green-dark);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.pron-pair small,
+.pron-example small {
+  color: var(--muted);
+  font-weight: 650;
+}
+
 /* Grammar visualization */
 .viz {
   margin-top: 18px;

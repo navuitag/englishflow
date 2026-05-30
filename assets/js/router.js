@@ -9,6 +9,9 @@ import { completeLesson } from "../../modules/lessonEngine.js";
 import { submitAnswer } from "../../modules/quizEngine.js";
 import { getGamificationSummary } from "../../modules/gamification.js";
 import { getOverallAccuracy, getWeakSkills } from "../../modules/progress.js";
+import { renderVocabList } from "../../components/vocabList.js";
+import { renderListeningPlayer, bindListeningPlayer } from "../../components/listeningPlayer.js";
+import { renderPronunciationGuide, bindPronunciationGuide } from "../../components/pronunciationGuide.js";
 
 let data = {
   skills: [],
@@ -95,7 +98,7 @@ function renderOnboarding(state) {
         <span class="brand-mark">E</span>
         <span class="eyebrow">Chào mừng đến EnglishFlow</span>
         <h1>Bạn đang học lớp mấy?</h1>
-        <p>Chọn trình độ để mình mở đúng lộ trình ngữ pháp tiếng Anh THCS. Bạn có thể đổi bất cứ lúc nào trên thanh điều hướng.</p>
+        <p>Chọn trình độ để mình mở đúng lộ trình ngữ pháp và từ vựng tiếng Anh THCS. Bạn có thể đổi bất cứ lúc nào trên thanh điều hướng.</p>
         <div class="grade-pick-grid">
           ${cards}
         </div>
@@ -134,7 +137,7 @@ function renderHome(state) {
       <div>
         <span class="eyebrow">Lộ trình hôm nay · ${labelLevel(activeLevel)}</span>
         <h1>Học tiếng Anh mỗi ngày, hiểu rõ từng lỗi sai.</h1>
-        <p>Xem cấu trúc ngữ pháp trực quan, luyện tập tương tác và biết ngay vì sao câu chưa đúng.</p>
+        <p>Xem cấu trúc ngữ pháp trực quan, học từ vựng, luyện nghe và phát âm theo Unit.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#/lesson/${nextSkill.id}">Tiếp tục học</a>
           <a class="btn secondary" href="#/practice/${nextSkill.id}">Luyện nhanh</a>
@@ -217,9 +220,9 @@ function renderSkills(state) {
 
   return `
     <section class="page-title">
-      <span class="eyebrow">Lộ trình ngữ pháp</span>
+      <span class="eyebrow">Lộ trình học</span>
       <h1>Cây bài học tiếng Anh THCS</h1>
-      <p>Chọn trình độ để bắt đầu. Mỗi nút là một điểm ngữ pháp; hoàn thành bài trước để mở khóa bài tiếp theo.</p>
+      <p>Chọn trình độ để bắt đầu. Mỗi Unit có ngữ pháp, từ vựng, phát âm và kỹ năng nghe.</p>
     </section>
     <div class="grade-tabs" role="group" aria-label="Chọn trình độ">
       ${tabs}
@@ -254,6 +257,9 @@ function renderLesson(id, state) {
         <a class="back-link" href="#/skills">← Bài học</a>
         <h1>${lesson.title}</h1>
         ${skill?.formula ? `<code class="formula-inline">${skill.formula}</code>` : ""}
+        ${skill?.skillType === "vocabulary" ? `<p class="vocab-lesson-note">${packWordCount(lesson)} từ vựng trong bài này</p>` : ""}
+        ${skill?.skillType === "listening" ? `<p class="skill-lesson-note">Luyện nghe hội thoại + trắc nghiệm</p>` : ""}
+        ${skill?.skillType === "pronunciation" ? `<p class="skill-lesson-note">Luyện phát âm · nhấn từ để nghe</p>` : ""}
         <p>${mastery}% mastery</p>
         <div class="progress-track"><span style="width:${mastery}%"></span></div>
       </aside>
@@ -265,6 +271,9 @@ function renderLesson(id, state) {
               <h2>${step.title}</h2>
               <p>${step.content}</p>
               ${step.type === "visualization" ? renderVisualization({ visualization: step.visualization, formula: step.formula }) : ""}
+              ${step.type === "vocabulary" ? renderVocabList(step.words) : ""}
+              ${step.type === "listening" ? renderListeningPlayer(step.script, { showTranscript: step.showTranscript }) : ""}
+              ${step.type === "pronunciation" ? renderPronunciationGuide(step) : ""}
               ${step.example ? `<div class="example-box"><span class="ex-good">✔ ${escapeHtml(step.example.correct)}</span><span class="ex-bad">✘ ${escapeHtml(step.example.wrong)}</span></div>` : ""}
             </div>
           </article>
@@ -282,6 +291,8 @@ function renderLesson(id, state) {
 }
 
 function bindLesson(id) {
+  bindListeningPlayer(document);
+  bindPronunciationGuide(document);
   const lesson = data.lessons.find((item) => item.id === id);
   const button = document.querySelector("#completeLesson");
   if (!lesson || !button) return;
@@ -309,7 +320,7 @@ function renderPractice(id, state) {
         <a class="back-link" href="#/skills">← Bài học</a>
         <span class="tag">${labelSkill(id)}</span>
       </div>
-      ${renderVisualization({ visualization: skill?.visualization, formula: skill?.formula })}
+      ${!["vocabulary", "listening", "pronunciation"].includes(skill?.skillType) ? renderVisualization({ visualization: skill?.visualization, formula: skill?.formula }) : ""}
       ${renderQuizCard(question)}
     </section>
   `;
@@ -334,6 +345,8 @@ function bindPractice(id) {
   }
 
   bindBuilder(card, question, id);
+  bindListeningPlayer(card);
+  bindPronunciationGuide(card);
 
   const hint = document.querySelector(".hint-btn");
   if (hint && hint.dataset.hint) {
@@ -499,6 +512,11 @@ function bindProfile() {
 
 function labelSkill(id) {
   return data.skills.find((skill) => skill.id === id)?.title || id;
+}
+
+function packWordCount(lesson) {
+  const vocabStep = lesson?.steps?.find((step) => step.type === "vocabulary");
+  return vocabStep?.words?.length || 0;
 }
 
 function notFound(message) {

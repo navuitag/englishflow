@@ -1,10 +1,13 @@
 import { escapeHtml } from "../assets/js/utils.js";
+import { renderListeningPlayer } from "./listeningPlayer.js";
 
 const TYPE_LABEL = {
   multiple_choice: "Chọn đáp án",
   input: "Điền từ",
   error_detection: "Sửa lỗi sai",
-  word_order: "Sắp xếp câu"
+  word_order: "Sắp xếp câu",
+  vocabulary: "Từ vựng",
+  listening: "Kỹ năng nghe"
 };
 
 function shuffle(list) {
@@ -23,6 +26,13 @@ export function renderQuizCard(question) {
     answerArea = `<div class="choice-grid">${question.choices
       .map((choice) => `<button class="choice-btn" data-answer="${escapeHtml(choice)}">${escapeHtml(choice)}</button>`)
       .join("")}</div>`;
+  } else if (question.type === "listening") {
+    answerArea = `
+      ${renderListeningPlayer(question.listenScript || [], { showTranscript: false })}
+      <div class="choice-grid">${question.choices
+        .map((choice) => `<button class="choice-btn" data-answer="${escapeHtml(choice)}">${escapeHtml(choice)}</button>`)
+        .join("")}</div>
+    `;
   } else if (question.type === "word_order") {
     const tokens = shuffle(question.tokens || []);
     answerArea = `
@@ -59,7 +69,9 @@ export function renderQuizCard(question) {
 
   const heading = question.type === "error_detection"
     ? "Tìm và sửa lỗi sai trong câu sau:"
-    : escapeHtml(question.question);
+    : question.type === "listening"
+      ? escapeHtml(question.question)
+      : escapeHtml(question.question);
 
   return `
     <article class="quiz-card" data-question-id="${question.id}" data-type="${question.type}">

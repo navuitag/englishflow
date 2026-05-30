@@ -94,7 +94,8 @@
 
   .skill-grid,
   .stat-grid,
-  .choice-grid {
+  .choice-grid,
+  .vocab-grid {
     grid-template-columns: 1fr;
   }
 

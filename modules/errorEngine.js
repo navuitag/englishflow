@@ -21,6 +21,42 @@ export function analyzeError(answer, question, errorPatterns) {
     return { ...pattern, skill: question.skill, recommendation: question.skill };
   }
 
+  if (grammar === "vocabulary") {
+    return {
+      skill: question.skill,
+      code: "VC001",
+      errorType: "vocabulary_error",
+      title: "Chưa đúng từ vựng",
+      message: "Kiểm tra lại chính tả tiếng Anh hoặc nghĩa tiếng Việt. Xem lại thẻ từ trong bài học.",
+      hint: question.hint || "Đọc lại danh sách từ vựng của Unit.",
+      recommendation: question.skill
+    };
+  }
+
+  if (grammar === "listening") {
+    return {
+      skill: question.skill,
+      code: "LS001",
+      errorType: "listening_error",
+      title: "Chưa đúng ý hội thoại",
+      message: "Nghe lại đoạn hội thoại và chú ý từ khóa trong câu hỏi (ai, ở đâu, khi nào).",
+      hint: question.hint || "Bật transcript nếu cần xem lại.",
+      recommendation: question.skill
+    };
+  }
+
+  if (grammar === "pronunciation") {
+    return {
+      skill: question.skill,
+      code: "PR001",
+      errorType: "pronunciation_error",
+      title: "Chưa đúng phát âm / trọng âm",
+      message: "Xem lại điểm phát âm trong bài học và lặp lại theo mẫu.",
+      hint: question.hint || "Nhấn từ mẫu để nghe lại.",
+      recommendation: question.skill
+    };
+  }
+
   const heuristic = runHeuristics(answer, question);
   if (heuristic) return heuristic;
 
@@ -39,6 +75,14 @@ function runHeuristics(answer, question) {
   const grammar = question.grammar || question.skill;
   const words = tokens(answer);
   const subjectIndex = words.findIndex((word) => THIRD_PERSON.includes(word));
+
+  if (grammar === "vocabulary") {
+    return null;
+  }
+
+  if (grammar === "listening" || grammar === "pronunciation") {
+    return null;
+  }
 
   if (grammar === "present_simple" && subjectIndex !== -1) {
     const verb = words[subjectIndex + 1];

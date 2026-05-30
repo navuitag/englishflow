@@ -9,9 +9,9 @@
 ## Tính năng chính
 
 - **Chọn trình độ để học**: màn hình chọn lớp khi mở app lần đầu, dropdown đổi trình độ trên thanh điều hướng, và nút "Đổi trình độ" trong Hồ sơ (giữ nguyên tiến độ).
-- **Lộ trình ngữ pháp**: nội dung chia theo lớp và **nhóm theo chủ đề (Unit)**; mỗi nút là một điểm ngữ pháp, mở khóa dần theo `prerequisite`.
-- **Bài học ngắn**: mục tiêu + **trực quan hóa cấu trúc câu** + ví dụ đúng/sai.
-- **Luyện tập đa dạng & chấm tức thì**: trắc nghiệm, điền từ, **sửa lỗi sai**, **sắp xếp câu (kéo/chạm để xếp)**.
+- **Lộ trình học**: nội dung chia theo lớp và **nhóm theo chủ đề (Unit)** — mỗi Unit có **ngữ pháp**, **từ vựng**, **phát âm** và **kỹ năng nghe**; mở khóa dần theo `prerequisite`.
+- **Bài học ngắn**: mục tiêu + trực quan hóa ngữ pháp / thẻ từ vựng / hướng dẫn phát âm / hội thoại nghe (TTS trình duyệt).
+- **Luyện tập đa dạng & chấm tức thì**: trắc nghiệm, điền từ, sửa lỗi sai, sắp xếp câu, **nghe hội thoại (TTS)**, **phát âm & trọng âm**.
 - **Error Detection Engine (module lõi)**: chuẩn hóa câu → so khớp mẫu lỗi → chẩn đoán bằng quy tắc (mã lỗi GR0xx) + giải thích nguyên nhân + gợi ý + đề xuất bài ôn.
 - **Grammar Visualizer**: timeline thì (quá khứ/hiện tại/tương lai), công thức câu tô màu theo thành phần, biểu đồ so sánh, sơ đồ chuyển câu chủ động → bị động.
 - **Tiến độ & Game hóa**: XP, level, streak, mastery theo điểm ngữ pháp, huy hiệu, daily quest, sổ tay lỗi sai.
@@ -23,9 +23,15 @@
 
 | | Tổng | Lớp 6 | Lớp 7 | Lớp 8 | Lớp 9 |
 |---|---|---|---|---|---|
-| Bài học (điểm ngữ pháp) | 83 | 25 | 21 | 17 | 20 |
-| Câu hỏi | 249 | 75 | 63 | 51 | 60 |
+| Bài học | **227** | 61 | 57 | 53 | 56 |
+| — Ngữ pháp | 83 | 25 | 21 | 17 | 20 |
+| — Từ vựng | 48 | 12 | 12 | 12 | 12 |
+| — Phát âm | 48 | 12 | 12 | 12 | 12 |
+| — Kỹ năng nghe | 48 | 12 | 12 | 12 | 12 |
+| Câu hỏi | **825** | 219 | 207 | 195 | 204 |
 | Mẫu lỗi sai | 86 | — | — | — | — |
+
+Mỗi Unit có bài **Phát âm** (âm/trọng âm/ngữ điệu) và **Kỹ năng nghe** (hội thoại + nút Nghe TTS + 4 câu hỏi). Bài từ vựng: ~8 từ EN↔VI và 4 câu luyện.
 
 ### Chương trình Lớp 6 — "Kết nối tri thức với cuộc sống" (Global Success)
 
