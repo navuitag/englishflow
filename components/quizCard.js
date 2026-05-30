@@ -1,4 +1,4 @@
-import { escapeHtml } from "../assets/js/utils.js";
+import { escapeHtml, shuffle } from "../assets/js/utils.js";
 import { renderListeningPlayer } from "./listeningPlayer.js";
 
 const TYPE_LABEL = {
@@ -10,31 +10,26 @@ const TYPE_LABEL = {
   listening: "Kỹ năng nghe"
 };
 
-function shuffle(list) {
-  const copy = [...list];
-  for (let i = copy.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
+function shuffleList(list) {
+  return shuffle(list);
 }
 
 export function renderQuizCard(question) {
   let answerArea = "";
 
   if (question.type === "multiple_choice") {
-    answerArea = `<div class="choice-grid">${question.choices
+    answerArea = `<div class="choice-grid">${shuffleList(question.choices)
       .map((choice) => `<button class="choice-btn" data-answer="${escapeHtml(choice)}">${escapeHtml(choice)}</button>`)
       .join("")}</div>`;
   } else if (question.type === "listening") {
     answerArea = `
       ${renderListeningPlayer(question.listenScript || [], { showTranscript: false })}
-      <div class="choice-grid">${question.choices
+      <div class="choice-grid">${shuffleList(question.choices)
         .map((choice) => `<button class="choice-btn" data-answer="${escapeHtml(choice)}">${escapeHtml(choice)}</button>`)
         .join("")}</div>
     `;
   } else if (question.type === "word_order") {
-    const tokens = shuffle(question.tokens || []);
+    const tokens = shuffleList(question.tokens || []);
     answerArea = `
       <div class="builder">
         <div class="builder-target" data-placeholder="Chạm vào các từ bên dưới để xếp câu"></div>

@@ -1,0 +1,348 @@
+import { buildFlashcardDeck, buildMemoryDeck, buildMemoryPairs } from "./practiceContent.js";
+
+export function createPracticeModule(ctx) {
+  const practiceSession = {
+    skillId: null,
+    continueAfterComplete: false,
+    flashcards: null,
+    memory: null
+  };
+
+  function getSkillQuestions(skillId) {
+    return ctx.data.questions.filter((question) => question.skill === skillId);
+  }
+
+  function getCorrectQuestionIds(skillId, state) {
+    return new Set(
+      state.answers
+        .filter((answer) => answer.skill === skillId && answer.correct)
+        .map((answer) => answer.questionId)
+    );
+  }
+
+  function areAllQuestionsCorrect(skillId, state) {
+    const skillQuestions = getSkillQuestions(skillId);
+    if (!skillQuestions.length) return false;
+    const correctIds = getCorrectQuestionIds(skillId, state);
+    return skillQuestions.every((question) => correctIds.has(question.id));
+  }
+
+  function pickPracticeQuestion(skillId, state) {
+    const skillQuestions = getSkillQuestions(skillId);
+    const correctIds = getCorrectQuestionIds(skillId, state);
+    const remaining = skillQuestions.filter((question) => !correctIds.has(question.id));
+    if (remaining.length) return remaining[0];
+    if (!practiceSession.continueAfterComplete) return null;
+    const attempts = state.answers.filter((answer) => answer.skill === skillId).length;
+    return skillQuestions[attempts % skillQuestions.length];
+  }
+
+  function getNextSkill(currentSkillId) {
+    const current = ctx.data.skills.find((skill) => skill.id === currentSkillId);
+    if (!current) return null;
+    const gradeSkills = ctx.data.skills
+      .filter((skill) => skill.grade === current.grade)
+      .sort((a, b) => (a.chapterIndex - b.chapterIndex) || (a.lessonNo - b.lessonNo));
+    const index = gradeSkills.findIndex((skill) => skill.id === currentSkillId);
+    return index >= 0 ? gradeSkills[index + 1] || null : null;
+  }
+
+  function resetPracticeModesIfNeeded(skillId) {
+    if (practiceSession.skillId !== skillId) {
+      practiceSession.skillId = skillId;
+      practiceSession.continueAfterComplete = false;
+      practiceSession.flashcards = null;
+      practiceSession.memory = null;
+    }
+  }
+
+  function renderPracticeTabs(skillId, activeMode) {
+    const modes = [
+      { id: "quiz", label: "Mini quiz", href: `#/practice/${skillId}` },
+      { id: "flashcards", label: "Flashcards", href: `#/practice/${skillId}/flashcards` },
+      { id: "memory", label: "Memory", href: `#/practice/${skillId}/memory` }
+    ];
+    return `
+      <nav class="practice-tabs" role="tablist" aria-label="Chế độ luyện tập">
+        ${modes.map((mode) => `
+          <a class="practice-tab${mode.id === activeMode ? " active" : ""}" href="${mode.href}" role="tab" aria-selected="${mode.id === activeMode}">${mode.label}</a>
+        `).join("")}
+      </nav>
+    `;
+  }
+
+  function renderPracticeShell(skillId, state, activeMode, body) {
+    const skill = ctx.data.skills.find((item) => item.id === skillId);
+    const vizConfig = ctx.getVizConfig?.(skill) || { visualization: skill?.visualization };
+    return `
+      <section class="practice-layout">
+        <div class="practice-header">
+          <a class="back-link" href="#/skills">← Kỹ năng</a>
+          <span class="tag">${ctx.labelSkill(skillId)}</span>
+        </div>
+        ${renderPracticeTabs(skillId, activeMode)}
+        ${activeMode === "quiz" && ctx.shouldShowPracticeViz?.(skill) !== false ? ctx.renderVisualization(vizConfig) : ""}
+        ${body}
+      </section>
+    `;
+  }
+
+  function renderPracticeCompletionPanel(skillId) {
+    const nextSkill = getNextSkill(skillId);
+    return `
+      <article class="quiz-complete-panel">
+        <h2>Đã trả lời đúng tất cả câu hỏi!</h2>
+        <p>Bạn muốn chuyển sang bài tiếp theo hay luyện thêm các câu này?</p>
+        <div class="quiz-complete-actions">
+          ${nextSkill
+            ? `<button class="btn primary" type="button" id="practiceNextLesson">Bài tiếp theo</button>`
+            : `<a class="btn primary" href="#/skills">Về cây kỹ năng</a>`}
+          <button class="btn secondary" type="button" id="practiceContinue">Luyện thêm</button>
+        </div>
+      </article>
+    `;
+  }
+
+  function ensureFlashcardDeck(skillId) {
+    if (practiceSession.flashcards?.deck) return;
+    const lesson = ctx.data.lessons.find((item) => item.skill === skillId);
+    const skill = ctx.data.skills.find((item) => item.id === skillId);
+    practiceSession.flashcards = {
+      deck: buildFlashcardDeck(skillId, lesson, ctx.data.questions, skill),
+      index: 0,
+      flipped: false,
+      known: new Set(),
+      xpAwarded: false
+    };
+  }
+
+  function ensureMemorySession(skillId) {
+    if (practiceSession.memory?.deck) return;
+    const lesson = ctx.data.lessons.find((item) => item.skill === skillId);
+    const pairs = buildMemoryPairs(skillId, lesson, ctx.data.questions);
+    practiceSession.memory = {
+      pairs,
+      deck: buildMemoryDeck(pairs),
+      flipped: [],
+      matched: [],
+      moves: 0,
+      locked: false,
+      xpAwarded: false
+    };
+  }
+
+  function awardPracticeBonus(amount, title, body) {
+    ctx.updateState((next) => {
+      next.xp += amount;
+      next.todayXp += amount;
+    });
+    ctx.showModal({ title, body: `${body} (+${amount} XP)` });
+  }
+
+  function renderPracticeFlashcards(skillId, state) {
+    if (!ctx.data.skills.find((item) => item.id === skillId)) {
+      return ctx.notFound("Không tìm thấy kỹ năng.");
+    }
+    resetPracticeModesIfNeeded(skillId);
+    ensureFlashcardDeck(skillId);
+    const session = practiceSession.flashcards;
+    return renderPracticeShell(skillId, state, "flashcards", ctx.renderFlashcardPanel(session.deck, session.index, session.flipped));
+  }
+
+  function renderPracticeMemory(skillId, state) {
+    if (!ctx.data.skills.find((item) => item.id === skillId)) {
+      return ctx.notFound("Không tìm thấy kỹ năng.");
+    }
+    resetPracticeModesIfNeeded(skillId);
+    ensureMemorySession(skillId);
+    const session = practiceSession.memory;
+    const won = session.pairs.length > 0 && session.matched.length === session.pairs.length;
+    return renderPracticeShell(
+      skillId,
+      state,
+      "memory",
+      ctx.renderMemoryPanel(session.deck, session.flipped, session.matched, session.moves, won)
+    );
+  }
+
+  function renderPracticeQuiz(skillId, state) {
+    const skillQuestions = getSkillQuestions(skillId);
+    if (!skillQuestions.length) return ctx.notFound("Chưa có câu hỏi cho kỹ năng này.");
+    resetPracticeModesIfNeeded(skillId);
+    const allComplete = areAllQuestionsCorrect(skillId, state);
+    const question = allComplete && !practiceSession.continueAfterComplete ? null : pickPracticeQuestion(skillId, state);
+    const body = question ? ctx.renderQuizCard(question) : renderPracticeCompletionPanel(skillId);
+    return renderPracticeShell(skillId, state, "quiz", body);
+  }
+
+  function navigateToNextSkill(currentSkillId) {
+    const nextSkill = getNextSkill(currentSkillId);
+    if (nextSkill) {
+      ctx.setRoute(`#/lesson/${nextSkill.id}`);
+      return;
+    }
+    ctx.setRoute("#/skills");
+  }
+
+  function promptPracticeCompletion(skillId) {
+    const nextSkill = getNextSkill(skillId);
+    ctx.showModal({
+      title: "Hoàn thành mini quiz!",
+      body: nextSkill
+        ? "Bạn đã trả lời đúng tất cả câu hỏi. Chuyển sang bài tiếp theo?"
+        : "Bạn đã trả lời đúng tất cả câu hỏi của bài này.",
+      actionLabel: nextSkill ? "Bài tiếp theo" : "Về cây kỹ năng",
+      secondaryLabel: "Luyện thêm",
+      onAction: () => navigateToNextSkill(skillId),
+      onSecondary: () => {
+        practiceSession.continueAfterComplete = true;
+        ctx.renderRoute();
+      }
+    });
+  }
+
+  function handleMemoryFlip(skillId, cardId) {
+    const session = practiceSession.memory;
+    if (!session || session.locked) return;
+    if (session.flipped.includes(cardId)) return;
+    const card = session.deck.find((item) => item.id === cardId);
+    if (!card || session.matched.includes(card.pairId)) return;
+    session.flipped.push(cardId);
+    if (session.flipped.length < 2) {
+      ctx.renderRoute();
+      return;
+    }
+    session.moves += 1;
+    const [firstId, secondId] = session.flipped;
+    const first = session.deck.find((item) => item.id === firstId);
+    const second = session.deck.find((item) => item.id === secondId);
+    if (first.pairId === second.pairId) {
+      session.matched.push(first.pairId);
+      session.flipped = [];
+      ctx.renderRoute();
+      if (session.matched.length === session.pairs.length && !session.xpAwarded) {
+        session.xpAwarded = true;
+        setTimeout(() => {
+          awardPracticeBonus(20, "Hoàn thành Memory Training!", `Ghép đủ ${session.pairs.length} cặp trong ${session.moves} lượt.`);
+        }, 350);
+      }
+      return;
+    }
+    session.locked = true;
+    ctx.renderRoute();
+    setTimeout(() => {
+      session.flipped = [];
+      session.locked = false;
+      ctx.renderRoute();
+    }, 850);
+  }
+
+  function bindPracticeFlashcards() {
+    const session = practiceSession.flashcards;
+    if (!session?.deck.length) return;
+    const progress = document.querySelector("#flashcardProgress");
+    if (progress) progress.textContent = `${session.known.size}/${session.deck.length} thẻ đã nhớ`;
+    document.querySelector("#flashcardFlip")?.addEventListener("click", () => {
+      session.flipped = !session.flipped;
+      ctx.renderRoute();
+    });
+    document.querySelector("#flashcardPrev")?.addEventListener("click", () => {
+      if (session.index <= 0) return;
+      session.index -= 1;
+      session.flipped = false;
+      ctx.renderRoute();
+    });
+    document.querySelector("#flashcardNext")?.addEventListener("click", () => {
+      if (session.index >= session.deck.length - 1) return;
+      session.index += 1;
+      session.flipped = false;
+      ctx.renderRoute();
+    });
+    document.querySelector("#flashcardKnown")?.addEventListener("click", () => {
+      const card = session.deck[session.index];
+      session.known.add(card.id);
+      if (session.known.size >= session.deck.length && !session.xpAwarded) {
+        session.xpAwarded = true;
+        ctx.renderRoute();
+        awardPracticeBonus(15, "Hoàn thành Flashcards!", "Bạn đã xem và ghi nhớ hết bộ thẻ.");
+        return;
+      }
+      if (session.index < session.deck.length - 1) {
+        session.index += 1;
+        session.flipped = false;
+      }
+      ctx.renderRoute();
+    });
+  }
+
+  function bindPracticeMemory(skillId) {
+    const session = practiceSession.memory;
+    if (!session?.deck.length) return;
+    document.querySelector("#memoryRestart")?.addEventListener("click", () => {
+      practiceSession.memory = null;
+      ensureMemorySession(skillId);
+      ctx.renderRoute();
+    });
+    document.querySelectorAll(".memory-card:not(.is-matched):not([disabled])").forEach((button) => {
+      button.addEventListener("click", () => handleMemoryFlip(skillId, button.dataset.cardId));
+    });
+  }
+
+  function bindPracticeQuiz(skillId) {
+    ctx.bindVisualizations?.();
+    document.querySelector("#practiceContinue")?.addEventListener("click", () => {
+      practiceSession.continueAfterComplete = true;
+      ctx.renderRoute();
+    });
+    document.querySelector("#practiceNextLesson")?.addEventListener("click", () => navigateToNextSkill(skillId));
+    const question = ctx.data.questions.find((item) => item.id === document.querySelector(".quiz-card")?.dataset.questionId);
+    if (!question) return;
+    ctx.bindPracticeExtras?.(skillId, question);
+    document.querySelectorAll(".choice-btn").forEach((button) => {
+      button.addEventListener("click", () => ctx.handleAnswer(button.dataset.answer, question, skillId));
+    });
+    const form = document.querySelector(".answer-form");
+    if (form) {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        ctx.handleAnswer(new FormData(form).get("answer"), question, skillId);
+      });
+    }
+    document.querySelector(".hint-btn")?.addEventListener("click", (event) => {
+      const hint = event.currentTarget.dataset.hint;
+      if (hint) ctx.showModal({ title: "Gợi ý", body: hint });
+    });
+  }
+
+  function onPracticeAnswerCorrect(skillId) {
+    const state = ctx.getState();
+    const allComplete = areAllQuestionsCorrect(skillId, state);
+    if (allComplete && !practiceSession.continueAfterComplete) {
+      setTimeout(() => promptPracticeCompletion(skillId), 400);
+      return true;
+    }
+    setTimeout(() => {
+      const nextRoute = `#/practice/${skillId}`;
+      if (window.location.hash.startsWith(nextRoute)) ctx.renderRoute();
+      else ctx.setRoute(nextRoute);
+    }, 900);
+    return false;
+  }
+
+  function resetOnLeavePractice(route) {
+    if (route !== "practice") practiceSession.continueAfterComplete = false;
+  }
+
+  return {
+    practiceSession,
+    resetOnLeavePractice,
+    renderPracticeQuiz,
+    renderPracticeFlashcards,
+    renderPracticeMemory,
+    bindPracticeQuiz,
+    bindPracticeFlashcards,
+    bindPracticeMemory,
+    onPracticeAnswerCorrect,
+    navigateToNextSkill
+  };
+}

@@ -1,10 +1,13 @@
-import { getState, resetProgress, setSelectedLevel, completeOnboarding, restartOnboarding } from "./state.js";
+import { getState, resetProgress, setSelectedLevel, completeOnboarding, restartOnboarding, updateState } from "./state.js";
 import { setRoute, escapeHtml, normalizeText } from "./utils.js";
 import { renderNavbar, renderBottomNav, labelLevel } from "../../components/navbar.js";
 import { renderLessonCard } from "../../components/lessonCard.js";
 import { renderQuizCard } from "../../components/quizCard.js";
+import { renderFlashcardPanel } from "../../components/flashcardPanel.js";
+import { renderMemoryPanel } from "../../components/memoryPanel.js";
 import { showModal } from "../../components/modal.js";
-import { renderVisualization } from "../../modules/visualization.js";
+import { renderVisualization, bindVisualizations } from "../../modules/visualization.js";
+import { createPracticeModule } from "../../modules/practiceModes.js";
 import { completeLesson } from "../../modules/lessonEngine.js";
 import { submitAnswer } from "../../modules/quizEngine.js";
 import { getGamificationSummary } from "../../modules/gamification.js";
@@ -20,15 +23,48 @@ let data = {
   errors: []
 };
 
+let practice;
+
 export function configureRouter(appData) {
   data = appData;
+  practice = createPracticeModule({
+    data,
+    getState,
+    updateState,
+    renderRoute,
+    setRoute,
+    escapeHtml,
+    showModal,
+    renderVisualization,
+    bindVisualizations,
+    renderQuizCard,
+    renderFlashcardPanel,
+    renderMemoryPanel,
+    labelSkill,
+    notFound,
+    handleAnswer,
+    getVizConfig: (skill) => ({ visualization: skill?.visualization, formula: skill?.formula }),
+    shouldShowPracticeViz: (skill) => !["vocabulary", "listening", "pronunciation"].includes(skill?.skillType),
+    bindPracticeExtras: (skillId, question) => {
+      const card = document.querySelector(".quiz-card");
+      if (!card || !question) return;
+      bindBuilder(card, question, skillId);
+      bindListeningPlayer(card);
+      bindPronunciationGuide(card);
+    }
+  });
   window.addEventListener("hashchange", renderRoute);
 }
 
 export function renderRoute() {
   const state = getState();
   const hash = window.location.hash || "#/home";
-  const [route, id] = hash.replace("#/", "").split("/");
+  const parts = hash.replace("#/", "").split("/").filter(Boolean);
+  const route = parts[0] || "home";
+  const id = parts[1];
+  const sub = parts[2];
+
+  practice?.resetOnLeavePractice(route);
 
   if (!state.onboarded) {
     render(renderOnboarding(state));
@@ -51,8 +87,16 @@ export function renderRoute() {
     content = renderLesson(id, state);
     after = () => bindLesson(id);
   } else if (route === "practice") {
-    content = renderPractice(id, state);
-    after = () => bindPractice(id);
+    if (sub === "flashcards") {
+      content = practice.renderPracticeFlashcards(id, state);
+      after = () => practice.bindPracticeFlashcards();
+    } else if (sub === "memory") {
+      content = practice.renderPracticeMemory(id, state);
+      after = () => practice.bindPracticeMemory(id);
+    } else {
+      content = practice.renderPracticeQuiz(id, state);
+      after = () => practice.bindPracticeQuiz(id);
+    }
   } else if (route === "skills") {
     content = renderSkills(state);
     after = bindSkills;
@@ -291,6 +335,7 @@ function renderLesson(id, state) {
 }
 
 function bindLesson(id) {
+  bindVisualizations();
   bindListeningPlayer(document);
   bindPronunciationGuide(document);
   const lesson = data.lessons.find((item) => item.id === id);
@@ -305,53 +350,6 @@ function bindLesson(id) {
     });
     setTimeout(() => setRoute(`#/practice/${lesson.skill}`), 500);
   });
-}
-
-function renderPractice(id, state) {
-  const skillQuestions = data.questions.filter((question) => question.skill === id);
-  if (!skillQuestions.length) return notFound("Chưa có câu hỏi cho bài này.");
-  const answeredIds = new Set(state.answers.filter((answer) => answer.skill === id).map((answer) => answer.questionId));
-  const question = skillQuestions.find((item) => !answeredIds.has(item.id)) || skillQuestions[state.answers.length % skillQuestions.length];
-  const skill = data.skills.find((item) => item.id === id);
-
-  return `
-    <section class="practice-layout">
-      <div class="practice-header">
-        <a class="back-link" href="#/skills">← Bài học</a>
-        <span class="tag">${labelSkill(id)}</span>
-      </div>
-      ${!["vocabulary", "listening", "pronunciation"].includes(skill?.skillType) ? renderVisualization({ visualization: skill?.visualization, formula: skill?.formula }) : ""}
-      ${renderQuizCard(question)}
-    </section>
-  `;
-}
-
-function bindPractice(id) {
-  const card = document.querySelector(".quiz-card");
-  if (!card) return;
-  const question = data.questions.find((item) => item.id === card.dataset.questionId);
-  if (!question) return;
-
-  document.querySelectorAll(".choice-btn").forEach((button) => {
-    button.addEventListener("click", () => handleAnswer(button.dataset.answer, question, id));
-  });
-
-  const form = document.querySelector(".answer-form");
-  if (form) {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      handleAnswer(new FormData(form).get("answer"), question, id);
-    });
-  }
-
-  bindBuilder(card, question, id);
-  bindListeningPlayer(card);
-  bindPronunciationGuide(card);
-
-  const hint = document.querySelector(".hint-btn");
-  if (hint && hint.dataset.hint) {
-    hint.addEventListener("click", () => showModal({ title: "Gợi ý", body: escapeHtml(hint.dataset.hint) }));
-  }
 }
 
 function bindBuilder(card, question, id) {
@@ -402,18 +400,11 @@ function handleAnswer(answer, question, skillId) {
   card.classList.add(result.correct ? "is-correct" : "is-wrong");
 
   if (result.correct) {
+    const completed = practice.onPracticeAnswerCorrect(skillId);
     panel.innerHTML = `
       <strong>Chính xác! +${result.xp} XP</strong>
-      <p>Bạn đang làm rất ổn. Câu tiếp theo sẽ xuất hiện sau một nhịp.</p>
+      <p>${completed ? "Bạn đã trả lời đúng tất cả câu hỏi của bài này." : "Câu tiếp theo sẽ xuất hiện sau một nhịp."}</p>
     `;
-    setTimeout(() => {
-      const nextRoute = `#/practice/${skillId}`;
-      if (window.location.hash === nextRoute) {
-        renderRoute();
-      } else {
-        setRoute(nextRoute);
-      }
-    }, 950);
     return;
   }
 

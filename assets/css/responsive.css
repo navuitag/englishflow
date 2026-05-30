@@ -94,9 +94,29 @@
 
   .skill-grid,
   .stat-grid,
-  .choice-grid,
-  .vocab-grid {
+  .choice-grid {
     grid-template-columns: 1fr;
+  }
+
+  .practice-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .memory-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .flashcard-text {
+    font-size: 18px;
+  }
+
+  .flashcard-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .flashcard-nav .btn:first-child,
+  .flashcard-nav .btn:last-child {
+    justify-self: stretch;
   }
 
   .lesson-step {
@@ -110,11 +130,11 @@
     flex-direction: column;
   }
 
-  .passive-flow {
-    flex-direction: column;
+  .compare-row {
+    grid-template-columns: 1fr;
   }
 
-  .passive-arrow {
-    transform: rotate(90deg);
+  .balance-beam {
+    padding: 0 14px;
   }
 }

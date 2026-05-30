@@ -261,3 +261,14 @@ code.formula-inline {
   padding: 24px;
   width: 100%;
 }
+
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.modal-actions .btn {
+  flex: 1 1 140px;
+}
