@@ -1,4 +1,4 @@
-const CACHE_NAME = "englishflow-v4";
+const CACHE_NAME = "englishflow-v5";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -36,7 +36,8 @@ const APP_SHELL = [
   "./data/skills.json",
   "./data/lessons.json",
   "./data/questions.json",
-  "./data/errors.json"
+  "./data/errors.json",
+  "./data/exercises.json"
 ];
 
 self.addEventListener("install", (event) => {

@@ -1,7 +1,7 @@
 .practice-tabs {
   display: grid;
   gap: 8px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .practice-tab {
@@ -433,4 +433,58 @@
 
 .viz-2d-alt[open] summary {
   color: var(--green-dark);
+}
+
+.practice-tabs {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.workbook-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.workbook-filter {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 800;
+  min-height: 36px;
+  padding: 6px 14px;
+}
+
+.workbook-filter.active {
+  background: #edf8f4;
+  border-color: rgba(32, 163, 107, 0.45);
+  color: var(--green);
+}
+
+.workbook-progress {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.tag-sgk {
+  background: #e8f3ff;
+  color: #194f65;
+}
+
+.tag-sbt {
+  background: #fff4e5;
+  color: #9a5b00;
+}
+
+.quiz-section {
+  color: var(--muted);
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 6px;
 }

@@ -7,17 +7,23 @@ const TYPE_LABEL = {
   error_detection: "Sửa lỗi sai",
   word_order: "Sắp xếp câu",
   vocabulary: "Từ vựng",
-  listening: "Kỹ năng nghe"
+  listening: "Kỹ năng nghe",
+  true_false: "Đúng – Sai",
+  fill_blank: "Điền từ"
 };
 
 function shuffleList(list) {
   return shuffle(list);
 }
 
-export function renderQuizCard(question) {
+export function renderQuizCard(question, options = {}) {
   let answerArea = "";
 
-  if (question.type === "multiple_choice") {
+  if (question.type === "true_false") {
+    answerArea = `<div class="choice-grid choice-grid--binary">${(question.choices || ["Đúng", "Sai"])
+      .map((choice) => `<button class="choice-btn" data-answer="${escapeHtml(choice)}">${escapeHtml(choice)}</button>`)
+      .join("")}</div>`;
+  } else if (question.type === "multiple_choice") {
     answerArea = `<div class="choice-grid">${shuffleList(question.choices)
       .map((choice) => `<button class="choice-btn" data-answer="${escapeHtml(choice)}">${escapeHtml(choice)}</button>`)
       .join("")}</div>`;
@@ -71,9 +77,11 @@ export function renderQuizCard(question) {
   return `
     <article class="quiz-card" data-question-id="${question.id}" data-type="${question.type}">
       <div class="quiz-meta">
-        <span>${TYPE_LABEL[question.type] || "Bài tập"}</span>
+        <span>${options.workbook ? "Bài tập rèn luyện" : (TYPE_LABEL[question.type] || "Bài tập")}${question.source === "sgk" ? ' <span class="tag tag-sgk">SGK</span>' : question.source === "sbt" ? ' <span class="tag tag-sbt">SBT</span>' : ""}</span>
         <button class="hint-btn" type="button" data-hint="${escapeHtml(question.hint || "")}">Gợi ý</button>
+        ${question.solution && options.workbook ? `<button class="hint-btn solution-btn" type="button" data-solution="${escapeHtml(question.solution)}">Lời giải</button>` : ""}
       </div>
+      ${question.section ? `<span class="quiz-section">${escapeHtml(question.section)}</span>` : ""}
       <h2>${heading}</h2>
       ${answerArea}
       <div class="feedback-panel" aria-live="polite"></div>

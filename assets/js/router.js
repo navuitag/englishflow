@@ -20,7 +20,8 @@ let data = {
   skills: [],
   lessons: [],
   questions: [],
-  errors: []
+  errors: [],
+  exercises: []
 };
 
 let practice;
@@ -93,6 +94,9 @@ export function renderRoute() {
     } else if (sub === "memory") {
       content = practice.renderPracticeMemory(id, state);
       after = () => practice.bindPracticeMemory(id);
+    } else if (sub === "workbook") {
+      content = practice.renderPracticeWorkbook(id, state);
+      after = () => practice.bindPracticeWorkbook(id);
     } else {
       content = practice.renderPracticeQuiz(id, state);
       after = () => practice.bindPracticeQuiz(id);
@@ -398,9 +402,12 @@ function handleAnswer(answer, question, skillId) {
   const card = document.querySelector(".quiz-card");
   card.classList.remove("is-correct", "is-wrong");
   card.classList.add(result.correct ? "is-correct" : "is-wrong");
+  const isWorkbook = String(question.id || "").startsWith("ex_");
 
   if (result.correct) {
-    const completed = practice.onPracticeAnswerCorrect(skillId);
+    const completed = isWorkbook
+      ? practice.onWorkbookAnswerCorrect(skillId)
+      : practice.onPracticeAnswerCorrect(skillId);
     panel.innerHTML = `
       <strong>Chính xác! +${result.xp} XP</strong>
       <p>${completed ? "Bạn đã trả lời đúng tất cả câu hỏi của bài này." : "Câu tiếp theo sẽ xuất hiện sau một nhịp."}</p>
