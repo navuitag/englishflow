@@ -354,7 +354,7 @@ function renderLesson(id, state) {
         ${skill?.skillType === "vocabulary" ? `<p class="vocab-lesson-note">${packWordCount(lesson)} từ vựng · nhấn thẻ để nghe</p>` : ""}
         ${skill?.skillType === "listening" ? `<p class="skill-lesson-note">Luyện nghe hội thoại + trắc nghiệm</p>` : ""}
         ${skill?.skillType === "pronunciation" ? `<p class="skill-lesson-note">Luyện phát âm · nhấn từ để nghe</p>` : ""}
-        ${skill?.skillType === "speaking" ? `<p class="skill-lesson-note">Luyện nói theo mẫu hội thoại · nhấn câu để nghe</p>` : ""}
+        ${skill?.skillType === "speaking" ? `<p class="skill-lesson-note">Luyện nói theo mẫu hội thoại · nghe mẫu · bấm mic để nói thử</p>` : ""}
         ${skill?.skillType === "writing" ? `<p class="skill-lesson-note">Luyện viết câu hoàn chỉnh · đúng ngữ pháp & dấu câu</p>` : ""}
         <p>${mastery}% mastery</p>
         <div class="progress-track"><span style="width:${mastery}%"></span></div>

@@ -132,6 +132,10 @@
     flex-direction: column;
   }
 
+  .speaking-prompt-actions {
+    grid-template-columns: 1fr;
+  }
+
   .compare-row {
     grid-template-columns: 1fr;
   }

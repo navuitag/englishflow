@@ -1,4 +1,5 @@
 import { escapeHtml, shuffle } from "../assets/js/utils.js";
+import { isRecognitionSupported } from "../modules/speech.js";
 import { renderListeningPlayer } from "./listeningPlayer.js";
 
 const TYPE_LABEL = {
@@ -60,9 +61,15 @@ export function renderQuizCard(question, options = {}) {
       </form>
     `;
   } else {
+    const speakingInput = question.grammar === "speaking";
     answerArea = `
       <form class="answer-form">
-        <input class="answer-input" name="answer" autocomplete="off" placeholder="Nhập đáp án của em">
+        <div class="answer-input-row">
+          <input class="answer-input" name="answer" autocomplete="off" placeholder="${speakingInput ? "Nói hoặc gõ đáp án" : "Nhập đáp án của em"}">
+          ${speakingInput && isRecognitionSupported() ? `
+            <button type="button" class="btn secondary speech-input-mic" data-expected="${escapeHtml(question.answer || "")}" aria-label="Nói đáp án">Nói</button>
+          ` : ""}
+        </div>
         <button class="btn primary" type="submit">Kiểm tra</button>
       </form>
     `;

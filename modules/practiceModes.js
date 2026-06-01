@@ -1,5 +1,6 @@
 import { bindFlashcardImages } from "../components/flashcardPanel.js";
 import { buildFlashcardDeck, buildMemoryDeck, buildMemoryPairs } from "./practiceContent.js";
+import { bindSpeechInput } from "./speech.js";
 
 export function createPracticeModule(ctx) {
   const practiceSession = {
@@ -151,6 +152,7 @@ export function createPracticeModule(ctx) {
         ctx.handleAnswer(new FormData(form).get("answer"), exercise, skillId);
       });
     }
+    bindSpeechInput(document);
     document.querySelector(".hint-btn")?.addEventListener("click", (event) => {
       const hint = event.currentTarget.dataset.hint;
       if (hint) ctx.showModal({ title: "Gợi ý", body: hint });
@@ -454,6 +456,7 @@ export function createPracticeModule(ctx) {
         ctx.handleAnswer(new FormData(form).get("answer"), question, skillId);
       });
     }
+    bindSpeechInput(document);
     document.querySelector(".hint-btn")?.addEventListener("click", (event) => {
       const hint = event.currentTarget.dataset.hint;
       if (hint) ctx.showModal({ title: "Gợi ý", body: hint });
