@@ -11,7 +11,7 @@ export function renderLessonCard(skill, state, questions) {
     : `<button class="btn disabled" disabled>Khóa</button>`;
 
   return `
-    <article class="skill-card ${unlocked ? "" : "locked"}${skill.skillType === "vocabulary" ? " skill-card-vocab" : ""}${skill.skillType === "listening" ? " skill-card-listening" : ""}${skill.skillType === "pronunciation" ? " skill-card-pronunciation" : ""}">
+    <article class="skill-card ${unlocked ? "" : "locked"}${skill.skillType === "vocabulary" ? " skill-card-vocab" : ""}${skill.skillType === "listening" ? " skill-card-listening" : ""}${skill.skillType === "pronunciation" ? " skill-card-pronunciation" : ""}${skill.skillType === "speaking" ? " skill-card-speaking" : ""}${skill.skillType === "writing" ? " skill-card-writing" : ""}">
       <div>
         <span class="tag">${labelLevel(skill.grade)} · ${skill.domain}</span>
         <h3>${skill.title}</h3>

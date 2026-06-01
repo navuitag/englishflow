@@ -15,6 +15,8 @@ import { getOverallAccuracy, getWeakSkills } from "../../modules/progress.js";
 import { renderVocabList } from "../../components/vocabList.js";
 import { renderListeningPlayer, bindListeningPlayer } from "../../components/listeningPlayer.js";
 import { renderPronunciationGuide, bindPronunciationGuide } from "../../components/pronunciationGuide.js";
+import { renderSpeakingGuide, bindSpeakingGuide } from "../../components/speakingGuide.js";
+import { renderWritingGuide } from "../../components/writingGuide.js";
 
 let data = {
   skills: [],
@@ -45,13 +47,14 @@ export function configureRouter(appData) {
     notFound,
     handleAnswer,
     getVizConfig: (skill) => ({ visualization: skill?.visualization, formula: skill?.formula }),
-    shouldShowPracticeViz: (skill) => !["vocabulary", "listening", "pronunciation"].includes(skill?.skillType),
+    shouldShowPracticeViz: (skill) => !["vocabulary", "listening", "pronunciation", "speaking", "writing"].includes(skill?.skillType),
     bindPracticeExtras: (skillId, question) => {
       const card = document.querySelector(".quiz-card");
       if (!card || !question) return;
       bindBuilder(card, question, skillId);
       bindListeningPlayer(card);
       bindPronunciationGuide(card);
+      bindSpeakingGuide(card);
     }
   });
   window.addEventListener("hashchange", renderRoute);
@@ -269,8 +272,8 @@ function renderSkills(state) {
   return `
     <section class="page-title">
       <span class="eyebrow">Lộ trình học</span>
-      <h1>Cây bài học tiếng Anh THCS</h1>
-      <p>Chọn trình độ để bắt đầu. Mỗi Unit có ngữ pháp, từ vựng, phát âm và kỹ năng nghe.</p>
+      <h1>Cây bài học tiếng Anh</h1>
+      <p>Chọn trình độ để bắt đầu. Mỗi Unit có ngữ pháp, từ vựng, phát âm, nghe, nói và viết.</p>
     </section>
     <div class="grade-tabs" role="group" aria-label="Chọn trình độ">
       ${tabs}
@@ -308,6 +311,8 @@ function renderLesson(id, state) {
         ${skill?.skillType === "vocabulary" ? `<p class="vocab-lesson-note">${packWordCount(lesson)} từ vựng trong bài này</p>` : ""}
         ${skill?.skillType === "listening" ? `<p class="skill-lesson-note">Luyện nghe hội thoại + trắc nghiệm</p>` : ""}
         ${skill?.skillType === "pronunciation" ? `<p class="skill-lesson-note">Luyện phát âm · nhấn từ để nghe</p>` : ""}
+        ${skill?.skillType === "speaking" ? `<p class="skill-lesson-note">Luyện nói theo mẫu hội thoại · nhấn câu để nghe</p>` : ""}
+        ${skill?.skillType === "writing" ? `<p class="skill-lesson-note">Luyện viết câu hoàn chỉnh · đúng ngữ pháp & dấu câu</p>` : ""}
         <p>${mastery}% mastery</p>
         <div class="progress-track"><span style="width:${mastery}%"></span></div>
       </aside>
@@ -322,6 +327,8 @@ function renderLesson(id, state) {
               ${step.type === "vocabulary" ? renderVocabList(step.words) : ""}
               ${step.type === "listening" ? renderListeningPlayer(step.script, { showTranscript: step.showTranscript }) : ""}
               ${step.type === "pronunciation" ? renderPronunciationGuide(step) : ""}
+              ${step.type === "speaking" ? renderSpeakingGuide(step) : ""}
+              ${step.type === "writing" ? renderWritingGuide(step) : ""}
               ${step.example ? `<div class="example-box"><span class="ex-good">✔ ${escapeHtml(step.example.correct)}</span><span class="ex-bad">✘ ${escapeHtml(step.example.wrong)}</span></div>` : ""}
             </div>
           </article>
@@ -342,6 +349,7 @@ function bindLesson(id) {
   bindVisualizations();
   bindListeningPlayer(document);
   bindPronunciationGuide(document);
+  bindSpeakingGuide(document);
   const lesson = data.lessons.find((item) => item.id === id);
   const button = document.querySelector("#completeLesson");
   if (!lesson || !button) return;

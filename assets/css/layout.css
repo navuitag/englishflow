@@ -634,6 +634,22 @@
   color: #8a6200;
 }
 
+.skill-card-speaking {
+  border-color: #c8ecd8;
+}
+
+.skill-card-speaking .tag {
+  color: #157a52;
+}
+
+.skill-card-writing {
+  border-color: #e8d4f8;
+}
+
+.skill-card-writing .tag {
+  color: #6b3fa0;
+}
+
 .skill-lesson-note {
   color: var(--muted);
   font-size: 14px;

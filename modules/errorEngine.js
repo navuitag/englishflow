@@ -75,6 +75,30 @@ export function analyzeError(answer, question, errorPatterns) {
     };
   }
 
+  if (grammar === "speaking") {
+    return {
+      skill: question.skill,
+      code: "SP001",
+      errorType: "speaking_error",
+      title: "Chưa đúng câu nói",
+      message: "Nghe lại mẫu hội thoại và lặp theo cấu trúc câu trong bài học.",
+      hint: question.hint || "Nghe mẫu → nói to → kiểm tra lại.",
+      recommendation: question.skill
+    };
+  }
+
+  if (grammar === "writing") {
+    return {
+      skill: question.skill,
+      code: "WR001",
+      errorType: "writing_error",
+      title: "Chưa đúng câu viết",
+      message: "Kiểm tra chính tả, chữ hoa đầu câu, dấu chấm và cấu trúc ngữ pháp.",
+      hint: question.hint || "Viết lại câu mẫu trong bài học.",
+      recommendation: question.skill
+    };
+  }
+
   const heuristic = runHeuristics(answer, question);
   if (heuristic) return heuristic;
 
@@ -98,7 +122,7 @@ function runHeuristics(answer, question) {
     return null;
   }
 
-  if (grammar === "listening" || grammar === "pronunciation") {
+  if (grammar === "listening" || grammar === "pronunciation" || grammar === "speaking" || grammar === "writing") {
     return null;
   }
 
