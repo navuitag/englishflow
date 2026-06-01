@@ -1,4 +1,16 @@
 import { escapeHtml } from "../assets/js/utils.js";
+import { vocabEmoji, vocabImagePath } from "../modules/vocabImages.js";
+
+function renderVocabArt(card) {
+  if (!card.image && !card.emoji) return "";
+  const src = card.image || vocabImagePath(card);
+  const emoji = card.emoji || vocabEmoji(card);
+  return `
+    <div class="flashcard-art" aria-hidden="true">
+      <img src="${escapeHtml(src)}" alt="" width="96" height="96" loading="lazy">
+      <span class="flashcard-emoji" hidden>${escapeHtml(emoji)}</span>
+    </div>`;
+}
 
 export function renderFlashcardPanel(deck, index, flipped) {
   if (!deck.length) {
@@ -8,6 +20,7 @@ export function renderFlashcardPanel(deck, index, flipped) {
   const card = deck[index];
   const face = flipped ? "back" : "front";
   const text = flipped ? card.back : card.front;
+  const showArt = !flipped && (card.image || card.emoji);
 
   return `
     <article class="flashcard-stack">
@@ -17,6 +30,7 @@ export function renderFlashcardPanel(deck, index, flipped) {
       </div>
       <button class="flashcard ${face}" type="button" id="flashcardFlip" aria-pressed="${flipped}">
         <span class="flashcard-label">${flipped ? "Mặt sau" : "Mặt trước"}</span>
+        ${showArt ? renderVocabArt(card) : ""}
         <p class="flashcard-text">${escapeHtml(text).replace(/\n/g, "<br>")}</p>
         <span class="flashcard-hint">Chạm để lật thẻ</span>
       </button>
@@ -28,4 +42,13 @@ export function renderFlashcardPanel(deck, index, flipped) {
       <p class="flashcard-progress" id="flashcardProgress"></p>
     </article>
   `;
+}
+
+export function bindFlashcardImages(root = document) {
+  root.querySelectorAll(".flashcard-art img").forEach((img) => {
+    img.addEventListener("error", () => {
+      img.hidden = true;
+      img.nextElementSibling?.removeAttribute("hidden");
+    });
+  });
 }

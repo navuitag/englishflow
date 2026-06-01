@@ -12,7 +12,7 @@ import { completeLesson } from "../../modules/lessonEngine.js";
 import { submitAnswer } from "../../modules/quizEngine.js";
 import { getGamificationSummary } from "../../modules/gamification.js";
 import { getOverallAccuracy, getWeakSkills } from "../../modules/progress.js";
-import { renderVocabList } from "../../components/vocabList.js";
+import { bindVocabList, renderVocabList } from "../../components/vocabList.js";
 import { renderListeningPlayer, bindListeningPlayer } from "../../components/listeningPlayer.js";
 import { renderPronunciationGuide, bindPronunciationGuide } from "../../components/pronunciationGuide.js";
 import { renderSpeakingGuide, bindSpeakingGuide } from "../../components/speakingGuide.js";
@@ -308,7 +308,7 @@ function renderLesson(id, state) {
         <a class="back-link" href="#/skills">← Bài học</a>
         <h1>${lesson.title}</h1>
         ${skill?.formula ? `<code class="formula-inline">${skill.formula}</code>` : ""}
-        ${skill?.skillType === "vocabulary" ? `<p class="vocab-lesson-note">${packWordCount(lesson)} từ vựng trong bài này</p>` : ""}
+        ${skill?.skillType === "vocabulary" ? `<p class="vocab-lesson-note">${packWordCount(lesson)} từ vựng · nhấn thẻ để nghe</p>` : ""}
         ${skill?.skillType === "listening" ? `<p class="skill-lesson-note">Luyện nghe hội thoại + trắc nghiệm</p>` : ""}
         ${skill?.skillType === "pronunciation" ? `<p class="skill-lesson-note">Luyện phát âm · nhấn từ để nghe</p>` : ""}
         ${skill?.skillType === "speaking" ? `<p class="skill-lesson-note">Luyện nói theo mẫu hội thoại · nhấn câu để nghe</p>` : ""}
@@ -347,6 +347,7 @@ function renderLesson(id, state) {
 
 function bindLesson(id) {
   bindVisualizations();
+  bindVocabList(document);
   bindListeningPlayer(document);
   bindPronunciationGuide(document);
   bindSpeakingGuide(document);

@@ -1,4 +1,4 @@
-const CACHE_NAME = "englishflow-v13";
+const CACHE_NAME = "englishflow-v14";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -16,6 +16,7 @@ const APP_SHELL = [
   "./modules/quizEngine.js",
   "./modules/errorEngine.js",
   "./modules/visualization.js",
+  "./modules/vocabImages.js",
   "./modules/practiceContent.js",
   "./modules/practiceModes.js",
   "./modules/progress.js",

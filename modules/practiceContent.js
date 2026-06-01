@@ -9,6 +9,22 @@ function truncate(text, max = 72) {
 export function buildFlashcardDeck(skillId, lesson, questions, skill) {
   const cards = [];
 
+  if (skill?.skillType === "vocabulary" && lesson) {
+    const vocabStep = lesson.steps.find((step) => step.type === "vocabulary");
+    if (vocabStep?.words?.length) {
+      vocabStep.words.forEach((word, index) => {
+        cards.push({
+          id: `${skillId}-word-${index}`,
+          front: word.en,
+          back: [word.vi, word.example].filter(Boolean).join("\n"),
+          tag: "Từ vựng",
+          emoji: word.emoji,
+          image: word.image
+        });
+      });
+    }
+  }
+
   if (skill?.description) {
     cards.push({
       id: `${skillId}-desc`,

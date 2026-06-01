@@ -67,6 +67,35 @@
   text-transform: uppercase;
 }
 
+.flashcard-art {
+  justify-self: center;
+  position: relative;
+}
+
+.flashcard-art img {
+  border-radius: 12px;
+  display: block;
+  height: 96px;
+  object-fit: contain;
+  width: 96px;
+}
+
+.flashcard-emoji {
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  font-size: 52px;
+  height: 96px;
+  justify-content: center;
+  width: 96px;
+}
+
+.flashcard-emoji[hidden],
+.vocab-emoji-fallback[hidden] {
+  display: none;
+}
+
 .flashcard-text {
   font-size: 22px;
   font-weight: 800;

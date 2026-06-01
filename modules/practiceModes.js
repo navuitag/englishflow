@@ -1,3 +1,4 @@
+import { bindFlashcardImages } from "../../components/flashcardPanel.js";
 import { buildFlashcardDeck, buildMemoryDeck, buildMemoryPairs } from "./practiceContent.js";
 
 export function createPracticeModule(ctx) {
@@ -370,6 +371,7 @@ export function createPracticeModule(ctx) {
   function bindPracticeFlashcards() {
     const session = practiceSession.flashcards;
     if (!session?.deck.length) return;
+    bindFlashcardImages(document);
     const progress = document.querySelector("#flashcardProgress");
     if (progress) progress.textContent = `${session.known.size}/${session.deck.length} thẻ đã nhớ`;
     document.querySelector("#flashcardFlip")?.addEventListener("click", () => {
