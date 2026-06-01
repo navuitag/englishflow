@@ -3,7 +3,7 @@
  * Sinh data/exercises.json — bài tập rèn luyện theo SGK & SBT cho *Flow projects.
  * Usage: node scripts/generate-workbook-exercises.mjs [bioflow|chemflow|mathflow|englishflow|phyflow|all]
  */
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile, access } from "node:fs/promises";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -15,7 +15,7 @@ const CONFIG = {
   chemflow: { label: "Hóa học", sgk: 4, sbt: 6 },
   mathflow: { label: "Toán", sgk: 4, sbt: 6 },
   phyflow: { label: "Vật lí", sgk: 4, sbt: 6 },
-  englishflow: { label: "Tiếng Anh", sgk: 3, sbt: 5, english: true }
+  englishflow: { label: "Tiếng Anh", sgk: 4, sbt: 8, english: true }
 };
 
 function step(lesson, type) {
@@ -123,6 +123,147 @@ function buildSgkExercises(skill, lesson, questions, cfg) {
   return items.slice(0, cfg.sgk);
 }
 
+function buildEnglishSgkExercises(skill, lesson, questions, cfg) {
+  const items = [];
+  const intro = step(lesson, "intro");
+  const summary = step(lesson, "summary");
+  const vocabulary = step(lesson, "vocabulary");
+  const listening = step(lesson, "listening");
+  const speaking = step(lesson, "speaking");
+  const writing = step(lesson, "writing");
+  const pronunciation = step(lesson, "pronunciation");
+  const skillQs = questions.filter((q) => q.skill === skill.id);
+  const pool = skillQs.flatMap((q) => (q.choices || []).concat(q.answer));
+
+  if (intro) {
+    items.push({
+      type: "multiple_choice",
+      section: "A. Nhận biết",
+      question: `Mục tiêu bài "${skill.title}" là gì?`,
+      choices: shuffle([intro.content, ...pickDistractors(pool, intro.content)]),
+      answer: intro.content,
+      hint: "Xem phần mục tiêu trong SGK.",
+      solution: intro.content
+    });
+  }
+
+  if (vocabulary?.words?.length) {
+    const word = vocabulary.words[0];
+    items.push({
+      type: "input",
+      section: "B. Từ vựng",
+      question: `Viết từ tiếng Anh: ${word.vi}`,
+      answer: word.en,
+      hint: word.example || word.en,
+      solution: word.en
+    });
+    items.push({
+      type: "true_false",
+      section: "C. Câu mẫu",
+      question: word.example || `${word.en} means ${word.vi}.`,
+      choices: ["Đúng", "Sai"],
+      answer: "Đúng",
+      hint: word.example,
+      solution: word.example || `${word.en} = ${word.vi}`
+    });
+  } else if (listening?.script?.length) {
+    const line = listening.script[0]?.text || "Sample dialogue line.";
+    items.push({
+      type: "true_false",
+      section: "B. Nghe hiểu",
+      question: `Trong hội thoại mẫu có câu: "${line}"`,
+      choices: ["Đúng", "Sai"],
+      answer: "Đúng",
+      hint: "Nghe lại mẫu hội thoại.",
+      solution: line
+    });
+  } else if (speaking?.prompts?.length) {
+    items.push({
+      type: "word_order",
+      section: "B. Luyện nói",
+      question: "Sắp xếp thành câu trả lời đúng:",
+      tokens: shuffle(speaking.prompts[0].replace(/[.!?]/g, "").split(/\s+/)),
+      answer: speaking.prompts[0].replace(/[.!?]/g, ""),
+      hint: speaking.model || speaking.prompts[0],
+      solution: speaking.prompts[0]
+    });
+  } else if (writing?.model) {
+    items.push({
+      type: "error_detection",
+      section: "B. Viết câu",
+      question: writing.model,
+      prompt: writing.model.replace(/^[A-Z]/, (c) => c.toLowerCase()),
+      answer: writing.model,
+      hint: (writing.checklist || []).join("; "),
+      solution: writing.model
+    });
+  } else if (pronunciation?.focus) {
+    items.push({
+      type: "true_false",
+      section: "B. Phát âm",
+      question: `${pronunciation.focus} là điểm phát âm trọng tâm của bài.`,
+      choices: ["Đúng", "Sai"],
+      answer: "Đúng",
+      hint: pronunciation.content,
+      solution: pronunciation.focus
+    });
+  }
+
+  if (summary) {
+    items.push({
+      type: "input",
+      section: "D. Ghi nhớ",
+      question: `Viết lại cấu trúc/công thức chính của bài: ${summary.title}`,
+      answer: summary.content,
+      hint: summary.content,
+      solution: summary.content
+    });
+  }
+
+  const generic = buildSgkExercises(skill, lesson, skillQs, cfg);
+  generic.forEach((item) => {
+    if (items.length >= cfg.sgk) return;
+    if (!items.some((existing) => existing.type === item.type && existing.question === item.question)) {
+      items.push(item);
+    }
+  });
+
+  return items.slice(0, cfg.sgk);
+}
+
+function questionToExercise(q, section, cfg) {
+  const base = {
+    section,
+    question: rephraseQuestion(q.question, cfg.label),
+    answer: q.answer,
+    hint: q.hint || "Xem lại SGK/SBT.",
+    solution: q.answer
+  };
+  if (q.grammar) base.grammar = q.grammar;
+
+  if (q.type === "multiple_choice" || q.type === "true_false") {
+    return {
+      ...base,
+      type: q.type,
+      choices: shuffle(q.choices || (q.type === "true_false" ? ["Đúng", "Sai"] : []))
+    };
+  }
+  if (q.type === "listening") {
+    return {
+      ...base,
+      type: "listening",
+      listenScript: q.listenScript,
+      choices: shuffle(q.choices || [])
+    };
+  }
+  return {
+    ...base,
+    type: q.type,
+    prompt: q.prompt,
+    tokens: q.tokens ? shuffle([...q.tokens]) : undefined
+  };
+}
+
 function rephraseQuestion(text, subject) {
   const prefixes = [
     `Theo SBT ${subject}, `,
@@ -157,42 +298,29 @@ function buildSbtExercises(skill, lesson, questions, cfg) {
   const pool = questions.flatMap((q) => (q.choices || []).concat(q.answer));
   const skillQs = questions.filter((q) => q.skill === skill.id);
 
-  skillQs.forEach((q, index) => {
-    if (items.length >= cfg.sbt - 3) return;
-    if (q.type === "multiple_choice" && q.choices?.length) {
-      const item = {
-        type: "multiple_choice",
-        section: "E. Trắc nghiệm SBT",
-        question: rephraseQuestion(q.question, cfg.label),
-        choices: shuffle(q.choices),
-        answer: q.answer,
-        hint: q.hint || "Xem lại phần luyện tập trong SBT.",
-        solution: q.answer
-      };
-      if (cfg.english && q.grammar) item.grammar = q.grammar;
-      items.push(item);
-    } else if (q.type === "input" || q.type === "error_detection") {
-      items.push({
-        type: q.type,
-        section: "F. Tự luận ngắn SBT",
-        question: rephraseQuestion(q.question, cfg.label),
-        prompt: q.prompt,
-        tokens: q.tokens,
-        answer: q.answer,
-        hint: q.hint || "Luyện theo dạng bài trong SBT.",
-        solution: q.answer
-      });
-    } else if (q.type === "word_order" && q.tokens) {
-      items.push({
-        type: "word_order",
-        section: "G. Sắp xếp SBT",
-        question: q.question,
-        tokens: q.tokens,
-        answer: q.answer,
-        hint: q.hint,
-        solution: q.answer
-      });
-    }
+  const typeSections = {
+    multiple_choice: "E. Trắc nghiệm SBT",
+    true_false: "F. Đúng – Sai SBT",
+    input: "G. Điền từ SBT",
+    error_detection: "H. Sửa lỗi SBT",
+    word_order: "I. Sắp xếp SBT",
+    listening: "J. Nghe hiểu SBT"
+  };
+  const typeOrder = ["multiple_choice", "true_false", "input", "error_detection", "word_order", "listening"];
+
+  typeOrder.forEach((type) => {
+    if (items.length >= cfg.sbt) return;
+    const q = skillQs.find((item) => item.type === type);
+    if (!q) return;
+    if (items.some((item) => item.type === type)) return;
+    items.push(questionToExercise(q, typeSections[type], cfg));
+  });
+
+  skillQs.forEach((q) => {
+    if (items.length >= cfg.sbt) return;
+    if (items.some((item) => item.type === q.type && item.answer === q.answer)) return;
+    if (!typeOrder.includes(q.type)) return;
+    items.push(questionToExercise(q, `${typeSections[q.type]} (mở rộng)`, cfg));
   });
 
   if (summary && items.length < cfg.sbt) {
@@ -276,7 +404,9 @@ function buildSbtExercises(skill, lesson, questions, cfg) {
 
 function buildSkillExercises(skill, lesson, questions, cfg) {
   const skillQs = questions.filter((q) => q.skill === skill.id);
-  const sgk = buildSgkExercises(skill, lesson, skillQs, cfg);
+  const sgk = cfg.english
+    ? buildEnglishSgkExercises(skill, lesson, questions, cfg)
+    : buildSgkExercises(skill, lesson, skillQs, cfg);
   const sbt = buildSbtExercises(skill, lesson, skillQs, cfg);
 
   return [
@@ -295,10 +425,20 @@ function buildSkillExercises(skill, lesson, questions, cfg) {
   ];
 }
 
+async function projectDir(name) {
+  const nested = join(ROOT, name);
+  try {
+    await access(join(nested, "data", "skills.json"));
+    return nested;
+  } catch {
+    return ROOT;
+  }
+}
+
 async function generateForProject(name) {
   const cfg = CONFIG[name];
   if (!cfg) throw new Error(`Unknown project: ${name}`);
-  const base = join(ROOT, name);
+  const base = await projectDir(name);
   const [skills, lessons, questions] = await Promise.all([
     readFile(join(base, "data/skills.json"), "utf8").then(JSON.parse),
     readFile(join(base, "data/lessons.json"), "utf8").then(JSON.parse),

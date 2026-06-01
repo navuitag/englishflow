@@ -23,12 +23,14 @@
 
 | | Tổng | Lớp 1 | Lớp 2 | Lớp 3 | Lớp 4 | Lớp 5 | Lớp 6 | Lớp 7 | Lớp 8 | Lớp 9 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Bài học | **595** | 64 | 64 | 80 | 80 | 80 | 61 | 57 | 53 | 56 |
+| Bài học | **875** | 96 | 96 | 120 | 120 | 120 | 85 | 81 | 77 | 80 |
 | — Ngữ pháp | 175 | 16 | 16 | 20 | 20 | 20 | 25 | 21 | 17 | 20 |
 | — Từ vựng | 140 | 16 | 16 | 20 | 20 | 20 | 12 | 12 | 12 | 12 |
 | — Phát âm | 140 | 16 | 16 | 20 | 20 | 20 | 12 | 12 | 12 | 12 |
 | — Kỹ năng nghe | 140 | 16 | 16 | 20 | 20 | 20 | 12 | 12 | 12 | 12 |
-| Câu hỏi | **2297** | 256 | 256 | 320 | 320 | 320 | 219 | 207 | 195 | 204 |
+| — Nói / Viết | 280 | — | — | — | — | — | 24 | 24 | 24 | 24 |
+| Câu hỏi (mini quiz) | **4059** | 384 | 384 | 480 | 480 | 480 | 484 | 465 | 441 | 461 |
+| Bài tập rèn luyện (SGK/SBT) | **10500** | — | — | — | — | — | 1020 | 972 | 924 | 960 |
 | Mẫu lỗi sai | 172 | 13 | 16 | 20 | 20 | 20 | — | — | — | — |
 
 Mỗi Unit có bài **Phát âm** (âm/trọng âm/ngữ điệu) và **Kỹ năng nghe** (hội thoại + nút Nghe TTS + 4 câu hỏi). Bài từ vựng: ~5–8 từ EN↔VI và 4 câu luyện.
@@ -189,6 +191,15 @@ Bám sát đủ 12 Unit của SGK, mỗi Unit là một chủ đề trong lộ t
 | 11 | Our greener world | Câu điều kiện loại 1; mạo từ a/an/the |
 | 12 | Robots | could/couldn't; will be able to |
 
+Mỗi Unit gồm ngữ pháp + từ vựng + phát âm + nghe + nói + viết. Mỗi kỹ năng có **4–6 câu mini quiz** đủ dạng cơ bản (trắc nghiệm, đúng/sai, điền) và nâng cao (sửa lỗi, sắp xếp câu, nghe). Tab **Rèn luyện**: **12 bài/kỹ năng** (SGK + SBT).
+
+Sinh lại luyện tập lớp 6:
+
+```bash
+node scripts/build-g6-practice.mjs
+node scripts/generate-workbook-exercises.mjs englishflow
+```
+
 ### Chương trình Lớp 7 — "Kết nối tri thức với cuộc sống" (Global Success)
 
 Bám sát đủ 12 Unit của SGK Tiếng Anh 7:
@@ -207,6 +218,15 @@ Bám sát đủ 12 Unit của SGK Tiếng Anh 7:
 | 10 | Energy sources | Present continuous |
 | 11 | Travelling in the future | Future simple; đại từ sở hữu |
 | 12 | English-speaking countries | Mạo từ a/an/the |
+
+Mỗi Unit gồm ngữ pháp + từ vựng + phát âm + nghe + nói + viết. Mỗi kỹ năng có **4–6 câu mini quiz** đủ dạng cơ bản (trắc nghiệm, đúng/sai, điền) và nâng cao (sửa lỗi, sắp xếp câu, nghe). Tab **Rèn luyện**: **12 bài/kỹ năng** (SGK + SBT).
+
+Sinh lại luyện tập lớp 7:
+
+```bash
+node scripts/build-g7-practice.mjs
+node scripts/generate-workbook-exercises.mjs englishflow
+```
 
 ### Chương trình Lớp 8 — "Kết nối tri thức với cuộc sống" (Global Success)
 
@@ -227,6 +247,15 @@ Bám sát đủ 12 Unit của SGK Tiếng Anh 8:
 | 11 | Science and technology | Câu tường thuật (trần thuật) |
 | 12 | Life on other planets | Câu tường thuật (câu hỏi) |
 
+Mỗi Unit gồm ngữ pháp + từ vựng + phát âm + nghe + nói + viết. Mỗi kỹ năng có **4–6 câu mini quiz** đủ dạng cơ bản (trắc nghiệm, đúng/sai, điền) và nâng cao (sửa lỗi, sắp xếp câu, nghe). Tab **Rèn luyện**: **12 bài/kỹ năng** (SGK + SBT).
+
+Sinh lại luyện tập lớp 8:
+
+```bash
+node scripts/build-g8-practice.mjs
+node scripts/generate-workbook-exercises.mjs englishflow
+```
+
 ### Chương trình Lớp 9 — "Kết nối tri thức với cuộc sống" (Global Success)
 
 Bám sát đủ 12 Unit của SGK Tiếng Anh 9:
@@ -246,7 +275,14 @@ Bám sát đủ 12 Unit của SGK Tiếng Anh 9:
 | 11 | Electronic devices | Quá khứ hoàn thành; câu bị động (HTĐ & QKĐ) |
 | 12 | Career choices | Tường thuật câu hỏi Wh-; MĐQH xác định |
 
-Mỗi bài có một lesson (mục tiêu + trực quan hóa + ví dụ đúng/sai) và 3 câu hỏi đủ các dạng (chọn đáp án, điền từ, sửa lỗi, sắp xếp câu).
+Mỗi Unit gồm ngữ pháp + từ vựng + phát âm + nghe + nói + viết. Mỗi kỹ năng có **4–6 câu mini quiz** đủ dạng cơ bản (trắc nghiệm, đúng/sai, điền) và nâng cao (sửa lỗi, sắp xếp câu, nghe). Tab **Rèn luyện**: **12 bài/kỹ năng** (SGK + SBT).
+
+Sinh lại luyện tập lớp 9:
+
+```bash
+node scripts/build-g9-practice.mjs
+node scripts/generate-workbook-exercises.mjs englishflow
+```
 
 ---
 
