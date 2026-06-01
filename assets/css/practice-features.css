@@ -1,7 +1,19 @@
 .practice-tabs {
   display: grid;
   gap: 8px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--practice-tab-cols, 4), minmax(0, 1fr));
+}
+
+.practice-tabs--2 {
+  --practice-tab-cols: 2;
+}
+
+.practice-tabs--3 {
+  --practice-tab-cols: 3;
+}
+
+.practice-tabs--4 {
+  --practice-tab-cols: 4;
 }
 
 .practice-tab {
@@ -435,10 +447,6 @@
   font-weight: 700;
   margin: 10px 0 0;
   padding-left: 18px;
-}
-
-.practice-tabs {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .workbook-filters {

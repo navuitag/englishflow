@@ -186,15 +186,26 @@ export function createPracticeModule(ctx) {
     }
   }
 
+  function getSkill(skillId) {
+    return ctx.data.skills.find((item) => item.id === skillId);
+  }
+
+  function isVocabSkill(skillId) {
+    return getSkill(skillId)?.skillType === "vocabulary";
+  }
+
   function renderPracticeTabs(skillId, activeMode) {
+    const vocabModes = isVocabSkill(skillId);
     const modes = [
       { id: "quiz", label: "Mini quiz", href: `#/practice/${skillId}` },
-      { id: "flashcards", label: "Flashcards", href: `#/practice/${skillId}/flashcards` },
-      { id: "memory", label: "Memory", href: `#/practice/${skillId}/memory` },
+      ...(vocabModes ? [
+        { id: "flashcards", label: "Flashcards", href: `#/practice/${skillId}/flashcards` },
+        { id: "memory", label: "Memory", href: `#/practice/${skillId}/memory` }
+      ] : []),
       { id: "workbook", label: "Bài tập", href: `#/practice/${skillId}/workbook` }
     ];
     return `
-      <nav class="practice-tabs" role="tablist" aria-label="Chế độ luyện tập">
+      <nav class="practice-tabs practice-tabs--${modes.length}" role="tablist" aria-label="Chế độ luyện tập">
         ${modes.map((mode) => `
           <a class="practice-tab${mode.id === activeMode ? " active" : ""}" href="${mode.href}" role="tab" aria-selected="${mode.id === activeMode}">${mode.label}</a>
         `).join("")}
@@ -250,7 +261,8 @@ export function createPracticeModule(ctx) {
   function ensureMemorySession(skillId) {
     if (practiceSession.memory?.deck) return;
     const lesson = ctx.data.lessons.find((item) => item.skill === skillId);
-    const pairs = buildMemoryPairs(skillId, lesson, ctx.data.questions);
+    const skill = getSkill(skillId);
+    const pairs = buildMemoryPairs(skillId, lesson, skill);
     practiceSession.memory = {
       pairs,
       deck: buildMemoryDeck(pairs),
@@ -271,29 +283,31 @@ export function createPracticeModule(ctx) {
   }
 
   function renderPracticeFlashcards(skillId, state) {
-    if (!ctx.data.skills.find((item) => item.id === skillId)) {
-      return ctx.notFound("Không tìm thấy kỹ năng.");
-    }
+    const skill = getSkill(skillId);
+    if (!skill) return ctx.notFound("Không tìm thấy kỹ năng.");
+    if (!isVocabSkill(skillId)) return renderPracticeQuiz(skillId, state);
+
     resetPracticeModesIfNeeded(skillId);
     ensureFlashcardDeck(skillId);
     const session = practiceSession.flashcards;
-    return renderPracticeShell(skillId, state, "flashcards", ctx.renderFlashcardPanel(session.deck, session.index, session.flipped));
+    const body = session.deck.length
+      ? ctx.renderFlashcardPanel(session.deck, session.index, session.flipped)
+      : `<article class="empty-state">Chưa có từ vựng cho bài này.</article>`;
+    return renderPracticeShell(skillId, state, "flashcards", body);
   }
 
   function renderPracticeMemory(skillId, state) {
-    if (!ctx.data.skills.find((item) => item.id === skillId)) {
-      return ctx.notFound("Không tìm thấy kỹ năng.");
-    }
+    const skill = getSkill(skillId);
+    if (!skill) return ctx.notFound("Không tìm thấy kỹ năng.");
+    if (!isVocabSkill(skillId)) return renderPracticeQuiz(skillId, state);
+
     resetPracticeModesIfNeeded(skillId);
     ensureMemorySession(skillId);
     const session = practiceSession.memory;
-    const won = session.pairs.length > 0 && session.matched.length === session.pairs.length;
-    return renderPracticeShell(
-      skillId,
-      state,
-      "memory",
-      ctx.renderMemoryPanel(session.deck, session.flipped, session.matched, session.moves, won)
-    );
+    const body = session.pairs.length
+      ? ctx.renderMemoryPanel(session.deck, session.flipped, session.matched, session.moves, session.matched.length === session.pairs.length)
+      : `<article class="empty-state">Chưa có từ vựng cho bài này.</article>`;
+    return renderPracticeShell(skillId, state, "memory", body);
   }
 
   function renderPracticeQuiz(skillId, state) {
