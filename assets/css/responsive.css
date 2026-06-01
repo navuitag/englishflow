@@ -64,7 +64,9 @@
   }
 
   .brand span:last-child,
-  .top-stats span:first-child {
+  .top-stats span:first-child,
+  .learner-switcher-name,
+  .learner-switcher-caret {
     display: none;
   }
 
