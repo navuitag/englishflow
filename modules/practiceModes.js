@@ -1,4 +1,4 @@
-import { bindFlashcardImages } from "../../components/flashcardPanel.js";
+import { bindFlashcardImages } from "../components/flashcardPanel.js";
 import { buildFlashcardDeck, buildMemoryDeck, buildMemoryPairs } from "./practiceContent.js";
 
 export function createPracticeModule(ctx) {
