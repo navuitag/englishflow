@@ -2,6 +2,24 @@ import { normalizeText } from "../assets/js/utils.js";
 
 const THIRD_PERSON = ["he", "she", "it", "this", "that"];
 const BE_VERBS = ["am", "is", "are", "was", "were", "be", "been", "being"];
+const PAST_SIMPLE_GRAMMARS = new Set(["past_simple", "outdoor_past", "school_trip", "family_time", "stories"]);
+const WOULD_LIKE_GRAMMARS = new Set(["would_like", "future_job"]);
+const WILL_GRAMMARS = new Set(["future_will", "tet_holiday", "special_days"]);
+const WH_WORDS = ["what", "where", "when", "who", "why", "how"];
+const SUBJECTS = ["i", "you", "we", "they", "he", "she", "it"];
+const PAST_MARKERS = ["yesterday", "last", "ago"];
+const IRREGULAR_PAST = {
+  went: "go", was: "be", were: "be", had: "have", did: "do", saw: "see",
+  ate: "eat", came: "come", took: "take", made: "make", got: "get",
+  bought: "buy", thought: "think", told: "tell", left: "leave", felt: "feel",
+  kept: "keep", brought: "bring", gave: "give", ran: "run", sang: "sing",
+  swam: "swim", flew: "fly", drew: "draw", grew: "grow", knew: "know",
+  wore: "wear", met: "meet", found: "find", built: "build", sent: "send",
+  spent: "spend", wrote: "write", spoke: "speak", heard: "hear", taught: "teach",
+  won: "win", lost: "lose", held: "hold", stood: "stand", sat: "sit",
+  slept: "sleep", read: "read", cut: "cut", hit: "hit", put: "put",
+  played: "play", visited: "visit", watched: "watch", stayed: "stay"
+};
 
 function tokens(value) {
   return normalizeText(value).replace(/[.,!?;:]/g, " ").split(/\s+/).filter(Boolean);
@@ -111,6 +129,38 @@ function runHeuristics(answer, question) {
     };
   }
 
+  if (grammar === "present_continuous_g1" && words.some((word) => word === "is" || word === "are")) {
+    const beIndex = words.findIndex((word) => word === "is" || word === "are");
+    const next = words[beIndex + 1];
+    if (next && !next.endsWith("ing")) {
+      return {
+        skill: question.skill,
+        code: "G1009",
+        errorType: "ing_form",
+        title: "Thiếu -ing",
+        message: `Sau is/are cần động từ -ing: "${next}" → "${next}ing" (hoặc dạng đúng).`,
+        hint: "He/She is + V-ing.",
+        recommendation: question.skill
+      };
+    }
+  }
+
+  if (grammar === "present_continuous_g2" && words.some((word) => word === "are" || word === "is")) {
+    const beIndex = words.findIndex((word) => word === "are" || word === "is");
+    const next = words[beIndex + 1];
+    if (next && !next.endsWith("ing")) {
+      return {
+        skill: question.skill,
+        code: "G2011",
+        errorType: "ing_form",
+        title: "Thiếu -ing",
+        message: `Sau are/is cần động từ -ing: "${next}" → "${next}ing" (hoặc dạng đúng).`,
+        hint: "They are + V-ing.",
+        recommendation: question.skill
+      };
+    }
+  }
+
   if (grammar === "past_continuous" && !words.some((word) => word === "was" || word === "were")) {
     return {
       skill: question.skill,
@@ -188,7 +238,267 @@ function runHeuristics(answer, question) {
     }
   }
 
+  const pastSimpleError = checkPastSimpleHeuristics(words, grammar, question);
+  if (pastSimpleError) return pastSimpleError;
+
+  const wouldLikeError = checkWouldLikeHeuristics(words, grammar, question);
+  if (wouldLikeError) return wouldLikeError;
+
+  const willError = checkWillHeuristics(words, grammar, question);
+  if (willError) return willError;
+
   return null;
+}
+
+function checkPastSimpleHeuristics(words, grammar, question) {
+  const inScope = PAST_SIMPLE_GRAMMARS.has(grammar)
+    || words.includes("did")
+    || words.includes("didn't")
+    || words.includes("didnt")
+    || words.includes("was")
+    || words.includes("were")
+    || words.some((word) => PAST_MARKERS.some((marker) => word.startsWith(marker)));
+
+  if (!inScope) return null;
+
+  const didIndex = words.findIndex((word) => word === "did" || word === "didn't" || word === "didnt");
+  if (didIndex !== -1) {
+    let verbIndex = didIndex + 1;
+    while (verbIndex < words.length && SUBJECTS.includes(words[verbIndex])) {
+      verbIndex += 1;
+    }
+    const verb = words[verbIndex];
+    if (verb && looksLikePastTenseVerb(verb)) {
+      const base = toBaseFormAfterDid(verb);
+      return {
+        skill: question.skill,
+        code: "G5011",
+        errorType: "did_base_form",
+        title: "Sai dạng động từ sau did",
+        message: `Sau did/didn't dùng động từ nguyên thể: "${verb}" → "${base}".`,
+        hint: "Did you + V (nguyên thể)?",
+        recommendation: question.skill
+      };
+    }
+  }
+
+  if ((words.includes("do") || words.includes("does")) && words.some((word) => looksLikePastTenseVerb(word))) {
+    return {
+      skill: question.skill,
+      code: "G5010",
+      errorType: "did_they_go",
+      title: "Cần Did + V (nguyên thể)",
+      message: "Câu hỏi quá khứ dùng Did + chủ ngữ + V nguyên thể, không dùng do/does + V-ed.",
+      hint: "Did they go to + place?",
+      recommendation: question.skill
+    };
+  }
+
+  const wasIndex = words.indexOf("was");
+  if (wasIndex !== -1) {
+    const after = words[wasIndex + 1];
+    if (after === "you" || after === "we" || after === "they") {
+      return {
+        skill: question.skill,
+        code: "G5009",
+        errorType: "were_you_at",
+        title: "Sai was/were",
+        message: `Với ${after} dùng were: "was ${after}" → "were ${after}".`,
+        hint: "Were you at + place?",
+        recommendation: question.skill
+      };
+    }
+  }
+
+  const wereIndex = words.indexOf("were");
+  if (wereIndex !== -1) {
+    const after = words[wereIndex + 1];
+    if (after === "he" || after === "she" || after === "it") {
+      return {
+        skill: question.skill,
+        code: "G5009",
+        errorType: "was_singular",
+        title: "Sai was/were",
+        message: `Với ${after} dùng was: "were ${after}" → "was ${after}".`,
+        hint: "Was he/she at + place?",
+        recommendation: question.skill
+      };
+    }
+  }
+
+  const hasPastMarker = words.some((word) => PAST_MARKERS.some((marker) => word.startsWith(marker)));
+  if (hasPastMarker && !words.includes("did") && !words.includes("was") && !words.includes("were")) {
+    const subjectIndex = words.findIndex((word) => SUBJECTS.includes(word));
+    if (subjectIndex !== -1) {
+      const verb = words[subjectIndex + 1];
+      if (verb && !looksLikePastTenseVerb(verb) && !BE_VERBS.includes(verb) && !["do", "does", "will", "can", "could", "should"].includes(verb)) {
+        return {
+          skill: question.skill,
+          code: "GR015",
+          errorType: "past_simple_ed",
+          title: "Cần thì quá khứ đơn",
+          message: `Với ${words.find((word) => PAST_MARKERS.some((marker) => word.startsWith(marker)))} dùng V-ed/V2: "${verb}" → "${toPastForm(verb)}".`,
+          hint: "S + V-ed + yesterday / last week.",
+          recommendation: question.skill
+        };
+      }
+    }
+  }
+
+  return null;
+}
+
+function checkWouldLikeHeuristics(words, grammar, question) {
+  const inScope = WOULD_LIKE_GRAMMARS.has(grammar)
+    || words.includes("would")
+    || words.some((word) => word === "i'd" || word === "id" || word.endsWith("'d"));
+
+  if (!inScope) return null;
+
+  const wouldIndex = words.indexOf("would");
+  if (wouldIndex !== -1) {
+    const next = words[wouldIndex + 1];
+    if (next === "likes" || next === "liked") {
+      return {
+        skill: question.skill,
+        code: "G5005",
+        errorType: "would_like_be",
+        title: "Sai would like",
+        message: 'Sau would dùng like (không thêm -s): "would likes" → "would like".',
+        hint: "would like to + V / would like + N",
+        recommendation: question.skill
+      };
+    }
+  }
+
+  if (words.includes("likes") && (words.includes("would") || words.some((word) => word === "i'd" || word === "id" || word.endsWith("'d")))) {
+    return {
+      skill: question.skill,
+      code: "G2012",
+      errorType: "would_like_error",
+      title: "Sai I'd like",
+      message: 'Like sau would/I\'d không thêm -s: "I\'d likes" → "I\'d like".',
+      hint: "I'd like to be a doctor.",
+      recommendation: question.skill
+    };
+  }
+
+  if (grammar === "future_job" && words.includes("like") && words.includes("be") && !words.includes("would")) {
+    return {
+      skill: question.skill,
+      code: "G5005",
+      errorType: "would_like_be",
+      title: "Sai would like to be",
+      message: 'Hỏi nghề tương lai: "What would you like to be?" không dùng do + like to be.',
+      hint: "What would you like to be?",
+      recommendation: question.skill
+    };
+  }
+
+  return null;
+}
+
+function checkWillHeuristics(words, grammar, question) {
+  const inScope = WILL_GRAMMARS.has(grammar)
+    || words.includes("will")
+    || words.includes("won't")
+    || words.includes("wont")
+    || words.some((word) => word.endsWith("'ll"));
+
+  if (!inScope) return null;
+
+  const willIndex = words.findIndex((word) => word === "will" || word === "won't" || word === "wont");
+  if (willIndex !== -1) {
+    const verb = words[willIndex + 1];
+    if (verb && verb !== "not" && verb !== "be" && looksLikeThirdPersonVerb(verb)) {
+      const base = stripThirdPersonS(verb);
+      return {
+        skill: question.skill,
+        code: "GR002",
+        errorType: "will_base_form",
+        title: "Sai dạng động từ sau will",
+        message: `Sau will dùng động từ nguyên thể: "will ${verb}" → "will ${base}".`,
+        hint: "S + will + V (nguyên thể).",
+        recommendation: question.skill
+      };
+    }
+  }
+
+  for (let index = 0; index < words.length - 2; index += 1) {
+    if (WH_WORDS.includes(words[index]) && SUBJECTS.includes(words[index + 1]) && words[index + 2] === "will") {
+      const wh = words[index];
+      const subject = words[index + 1];
+      return {
+        skill: question.skill,
+        code: "G5012",
+        errorType: "will_inversion",
+        title: "Sai thứ tự câu hỏi với will",
+        message: `Đảo will lên trước chủ ngữ: "${wh} ${subject} will ..." → "${wh} will ${subject} ...".`,
+        hint: `${capitalize(wh)} will you + V?`,
+        recommendation: question.skill
+      };
+    }
+  }
+
+  if (words.includes("yes") && words.includes("am") && !words.includes("will") && !words.includes("wont") && !words.includes("won't")) {
+    return {
+      skill: question.skill,
+      code: "G5012",
+      errorType: "yes_i_will",
+      title: "Trả lời câu hỏi Will...?",
+      message: 'Trả lời câu hỏi Will...? bằng "Yes, I will" / "No, I won\'t", không dùng am.',
+      hint: "Yes, I will. / No, I won't.",
+      recommendation: question.skill
+    };
+  }
+
+  return null;
+}
+
+function looksLikePastTenseVerb(verb) {
+  if (!verb) return false;
+  if (IRREGULAR_PAST[verb]) return true;
+  return /ed$/.test(verb) && verb.length > 3;
+}
+
+function looksLikeThirdPersonVerb(verb) {
+  if (!verb || BE_VERBS.includes(verb)) return false;
+  if (verb === "has" || verb === "does") return true;
+  if (verb.endsWith("ss") || verb.endsWith("us")) return false;
+  return /ies$|([^s])es$|[^s]s$/.test(verb);
+}
+
+function toBaseFormAfterDid(verb) {
+  return IRREGULAR_PAST[verb] || stripPastEd(verb);
+}
+
+function toPastForm(verb) {
+  if (/(s|x|z|ch|sh)$/.test(verb)) return `${verb}ed`;
+  if (/[^aeiou]y$/.test(verb)) return `${verb.slice(0, -1)}ied`;
+  if (/(e)$/.test(verb)) return `${verb}d`;
+  if (verb.length <= 3) return `${verb}ed`;
+  return `${verb}ed`;
+}
+
+function stripPastEd(verb) {
+  if (verb.endsWith("ied")) return `${verb.slice(0, -3)}y`;
+  if (verb.endsWith("ed")) {
+    const stem = verb.slice(0, -2);
+    if (stem.length > 2 && stem.endsWith(stem.at(-1))) return stem.slice(0, -1);
+    return stem;
+  }
+  return verb;
+}
+
+function stripThirdPersonS(verb) {
+  if (verb.endsWith("ies")) return `${verb.slice(0, -3)}y`;
+  if (verb.endsWith("es") && /(s|x|z|ch|sh|o)es$/.test(verb)) return verb.slice(0, -2);
+  if (verb.endsWith("s")) return verb.slice(0, -1);
+  return verb;
+}
+
+function capitalize(value) {
+  return value ? `${value.charAt(0).toUpperCase()}${value.slice(1)}` : value;
 }
 
 function addS(verb) {

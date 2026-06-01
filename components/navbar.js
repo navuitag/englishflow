@@ -1,6 +1,11 @@
 import { getGamificationSummary } from "../modules/gamification.js";
 
 const LEVEL_LABEL = {
+  1: "Lớp 1",
+  2: "Lớp 2",
+  3: "Lớp 3",
+  4: "Lớp 4",
+  5: "Lớp 5",
   6: "Lớp 6",
   7: "Lớp 7",
   8: "Lớp 8",

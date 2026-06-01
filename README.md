@@ -1,6 +1,6 @@
-# EnglishFlow — Học Tiếng Anh THCS qua phân tích lỗi sai
+# EnglishFlow — Học Tiếng Anh qua phân tích lỗi sai
 
-Ứng dụng web học Tiếng Anh THCS (lớp 6–9) theo hướng **Error-based Learning + Visual Learning**: học điểm ngữ pháp ngắn, luyện tập tương tác, **phát hiện và giải thích lỗi sai tức thì**, kèm trực quan hóa cấu trúc câu và game hóa để duy trì động lực.
+Ứng dụng web học Tiếng Anh **tiểu học (lớp 1–5)** và **THCS (lớp 6–9)** theo SGK **"Kết nối tri thức với cuộc sống" (Global Success)**, hướng **Error-based Learning + Visual Learning**: học điểm ngữ pháp ngắn, luyện tập tương tác, **phát hiện và giải thích lỗi sai tức thì**, kèm trực quan hóa cấu trúc câu và game hóa để duy trì động lực.
 
 Ứng dụng là **SPA thuần** bằng HTML5 + CSS3 + JavaScript ES6 (ES Modules), **không cần backend**, chạy được offline (PWA + Service Worker + localStorage).
 
@@ -21,17 +21,154 @@
 
 ## Nội dung
 
-| | Tổng | Lớp 6 | Lớp 7 | Lớp 8 | Lớp 9 |
-|---|---|---|---|---|---|
-| Bài học | **227** | 61 | 57 | 53 | 56 |
-| — Ngữ pháp | 83 | 25 | 21 | 17 | 20 |
-| — Từ vựng | 48 | 12 | 12 | 12 | 12 |
-| — Phát âm | 48 | 12 | 12 | 12 | 12 |
-| — Kỹ năng nghe | 48 | 12 | 12 | 12 | 12 |
-| Câu hỏi | **825** | 219 | 207 | 195 | 204 |
-| Mẫu lỗi sai | 86 | — | — | — | — |
+| | Tổng | Lớp 1 | Lớp 2 | Lớp 3 | Lớp 4 | Lớp 5 | Lớp 6 | Lớp 7 | Lớp 8 | Lớp 9 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Bài học | **595** | 64 | 64 | 80 | 80 | 80 | 61 | 57 | 53 | 56 |
+| — Ngữ pháp | 175 | 16 | 16 | 20 | 20 | 20 | 25 | 21 | 17 | 20 |
+| — Từ vựng | 140 | 16 | 16 | 20 | 20 | 20 | 12 | 12 | 12 | 12 |
+| — Phát âm | 140 | 16 | 16 | 20 | 20 | 20 | 12 | 12 | 12 | 12 |
+| — Kỹ năng nghe | 140 | 16 | 16 | 20 | 20 | 20 | 12 | 12 | 12 | 12 |
+| Câu hỏi | **2297** | 256 | 256 | 320 | 320 | 320 | 219 | 207 | 195 | 204 |
+| Mẫu lỗi sai | 172 | 13 | 16 | 20 | 20 | 20 | — | — | — | — |
 
-Mỗi Unit có bài **Phát âm** (âm/trọng âm/ngữ điệu) và **Kỹ năng nghe** (hội thoại + nút Nghe TTS + 4 câu hỏi). Bài từ vựng: ~8 từ EN↔VI và 4 câu luyện.
+Mỗi Unit có bài **Phát âm** (âm/trọng âm/ngữ điệu) và **Kỹ năng nghe** (hội thoại + nút Nghe TTS + 4 câu hỏi). Bài từ vựng: ~5–8 từ EN↔VI và 4 câu luyện.
+
+### Chương trình Lớp 1 — "Kết nối tri thức với cuộc sống" (Global Success)
+
+Bám sát đủ **16 Unit** của SGK Tiếng Anh 1:
+
+| Unit | Chủ đề | Trọng tâm ngữ pháp |
+|---|---|---|
+| 1 | In the school playground | Hello/Hi; I'm... |
+| 2 | In the dining room | I have a... |
+| 3 | At the street market | This is my... |
+| 4 | In the bedroom | This is a... |
+| 5 | At the fish and chip shop | I like... |
+| 6 | In the classroom | Màu sắc (It's red...) |
+| 7 | In the garden | There's a... |
+| 8 | In the park | Bộ phận cơ thể |
+| 9 | In the shop | How many...? |
+| 10 | At the zoo | This is a... (animals) |
+| 11 | At the bus stop | He/She is + V-ing |
+| 12 | At the lake | Look at... |
+| 13 | In the school canteen | I want... |
+| 14 | In the toy shop | I can see... |
+| 15 | At the football match | He/She is... |
+| 16 | At home | How many...? (at home) |
+
+Sinh lại nội dung lớp 1: `node scripts/build-grade1.js`
+
+### Chương trình Lớp 2 — "Kết nối tri thức với cuộc sống" (Global Success)
+
+Bám sát đủ **16 Unit** của SGK Tiếng Anh 2:
+
+| Unit | Chủ đề | Trọng tâm ngữ pháp |
+|---|---|---|
+| 1 | At my birthday party | I like + N; The + N + is yummy |
+| 2 | In the backyard | Where is the...? |
+| 3 | At the seaside | Let's + V |
+| 4 | In the countryside | There are + N |
+| 5 | In the classroom | What colour is the...? |
+| 6 | On the farm | What can you see? / I can see... |
+| 7 | In the kitchen | Pass me the..., please / Here you are |
+| 8 | In the village | Giới từ in/on/under |
+| 9 | In the grocery store | How much is the...? |
+| 10 | At the zoo | These are + N |
+| 11 | In the playground | They are + V-ing |
+| 12 | At the café | I'd like + N |
+| 13 | In the maths class | How many + N? |
+| 14 | At home | Where are the...? |
+| 15 | In the clothes shop | What colour is the...? (clothes) |
+| 16 | At the campsite | We have a + N |
+
+Sinh lại nội dung lớp 2: `node scripts/build-grade2.js`
+
+### Chương trình Lớp 3 — "Kết nối tri thức với cuộc sống" (Global Success)
+
+Bám sát đủ **20 Unit** của SGK Tiếng Anh 3:
+
+| Unit | Chủ đề | Trọng tâm ngữ pháp |
+|---|---|---|
+| 1 | Hello | Chào hỏi; How are you? |
+| 2 | Our names | What's your name? How old are you? |
+| 3 | Our friends | This is my friend; Who is he/she? |
+| 4 | Our bodies | I have two eyes; Touch your... |
+| 5 | My hobbies | What's your hobby? I like + V-ing |
+| 6 | Our school | Is this our...? Let's go to... |
+| 7 | Classroom instructions | Sit down / Stand up / Open your book |
+| 8 | My school things | This is my pen (my/your) |
+| 9 | Colours | What colour is/are...? |
+| 10 | Break time activities | What are you doing? I am + V-ing |
+| 11 | My family | This is my father; Who is he? |
+| 12 | Jobs | What's his/her job? He/She is a... |
+| 13 | My house | There is/are; in/on |
+| 14 | My bedroom | Where is my bed? |
+| 15 | At the dining table | Pass me the..., please |
+| 16 | My pets | Do you have any...? How many...? |
+| 17 | Our toys | These are my toys |
+| 18 | Playing and doing | She is reading; What is he doing? |
+| 19 | Outdoor activities | I like cycling; They are flying a kite |
+| 20 | At the zoo | What is this? It's an elephant |
+
+Sinh lại nội dung lớp 3: `node scripts/build-grade3.js`
+
+### Chương trình Lớp 4 — "Kết nối tri thức với cuộc sống" (Global Success)
+
+Bám sát đủ **20 Unit** của SGK Tiếng Anh 4 (2 tập × 10 Unit):
+
+| Unit | Chủ đề | Trọng tâm ngữ pháp |
+|---|---|---|
+| 1 | My friends | Where are you from? I'm from... |
+| 2 | Time and daily routines | What time do you...? I ... at ... |
+| 3 | My week | What do you do on Monday? |
+| 4 | My birthday party | When is your birthday? |
+| 5 | Things we can do | Can you...? Yes, I can / No, I can't |
+| 6 | Our school facilities | Is there a...? Yes, there is |
+| 7 | Our timetables | What time does... start? |
+| 8 | My favourite subjects | What's your favourite subject? |
+| 9 | Our sports day | Who is running? (present continuous) |
+| 10 | Our summer holidays | Where are you going? |
+| 11 | My home | How many bedrooms are there? |
+| 12 | Jobs | What does your father do? |
+| 13 | Appearance | What does she look like? |
+| 14 | Daily activities | What do you do every day? |
+| 15 | My family's weekends | What do you do at the weekend? |
+| 16 | Weather | What's the weather like? |
+| 17 | In the city | Go straight / Turn left |
+| 18 | At the shopping centre | How much is this? |
+| 19 | The animal world | Tigers live in... / What do lions eat? |
+| 20 | At summer camp | What are they doing? They are... |
+
+Sinh lại nội dung lớp 4: `node scripts/build-grade4.js`
+
+### Chương trình Lớp 5 — "Kết nối tri thức với cuộc sống" (Global Success)
+
+Bám sát đủ **20 Unit** của SGK Tiếng Anh 5 (2 tập × 10 Unit):
+
+| Unit | Chủ đề | Trọng tâm ngữ pháp |
+|---|---|---|
+| 1 | All about me! | What's your favourite...? / I'm in Grade 5 |
+| 2 | Our homes | Where do you live? / Do you live in this house? |
+| 3 | My foreign friends | What nationality is she? / What's he like? |
+| 4 | Our free-time activities | What do you like doing? / What do you do at the weekend? |
+| 5 | My future job | What would you like to be? / Why would you like to be a...? |
+| 6 | Our school rooms | Where's the library? / Could you tell me the way to...? |
+| 7 | Our favourite school activities | What school activity do you like? / Why do you like...? |
+| 8 | In our classroom | Where are the pencils? / Whose book is this? |
+| 9 | Our outdoor activities | Were you at the...? / What did you do yesterday? |
+| 10 | Our school trip | Did they go to...? / What did they do there? |
+| 11 | Family time | Did you...? / What did your family do in...? |
+| 12 | Our Tet holiday | Will you... for Tet? / Where will you go at Tet? |
+| 13 | Our special days | What will you do on your birthday? / We'll have... |
+| 14 | Staying healthy | How does he/she stay healthy? / How often does he/she...? |
+| 15 | Our health | What's the matter? / You should... |
+| 16 | Seasons and the weather | How's the weather in...? / What do you usually wear in...? |
+| 17 | Stories for children | Who are the main characters? / How did he/she...? |
+| 18 | Means of transport | Where do you want to visit? / How can I get to... by...? |
+| 19 | Places of interest | What do you think of...? / How far is it from... to...? |
+| 20 | Our summer holidays | Where are you going to visit? / What are you going to do? |
+
+Sinh lại nội dung lớp 5: `node scripts/build-grade5.js`
 
 ### Chương trình Lớp 6 — "Kết nối tri thức với cuộc sống" (Global Success)
 

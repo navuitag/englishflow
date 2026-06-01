@@ -1,7 +1,7 @@
 {
   "name": "EnglishFlow",
   "short_name": "EnglishFlow",
-  "description": "Ứng dụng học tiếng Anh THCS theo hướng phân tích lỗi sai và trực quan hóa ngữ pháp.",
+  "description": "Học tiếng Anh lớp 1–5 và THCS (Global Success) qua phân tích lỗi sai và trực quan hóa ngữ pháp.",
   "start_url": "./index.html#/home",
   "display": "standalone",
   "background_color": "#f7fbff",

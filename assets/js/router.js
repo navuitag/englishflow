@@ -146,7 +146,7 @@ function renderOnboarding(state) {
         <span class="brand-mark">E</span>
         <span class="eyebrow">Chào mừng đến EnglishFlow</span>
         <h1>Bạn đang học lớp mấy?</h1>
-        <p>Chọn trình độ để mình mở đúng lộ trình ngữ pháp và từ vựng tiếng Anh THCS. Bạn có thể đổi bất cứ lúc nào trên thanh điều hướng.</p>
+        <p>Chọn trình độ để mình mở đúng lộ trình tiếng Anh theo SGK Global Success (lớp 1–5 và THCS). Bạn có thể đổi bất cứ lúc nào trên thanh điều hướng.</p>
         <div class="grade-pick-grid">
           ${cards}
         </div>

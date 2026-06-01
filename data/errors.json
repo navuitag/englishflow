@@ -1,5 +1,865 @@
 [
   {
+    "pattern": "what is your favourite colour",
+    "grammar": "all_about_me",
+    "code": "G5001",
+    "errorType": "favourite_whats",
+    "title": "Sai What's your favourite + N?",
+    "message": "Sở thích: What's your favourite colour? I'm in Grade 5.",
+    "hint": "What's your favourite + N?",
+    "recommendation": "g5_u1_all_about_me"
+  },
+  {
+    "pattern": "where you live",
+    "grammar": "our_homes",
+    "code": "G5002",
+    "errorType": "where_do_live",
+    "title": "Sai Where do you live?",
+    "message": "Nơi ở: Where do you live? I live in a village. Do you live in this house?",
+    "hint": "Where do you live?",
+    "recommendation": "g5_u2_our_homes"
+  },
+  {
+    "pattern": "what is she nationality",
+    "grammar": "foreign_friends",
+    "code": "G5003",
+    "errorType": "nationality_is",
+    "title": "Sai What nationality is she?",
+    "message": "Quốc tịch: What nationality is she? Tính cách: What's he like?",
+    "hint": "What nationality is she?",
+    "recommendation": "g5_u3_foreign_friends"
+  },
+  {
+    "pattern": "what do you like do",
+    "grammar": "free_time",
+    "code": "G5004",
+    "errorType": "like_doing",
+    "title": "Sai like + V-ing",
+    "message": "Sở thích: What do you like doing? I like reading books.",
+    "hint": "like + V-ing",
+    "recommendation": "g5_u4_free_time"
+  },
+  {
+    "pattern": "what do you like to be",
+    "grammar": "future_job",
+    "code": "G5005",
+    "errorType": "would_like_be",
+    "title": "Sai would like to be",
+    "message": "Nghề tương lai: What would you like to be? Because I'd like to help people.",
+    "hint": "would you like to be",
+    "recommendation": "g5_u5_future_job"
+  },
+  {
+    "pattern": "where is the library on second floor",
+    "grammar": "school_rooms",
+    "code": "G5006",
+    "errorType": "on_the_floor",
+    "title": "Sai on the second floor",
+    "message": "Vị trí: Where's the library? It's on the second floor.",
+    "hint": "on the + ordinal + floor",
+    "recommendation": "g5_u6_school_rooms"
+  },
+  {
+    "pattern": "what school activity he like",
+    "grammar": "school_activities",
+    "code": "G5007",
+    "errorType": "does_he_like",
+    "title": "Sai does he like",
+    "message": "Hoạt động trường: What school activity does he like? He likes drawing.",
+    "hint": "does + person + like",
+    "recommendation": "g5_u7_school_activities"
+  },
+  {
+    "pattern": "who pen is this",
+    "grammar": "in_classroom",
+    "code": "G5008",
+    "errorType": "whose_pen",
+    "title": "Sai Whose pen is this?",
+    "message": "Sở hữu: Whose pen is this? Vị trí: Where are the pencils?",
+    "hint": "Whose + N + is this?",
+    "recommendation": "g5_u8_in_classroom"
+  },
+  {
+    "pattern": "was you at the cinema",
+    "grammar": "outdoor_past",
+    "code": "G5009",
+    "errorType": "were_you_at",
+    "title": "Sai Were you at...?",
+    "message": "Quá khứ: Were you at the cinema? What did you do yesterday?",
+    "hint": "Were you at + place?",
+    "recommendation": "g5_u9_outdoor_past"
+  },
+  {
+    "pattern": "do they went to the museum",
+    "grammar": "school_trip",
+    "code": "G5010",
+    "errorType": "did_they_go",
+    "title": "Sai Did they go...?",
+    "message": "Chuyến đi: Did they go to the museum? What did they do there?",
+    "hint": "Did they go to + place?",
+    "recommendation": "g5_u10_school_trip"
+  },
+  {
+    "pattern": "did you visited grandparents",
+    "grammar": "family_time",
+    "code": "G5011",
+    "errorType": "did_visit",
+    "title": "Sai Did you visit...?",
+    "message": "Gia đình: Did you visit your grandparents? What did your family do?",
+    "hint": "Did you + V (base form)",
+    "recommendation": "g5_u11_family_time"
+  },
+  {
+    "pattern": "where you will go at tet",
+    "grammar": "tet_holiday",
+    "code": "G5012",
+    "errorType": "where_will_go",
+    "title": "Sai Where will you go?",
+    "message": "Tết: Will you visit for Tet? Where will you go at Tet?",
+    "hint": "Where will you + V?",
+    "recommendation": "g5_u12_tet_holiday"
+  },
+  {
+    "pattern": "what you will do on birthday",
+    "grammar": "special_days",
+    "code": "G5013",
+    "errorType": "what_will_do",
+    "title": "Sai What will you do on your birthday?",
+    "message": "Ngày đặc biệt: What will you do on your birthday? We'll have a party.",
+    "hint": "What will you do on + day?",
+    "recommendation": "g5_u13_special_days"
+  },
+  {
+    "pattern": "how she stay healthy",
+    "grammar": "staying_healthy",
+    "code": "G5014",
+    "errorType": "how_does_stay",
+    "title": "Sai How does she stay healthy?",
+    "message": "Sức khỏe: How does she stay healthy? How often does he go jogging?",
+    "hint": "How does + person + stay healthy?",
+    "recommendation": "g5_u14_staying_healthy"
+  },
+  {
+    "pattern": "what is the matter with you",
+    "grammar": "our_health",
+    "code": "G5015",
+    "errorType": "whats_matter",
+    "title": "Sai What's the matter?",
+    "message": "Sức khỏe: What's the matter? You should see a doctor.",
+    "hint": "What's the matter?",
+    "recommendation": "g5_u15_our_health"
+  },
+  {
+    "pattern": "how is the weather in winter",
+    "grammar": "seasons_weather",
+    "code": "G5016",
+    "errorType": "hows_weather",
+    "title": "Sai How's the weather in winter?",
+    "message": "Mùa: How's the weather in winter? What do you wear in summer?",
+    "hint": "How's the weather in + season?",
+    "recommendation": "g5_u16_seasons_weather"
+  },
+  {
+    "pattern": "who is the main characters",
+    "grammar": "stories",
+    "code": "G5017",
+    "errorType": "who_are_characters",
+    "title": "Sai Who are the main characters?",
+    "message": "Truyện: Who are the main characters? How did he defeat the dragon?",
+    "hint": "Who are the main characters?",
+    "recommendation": "g5_u17_stories"
+  },
+  {
+    "pattern": "you can get there on bus",
+    "grammar": "transport",
+    "code": "G5018",
+    "errorType": "by_transport",
+    "title": "Sai by + transport",
+    "message": "Đi lại: Where do you want to visit? You can get there by bus.",
+    "hint": "by + bus/train/plane",
+    "recommendation": "g5_u18_transport"
+  },
+  {
+    "pattern": "how many far is it from school",
+    "grammar": "places_interest",
+    "code": "G5019",
+    "errorType": "how_far_from",
+    "title": "Sai How far is it from...?",
+    "message": "Địa điểm: What do you think of the park? How far is it from the school?",
+    "hint": "How far is it from + place?",
+    "recommendation": "g5_u19_places_interest"
+  },
+  {
+    "pattern": "where you are going visit",
+    "grammar": "summer_holidays",
+    "code": "G5020",
+    "errorType": "going_to_visit",
+    "title": "Sai going to visit",
+    "message": "Hè: Where are you going to visit? What are you going to do?",
+    "hint": "going to + visit / do",
+    "recommendation": "g5_u20_summer_holidays"
+  },
+  {
+    "pattern": "where is you from",
+    "grammar": "where_from",
+    "code": "G4001",
+    "errorType": "where_from_question",
+    "title": "Sai Where are you from?",
+    "message": "Hỏi quê quán: Where are you from? Trả lời: I'm from Vietnam.",
+    "hint": "Where are you from?",
+    "recommendation": "g4_u1_where_from"
+  },
+  {
+    "pattern": "i get up in 7",
+    "grammar": "time_routines",
+    "code": "G4002",
+    "errorType": "time_at",
+    "title": "Sai giờ với at",
+    "message": "Giờ cụ thể dùng at: I get up at 7 o'clock.",
+    "hint": "at + time",
+    "recommendation": "g4_u2_time_routines"
+  },
+  {
+    "pattern": "i have english in monday",
+    "grammar": "my_week",
+    "code": "G4003",
+    "errorType": "day_on",
+    "title": "Sai on + ngày",
+    "message": "Ngày trong tuần: I have English on Monday.",
+    "hint": "on Monday",
+    "recommendation": "g4_u3_my_week"
+  },
+  {
+    "pattern": "when is your birthday in 5 may",
+    "grammar": "my_birthday",
+    "code": "G4004",
+    "errorType": "birthday_when",
+    "title": "Sai When is your birthday?",
+    "message": "Tháng: It's in May. Ngày: It's on the 5th of May.",
+    "hint": "in + month / on + date",
+    "recommendation": "g4_u4_my_birthday"
+  },
+  {
+    "pattern": "do you can swim",
+    "grammar": "can_do",
+    "code": "G4005",
+    "errorType": "can_question",
+    "title": "Sai Can you...?",
+    "message": "Khả năng: Can you swim? Trả lời: Yes, I can / No, I can't.",
+    "hint": "Can you + V?",
+    "recommendation": "g4_u5_can_do"
+  },
+  {
+    "pattern": "are there a library",
+    "grammar": "school_facilities",
+    "code": "G4006",
+    "errorType": "is_there",
+    "title": "Sai Is there a...?",
+    "message": "Một cơ sở: Is there a library? Trả lời: Yes, there is.",
+    "hint": "Is there a + N?",
+    "recommendation": "g4_u6_school_facilities"
+  },
+  {
+    "pattern": "what time do the lesson start",
+    "grammar": "timetables",
+    "code": "G4007",
+    "errorType": "does_start",
+    "title": "Sai does + chủ ngữ số ít",
+    "message": "Tiết học số ít: What time does the lesson start? It starts at 8 o'clock.",
+    "hint": "does + V",
+    "recommendation": "g4_u7_timetables"
+  },
+  {
+    "pattern": "what is your favourite subject",
+    "grammar": "favourite_subjects",
+    "code": "G4008",
+    "errorType": "favourite_whats",
+    "title": "Sai What's your favourite subject?",
+    "message": "Hỏi môn yêu thích: What's your favourite subject? I like English.",
+    "hint": "What's your favourite subject?",
+    "recommendation": "g4_u8_favourite_subjects"
+  },
+  {
+    "pattern": "who are running",
+    "grammar": "sports_day",
+    "code": "G4009",
+    "errorType": "who_is_ing",
+    "title": "Sai Who is + V-ing",
+    "message": "Hỏi ai đang làm: Who is running? Tom is.",
+    "hint": "Who is + V-ing?",
+    "recommendation": "g4_u9_sports_day"
+  },
+  {
+    "pattern": "how much bedrooms are there",
+    "grammar": "my_home",
+    "code": "G4011",
+    "errorType": "how_many_rooms",
+    "title": "Nhầm How many / How much",
+    "message": "Đếm phòng: How many bedrooms are there? There are three.",
+    "hint": "How many + rooms?",
+    "recommendation": "g4_u11_my_home"
+  },
+  {
+    "pattern": "what does your father does",
+    "grammar": "jobs",
+    "code": "G4012",
+    "errorType": "what_does_do",
+    "title": "Sai What does ... do?",
+    "message": "Hỏi nghề: What does your father do? He is a doctor.",
+    "hint": "What does + person + do?",
+    "recommendation": "g4_u12_jobs"
+  },
+  {
+    "pattern": "what is she look like",
+    "grammar": "appearance",
+    "code": "G4013",
+    "errorType": "look_like",
+    "title": "Sai What does she look like?",
+    "message": "Ngoại hình: What does she look like? She has long hair.",
+    "hint": "What does + person + look like?",
+    "recommendation": "g4_u13_appearance"
+  },
+  {
+    "pattern": "i brushes my teeth",
+    "grammar": "daily_activities",
+    "code": "G4014",
+    "errorType": "daily_i_v",
+    "title": "Sai I + V (every day)",
+    "message": "Thói quen: I brush my teeth every day (không thêm -es sau I).",
+    "hint": "I + V + every day",
+    "recommendation": "g4_u14_daily_activities"
+  },
+  {
+    "pattern": "what do you at weekend",
+    "grammar": "family_weekends",
+    "code": "G4015",
+    "errorType": "at_weekend",
+    "title": "Sai at the weekend",
+    "message": "Cuối tuần: What do you do at the weekend? We go shopping.",
+    "hint": "at the weekend",
+    "recommendation": "g4_u15_family_weekends"
+  },
+  {
+    "pattern": "how is the weather",
+    "grammar": "weather",
+    "code": "G4016",
+    "errorType": "weather_like",
+    "title": "Sai What's the weather like?",
+    "message": "Thời tiết: What's the weather like? It's sunny and hot.",
+    "hint": "What's the weather like?",
+    "recommendation": "g4_u16_weather"
+  },
+  {
+    "pattern": "go to straight",
+    "grammar": "in_the_city",
+    "code": "G4017",
+    "errorType": "go_straight",
+    "title": "Sai Go straight",
+    "message": "Chỉ đường: Go straight. Turn left. Turn right.",
+    "hint": "Go straight",
+    "recommendation": "g4_u17_in_the_city"
+  },
+  {
+    "pattern": "how many is this",
+    "grammar": "shopping",
+    "code": "G4018",
+    "errorType": "how_much_price",
+    "title": "Nhầm How much / How many",
+    "message": "Giá tiền: How much is this? It's 50,000 dong.",
+    "hint": "How much is this?",
+    "recommendation": "g4_u18_shopping"
+  },
+  {
+    "pattern": "tigers lives in forest",
+    "grammar": "animal_world",
+    "code": "G4019",
+    "errorType": "animals_live",
+    "title": "Sai Tigers live in...",
+    "message": "Nơi sống: Tigers live in the forest. What do lions eat?",
+    "hint": "live in + habitat",
+    "recommendation": "g4_u19_animal_world"
+  },
+  {
+    "pattern": "what do they doing",
+    "grammar": "summer_camp",
+    "code": "G4020",
+    "errorType": "they_are_ing",
+    "title": "Sai What are they doing?",
+    "message": "Hành động đang diễn ra: What are they doing? They are singing songs.",
+    "hint": "They are + V-ing",
+    "recommendation": "g4_u20_summer_camp"
+  },
+  {
+    "pattern": "how is you",
+    "grammar": "hello",
+    "code": "G3001",
+    "errorType": "hello_greeting",
+    "title": "Sai How are you?",
+    "message": "Hỏi thăm sức khỏe: How are you? Trả lời: I'm fine, thank you.",
+    "hint": "How are you?",
+    "recommendation": "g3_u1_hello"
+  },
+  {
+    "pattern": "what is your name",
+    "grammar": "our_names",
+    "code": "G3002",
+    "errorType": "name_question",
+    "title": "Sai What's your name?",
+    "message": "Hỏi tên: What's your name? (không dùng What is your name trong hội thoại ngắn).",
+    "hint": "What's your name?",
+    "recommendation": "g3_u2_our_names"
+  },
+  {
+    "pattern": "who is she is",
+    "grammar": "our_friends",
+    "code": "G3003",
+    "errorType": "friend_intro",
+    "title": "Sai giới thiệu bạn",
+    "message": "Giới thiệu: This is my friend. Hỏi: Who is he/she?",
+    "hint": "This is my friend.",
+    "recommendation": "g3_u3_our_friends"
+  },
+  {
+    "pattern": "i has two eyes",
+    "grammar": "our_bodies",
+    "code": "G3004",
+    "errorType": "have_body",
+    "title": "Sai I have",
+    "message": "Nói bộ phận cơ thể: I have two eyes (không dùng has sau I).",
+    "hint": "I have two eyes.",
+    "recommendation": "g3_u4_our_bodies"
+  },
+  {
+    "pattern": "i like read",
+    "grammar": "my_hobbies",
+    "code": "G3005",
+    "errorType": "like_ing",
+    "title": "Sai I like + V-ing",
+    "message": "Sở thích: I like reading (dùng V-ing sau like).",
+    "hint": "I like + V-ing.",
+    "recommendation": "g3_u5_my_hobbies"
+  },
+  {
+    "pattern": "lets goes to",
+    "grammar": "our_school",
+    "code": "G3006",
+    "errorType": "lets_go",
+    "title": "Sai Let's go to",
+    "message": "Sau Let's dùng động từ nguyên thể: Let's go to the library.",
+    "hint": "Let's + V.",
+    "recommendation": "g3_u6_our_school"
+  },
+  {
+    "pattern": "sits down please",
+    "grammar": "classroom_instructions",
+    "code": "G3007",
+    "errorType": "imperative",
+    "title": "Sai mệnh lệnh lớp học",
+    "message": "Mệnh lệnh: Sit down / Stand up / Open your book (động từ nguyên thể).",
+    "hint": "Sit down, please.",
+    "recommendation": "g3_u7_classroom_instructions"
+  },
+  {
+    "pattern": "this is me pen",
+    "grammar": "school_things",
+    "code": "G3008",
+    "errorType": "my_your",
+    "title": "Sai my/your",
+    "message": "Sở hữu: This is my pen / This is your book (dùng my/your, không dùng me).",
+    "hint": "This is my pen.",
+    "recommendation": "g3_u8_school_things"
+  },
+  {
+    "pattern": "what color is",
+    "grammar": "colours",
+    "code": "G3009",
+    "errorType": "colour_question",
+    "title": "Sai What colour is/are",
+    "message": "Hỏi màu: What colour is the pen? / What colour are the books?",
+    "hint": "What colour is/are...?",
+    "recommendation": "g3_u9_colours"
+  },
+  {
+    "pattern": "i am play football",
+    "grammar": "breaktime",
+    "code": "G3010",
+    "errorType": "am_ing",
+    "title": "Sai I am + V-ing",
+    "message": "Hành động đang diễn ra: I am playing football.",
+    "hint": "I am + V-ing.",
+    "recommendation": "g3_u10_breaktime"
+  },
+  {
+    "pattern": "this is my father he",
+    "grammar": "my_family",
+    "code": "G3011",
+    "errorType": "family_intro",
+    "title": "Sai giới thiệu gia đình",
+    "message": "Giới thiệu: This is my father. Hỏi: Who is he?",
+    "hint": "This is my father.",
+    "recommendation": "g3_u11_my_family"
+  },
+  {
+    "pattern": "there are a kitchen",
+    "grammar": "my_house",
+    "code": "G3013",
+    "errorType": "there_be",
+    "title": "Sai There is / There are",
+    "message": "Một phòng: There is a kitchen. Nhiều phòng: There are two bedrooms.",
+    "hint": "There is/are + N.",
+    "recommendation": "g3_u13_my_house"
+  },
+  {
+    "pattern": "where are my bed",
+    "grammar": "my_bedroom",
+    "code": "G3014",
+    "errorType": "where_is",
+    "title": "Sai Where is / Where are",
+    "message": "Một vật: Where is my bed? Trả lời: It's in the bedroom.",
+    "hint": "Where is my bed?",
+    "recommendation": "g3_u14_my_bedroom"
+  },
+  {
+    "pattern": "give me the rice",
+    "grammar": "dining_table",
+    "code": "G3015",
+    "errorType": "pass_me",
+    "title": "Nhầm Pass me và Give me",
+    "message": "Nhờ đưa đồ ăn: Pass me the rice, please.",
+    "hint": "Pass me the + N, please.",
+    "recommendation": "g3_u15_dining_table"
+  },
+  {
+    "pattern": "how much rabbits",
+    "grammar": "my_pets",
+    "code": "G3016",
+    "errorType": "how_many_pets",
+    "title": "Nhầm How many / How much",
+    "message": "Đếm vật nuôi: How many rabbits do you have?",
+    "hint": "How many + pets?",
+    "recommendation": "g3_u16_my_pets"
+  },
+  {
+    "pattern": "this are my toys",
+    "grammar": "our_toys",
+    "code": "G3017",
+    "errorType": "these_toys",
+    "title": "Sai These are",
+    "message": "Nhiều đồ chơi: These are my toys. Hỏi: Whose toy is this?",
+    "hint": "These are my toys.",
+    "recommendation": "g3_u17_our_toys"
+  },
+  {
+    "pattern": "she is read",
+    "grammar": "playing_doing",
+    "code": "G3018",
+    "errorType": "she_ing",
+    "title": "Sai She is + V-ing",
+    "message": "Hành động đang diễn ra: She is reading / He is writing.",
+    "hint": "She/He is + V-ing.",
+    "recommendation": "g3_u18_playing_doing"
+  },
+  {
+    "pattern": "they is flying",
+    "grammar": "outdoor",
+    "code": "G3019",
+    "errorType": "they_ing",
+    "title": "Sai They are + V-ing",
+    "message": "Nhiều người: They are flying a kite.",
+    "hint": "They are + V-ing.",
+    "recommendation": "g3_u19_outdoor"
+  },
+  {
+    "pattern": "it is a elephant",
+    "grammar": "at_the_zoo",
+    "code": "G3020",
+    "errorType": "a_an_animal",
+    "title": "Sai a/an trước con vật",
+    "message": "Elephant bắt đầu bằng nguyên âm: It's an elephant.",
+    "hint": "It's a/an + animal.",
+    "recommendation": "g3_u20_at_the_zoo"
+  },
+  {
+    "pattern": "the cake is like",
+    "grammar": "i_like_yummy",
+    "code": "G2001",
+    "errorType": "like_yummy_error",
+    "title": "Nhầm I like và The ... is yummy",
+    "message": "Thích món ăn: I like cake. Mô tả ngon: The cake is yummy.",
+    "hint": "I like + N · The + N + is yummy.",
+    "recommendation": "g2_u1_i_like_yummy"
+  },
+  {
+    "pattern": "where are the ball",
+    "grammar": "where_is",
+    "code": "G2002",
+    "errorType": "where_is_error",
+    "title": "Sai Where is / Where are",
+    "message": "Một vật dùng Where is the + N?, không dùng Where are.",
+    "hint": "Where is the ball?",
+    "recommendation": "g2_u2_where_is"
+  },
+  {
+    "pattern": "lets looks at",
+    "grammar": "lets",
+    "code": "G2003",
+    "errorType": "lets_error",
+    "title": "Sai sau Let's",
+    "message": "Sau Let's dùng động từ nguyên thể: Let's look at...",
+    "hint": "Let's + V.",
+    "recommendation": "g2_u3_lets"
+  },
+  {
+    "pattern": "there is cows",
+    "grammar": "there_are",
+    "code": "G2004",
+    "errorType": "there_be_plural",
+    "title": "Sai There is / There are",
+    "message": "Nhiều vật dùng There are + N số nhiều.",
+    "hint": "There are cows.",
+    "recommendation": "g2_u4_there_are"
+  },
+  {
+    "pattern": "what color is",
+    "grammar": "what_colour",
+    "code": "G2005",
+    "errorType": "colour_spelling",
+    "title": "Thiếu cấu trúc What colour",
+    "message": "Hỏi màu: What colour is the + N? Trả lời: It's + màu.",
+    "hint": "What colour is the desk?",
+    "recommendation": "g2_u5_what_colour"
+  },
+  {
+    "pattern": "i can sees",
+    "grammar": "can_see",
+    "code": "G2006",
+    "errorType": "modal_error",
+    "title": "Sai sau can",
+    "message": "Sau can dùng động từ nguyên thể: I can see.",
+    "hint": "I can see a horse.",
+    "recommendation": "g2_u6_can_see"
+  },
+  {
+    "pattern": "give me the",
+    "grammar": "pass_me",
+    "code": "G2007",
+    "errorType": "pass_me_error",
+    "title": "Nhầm Pass me và Give me",
+    "message": "Nhờ đưa đồ trong bếp: Pass me the + N, please.",
+    "hint": "Pass me the plate, please.",
+    "recommendation": "g2_u7_pass_me"
+  },
+  {
+    "pattern": "in the bench",
+    "grammar": "prepositions",
+    "code": "G2008",
+    "errorType": "preposition_error",
+    "title": "Sai giới từ in/on/under",
+    "message": "Trên bề mặt dùng on; bên dưới dùng under; bên trong dùng in.",
+    "hint": "The ball is under the bench.",
+    "recommendation": "g2_u8_prepositions"
+  },
+  {
+    "pattern": "how many is the",
+    "grammar": "how_much",
+    "code": "G2009",
+    "errorType": "how_much_error",
+    "title": "Nhầm How much / How many",
+    "message": "Hỏi giá dùng How much is the + N?",
+    "hint": "How much is the apple?",
+    "recommendation": "g2_u9_how_much"
+  },
+  {
+    "pattern": "this are lions",
+    "grammar": "these_are",
+    "code": "G2010",
+    "errorType": "these_are_error",
+    "title": "Sai These are",
+    "message": "Giới thiệu nhiều vật gần: These are + N.",
+    "hint": "These are lions.",
+    "recommendation": "g2_u10_these_are"
+  },
+  {
+    "pattern": "they is running",
+    "grammar": "present_continuous_g2",
+    "code": "G2011",
+    "errorType": "ing_form",
+    "title": "Sai They are + V-ing",
+    "message": "Hành động đang diễn ra: They are running.",
+    "hint": "They are + V-ing.",
+    "recommendation": "g2_u11_present_continuous_g2"
+  },
+  {
+    "pattern": "i would likes",
+    "grammar": "would_like",
+    "code": "G2012",
+    "errorType": "would_like_error",
+    "title": "Sai I'd like",
+    "message": "Gọi món: I'd like + N (like không thêm -s).",
+    "hint": "I'd like juice, please.",
+    "recommendation": "g2_u12_would_like"
+  },
+  {
+    "pattern": "how much pencils",
+    "grammar": "how_many_plural",
+    "code": "G2013",
+    "errorType": "how_many_error",
+    "title": "Nhầm How many / How much",
+    "message": "Đếm được dùng How many + danh từ số nhiều.",
+    "hint": "How many pencils?",
+    "recommendation": "g2_u13_how_many_plural"
+  },
+  {
+    "pattern": "where is the toys",
+    "grammar": "where_are",
+    "code": "G2014",
+    "errorType": "where_are_error",
+    "title": "Sai Where is / Where are",
+    "message": "Nhiều vật dùng Where are the + N?",
+    "hint": "Where are the toys?",
+    "recommendation": "g2_u14_where_are"
+  },
+  {
+    "pattern": "what colour are the shirt",
+    "grammar": "what_colour_clothes",
+    "code": "G2016",
+    "errorType": "colour_question_error",
+    "title": "Sai What colour is/are",
+    "message": "Một món quần áo: What colour is the shirt?",
+    "hint": "What colour is the + clothes?",
+    "recommendation": "g2_u15_what_colour_clothes"
+  },
+  {
+    "pattern": "we has a tent",
+    "grammar": "we_have",
+    "code": "G2015",
+    "errorType": "we_have_error",
+    "title": "Sai We have",
+    "message": "We + have (không dùng has sau We).",
+    "hint": "We have a tent.",
+    "recommendation": "g2_u16_we_have"
+  },
+  {
+    "pattern": "goodbye hello",
+    "grammar": "greetings",
+    "code": "G1001",
+    "errorType": "greeting_error",
+    "title": "Nhầm lời chào và tạm biệt",
+    "message": "Hello/Hi dùng khi gặp; Bye/Goodbye khi chia tay.",
+    "hint": "Hello · Hi · I'm...",
+    "recommendation": "g1_u1_greetings"
+  },
+  {
+    "pattern": "i have is",
+    "grammar": "have_a",
+    "code": "G1002",
+    "errorType": "have_error",
+    "title": "Sai cấu trúc I have a...",
+    "message": "Sau I have cần mạo từ a/an + danh từ, không dùng is.",
+    "hint": "I have a + N.",
+    "recommendation": "g1_u2_have_a"
+  },
+  {
+    "pattern": "this is i",
+    "grammar": "this_is_my",
+    "code": "G1003",
+    "errorType": "possessive_error",
+    "title": "Thiếu my sau This is",
+    "message": "Giới thiệu đồ của mình: This is my + N.",
+    "hint": "This is my bag.",
+    "recommendation": "g1_u3_this_is_my"
+  },
+  {
+    "pattern": "this is the",
+    "grammar": "this_is_a",
+    "code": "G1004",
+    "errorType": "article_error",
+    "title": "Dùng sai mạo từ",
+    "message": "Nhận diện lần đầu dùng a/an: This is a desk.",
+    "hint": "This is a + N.",
+    "recommendation": "g1_u4_this_is_a"
+  },
+  {
+    "pattern": "i likes",
+    "grammar": "i_like",
+    "code": "G1005",
+    "errorType": "verb_form",
+    "title": "Sai dạng like",
+    "message": "I + like (nguyên thể), không thêm -s.",
+    "hint": "I like fish.",
+    "recommendation": "g1_u5_i_like"
+  },
+  {
+    "pattern": "it red",
+    "grammar": "colors",
+    "code": "G1006",
+    "errorType": "missing_be",
+    "title": "Thiếu is khi nói màu",
+    "message": "Mô tả màu: It's red / It is blue.",
+    "hint": "It's + màu.",
+    "recommendation": "g1_u6_colors"
+  },
+  {
+    "pattern": "there are a",
+    "grammar": "there_is",
+    "code": "G1007",
+    "errorType": "there_be_error",
+    "title": "Sai There's / There are",
+    "message": "Một vật dùng There's a..., không dùng There are a.",
+    "hint": "There's a flower.",
+    "recommendation": "g1_u7_there_is"
+  },
+  {
+    "pattern": "how much clocks",
+    "grammar": "how_many",
+    "code": "G1008",
+    "errorType": "question_error",
+    "title": "Nhầm How many / How much",
+    "message": "Đếm được dùng How many + danh từ số nhiều.",
+    "hint": "How many clocks?",
+    "recommendation": "g1_u9_how_many"
+  },
+  {
+    "pattern": "he is run",
+    "grammar": "present_continuous_g1",
+    "code": "G1009",
+    "errorType": "ing_form",
+    "title": "Thiếu -ing",
+    "message": "Hành động đang diễn ra: He is running.",
+    "hint": "He/She is + V-ing.",
+    "recommendation": "g1_u11_present_continuous_g1"
+  },
+  {
+    "pattern": "looks at",
+    "grammar": "look_at",
+    "code": "G1010",
+    "errorType": "imperative_error",
+    "title": "Sai mệnh lệnh Look at",
+    "message": "Chỉ dẫn nhìn: Look at + N (không thêm -s).",
+    "hint": "Look at the lake.",
+    "recommendation": "g1_u12_look_at"
+  },
+  {
+    "pattern": "i wants",
+    "grammar": "i_want",
+    "code": "G1011",
+    "errorType": "verb_form",
+    "title": "Sai dạng want",
+    "message": "I want + N (nguyên thể want).",
+    "hint": "I want a banana.",
+    "recommendation": "g1_u13_i_want"
+  },
+  {
+    "pattern": "she is watch",
+    "grammar": "he_she_is",
+    "code": "G1013",
+    "errorType": "ing_form",
+    "title": "Thiếu -ing sau is",
+    "message": "She is watching (không dùng watch sau is).",
+    "hint": "She is watching.",
+    "recommendation": "g1_u15_he_she_is"
+  },
+  {
     "pattern": "he get",
     "grammar": "present_simple",
     "code": "GR001",
