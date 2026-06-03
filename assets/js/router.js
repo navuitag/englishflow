@@ -32,6 +32,12 @@ import { renderPronunciationGuide, bindPronunciationGuide } from "../../componen
 import { renderSpeakingGuide, bindSpeakingGuide } from "../../components/speakingGuide.js";
 import { renderWritingGuide } from "../../components/writingGuide.js";
 
+const MINDMAP_CONFIG = {
+  subject: "Tiếng Anh",
+  emoji: "🇬🇧",
+  defaultGroupMode: "domain"
+};
+
 let data = {
   skills: [],
   lessons: [],
@@ -41,6 +47,8 @@ let data = {
 };
 
 let practice;
+let mindMap;
+let mindMapGroupMode = MINDMAP_CONFIG.defaultGroupMode;
 
 export function configureRouter(appData) {
   data = appData;
@@ -70,6 +78,17 @@ export function configureRouter(appData) {
       bindPronunciationGuide(card);
       bindSpeakingGuide(card);
     }
+  });
+  mindMap = createMindMapModule({
+    data,
+    getState,
+    setSelectedLevel,
+    getSelectedGrade: (state, grades) =>
+      grades.includes(state.selectedLevel) ? state.selectedLevel : grades[0],
+    renderRoute,
+    escapeHtml,
+    config: MINDMAP_CONFIG,
+    setMindMapMode: (mode) => { mindMapGroupMode = mode; }
   });
   window.addEventListener("hashchange", renderRoute);
 }
@@ -118,6 +137,9 @@ export function renderRoute() {
       content = practice.renderPracticeQuiz(id, state);
       after = () => practice.bindPracticeQuiz(id);
     }
+  } else if (route === "mindmap") {
+    content = mindMap.renderPage(state, { groupMode: mindMapGroupMode });
+    after = () => mindMap.bindPage(state);
   } else if (route === "skills") {
     content = renderSkills(state);
     after = bindSkills;
@@ -252,7 +274,7 @@ function renderHome(state) {
     </section>
     <section class="section-head">
       <h2>Bài học tiếp theo · ${labelLevel(activeLevel)}</h2>
-      <a href="#/skills">Xem tất cả bài</a>
+      <a href="#/mindmap">Sơ đồ tư duy</a> · <a href="#/skills">Xem tất cả bài</a>
     </section>
     <div class="skill-grid">
       ${levelSkills.slice(0, 3).map((skill) => renderLessonCard(skill, state, data.questions)).join("")}

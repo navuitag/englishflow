@@ -1,4 +1,4 @@
-const CACHE_NAME = "englishflow-v22";
+const CACHE_NAME = "englishflow-v6";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -8,6 +8,7 @@ const APP_SHELL = [
   "./assets/css/animation.css",
   "./assets/css/responsive.css",
   "./assets/css/practice-features.css",
+  "./assets/css/mindmap.css",
   "./assets/js/app.js",
   "./assets/js/router.js",
   "./assets/js/state.js",
@@ -19,6 +20,7 @@ const APP_SHELL = [
   "./modules/vocabImages.js",
   "./modules/practiceContent.js",
   "./modules/practiceModes.js",
+  "./modules/mindMap.js",
   "./modules/progress.js",
   "./modules/gamification.js",
   "./modules/speech.js",
