@@ -21,6 +21,7 @@ import { renderMemoryPanel } from "../../components/memoryPanel.js";
 import { showModal } from "../../components/modal.js";
 import { renderVisualization, bindVisualizations } from "../../modules/visualization.js";
 import { createPracticeModule } from "../../modules/practiceModes.js";
+import { createMindMapModule } from "../../modules/mindMap.js";
 import { completeLesson } from "../../modules/lessonEngine.js";
 import { submitAnswer } from "../../modules/quizEngine.js";
 import { getGamificationSummary } from "../../modules/gamification.js";
