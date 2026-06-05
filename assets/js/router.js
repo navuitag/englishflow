@@ -21,7 +21,7 @@ import { renderMemoryPanel } from "../../components/memoryPanel.js";
 import { showModal } from "../../components/modal.js";
 import { renderVisualization, bindVisualizations } from "../../modules/visualization.js";
 import { createPracticeModule } from "../../modules/practiceModes.js";
-import { createMindMapModule } from "../../modules/mindMap.js";
+import { chapterMindMapHref, createMindMapModule } from "../../modules/mindMap.js";
 import { completeLesson } from "../../modules/lessonEngine.js";
 import { submitAnswer } from "../../modules/quizEngine.js";
 import { getGamificationSummary } from "../../modules/gamification.js";
@@ -342,7 +342,7 @@ function renderSkills(state) {
       <header class="chapter-head">
         <span class="tag">Chủ đề ${group.chapterIndex} · ${group.book}</span>
         <h2>${group.chapter}</h2>
-        <a class="chapter-mm-link" href="${mindMap.chapterMindMapHref(group.items[0], mindMapGroupMode)}">🧠 Sơ đồ chủ đề</a>
+        <a class="chapter-mm-link" href="${chapterMindMapHref(group.items[0], mindMapGroupMode)}">🧠 Sơ đồ chủ đề</a>
       </header>
       <div class="skill-path">
         ${group.items.map((skill) => renderLessonCard(skill, state, data.questions)).join("")}

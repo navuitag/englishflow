@@ -25,6 +25,12 @@ export function parseBranchId(branchId) {
   return { grade: Number(branchId.slice(0, idx)), slug: branchId.slice(idx + 2) };
 }
 
+/** Standalone href helper — safe before createMindMapModule() runs. */
+export function chapterMindMapHref(skill, groupMode = "chapter") {
+  if (!skill) return "#/mindmap";
+  return `#/mindmap/topic/${encodeURIComponent(makeBranchId(skill.grade, groupKey(skill, groupMode)))}`;
+}
+
 function isSkillUnlocked(skill, completed) {
   return (skill.prerequisite || []).every((id) => completed.includes(id));
 }
@@ -457,11 +463,6 @@ export function createMindMapModule(ctx) {
     return renderSummerTopicDetail(map, packId);
   }
 
-  function chapterMindMapHref(skill, groupMode = config.defaultGroupMode) {
-    if (!skill) return "#/mindmap";
-    return `#/mindmap/topic/${encodeURIComponent(makeBranchId(skill.grade, groupKey(skill, groupMode)))}`;
-  }
-
   function bindPage() {
     document.querySelectorAll("[data-mm-grade]").forEach((tab) => {
       tab.addEventListener("click", () => {
@@ -505,7 +506,8 @@ export function createMindMapModule(ctx) {
     renderSkillPage,
     renderSummerTopicPage,
     bindPage,
-    chapterMindMapHref,
+    chapterMindMapHref: (skill, groupMode = config.defaultGroupMode) =>
+      chapterMindMapHref(skill, groupMode),
     makeBranchId,
     buildMindMapTree,
     buildSummerBranches
