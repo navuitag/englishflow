@@ -295,7 +295,6 @@ function renderHome(state) {
       <article><strong>${getOverallAccuracy(state)}%</strong><span>Độ chính xác</span></article>
       <article><strong>${summary.level}</strong><span>Cấp độ</span></article>
     </section>
-    ${renderEdtechHubGrid()}
     <section class="section-head">
       <h2>Bài học tiếp theo · ${labelLevel(activeLevel)}</h2>
       <a href="#/mindmap">Sơ đồ tư duy</a> · <a href="#/skills">Xem tất cả bài</a>
@@ -303,6 +302,7 @@ function renderHome(state) {
     <div class="skill-grid">
       ${levelSkills.slice(0, 3).map((skill) => renderLessonCard(skill, state, data.questions)).join("")}
     </div>
+    ${renderEdtechHubGrid()}
   `;
 }
 
