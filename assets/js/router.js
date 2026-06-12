@@ -29,6 +29,7 @@ import { getGamificationSummary } from "../../modules/gamification.js";
 import { getOverallAccuracy, getWeakSkills } from "../../modules/progress.js";
 import { bindVocabList, renderVocabList } from "../../components/vocabList.js";
 import { bindLearnerSwitcher, renderAddLearnerForm, renderLearnerList } from "../../components/learnerSwitcher.js";
+import { bindEdtechHub, renderEdtechHubGrid } from "../../components/edtechHub.js";
 import { renderListeningPlayer, bindListeningPlayer } from "../../components/listeningPlayer.js";
 import { renderPronunciationGuide, bindPronunciationGuide } from "../../components/pronunciationGuide.js";
 import { renderSpeakingGuide, bindSpeakingGuide } from "../../components/speakingGuide.js";
@@ -174,6 +175,7 @@ export function renderRoute() {
 }
 
 function bindNavbar() {
+  bindEdtechHub();
   bindLearnerSwitcher({
     onSwitch: (profileId) => {
       switchProfile(profileId);
@@ -291,6 +293,7 @@ function renderHome(state) {
       <article><strong>${getOverallAccuracy(state)}%</strong><span>Độ chính xác</span></article>
       <article><strong>${summary.level}</strong><span>Cấp độ</span></article>
     </section>
+    ${renderEdtechHubGrid()}
     <section class="section-head">
       <h2>Bài học tiếp theo · ${labelLevel(activeLevel)}</h2>
       <a href="#/mindmap">Sơ đồ tư duy</a> · <a href="#/skills">Xem tất cả bài</a>

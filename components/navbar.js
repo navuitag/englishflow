@@ -1,5 +1,6 @@
 import { getGamificationSummary } from "../modules/gamification.js";
 import { renderLearnerSwitcher } from "./learnerSwitcher.js";
+import { renderEdtechHubButton } from "./edtechHub.js";
 
 const LEVEL_LABEL = {
   1: "Lớp 1",
@@ -37,6 +38,7 @@ export function renderNavbar(state, levels = []) {
         <a href="#/profile">Hồ sơ</a>
       </nav>
       <div class="top-stats">
+        ${renderEdtechHubButton()}
         ${renderLearnerSwitcher(state)}
         ${levels.length ? `<label class="grade-switch">
           <span>Trình độ</span>
