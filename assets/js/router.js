@@ -30,6 +30,7 @@ import { getOverallAccuracy, getWeakSkills } from "../../modules/progress.js";
 import { bindVocabList, renderVocabList } from "../../components/vocabList.js";
 import { bindLearnerSwitcher, renderAddLearnerForm, renderLearnerList } from "../../components/learnerSwitcher.js";
 import { bindEdtechHub, renderEdtechHubGrid } from "../../components/edtechHub.js";
+import { renderAppFooter, renderAuthorCard } from "../author.js";
 import { renderListeningPlayer, bindListeningPlayer } from "../../components/listeningPlayer.js";
 import { renderPronunciationGuide, bindPronunciationGuide } from "../../components/pronunciationGuide.js";
 import { renderSpeakingGuide, bindSpeakingGuide } from "../../components/speakingGuide.js";
@@ -117,6 +118,7 @@ export function renderRoute() {
     <main class="app-shell">
       ${content}
     </main>
+    ${renderAppFooter()}
     ${renderBottomNav()}
   `;
 
@@ -605,6 +607,7 @@ function renderProfile(state) {
       <h2>Thêm người học mới</h2>
       ${renderAddLearnerForm()}
     </section>
+    ${renderAuthorCard()}
   `;
 }
 

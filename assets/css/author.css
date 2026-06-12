@@ -1,0 +1,89 @@
+.app-footer {
+  border-top: 1px solid var(--line, #d8e6f2);
+  color: var(--muted, #5f7d98);
+  font-size: 13px;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 20px 24px 96px;
+  text-align: center;
+}
+
+.app-footer-title {
+  color: var(--text, #193f65);
+  font-weight: 800;
+  margin: 0 0 6px;
+}
+
+.app-footer-links {
+  margin: 0;
+}
+
+.app-footer-links a {
+  color: var(--blue, #193f65);
+  font-weight: 700;
+}
+
+.author-card {
+  background: var(--surface, #fff);
+  border: 1px solid var(--line, #d8e6f2);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(25, 63, 101, 0.08);
+  padding: 20px;
+}
+
+.author-card h2 {
+  margin-top: 0;
+}
+
+.author-card p {
+  margin: 0 0 8px;
+}
+
+.author-card p:last-child {
+  margin-bottom: 0;
+}
+
+.author-card a {
+  color: var(--blue, #193f65);
+  font-weight: 700;
+}
+
+.sidebar-author {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+  line-height: 1.45;
+  margin: 10px 0 0;
+}
+
+.sidebar-author strong {
+  color: rgba(255, 255, 255, 0.95);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.sidebar-author a {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+}
+
+.sidebar-author a:hover {
+  text-decoration: underline;
+}
+
+.hub-author {
+  border-top: 1px solid var(--line, #d8e6f2);
+  color: var(--muted, #5f7d98);
+  font-size: 14px;
+  margin-top: 40px;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.hub-author strong {
+  color: var(--text, #193f65);
+}
+
+.hub-author a {
+  color: var(--text, #193f65);
+  font-weight: 700;
+}

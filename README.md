@@ -449,3 +449,11 @@ Trạng thái người dùng (`localStorage` key: `englishflow_state`):
 
 - `tai_lieu_dac_ta_ky_thuat_english_error_lab.md` — Đặc tả kỹ thuật.
 - `tai_lieu_thiet_ke_chi_tiet_english_error_lab.md` — Thiết kế chi tiết.
+
+---
+
+## Tác giả
+
+- **Nguyễn Anh Vũ**
+- Email: [navuitag@gmail.com](mailto:navuitag@gmail.com)
+- Điện thoại: [0986201079](tel:+84986201079)
