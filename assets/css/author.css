@@ -23,6 +23,29 @@
   font-weight: 700;
 }
 
+.app-footer-zalo {
+  margin: 18px auto 0;
+  max-width: 220px;
+}
+
+.app-footer-zalo img {
+  background: #fff;
+  border: 1px solid var(--line, #d8e6f2);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(25, 63, 101, 0.1);
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.app-footer-zalo figcaption {
+  color: var(--muted, #5f7d98);
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
 .author-card {
   background: var(--surface, #fff);
   border: 1px solid var(--line, #d8e6f2);
@@ -86,4 +109,27 @@
 .hub-author a {
   color: var(--text, #193f65);
   font-weight: 700;
+}
+
+.hub-zalo-qr {
+  margin: 18px auto 0;
+  max-width: 220px;
+}
+
+.hub-zalo-qr img {
+  background: #fff;
+  border: 1px solid var(--line, #d8e6f2);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(25, 63, 101, 0.1);
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.hub-zalo-qr figcaption {
+  color: var(--muted, #5f7d98);
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 8px;
 }

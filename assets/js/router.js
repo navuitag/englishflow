@@ -31,6 +31,7 @@ import { bindVocabList, renderVocabList } from "../../components/vocabList.js";
 import { bindLearnerSwitcher, renderAddLearnerForm, renderLearnerList } from "../../components/learnerSwitcher.js";
 import { bindEdtechHub, renderEdtechHubGrid } from "../../components/edtechHub.js";
 import { renderAppFooter, renderAuthorCard } from "./author.js";
+import { bindFeedback, renderFeedbackCard } from "./feedback.js";
 import { renderListeningPlayer, bindListeningPlayer } from "../../components/listeningPlayer.js";
 import { renderPronunciationGuide, bindPronunciationGuide } from "../../components/pronunciationGuide.js";
 import { renderSpeakingGuide, bindSpeakingGuide } from "../../components/speakingGuide.js";
@@ -178,6 +179,7 @@ export function renderRoute() {
 
 function bindNavbar() {
   bindEdtechHub();
+  bindFeedback();
   bindLearnerSwitcher({
     onSwitch: (profileId) => {
       switchProfile(profileId);
@@ -608,6 +610,7 @@ function renderProfile(state) {
       ${renderAddLearnerForm()}
     </section>
     ${renderAuthorCard()}
+    ${renderFeedbackCard()}
   `;
 }
 
