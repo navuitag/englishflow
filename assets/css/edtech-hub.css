@@ -1,5 +1,52 @@
 .edtech-hub {
+  align-items: center;
+  display: flex;
+  gap: 8px;
   position: relative;
+}
+
+.edtech-hub-home-btn {
+  align-items: center;
+  background: #eaf7f1;
+  border: 1px solid #cfe9dd;
+  border-radius: 8px;
+  color: var(--green-dark, #178a58);
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 800;
+  gap: 6px;
+  padding: 9px 12px;
+  text-decoration: none;
+}
+
+.edtech-hub-home-btn:hover {
+  background: #dff3ea;
+}
+
+.edtech-hub-item-home {
+  background: #f3faf7;
+  margin-bottom: 4px;
+}
+
+.edtech-hub-item-home:hover {
+  background: #eaf7f1;
+}
+
+.edtech-hub-sidebar-home {
+  background: rgba(255, 255, 255, 0.1);
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.edtech-hub-grid-section .section-head a {
+  color: var(--blue, #193f65);
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.edtech-hub-grid-section .section-head a:hover {
+  text-decoration: underline;
 }
 
 .edtech-hub-btn {

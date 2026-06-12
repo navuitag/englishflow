@@ -1,5 +1,24 @@
-import { listApps } from "../assets/js/edtechApps.js";
+import { getHubUrl, listApps } from "../assets/js/edtechApps.js";
 import { escapeHtml } from "../assets/js/utils.js";
+
+function renderHubMenuItem() {
+  return `
+      <a class="edtech-hub-item edtech-hub-item-home" href="${escapeHtml(getHubUrl())}">
+        <span class="edtech-hub-emoji" aria-hidden="true">🏠</span>
+        <span class="edtech-hub-meta">
+          <strong>EdTech Hub</strong>
+          <small>Trang chủ · chọn môn học</small>
+        </span>
+      </a>`;
+}
+
+export function renderHubLink() {
+  return `
+    <a class="edtech-hub-home-btn" href="${escapeHtml(getHubUrl())}" title="Về EdTech Hub">
+      <span aria-hidden="true">🏠</span>
+      <span class="edtech-hub-label-btn">Hub</span>
+    </a>`;
+}
 
 export function renderEdtechHubButton() {
   const apps = listApps();
@@ -15,12 +34,14 @@ export function renderEdtechHubButton() {
 
   return `
     <div class="edtech-hub">
+      ${renderHubLink()}
       <button type="button" class="edtech-hub-btn" id="edtechHubBtn" aria-haspopup="true" aria-expanded="false">
         <span class="edtech-hub-icon" aria-hidden="true">📚</span>
         <span class="edtech-hub-label-btn">Môn học</span>
         <span class="edtech-hub-caret" aria-hidden="true">▾</span>
       </button>
       <div class="edtech-hub-menu" id="edtechHubMenu" hidden>
+        ${renderHubMenuItem()}
         <p class="edtech-hub-menu-title">Chuyển môn học</p>
         ${menu}
       </div>
@@ -35,6 +56,7 @@ export function renderEdtechHubGrid(title = "Khám phá môn học khác") {
     <section class="edtech-hub-grid-section">
       <div class="section-head">
         <h2>${escapeHtml(title)}</h2>
+        <a href="${escapeHtml(getHubUrl())}">← Về EdTech Hub</a>
       </div>
       <div class="edtech-hub-grid">
         ${apps.map((app) => `

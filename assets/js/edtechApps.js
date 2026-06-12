@@ -17,6 +17,8 @@ export const EDTECH_APPS = [
 
 const FOLDER_IDS = new Set(EDTECH_APPS.map((app) => app.folder.toLowerCase()));
 
+export const HUB_REPO = "edtech";
+
 function appFolder(app) {
   return app.folder;
 }
@@ -55,6 +57,38 @@ export function getAppUrl(app, currentAppId = CURRENT_APP_ID) {
   }
 
   return `../${appFolder(app)}/index.html${app.start}`;
+}
+
+export function getHubUrl(currentAppId = CURRENT_APP_ID) {
+  const override = typeof localStorage !== "undefined" && localStorage.getItem("edtech_hub_base");
+  if (override) {
+    const base = override.replace(/\/$/, "");
+    return `${base}/${HUB_REPO}/index.html`;
+  }
+
+  if (typeof window === "undefined") {
+    return `../${HUB_REPO}/index.html`;
+  }
+
+  const { hostname, pathname, protocol, port } = window.location;
+  const portSuffix = port ? `:${port}` : "";
+
+  if (hostname.endsWith(".github.io")) {
+    return `${protocol}//${hostname}/${HUB_REPO}/`;
+  }
+
+  const segments = pathname.split("/").filter(Boolean);
+  const currentIdx = segments.findIndex((segment) =>
+    segment.toLowerCase() === String(currentAppId).toLowerCase()
+    || FOLDER_IDS.has(segment.toLowerCase())
+  );
+  if (currentIdx >= 0) {
+    const prefix = segments.slice(0, currentIdx).join("/");
+    const root = prefix ? `/${prefix}` : "";
+    return `${protocol}//${hostname}${portSuffix}${root}/${HUB_REPO}/index.html`;
+  }
+
+  return `../${HUB_REPO}/index.html`;
 }
 
 export function listApps(currentAppId = CURRENT_APP_ID) {
