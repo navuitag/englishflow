@@ -1,4 +1,4 @@
-const CACHE_NAME = "englishflow-v10";
+const CACHE_NAME = "englishflow-v11";
 const APP_SHELL = [
   "./",
   "./index.html",

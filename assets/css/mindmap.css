@@ -6,6 +6,19 @@
   border-radius: 16px;
 }
 
+/* Chuyên đề — thẻ danh sách */
+.st-topic-card.card-panel {
+  padding: 16px 18px;
+}
+
+.st-topic-card.card-panel.st-topic-card--thumb {
+  padding: 0;
+}
+
+.st-topic-card--thumb .st-topic-card-body {
+  padding: 16px 18px;
+}
+
 .mm-page-head {
   margin-bottom: 16px;
 }
