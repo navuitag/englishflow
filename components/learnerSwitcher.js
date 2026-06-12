@@ -18,7 +18,7 @@ export function renderLearnerSwitcher(state) {
         <span class="learner-avatar" style="background:${escapeHtml(profile.avatarColor)}">${escapeHtml(initials(profile.name))}</span>
         <span class="learner-menu-meta">
           <strong>${escapeHtml(profile.name)}</strong>
-          <small>${profile.summary.xp} XP · ${profile.summary.completedLessons} bài</small>
+          <small>${profile.summary.studyTodayLabel || "0 phút"} hôm nay · ${profile.summary.studyTotalLabel || "0 phút"} tổng</small>
         </span>
       </button>`;
   }).join("");
@@ -91,7 +91,7 @@ export function renderLearnerList(state, profiles) {
           <span class="learner-avatar learner-avatar-lg" style="background:${escapeHtml(profile.avatarColor)}">${escapeHtml(initials(profile.name))}</span>
           <div>
             <h3>${escapeHtml(profile.name)}${isActive ? ' <span class="tag">Đang học</span>' : ""}</h3>
-            <p>${profile.summary.xp} XP · ${profile.summary.completedLessons} bài · ${profile.summary.accuracy}% chính xác</p>
+            <p>${profile.summary.studyTodayLabel || "0 phút"} hôm nay · ${profile.summary.studyTotalLabel || "0 phút"} tổng · ${profile.summary.xp} XP</p>
           </div>
         </div>
         <div class="learner-card-actions">

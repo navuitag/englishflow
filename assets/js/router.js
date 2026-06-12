@@ -12,6 +12,7 @@ import {
   deleteProfile,
   hasProfiles
 } from "./state.js";
+import { getStudyTimeSummary } from "./studyTime.js";
 import { setRoute, escapeHtml, normalizeText } from "./utils.js";
 import { renderNavbar, renderBottomNav, labelLevel } from "../../components/navbar.js";
 import { renderLessonCard } from "../../components/lessonCard.js";
@@ -256,6 +257,7 @@ function render(content) {
 }
 
 function renderHome(state) {
+  const study = getStudyTimeSummary(state);
   const summary = getGamificationSummary(state);
   const activeLevel = resolveLevel(state);
   const levelSkills = data.skills.filter((skill) => skill.grade === activeLevel);
@@ -282,8 +284,10 @@ function renderHome(state) {
       </div>
     </section>
     <section class="stat-grid">
+      <article><strong>${study.todayLabel}</strong><span>Học hôm nay</span></article>
       <article><strong>${state.todayXp}</strong><span>XP hôm nay</span></article>
       <article><strong>${state.streak}</strong><span>Chuỗi ngày</span></article>
+      <article><strong>${study.totalLabel}</strong><span>Tổng giờ học</span></article>
       <article><strong>${getOverallAccuracy(state)}%</strong><span>Độ chính xác</span></article>
       <article><strong>${summary.level}</strong><span>Cấp độ</span></article>
     </section>
@@ -549,6 +553,7 @@ function renderErrors(state) {
 }
 
 function renderProfile(state) {
+  const study = getStudyTimeSummary(state);
   const summary = getGamificationSummary(state);
   const profiles = getProfiles();
 
@@ -559,6 +564,11 @@ function renderProfile(state) {
       <p>Đang học ${labelLevel(resolveLevel(state))} · Level ${summary.level} · ${state.xp} XP</p>
     </section>
     <section class="profile-grid">
+      <article>
+        <h2>Thời gian học</h2>
+        <p>Hôm nay: <strong>${study.todayLabel}</strong> · Tổng: <strong>${study.totalLabel}</strong></p>
+        <p class="text-muted">Tự động ghi nhận khi em mở app và học (tab đang hiển thị).</p>
+      </article>
       <article>
         <h2>Huy hiệu</h2>
         <div class="badge-list">

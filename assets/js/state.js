@@ -1,3 +1,5 @@
+import { getStudyTimeSummary } from "./studyTime.js";
+
 const LEGACY_KEY = "englishflow_state";
 const STORAGE_KEY = "englishflow_accounts";
 
@@ -17,6 +19,10 @@ const defaultProgress = () => ({
     target: 5,
     progress: 0
   },
+  studyMinutesToday: 0,
+  studyMinutesTotal: 0,
+  studyLastDate: null,
+  studyDailyLog: [],
   lastStudiedDate: new Date().toISOString().slice(0, 10)
 });
 
@@ -145,11 +151,14 @@ export function getProfiles() {
 export function summarizeProgress(progress = defaultProgress()) {
   const totalAnswers = progress.answers?.length || 0;
   const correctAnswers = (progress.answers || []).filter((item) => item.correct).length;
+  const study = getStudyTimeSummary(progress);
   return {
     xp: progress.xp || 0,
     completedLessons: progress.completedLessons?.length || 0,
     accuracy: totalAnswers ? Math.round((correctAnswers / totalAnswers) * 100) : 0,
-    onboarded: Boolean(progress.onboarded)
+    onboarded: Boolean(progress.onboarded),
+    studyTodayLabel: study.todayLabel,
+    studyTotalLabel: study.totalLabel
   };
 }
 

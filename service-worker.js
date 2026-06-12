@@ -1,4 +1,4 @@
-const CACHE_NAME = "englishflow-v11";
+const CACHE_NAME = "englishflow-v12";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -12,6 +12,7 @@ const APP_SHELL = [
   "./assets/js/app.js",
   "./assets/js/router.js",
   "./assets/js/state.js",
+  "./assets/js/studyTime.js",
   "./assets/js/utils.js",
   "./modules/lessonEngine.js",
   "./modules/quizEngine.js",
