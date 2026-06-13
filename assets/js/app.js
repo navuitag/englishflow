@@ -4,15 +4,16 @@ import { createStudyTimeTracker } from "./studyTime.js";
 import { configureRouter, renderRoute } from "./router.js";
 
 async function boot() {
-  const [skills, lessons, questions, errors, exercises] = await Promise.all([
+  const [skills, lessons, questions, errors, exercises, specialTopics] = await Promise.all([
     loadJson("data/skills.json"),
     loadJson("data/lessons.json"),
     loadJson("data/questions.json"),
     loadJson("data/errors.json"),
-    loadJson("data/exercises.json")
+    loadJson("data/exercises.json"),
+    loadJson("data/special-topics.json")
   ]);
 
-  configureRouter({ skills, lessons, questions, errors, exercises });
+  configureRouter({ skills, lessons, questions, errors, exercises, specialTopics });
 
   if (!window.location.hash) {
     window.location.hash = "#/home";

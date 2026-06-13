@@ -23,7 +23,8 @@ const defaultProgress = () => ({
   studyMinutesTotal: 0,
   studyLastDate: null,
   studyDailyLog: [],
-  lastStudiedDate: new Date().toISOString().slice(0, 10)
+  lastStudiedDate: new Date().toISOString().slice(0, 10),
+  specialTopics: {}
 });
 
 function createEmptyAccounts() {

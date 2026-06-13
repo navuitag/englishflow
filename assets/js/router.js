@@ -36,6 +36,7 @@ import { renderListeningPlayer, bindListeningPlayer } from "../../components/lis
 import { renderPronunciationGuide, bindPronunciationGuide } from "../../components/pronunciationGuide.js";
 import { renderSpeakingGuide, bindSpeakingGuide } from "../../components/speakingGuide.js";
 import { renderWritingGuide } from "../../components/writingGuide.js";
+import { createSpecialTopicsModule, getSpecialTopicsSummary } from "../../modules/specialTopics.js";
 
 const MINDMAP_CONFIG = {
   subject: "Tiếng Anh",
@@ -48,11 +49,13 @@ let data = {
   lessons: [],
   questions: [],
   errors: [],
-  exercises: []
+  exercises: [],
+  specialTopics: { topics: [], categories: [] }
 };
 
 let practice;
 let mindMap;
+let specialTopics;
 let mindMapGroupMode = MINDMAP_CONFIG.defaultGroupMode;
 
 export function configureRouter(appData) {
@@ -95,6 +98,13 @@ export function configureRouter(appData) {
     config: MINDMAP_CONFIG,
     setMindMapMode: (mode) => { mindMapGroupMode = mode; }
   });
+  specialTopics = createSpecialTopicsModule({
+    data,
+    getState,
+    renderRoute,
+    escapeHtml,
+    notFound
+  });
   window.addEventListener("hashchange", renderRoute);
 }
 
@@ -107,6 +117,7 @@ export function renderRoute() {
   const sub = parts[2];
 
   practice?.resetOnLeavePractice(route);
+  specialTopics?.resetOnLeave(route);
 
   if (!state.onboarded) {
     render(renderOnboarding(state));
@@ -159,6 +170,21 @@ export function renderRoute() {
     } else {
       content = mindMap.renderPage(state, { groupMode: mindMapGroupMode });
       after = () => mindMap.bindPage(state);
+    }
+  } else if (route === "special-topics") {
+    if (!id) {
+      content = specialTopics.renderCatalog(state);
+    } else if (sub === "flash") {
+      content = specialTopics.renderFlash(state, id);
+      after = () => specialTopics.bindFlash(id);
+    } else if (sub === "quiz") {
+      content = specialTopics.renderQuiz(state, id);
+      after = () => specialTopics.bindQuiz(id);
+    } else if (sub === "memory") {
+      content = specialTopics.renderMemory(state, id);
+      after = () => specialTopics.bindMemory(id);
+    } else {
+      content = specialTopics.renderTopicHub(state, id);
     }
   } else if (route === "skills") {
     content = renderSkills(state);
@@ -270,6 +296,7 @@ function renderHome(state) {
   const nextSkill = levelSkills.find((skill) => !state.completedLessons.includes(skill.id)) || levelSkills[0] || data.skills[0];
   const questPercent = Math.round((state.dailyQuest.progress / state.dailyQuest.target) * 100);
   const weakSkill = getWeakSkills(state)[0];
+  const stSummary = getSpecialTopicsSummary(state, data.specialTopics?.topics || []);
 
   return `
     <section class="hero-panel">
@@ -280,6 +307,7 @@ function renderHome(state) {
         <div class="hero-actions">
           <a class="btn primary" href="#/lesson/${nextSkill.id}">Tiếp tục học</a>
           <a class="btn secondary" href="#/practice/${nextSkill.id}">Luyện nhanh</a>
+          <a class="btn secondary" href="#/special-topics">47 chuyên đề</a>
         </div>
       </div>
       <div class="daily-card">
@@ -303,6 +331,16 @@ function renderHome(state) {
     </section>
     <div class="skill-grid">
       ${levelSkills.slice(0, 3).map((skill) => renderLessonCard(skill, state, data.questions)).join("")}
+    </div>
+    <section class="section-head">
+      <h2>Chuyên đề THCS</h2>
+      <a href="#/special-topics">Xem 47 chuyên đề</a>
+    </section>
+    <div class="st-home-banner">
+      <div>
+        <strong>${stSummary.studied}/${stSummary.total}</strong> chuyên đề đã luyện · <strong>${stSummary.xp}</strong> XP chuyên đề
+      </div>
+      <a class="btn secondary" href="#/special-topics">Flash · Quiz · Memory</a>
     </div>
     ${renderEdtechHubGrid()}
   `;

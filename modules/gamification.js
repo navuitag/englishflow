@@ -10,6 +10,9 @@ export function getGamificationSummary(state) {
   if (state.streak >= 7) badges.push("7 ngày liên tiếp");
   if (state.answers.filter((answer) => answer.correct).length >= 10) badges.push("Săn lỗi đại tài");
   if (state.errors.length === 0 && state.answers.length >= 5) badges.push("Không vương lỗi sai");
+  const stDone = Object.values(state.specialTopics || {}).filter((item) => (item.modesDone || []).length >= 2).length;
+  if (stDone >= 1) badges.push("Chuyên đề đầu tiên");
+  if (stDone >= 10) badges.push("Bậc thầy chuyên đề");
 
   return {
     level,

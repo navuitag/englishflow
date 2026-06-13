@@ -1,4 +1,4 @@
-const CACHE_NAME = "englishflow-v18";
+const CACHE_NAME = "englishflow-v19";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -8,6 +8,7 @@ const APP_SHELL = [
   "./assets/css/animation.css",
   "./assets/css/responsive.css",
   "./assets/css/practice-features.css",
+  "./assets/css/special-topics.css",
   "./assets/css/mindmap.css",
   "./assets/js/app.js",
   "./assets/js/router.js",
@@ -33,6 +34,7 @@ const APP_SHELL = [
   "./modules/mindMap.js",
   "./modules/progress.js",
   "./modules/gamification.js",
+  "./modules/specialTopics.js",
   "./modules/speech.js",
   "./components/navbar.js",
   "./components/lessonCard.js",
@@ -50,7 +52,8 @@ const APP_SHELL = [
   "./data/lessons.json",
   "./data/questions.json",
   "./data/errors.json",
-  "./data/exercises.json"
+  "./data/exercises.json",
+  "./data/special-topics.json"
 ];
 
 self.addEventListener("install", (event) => {
