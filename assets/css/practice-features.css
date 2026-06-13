@@ -16,6 +16,10 @@
   --practice-tab-cols: 4;
 }
 
+.practice-tabs--5 {
+  --practice-tab-cols: 5;
+}
+
 .practice-tab {
   background: var(--surface);
   border: 1px solid var(--line);

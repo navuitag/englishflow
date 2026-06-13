@@ -174,6 +174,7 @@ export function renderRoute() {
   } else if (route === "special-topics") {
     if (!id) {
       content = specialTopics.renderCatalog(state);
+      after = () => specialTopics.bindPosterLightbox();
     } else if (sub === "flash") {
       content = specialTopics.renderFlash(state, id);
       after = () => specialTopics.bindFlash(id);
@@ -183,8 +184,12 @@ export function renderRoute() {
     } else if (sub === "memory") {
       content = specialTopics.renderMemory(state, id);
       after = () => specialTopics.bindMemory(id);
+    } else if (sub === "poster") {
+      content = specialTopics.renderPosterView(state, id);
+      after = () => specialTopics.bindPosterView(id);
     } else {
       content = specialTopics.renderTopicHub(state, id);
+      after = () => specialTopics.bindPosterLightbox();
     }
   } else if (route === "skills") {
     content = renderSkills(state);

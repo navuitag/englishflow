@@ -54,3 +54,15 @@ export function percent(value, total) {
   if (!total) return 0;
   return Math.round((value / total) * 100);
 }
+
+/** Resolve relative asset paths (e.g. special-topic/foo.png) against the app URL. */
+export function resolveMediaUrl(path) {
+  if (!path) return "";
+  if (/^https?:\/\//i.test(path)) return path;
+  try {
+    const normalized = path.startsWith("./") ? path : `./${path.replace(/^\//, "")}`;
+    return new URL(normalized, window.location.href).href;
+  } catch {
+    return path;
+  }
+}

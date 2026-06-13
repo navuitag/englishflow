@@ -1,5 +1,5 @@
 import { updateState } from "../assets/js/state.js";
-import { normalizeText } from "../assets/js/utils.js";
+import { normalizeText, escapeHtml, resolveMediaUrl } from "../assets/js/utils.js";
 import { renderFlashcardPanel, bindFlashcardImages } from "../components/flashcardPanel.js";
 import { renderMemoryPanel } from "../components/memoryPanel.js";
 import { xpForAnswer } from "./gamification.js";
@@ -37,7 +37,106 @@ function markModeDone(topicId, mode) {
   });
 }
 
+function closePosterLightbox() {
+  document.querySelector(".st-lightbox-backdrop")?.remove();
+  document.body.classList.remove("st-lightbox-open");
+}
+
+function showPosterLightbox(src, caption = "") {
+  closePosterLightbox();
+  const imageUrl = resolveMediaUrl(src);
+  const backdrop = document.createElement("div");
+  backdrop.className = "st-lightbox-backdrop";
+  backdrop.innerHTML = `
+    <div class="st-lightbox-toolbar">
+      <p class="st-lightbox-caption">${escapeHtml(caption)}</p>
+      <div class="st-lightbox-actions">
+        <a class="btn quiet st-lightbox-open" href="${escapeHtml(imageUrl)}" target="_blank" rel="noopener">Mở tab mới</a>
+        <button class="btn secondary st-lightbox-close" type="button" aria-label="Đóng">Đóng</button>
+      </div>
+    </div>
+    <div class="st-lightbox-scroll">
+      <img class="st-lightbox-img" src="${escapeHtml(imageUrl)}" alt="${escapeHtml(caption)}">
+    </div>
+  `;
+
+  const onKeyDown = (event) => {
+    if (event.key === "Escape") {
+      closePosterLightbox();
+      document.removeEventListener("keydown", onKeyDown);
+    }
+  };
+
+  backdrop.querySelector(".st-lightbox-close")?.addEventListener("click", () => {
+    closePosterLightbox();
+    document.removeEventListener("keydown", onKeyDown);
+  });
+  backdrop.addEventListener("click", (event) => {
+    if (event.target === backdrop || event.target.classList.contains("st-lightbox-scroll")) {
+      closePosterLightbox();
+      document.removeEventListener("keydown", onKeyDown);
+    }
+  });
+  backdrop.querySelector(".st-lightbox-img")?.addEventListener("click", (event) => {
+    event.stopPropagation();
+  });
+
+  document.body.classList.add("st-lightbox-open");
+  document.body.append(backdrop);
+  document.addEventListener("keydown", onKeyDown);
+}
+
+function renderPosterPreview(poster, caption, escape, { compact = false, topicId = "" } = {}) {
+  if (!poster) return compact ? "" : "<p class='empty-state'>Chưa có ảnh.</p>";
+  const imageUrl = resolveMediaUrl(poster);
+  const safeSrc = escape(imageUrl);
+  const safeCaption = escape(caption);
+  const fileName = escape(poster.split("/").pop() || "infographic.png");
+  if (compact) {
+    return `
+      <button type="button" class="st-zoom-btn" data-st-fullscreen="${safeSrc}" data-st-caption="${safeCaption}" aria-label="Xem ảnh full-size">
+        <span aria-hidden="true">⤢</span>
+      </button>`;
+  }
+  const posterPageLink = topicId
+    ? `<a class="btn primary" href="#/special-topics/${escape(topicId)}/poster">Xem ảnh gốc</a>`
+    : "";
+  return `
+    <div class="st-poster-wrap">
+      <button type="button" class="st-poster-btn" data-st-fullscreen="${safeSrc}" data-st-caption="${safeCaption}" aria-label="Xem infographic full-size">
+        <img class="st-poster" src="${safeSrc}" alt="${safeCaption}" loading="lazy">
+        <span class="st-poster-hint">Nhấn để phóng to</span>
+      </button>
+      <div class="st-poster-actions">
+        ${posterPageLink}
+        <a class="btn secondary st-open-image" href="${safeSrc}" target="_blank" rel="noopener">Mở tab mới</a>
+        <a class="btn quiet" href="${safeSrc}" download="${fileName}">Tải ảnh</a>
+      </div>
+    </div>`;
+}
+
+let posterLightboxReady = false;
+
+function ensurePosterLightboxBinding() {
+  if (posterLightboxReady) return;
+  posterLightboxReady = true;
+  document.addEventListener("click", (event) => {
+    const trigger = event.target.closest("[data-st-fullscreen]");
+    if (!trigger) return;
+    event.preventDefault();
+    event.stopPropagation();
+    const src = trigger.getAttribute("data-st-fullscreen") || "";
+    const caption = trigger.getAttribute("data-st-caption") || "";
+    showPosterLightbox(src, caption);
+  });
+}
+
+function bindPosterLightbox() {
+  ensurePosterLightboxBinding();
+}
+
 export function createSpecialTopicsModule(ctx) {
+  ensurePosterLightboxBinding();
   const sessions = {
     topicId: null,
     flashIndex: 0,
@@ -84,7 +183,8 @@ export function createSpecialTopicsModule(ctx) {
         return `
           <a class="st-topic-card" href="#/special-topics/${topic.id}">
             <div class="st-topic-thumb">
-              ${topic.poster ? `<img src="${ctx.escapeHtml(topic.poster)}" alt="" loading="lazy">` : `<span class="st-topic-fallback">${topic.order}</span>`}
+              ${topic.poster ? `<img src="${ctx.escapeHtml(resolveMediaUrl(topic.poster))}" alt="" loading="lazy">` : `<span class="st-topic-fallback">${topic.order}</span>`}
+              ${topic.poster ? renderPosterPreview(topic.poster, topic.title, ctx.escapeHtml, { compact: true, topicId: topic.id }) : ""}
             </div>
             <div class="st-topic-body">
               <span class="tag">${ctx.escapeHtml(cat.label)}</span>
@@ -147,8 +247,9 @@ export function createSpecialTopicsModule(ctx) {
           </div>
         </div>
 
-        <div class="practice-tabs practice-tabs--4 st-mode-tabs">
+        <div class="practice-tabs practice-tabs--5 st-mode-tabs">
           <a class="practice-tab active" href="#/special-topics/${topic.id}">Tài liệu</a>
+          <a class="practice-tab" href="#/special-topics/${topic.id}/poster">Infographic gốc</a>
           <a class="practice-tab" href="#/special-topics/${topic.id}/flash">Flash study</a>
           <a class="practice-tab" href="#/special-topics/${topic.id}/quiz">Quiz</a>
           <a class="practice-tab" href="#/special-topics/${topic.id}/memory">Memory</a>
@@ -157,13 +258,13 @@ export function createSpecialTopicsModule(ctx) {
         <div class="st-material-grid">
           <article class="st-material-card">
             <h2>Infographic</h2>
-            ${topic.poster ? `<img class="st-poster" src="${ctx.escapeHtml(topic.poster)}" alt="${ctx.escapeHtml(topic.title)}">` : "<p class='empty-state'>Chưa có ảnh.</p>"}
+            ${renderPosterPreview(topic.poster, topic.title, ctx.escapeHtml, { topicId: topic.id })}
           </article>
           <article class="st-material-card">
             <h2>Tài liệu PDF</h2>
             <p>Đọc đầy đủ lý thuyết, ví dụ và bài tập trong file gốc.</p>
-            <a class="btn primary" href="${ctx.escapeHtml(topic.pdf)}" target="_blank" rel="noopener">Mở PDF</a>
-            <iframe class="st-pdf-frame" src="${ctx.escapeHtml(topic.pdf)}" title="${ctx.escapeHtml(topic.title)}"></iframe>
+            <a class="btn primary" href="${ctx.escapeHtml(resolveMediaUrl(topic.pdf))}" target="_blank" rel="noopener">Mở PDF</a>
+            <iframe class="st-pdf-frame" src="${ctx.escapeHtml(resolveMediaUrl(topic.pdf))}" title="${ctx.escapeHtml(topic.title)}"></iframe>
           </article>
         </div>
 
@@ -179,6 +280,44 @@ export function createSpecialTopicsModule(ctx) {
           <a class="btn secondary" href="#/special-topics/${topic.id}/flash">Học flashcard →</a>
         </section>
       </section>`;
+  }
+
+  function renderPosterView(state, topicId) {
+    const topic = getTopic(topicId);
+    if (!topic) return ctx.notFound("Không tìm thấy chuyên đề.");
+    if (!topic.poster) return ctx.notFound("Chuyên đề này chưa có infographic.");
+
+    const imageUrl = resolveMediaUrl(topic.poster);
+    const fileName = topic.poster.split("/").pop() || "infographic.png";
+
+    return `
+      <section class="st-poster-view">
+        <a class="back-link" href="#/special-topics/${topic.id}">← ${ctx.escapeHtml(topic.title)}</a>
+        <div class="st-poster-view-head">
+          <div>
+            <span class="tag">${ctx.escapeHtml(topic.categoryLabel)}</span>
+            <h1>Infographic gốc · Chuyên đề ${topic.order}</h1>
+            <p>${ctx.escapeHtml(topic.title)}${topic.titleEn ? ` (${ctx.escapeHtml(topic.titleEn)})` : ""}</p>
+          </div>
+          <div class="st-poster-actions">
+            <button type="button" class="btn secondary" data-st-fullscreen="${ctx.escapeHtml(imageUrl)}" data-st-caption="${ctx.escapeHtml(topic.title)}">Phóng to</button>
+            <a class="btn secondary" href="${ctx.escapeHtml(imageUrl)}" target="_blank" rel="noopener">Mở tab mới</a>
+            <a class="btn quiet" href="${ctx.escapeHtml(imageUrl)}" download="${ctx.escapeHtml(fileName)}">Tải ảnh</a>
+          </div>
+        </div>
+        <div class="st-poster-viewport">
+          <img class="st-poster-original" src="${ctx.escapeHtml(imageUrl)}" alt="${ctx.escapeHtml(topic.title)}" loading="eager">
+        </div>
+        <p class="st-poster-view-hint">Cuộn để xem toàn bộ ảnh ở độ phân giải gốc. Nhấn ảnh hoặc nút Phóng to để xem lightbox.</p>
+      </section>`;
+  }
+
+  function bindPosterView(topicId) {
+    const topic = getTopic(topicId);
+    if (!topic?.poster) return;
+    document.querySelector(".st-poster-original")?.addEventListener("click", () => {
+      showPosterLightbox(resolveMediaUrl(topic.poster), topic.title);
+    });
   }
 
   function renderFlash(state, topicId) {
@@ -465,12 +604,15 @@ export function createSpecialTopicsModule(ctx) {
   return {
     renderCatalog,
     renderTopicHub,
+    renderPosterView,
     renderFlash,
     renderQuiz,
     renderMemory,
     bindFlash,
     bindQuiz,
     bindMemory,
+    bindPosterLightbox,
+    bindPosterView,
     resetOnLeave
   };
 }
