@@ -12,7 +12,7 @@ export const EDTECH_APPS = [
   { id: "literatureflow", name: "LiteratureFlow VN", short: "Ngữ văn", emoji: "📖", folder: "literatureflow", repo: "literatureflow", start: "#/home" },
   { id: "ITflow", name: "ITflow VN", short: "Tin học", emoji: "💻", folder: "ITflow", repo: "ITflow", start: "#/home" },
   { id: "englishflow", name: "EnglishFlow", short: "Tiếng Anh", emoji: "🇬🇧", folder: "englishflow", repo: "englishflow", start: "#/home" },
-  { id: "engcoach", name: "EngCoach", short: "Anh 60 ngày", emoji: "🗣️", folder: "engcoach", repo: "engcoach", start: "#/dashboard" }
+  { id: "engcoach", name: "EngCoach", short: "Học tiếng Anh trong 60 ngày", emoji: "🗣️", folder: "engcoach", repo: "engcoach", start: "#/dashboard" }
 ];
 
 const FOLDER_IDS = new Set(EDTECH_APPS.map((app) => app.folder.toLowerCase()));
