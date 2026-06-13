@@ -1,4 +1,4 @@
-const CACHE_NAME = "englishflow-v$(( $(echo 17) + 1 ))";
+const CACHE_NAME = "englishflow-v18";
 const APP_SHELL = [
   "./",
   "./index.html",
