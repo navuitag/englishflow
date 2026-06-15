@@ -260,6 +260,71 @@ def build_quiz(topic_id: str, vocab, formulas, tips, title: str) -> list[dict]:
     return questions[:10]
 
 
+PRONUNCIATION_SHADOWING_01 = [
+    {"id": "sh_ship", "text": "ship", "hint": "Âm /ɪ/ — ngắn, bật nhanh", "group": "Cặp /ɪ/ và /iː/"},
+    {"id": "sh_sheep", "text": "sheep", "hint": "Âm /iː/ — kéo dài miệng cười", "group": "Cặp /ɪ/ và /iː/"},
+    {"id": "sh_sit", "text": "sit", "hint": "Âm /ɪ/", "group": "Cặp /ɪ/ và /iː/"},
+    {"id": "sh_seat", "text": "seat", "hint": "Âm /iː/", "group": "Cặp /ɪ/ và /iː/"},
+    {"id": "sh_think", "text": "think", "hint": "Âm /θ/ — lưỡi giữa răng", "group": "Cặp /θ/ và /t/"},
+    {"id": "sh_tree", "text": "tree", "hint": "Âm /t/", "group": "Cặp /θ/ và /t/"},
+    {"id": "sh_books", "text": "books", "hint": "Đuôi -s đọc /s/", "group": "Quy tắc -s / -es"},
+    {"id": "sh_dogs", "text": "dogs", "hint": "Đuôi -s đọc /z/", "group": "Quy tắc -s / -es"},
+    {"id": "sh_watches", "text": "watches", "hint": "Đuôi -es đọc /ɪz/", "group": "Quy tắc -s / -es"},
+    {"id": "sh_worked", "text": "worked", "hint": "Đuôi -ed đọc /t/", "group": "Quy tắc -ed"},
+    {"id": "sh_played", "text": "played", "hint": "Đuôi -ed đọc /d/", "group": "Quy tắc -ed"},
+    {"id": "sh_wanted", "text": "wanted", "hint": "Đuôi -ed đọc /ɪd/", "group": "Quy tắc -ed"},
+    {"id": "sh_mother", "text": "mother", "hint": "Trọng âm âm 1: MOther", "group": "Trọng âm từ"},
+    {"id": "sh_decide", "text": "decide", "hint": "Trọng âm âm 2: deCIDE", "group": "Trọng âm từ"},
+    {"id": "sh_sentence", "text": "I want to buy a new car.", "hint": "Nhấn WANT · BUY · NEW · CAR", "group": "Trọng âm câu"},
+]
+
+
+def is_english_shadow_line(text: str) -> bool:
+    cleaned = text.strip()
+    if not cleaned or len(cleaned) > 80:
+        return False
+    if re.search(r"^[IVX]+\.", cleaned):
+        return False
+    return bool(re.match(r"^[A-Za-z0-9][A-Za-z0-9\s.,'!?-]*$", cleaned))
+
+
+def build_shadowing(order: int, category: str, vocab: list[tuple[str, str]]) -> list[dict]:
+    if order == 1 and category == "pronunciation":
+        return [dict(item) for item in PRONUNCIATION_SHADOWING_01]
+
+    if category not in ("pronunciation", "speaking"):
+        return []
+
+    lines = []
+    for index, (en, vi) in enumerate(vocab):
+        if not is_english_shadow_line(en):
+            continue
+        lines.append({
+            "id": f"sh_{slugify(en)[:28]}_{index}",
+            "text": re.sub(r"\s+", " ", en).strip(),
+            "hint": vi[:100] if vi else "",
+            "group": "Từ vựng" if category == "pronunciation" else "Mẫu câu",
+        })
+        if len(lines) >= 12:
+            break
+    return lines
+
+
+def pick_poster(pdf_path: Path) -> str | None:
+    exact = pdf_path.with_suffix(".png")
+    if exact.exists():
+        return f"special-topic/{exact.name}"
+    stem = pdf_path.stem
+    matches = sorted(TOPIC_DIR.glob(f"{stem}*.png"), key=lambda p: (p.name != f"{stem}.png", p.name))
+    if not matches:
+        prefix = re.match(r"(\d+)", pdf_path.name)
+        if prefix:
+            matches = sorted(TOPIC_DIR.glob(f"{prefix.group(1)}.*.png"))
+    if matches:
+        return f"special-topic/{matches[0].name}"
+    return None
+
+
 def process_pdf(pdf_path: Path) -> dict:
     text = pdf_text(pdf_path)
     filename = pdf_path.name
@@ -268,15 +333,16 @@ def process_pdf(pdf_path: Path) -> dict:
     topic_id = f"st_{order:02d}_{slugify(filename)}"
     title_vi, title_en = parse_title(text, filename)
     category = detect_category(filename)
-    png = pdf_path.with_suffix(".png")
+    poster = pick_poster(pdf_path)
     vocab = extract_vocab_pairs(text)
     formulas = extract_formulas(text)
     tips = extract_tips(text)
     sections = extract_sections(text)
     flashcards = build_flashcards(vocab, formulas, tips, sections)
     quiz = build_quiz(topic_id, vocab, formulas, tips, title_vi)
+    shadowing = build_shadowing(order, category, vocab)
 
-    return {
+    topic = {
         "id": topic_id,
         "order": order,
         "title": title_vi,
@@ -285,22 +351,27 @@ def process_pdf(pdf_path: Path) -> dict:
         "categoryLabel": CATEGORY_LABELS.get(category, "Kỹ năng"),
         "objective": parse_objective(text),
         "pdf": f"special-topic/{filename}",
-        "poster": f"special-topic/{png.name}" if png.exists() else None,
+        "poster": poster,
         "flashcards": flashcards,
         "quiz": quiz,
         "stats": {
             "flashCount": len(flashcards),
             "quizCount": len(quiz),
             "vocabCount": len(vocab),
+            "shadowingCount": len(shadowing),
         },
     }
+    if shadowing:
+        topic["shadowing"] = shadowing
+    return topic
 
 
 def main():
     pdfs = sorted(TOPIC_DIR.glob("*.pdf"), key=lambda p: p.name)
     topics = [process_pdf(p) for p in pdfs]
+    shadow_total = sum(len(t.get("shadowing", [])) for t in topics)
     payload = {
-        "version": 1,
+        "version": 2,
         "generatedFrom": "special-topic/*.pdf",
         "topicCount": len(topics),
         "categories": [
@@ -311,7 +382,11 @@ def main():
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Wrote {OUT} ({len(topics)} topics, {sum(len(t['flashcards']) for t in topics)} flashcards)")
+    print(
+        f"Wrote {OUT} ({len(topics)} topics, "
+        f"{sum(len(t['flashcards']) for t in topics)} flashcards, "
+        f"{shadow_total} shadowing lines)"
+    )
 
 
 if __name__ == "__main__":

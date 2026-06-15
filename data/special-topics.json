@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "generatedFrom": "special-topic/*.pdf",
   "topicCount": 47,
   "categories": [
@@ -323,29 +323,104 @@
           "hint": "/æ/ mở miệng rộng hơn rất nhiều."
         }
       ],
-      "shadowing": [
-        { "id": "sh_ship", "text": "ship", "hint": "Âm /ɪ/ — ngắn, bật nhanh", "group": "Cặp /ɪ/ và /iː/" },
-        { "id": "sh_sheep", "text": "sheep", "hint": "Âm /iː/ — kéo dài miệng cười", "group": "Cặp /ɪ/ và /iː/" },
-        { "id": "sh_sit", "text": "sit", "hint": "Âm /ɪ/", "group": "Cặp /ɪ/ và /iː/" },
-        { "id": "sh_seat", "text": "seat", "hint": "Âm /iː/", "group": "Cặp /ɪ/ và /iː/" },
-        { "id": "sh_think", "text": "think", "hint": "Âm /θ/ — lưỡi giữa răng", "group": "Cặp /θ/ và /t/" },
-        { "id": "sh_tree", "text": "tree", "hint": "Âm /t/", "group": "Cặp /θ/ và /t/" },
-        { "id": "sh_books", "text": "books", "hint": "Đuôi -s đọc /s/ (sau p, k, f, t, th)", "group": "Quy tắc -s / -es" },
-        { "id": "sh_dogs", "text": "dogs", "hint": "Đuôi -s đọc /z/", "group": "Quy tắc -s / -es" },
-        { "id": "sh_watches", "text": "watches", "hint": "Đuôi -es đọc /ɪz/", "group": "Quy tắc -s / -es" },
-        { "id": "sh_worked", "text": "worked", "hint": "Đuôi -ed đọc /t/", "group": "Quy tắc -ed" },
-        { "id": "sh_played", "text": "played", "hint": "Đuôi -ed đọc /d/", "group": "Quy tắc -ed" },
-        { "id": "sh_wanted", "text": "wanted", "hint": "Đuôi -ed đọc /ɪd/ (sau t, d)", "group": "Quy tắc -ed" },
-        { "id": "sh_mother", "text": "mother", "hint": "Trọng âm âm 1: MOther", "group": "Trọng âm từ" },
-        { "id": "sh_decide", "text": "decide", "hint": "Trọng âm âm 2: deCIDE", "group": "Trọng âm từ" },
-        { "id": "sh_sentence", "text": "I want to buy a new car.", "hint": "Nhấn WANT · BUY · NEW · CAR", "group": "Trọng âm câu" }
-      ],
       "stats": {
         "flashCount": 23,
         "quizCount": 10,
         "vocabCount": 13,
         "shadowingCount": 15
-      }
+      },
+      "shadowing": [
+        {
+          "id": "sh_ship",
+          "text": "ship",
+          "hint": "Âm /ɪ/ — ngắn, bật nhanh",
+          "group": "Cặp /ɪ/ và /iː/"
+        },
+        {
+          "id": "sh_sheep",
+          "text": "sheep",
+          "hint": "Âm /iː/ — kéo dài miệng cười",
+          "group": "Cặp /ɪ/ và /iː/"
+        },
+        {
+          "id": "sh_sit",
+          "text": "sit",
+          "hint": "Âm /ɪ/",
+          "group": "Cặp /ɪ/ và /iː/"
+        },
+        {
+          "id": "sh_seat",
+          "text": "seat",
+          "hint": "Âm /iː/",
+          "group": "Cặp /ɪ/ và /iː/"
+        },
+        {
+          "id": "sh_think",
+          "text": "think",
+          "hint": "Âm /θ/ — lưỡi giữa răng",
+          "group": "Cặp /θ/ và /t/"
+        },
+        {
+          "id": "sh_tree",
+          "text": "tree",
+          "hint": "Âm /t/",
+          "group": "Cặp /θ/ và /t/"
+        },
+        {
+          "id": "sh_books",
+          "text": "books",
+          "hint": "Đuôi -s đọc /s/",
+          "group": "Quy tắc -s / -es"
+        },
+        {
+          "id": "sh_dogs",
+          "text": "dogs",
+          "hint": "Đuôi -s đọc /z/",
+          "group": "Quy tắc -s / -es"
+        },
+        {
+          "id": "sh_watches",
+          "text": "watches",
+          "hint": "Đuôi -es đọc /ɪz/",
+          "group": "Quy tắc -s / -es"
+        },
+        {
+          "id": "sh_worked",
+          "text": "worked",
+          "hint": "Đuôi -ed đọc /t/",
+          "group": "Quy tắc -ed"
+        },
+        {
+          "id": "sh_played",
+          "text": "played",
+          "hint": "Đuôi -ed đọc /d/",
+          "group": "Quy tắc -ed"
+        },
+        {
+          "id": "sh_wanted",
+          "text": "wanted",
+          "hint": "Đuôi -ed đọc /ɪd/",
+          "group": "Quy tắc -ed"
+        },
+        {
+          "id": "sh_mother",
+          "text": "mother",
+          "hint": "Trọng âm âm 1: MOther",
+          "group": "Trọng âm từ"
+        },
+        {
+          "id": "sh_decide",
+          "text": "decide",
+          "hint": "Trọng âm âm 2: deCIDE",
+          "group": "Trọng âm từ"
+        },
+        {
+          "id": "sh_sentence",
+          "text": "I want to buy a new car.",
+          "hint": "Nhấn WANT · BUY · NEW · CAR",
+          "group": "Trọng âm câu"
+        }
+      ]
     },
     {
       "id": "st_02_parts-of-speech",
@@ -642,7 +717,8 @@
       "stats": {
         "flashCount": 29,
         "quizCount": 8,
-        "vocabCount": 23
+        "vocabCount": 23,
+        "shadowingCount": 0
       }
     },
     {
@@ -898,7 +974,8 @@
       "stats": {
         "flashCount": 22,
         "quizCount": 8,
-        "vocabCount": 16
+        "vocabCount": 16,
+        "shadowingCount": 0
       }
     },
     {
@@ -1234,7 +1311,8 @@
       "stats": {
         "flashCount": 31,
         "quizCount": 10,
-        "vocabCount": 12
+        "vocabCount": 12,
+        "shadowingCount": 0
       }
     },
     {
@@ -1660,7 +1738,8 @@
       "stats": {
         "flashCount": 46,
         "quizCount": 10,
-        "vocabCount": 38
+        "vocabCount": 38,
+        "shadowingCount": 0
       }
     },
     {
@@ -1924,7 +2003,8 @@
       "stats": {
         "flashCount": 19,
         "quizCount": 10,
-        "vocabCount": 9
+        "vocabCount": 9,
+        "shadowingCount": 0
       }
     },
     {
@@ -2205,7 +2285,8 @@
       "stats": {
         "flashCount": 24,
         "quizCount": 9,
-        "vocabCount": 18
+        "vocabCount": 18,
+        "shadowingCount": 0
       }
     },
     {
@@ -2451,7 +2532,8 @@
       "stats": {
         "flashCount": 16,
         "quizCount": 10,
-        "vocabCount": 7
+        "vocabCount": 7,
+        "shadowingCount": 0
       }
     },
     {
@@ -2755,7 +2837,8 @@
       "stats": {
         "flashCount": 30,
         "quizCount": 8,
-        "vocabCount": 24
+        "vocabCount": 24,
+        "shadowingCount": 0
       }
     },
     {
@@ -3049,7 +3132,8 @@
       "stats": {
         "flashCount": 24,
         "quizCount": 10,
-        "vocabCount": 14
+        "vocabCount": 14,
+        "shadowingCount": 0
       }
     },
     {
@@ -3433,7 +3517,8 @@
       "stats": {
         "flashCount": 39,
         "quizCount": 10,
-        "vocabCount": 25
+        "vocabCount": 25,
+        "shadowingCount": 0
       }
     },
     {
@@ -3702,7 +3787,8 @@
       "stats": {
         "flashCount": 22,
         "quizCount": 9,
-        "vocabCount": 15
+        "vocabCount": 15,
+        "shadowingCount": 0
       }
     },
     {
@@ -3960,7 +4046,8 @@
       "stats": {
         "flashCount": 18,
         "quizCount": 10,
-        "vocabCount": 13
+        "vocabCount": 13,
+        "shadowingCount": 0
       }
     },
     {
@@ -4216,7 +4303,8 @@
       "stats": {
         "flashCount": 22,
         "quizCount": 8,
-        "vocabCount": 16
+        "vocabCount": 16,
+        "shadowingCount": 0
       }
     },
     {
@@ -4468,7 +4556,8 @@
       "stats": {
         "flashCount": 17,
         "quizCount": 10,
-        "vocabCount": 9
+        "vocabCount": 9,
+        "shadowingCount": 0
       }
     },
     {
@@ -4773,7 +4862,8 @@
       "stats": {
         "flashCount": 28,
         "quizCount": 9,
-        "vocabCount": 24
+        "vocabCount": 24,
+        "shadowingCount": 0
       }
     },
     {
@@ -5005,7 +5095,8 @@
       "stats": {
         "flashCount": 18,
         "quizCount": 8,
-        "vocabCount": 12
+        "vocabCount": 12,
+        "shadowingCount": 0
       }
     },
     {
@@ -5237,7 +5328,8 @@
       "stats": {
         "flashCount": 18,
         "quizCount": 8,
-        "vocabCount": 12
+        "vocabCount": 12,
+        "shadowingCount": 0
       }
     },
     {
@@ -5519,7 +5611,8 @@
       "stats": {
         "flashCount": 22,
         "quizCount": 10,
-        "vocabCount": 13
+        "vocabCount": 13,
+        "shadowingCount": 0
       }
     },
     {
@@ -5751,7 +5844,8 @@
       "stats": {
         "flashCount": 18,
         "quizCount": 8,
-        "vocabCount": 13
+        "vocabCount": 13,
+        "shadowingCount": 0
       }
     },
     {
@@ -6151,7 +6245,8 @@
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
-        "vocabCount": 40
+        "vocabCount": 40,
+        "shadowingCount": 0
       }
     },
     {
@@ -6551,7 +6646,8 @@
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
-        "vocabCount": 40
+        "vocabCount": 40,
+        "shadowingCount": 0
       }
     },
     {
@@ -6951,7 +7047,8 @@
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
-        "vocabCount": 40
+        "vocabCount": 40,
+        "shadowingCount": 0
       }
     },
     {
@@ -7351,7 +7448,8 @@
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
-        "vocabCount": 40
+        "vocabCount": 40,
+        "shadowingCount": 0
       }
     },
     {
@@ -7751,7 +7849,8 @@
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
-        "vocabCount": 40
+        "vocabCount": 40,
+        "shadowingCount": 0
       }
     },
     {
@@ -8151,7 +8250,8 @@
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
-        "vocabCount": 40
+        "vocabCount": 40,
+        "shadowingCount": 0
       }
     },
     {
@@ -8353,7 +8453,8 @@
       "stats": {
         "flashCount": 13,
         "quizCount": 8,
-        "vocabCount": 12
+        "vocabCount": 12,
+        "shadowingCount": 0
       }
     },
     {
@@ -8753,7 +8854,8 @@
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
-        "vocabCount": 40
+        "vocabCount": 40,
+        "shadowingCount": 0
       }
     },
     {
@@ -9172,7 +9274,8 @@
       "stats": {
         "flashCount": 47,
         "quizCount": 9,
-        "vocabCount": 40
+        "vocabCount": 40,
+        "shadowingCount": 0
       }
     },
     {
@@ -9572,7 +9675,8 @@
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
-        "vocabCount": 40
+        "vocabCount": 40,
+        "shadowingCount": 0
       }
     },
     {
@@ -9972,7 +10076,8 @@
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
-        "vocabCount": 40
+        "vocabCount": 40,
+        "shadowingCount": 0
       }
     },
     {
@@ -10372,7 +10477,8 @@
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
-        "vocabCount": 40
+        "vocabCount": 40,
+        "shadowingCount": 0
       }
     },
     {
@@ -10772,7 +10878,8 @@
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
-        "vocabCount": 40
+        "vocabCount": 40,
+        "shadowingCount": 0
       }
     },
     {
@@ -11113,7 +11220,8 @@
       "stats": {
         "flashCount": 34,
         "quizCount": 9,
-        "vocabCount": 27
+        "vocabCount": 27,
+        "shadowingCount": 0
       }
     },
     {
@@ -11339,7 +11447,8 @@
       "stats": {
         "flashCount": 17,
         "quizCount": 8,
-        "vocabCount": 11
+        "vocabCount": 11,
+        "shadowingCount": 0
       }
     },
     {
@@ -11565,7 +11674,8 @@
       "stats": {
         "flashCount": 17,
         "quizCount": 8,
-        "vocabCount": 11
+        "vocabCount": 11,
+        "shadowingCount": 0
       }
     },
     {
@@ -11735,7 +11845,8 @@
       "stats": {
         "flashCount": 12,
         "quizCount": 6,
-        "vocabCount": 6
+        "vocabCount": 6,
+        "shadowingCount": 0
       }
     },
     {
@@ -12027,7 +12138,8 @@
       "stats": {
         "flashCount": 28,
         "quizCount": 8,
-        "vocabCount": 22
+        "vocabCount": 22,
+        "shadowingCount": 0
       }
     },
     {
@@ -12301,8 +12413,83 @@
       "stats": {
         "flashCount": 25,
         "quizCount": 8,
-        "vocabCount": 19
-      }
+        "vocabCount": 19,
+        "shadowingCount": 12
+      },
+      "shadowing": [
+        {
+          "id": "sh_friendly_0",
+          "text": "friendly",
+          "hint": "thân thiện",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_active_1",
+          "text": "active",
+          "hint": "năng động",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_hardworking_2",
+          "text": "hardworking",
+          "hint": "chăm chỉ",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_patient_3",
+          "text": "patient",
+          "hint": "kiên nhẫn",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_honest_4",
+          "text": "honest",
+          "hint": "trung thực",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_cheerful_5",
+          "text": "cheerful",
+          "hint": "vui vẻ",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_confident_6",
+          "text": "confident",
+          "hint": "tự tin",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_creative_7",
+          "text": "creative",
+          "hint": "sáng tạo",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_responsible_8",
+          "text": "responsible",
+          "hint": "có trách nhiệm",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_optimistic_9",
+          "text": "optimistic",
+          "hint": "lạc quan",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_point-again_10",
+          "text": "Point Again",
+          "hint": "Ví dụ:",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_i-am-14-years-old_11",
+          "text": "I am 14 years old.",
+          "hint": "❌ Dùng sai thì",
+          "group": "Mẫu câu"
+        }
+      ]
     },
     {
       "id": "st_40_speaking-picture-description",
@@ -12569,8 +12756,83 @@
       "stats": {
         "flashCount": 24,
         "quizCount": 8,
-        "vocabCount": 18
-      }
+        "vocabCount": 18,
+        "shadowingCount": 12
+      },
+      "shadowing": [
+        {
+          "id": "sh_the-picture-is-about-student_0",
+          "text": "The picture is about students studying in a classroom.",
+          "hint": "Bước 2 – Mô tả nhân vật chính",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_the-boy-is-riding-a-bicycle_1",
+          "text": "The boy is riding a bicycle.",
+          "hint": "Bước 4 – Mô tả bối cảnh",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_it-is-sunny-and-warm_2",
+          "text": "It is sunny and warm.",
+          "hint": "Bước 5 – Suy luận",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_it-looks-like-they-are-enjoy_3",
+          "text": "It looks like they are enjoying themselves.",
+          "hint": "Bước 6 – Kết luận",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_beautiful_4",
+          "text": "beautiful",
+          "hint": "đẹp",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_crowded_5",
+          "text": "crowded",
+          "hint": "đông đúc",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_quiet_6",
+          "text": "quiet",
+          "hint": "yên tĩnh",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_clean_7",
+          "text": "clean",
+          "hint": "sạch",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_colorful_8",
+          "text": "colorful",
+          "hint": "nhiều màu sắc",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_peaceful_9",
+          "text": "peaceful",
+          "hint": "yên bình",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_modern_10",
+          "text": "modern",
+          "hint": "hiện đại",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_busy_11",
+          "text": "busy",
+          "hint": "nhộn nhịp",
+          "group": "Mẫu câu"
+        }
+      ]
     },
     {
       "id": "st_41_speaking-storytelling",
@@ -12873,8 +13135,83 @@
       "stats": {
         "flashCount": 30,
         "quizCount": 8,
-        "vocabCount": 24
-      }
+        "vocabCount": 24,
+        "shadowingCount": 12
+      },
+      "shadowing": [
+        {
+          "id": "sh_arrive_0",
+          "text": "arrive",
+          "hint": "đến",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_meet_1",
+          "text": "meet",
+          "hint": "gặp",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_see_2",
+          "text": "see",
+          "hint": "nhìn thấy",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_find_3",
+          "text": "find",
+          "hint": "tìm thấy",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_lose_4",
+          "text": "lose",
+          "hint": "làm mất",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_help_5",
+          "text": "help",
+          "hint": "giúp",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_rescue_6",
+          "text": "rescue",
+          "hint": "cứu",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_return_7",
+          "text": "return",
+          "hint": "quay lại",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_celebrate_8",
+          "text": "celebrate",
+          "hint": "ăn mừng",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_excited_9",
+          "text": "excited",
+          "hint": "hào hứng",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_nervous_10",
+          "text": "nervous",
+          "hint": "lo lắng",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_scared_11",
+          "text": "scared",
+          "hint": "sợ hãi",
+          "group": "Mẫu câu"
+        }
+      ]
     },
     {
       "id": "st_42_speaking-giving-opinions",
@@ -13117,8 +13454,83 @@
       "stats": {
         "flashCount": 20,
         "quizCount": 8,
-        "vocabCount": 14
-      }
+        "vocabCount": 14,
+        "shadowingCount": 12
+      },
+      "shadowing": [
+        {
+          "id": "sh_opinion_0",
+          "text": "Opinion",
+          "hint": "Ví dụ:",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_link_1",
+          "text": "Link",
+          "hint": "Ví dụ:",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_important_2",
+          "text": "important",
+          "hint": "quan trọng",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_useful_3",
+          "text": "useful",
+          "hint": "hữu ích",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_interesting_4",
+          "text": "interesting",
+          "hint": "thú vị",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_beneficial_5",
+          "text": "beneficial",
+          "hint": "có lợi",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_harmful_6",
+          "text": "harmful",
+          "hint": "có hại",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_exciting_7",
+          "text": "exciting",
+          "hint": "hấp dẫn",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_necessary_8",
+          "text": "necessary",
+          "hint": "cần thiết",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_effective_9",
+          "text": "effective",
+          "hint": "hiệu quả",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_challenging_10",
+          "text": "challenging",
+          "hint": "thử thách",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_enjoyable_11",
+          "text": "enjoyable",
+          "hint": "thú vị",
+          "group": "Mẫu câu"
+        }
+      ]
     },
     {
       "id": "st_43_speaking-debate-skill",
@@ -13331,8 +13743,65 @@
       "stats": {
         "flashCount": 15,
         "quizCount": 8,
-        "vocabCount": 9
-      }
+        "vocabCount": 9,
+        "shadowingCount": 9
+      },
+      "shadowing": [
+        {
+          "id": "sh_claim_0",
+          "text": "Claim",
+          "hint": "Nêu quan điểm.",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_reason_1",
+          "text": "Reason",
+          "hint": "Đưa lý do.",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_evidence_2",
+          "text": "Evidence",
+          "hint": "Đưa ví dụ hoặc minh chứng.",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_conclusion_3",
+          "text": "Conclusion",
+          "hint": "Kết luận lại.",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_point-again_4",
+          "text": "Point Again",
+          "hint": "Ví dụ:",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_you-re-wrong_5",
+          "text": "You're wrong.",
+          "hint": "Hãy nói:",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_i-understand-your-point-but-_6",
+          "text": "I understand your point, but I have a different opinion.",
+          "hint": "Thay vì:",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_that-s-impossible_7",
+          "text": "That's impossible.",
+          "hint": "Hãy nói:",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_review_8",
+          "text": "Review",
+          "hint": "Quy tắc Sandwich",
+          "group": "Mẫu câu"
+        }
+      ]
     },
     {
       "id": "st_44_speaking-short-presentation",
@@ -13545,8 +14014,65 @@
       "stats": {
         "flashCount": 15,
         "quizCount": 8,
-        "vocabCount": 9
-      }
+        "vocabCount": 9,
+        "shadowingCount": 9
+      },
+      "shadowing": [
+        {
+          "id": "sh_eye-contact_0",
+          "text": "Eye Contact",
+          "hint": "Nhìn khán giả.",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_smile_1",
+          "text": "Smile",
+          "hint": "Mỉm cười tự nhiên.",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_gestures_2",
+          "text": "Gestures",
+          "hint": "Dùng tay vừa phải.",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_posture_3",
+          "text": "Posture",
+          "hint": "Đứng thẳng.",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_voice_4",
+          "text": "Voice",
+          "hint": "Nói rõ và chậm.",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_in-my-opinion_5",
+          "text": "In my opinion...",
+          "hint": "Nếu chưa chắc",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_eye-contact_6",
+          "text": "Eye contact.",
+          "hint": "❌ Quá nhiều chữ trên giấy.",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_ghi-keyword_7",
+          "text": "Ghi keyword.",
+          "hint": "❌ Nói quá nhanh.",
+          "group": "Mẫu câu"
+        },
+        {
+          "id": "sh_conclusion_8",
+          "text": "Conclusion",
+          "hint": "Quy tắc 5S",
+          "group": "Mẫu câu"
+        }
+      ]
     },
     {
       "id": "st_45_phrasal-verbs",
@@ -13945,7 +14471,8 @@
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
-        "vocabCount": 40
+        "vocabCount": 40,
+        "shadowingCount": 0
       }
     },
     {
@@ -14096,7 +14623,8 @@
       "stats": {
         "flashCount": 11,
         "quizCount": 5,
-        "vocabCount": 5
+        "vocabCount": 5,
+        "shadowingCount": 0
       }
     },
     {
@@ -14317,7 +14845,8 @@
       "stats": {
         "flashCount": 14,
         "quizCount": 9,
-        "vocabCount": 13
+        "vocabCount": 13,
+        "shadowingCount": 0
       }
     }
   ]
