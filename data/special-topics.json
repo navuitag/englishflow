@@ -323,10 +323,28 @@
           "hint": "/æ/ mở miệng rộng hơn rất nhiều."
         }
       ],
+      "shadowing": [
+        { "id": "sh_ship", "text": "ship", "hint": "Âm /ɪ/ — ngắn, bật nhanh", "group": "Cặp /ɪ/ và /iː/" },
+        { "id": "sh_sheep", "text": "sheep", "hint": "Âm /iː/ — kéo dài miệng cười", "group": "Cặp /ɪ/ và /iː/" },
+        { "id": "sh_sit", "text": "sit", "hint": "Âm /ɪ/", "group": "Cặp /ɪ/ và /iː/" },
+        { "id": "sh_seat", "text": "seat", "hint": "Âm /iː/", "group": "Cặp /ɪ/ và /iː/" },
+        { "id": "sh_think", "text": "think", "hint": "Âm /θ/ — lưỡi giữa răng", "group": "Cặp /θ/ và /t/" },
+        { "id": "sh_tree", "text": "tree", "hint": "Âm /t/", "group": "Cặp /θ/ và /t/" },
+        { "id": "sh_books", "text": "books", "hint": "Đuôi -s đọc /s/ (sau p, k, f, t, th)", "group": "Quy tắc -s / -es" },
+        { "id": "sh_dogs", "text": "dogs", "hint": "Đuôi -s đọc /z/", "group": "Quy tắc -s / -es" },
+        { "id": "sh_watches", "text": "watches", "hint": "Đuôi -es đọc /ɪz/", "group": "Quy tắc -s / -es" },
+        { "id": "sh_worked", "text": "worked", "hint": "Đuôi -ed đọc /t/", "group": "Quy tắc -ed" },
+        { "id": "sh_played", "text": "played", "hint": "Đuôi -ed đọc /d/", "group": "Quy tắc -ed" },
+        { "id": "sh_wanted", "text": "wanted", "hint": "Đuôi -ed đọc /ɪd/ (sau t, d)", "group": "Quy tắc -ed" },
+        { "id": "sh_mother", "text": "mother", "hint": "Trọng âm âm 1: MOther", "group": "Trọng âm từ" },
+        { "id": "sh_decide", "text": "decide", "hint": "Trọng âm âm 2: deCIDE", "group": "Trọng âm từ" },
+        { "id": "sh_sentence", "text": "I want to buy a new car.", "hint": "Nhấn WANT · BUY · NEW · CAR", "group": "Trọng âm câu" }
+      ],
       "stats": {
         "flashCount": 23,
         "quizCount": 10,
-        "vocabCount": 13
+        "vocabCount": 13,
+        "shadowingCount": 15
       }
     },
     {

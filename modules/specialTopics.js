@@ -3,12 +3,14 @@ import { normalizeText, escapeHtml, resolveMediaUrl } from "../assets/js/utils.j
 import { renderFlashcardPanel, bindFlashcardImages } from "../components/flashcardPanel.js";
 import { renderMemoryPanel } from "../components/memoryPanel.js";
 import { xpForAnswer } from "./gamification.js";
+import { bindShadowingPanel, renderShadowingPanel } from "../components/shadowingPanel.js";
 
 function defaultTopicProgress() {
   return {
     knownCards: [],
     quizBest: 0,
     memoryBest: null,
+    shadowingDone: [],
     modesDone: [],
     xp: 0
   };
@@ -145,8 +147,44 @@ export function createSpecialTopicsModule(ctx) {
     quizIndex: 0,
     quizScore: 0,
     quizOrder: [],
-    memory: null
+    memory: null,
+    shadowIndex: 0,
+    shadowHideText: false
   };
+
+  function getShadowingLines(topic) {
+    if (topic?.shadowing?.length) return topic.shadowing;
+    if (topic?.category !== "pronunciation") return [];
+    return (topic.flashcards || [])
+      .filter((card) => card.tag === "Từ vựng" && /^[A-Za-z0-9 .,'!?-]+$/.test(card.front))
+      .map((card, index) => ({
+        id: `sh_auto_${index}`,
+        text: card.front.replace(/\s+/g, " ").trim(),
+        hint: card.back || ""
+      }));
+  }
+
+  function topicSupportsShadowing(topic) {
+    return getShadowingLines(topic).length > 0;
+  }
+
+  function modeTabCount(topic) {
+    return topicSupportsShadowing(topic) ? 6 : 5;
+  }
+
+  function renderModeTabs(topic, active) {
+    const shadow = topicSupportsShadowing(topic);
+    const count = modeTabCount(topic);
+    return `
+      <div class="practice-tabs practice-tabs--${count} st-mode-tabs">
+        <a class="practice-tab${active === "hub" ? " active" : ""}" href="#/special-topics/${topic.id}">Tài liệu</a>
+        <a class="practice-tab${active === "poster" ? " active" : ""}" href="#/special-topics/${topic.id}/poster">Infographic gốc</a>
+        ${shadow ? `<a class="practice-tab${active === "shadowing" ? " active" : ""}" href="#/special-topics/${topic.id}/shadowing">Shadowing</a>` : ""}
+        <a class="practice-tab${active === "flash" ? " active" : ""}" href="#/special-topics/${topic.id}/flash">Flash study</a>
+        <a class="practice-tab${active === "quiz" ? " active" : ""}" href="#/special-topics/${topic.id}/quiz">Quiz</a>
+        <a class="practice-tab${active === "memory" ? " active" : ""}" href="#/special-topics/${topic.id}/memory">Memory</a>
+      </div>`;
+  }
 
   function getTopic(id) {
     return ctx.data.specialTopics?.topics?.find((item) => item.id === id) || null;
@@ -165,7 +203,9 @@ export function createSpecialTopicsModule(ctx) {
     const known = progress.knownCards.length;
     const total = topic.flashcards.length || 1;
     const modes = progress.modesDone.length;
-    return { known, total, modes, xp: progress.xp, quizBest: progress.quizBest };
+    const shadowTotal = getShadowingLines(topic).length;
+    const shadowDone = (progress.shadowingDone || []).length;
+    return { known, total, modes, xp: progress.xp, quizBest: progress.quizBest, shadowDone, shadowTotal };
   }
 
   function renderCatalog(state) {
@@ -191,7 +231,7 @@ export function createSpecialTopicsModule(ctx) {
               <h3>${ctx.escapeHtml(topic.title)}</h3>
               ${topic.titleEn ? `<p class="st-topic-en">${ctx.escapeHtml(topic.titleEn)}</p>` : ""}
               <div class="progress-track"><span style="width:${pct}%"></span></div>
-              <p class="st-topic-meta">${summary.known}/${summary.total} thẻ · Quiz cao ${summary.quizBest}% · ${summary.modes}/3 chế độ</p>
+              <p class="st-topic-meta">${summary.known}/${summary.total} thẻ · Quiz cao ${summary.quizBest}%${summary.shadowTotal ? ` · Shadow ${summary.shadowDone}/${summary.shadowTotal}` : ""} · ${summary.modes}/4 chế độ</p>
             </div>
           </a>`;
       }).join("");
@@ -211,7 +251,7 @@ export function createSpecialTopicsModule(ctx) {
         <div>
           <span class="eyebrow">47 chuyên đề THCS</span>
           <h1>Chuyên đề tiếng Anh</h1>
-          <p>Flashcard, quiz, memory game và tài liệu PDF/infographic — ôn ngữ pháp, từ vựng, kỹ năng nghe–nói–đọc–viết.</p>
+          <p>Flashcard, quiz, memory game, shadowing phát âm và tài liệu PDF/infographic — ôn ngữ pháp, từ vựng, kỹ năng nghe–nói–đọc–viết.</p>
           <div class="hero-actions">
             <a class="btn primary" href="#/special-topics/${topics[0]?.id || ""}">Bắt đầu chuyên đề 1</a>
           </div>
@@ -243,17 +283,20 @@ export function createSpecialTopicsModule(ctx) {
           <div class="st-detail-stats">
             <article><strong>${summary.known}/${summary.total}</strong><span>Thẻ đã nhớ</span></article>
             <article><strong>${summary.quizBest}%</strong><span>Quiz tốt nhất</span></article>
+            <article><strong>${summary.shadowTotal ? `${summary.shadowDone}/${summary.shadowTotal}` : "—"}</strong><span>Shadowing</span></article>
             <article><strong>${summary.xp}</strong><span>XP chuyên đề</span></article>
           </div>
         </div>
 
-        <div class="practice-tabs practice-tabs--5 st-mode-tabs">
-          <a class="practice-tab active" href="#/special-topics/${topic.id}">Tài liệu</a>
-          <a class="practice-tab" href="#/special-topics/${topic.id}/poster">Infographic gốc</a>
-          <a class="practice-tab" href="#/special-topics/${topic.id}/flash">Flash study</a>
-          <a class="practice-tab" href="#/special-topics/${topic.id}/quiz">Quiz</a>
-          <a class="practice-tab" href="#/special-topics/${topic.id}/memory">Memory</a>
-        </div>
+        ${renderModeTabs(topic, "hub")}
+
+        ${topicSupportsShadowing(topic) ? `
+          <article class="st-shadowing-promo card-panel">
+            <h2>Luyện phát âm Shadowing</h2>
+            <p>Nghe mẫu → nói theo ngay (cùng nhịp) — phương pháp shadowing cho ${summary.shadowTotal} câu/từ trong chuyên đề này.</p>
+            <a class="btn primary" href="#/special-topics/${topic.id}/shadowing">Bắt đầu Shadowing</a>
+          </article>
+        ` : ""}
 
         <div class="st-material-grid">
           <article class="st-material-card">
@@ -331,12 +374,7 @@ export function createSpecialTopicsModule(ctx) {
     return `
       <section class="st-practice">
         <a class="back-link" href="#/special-topics/${topic.id}">← ${ctx.escapeHtml(topic.title)}</a>
-        <div class="practice-tabs practice-tabs--4 st-mode-tabs">
-          <a class="practice-tab" href="#/special-topics/${topic.id}">Tài liệu</a>
-          <a class="practice-tab active" href="#/special-topics/${topic.id}/flash">Flash study</a>
-          <a class="practice-tab" href="#/special-topics/${topic.id}/quiz">Quiz</a>
-          <a class="practice-tab" href="#/special-topics/${topic.id}/memory">Memory</a>
-        </div>
+        ${renderModeTabs(topic, "flash")}
         <p class="st-practice-lead">Đã nhớ ${knownCount}/${deck.length} thẻ · +5 XP mỗi thẻ mới</p>
         ${renderFlashcardPanel(deck, sessions.flashIndex, sessions.flashFlipped)}
         <div id="stFlashFeedback" class="feedback-panel" hidden></div>
@@ -376,12 +414,7 @@ export function createSpecialTopicsModule(ctx) {
     return `
       <section class="st-practice">
         <a class="back-link" href="#/special-topics/${topic.id}">← ${ctx.escapeHtml(topic.title)}</a>
-        <div class="practice-tabs practice-tabs--4 st-mode-tabs">
-          <a class="practice-tab" href="#/special-topics/${topic.id}">Tài liệu</a>
-          <a class="practice-tab" href="#/special-topics/${topic.id}/flash">Flash study</a>
-          <a class="practice-tab active" href="#/special-topics/${topic.id}/quiz">Quiz</a>
-          <a class="practice-tab" href="#/special-topics/${topic.id}/memory">Memory</a>
-        </div>
+        ${renderModeTabs(topic, "quiz")}
         <div class="st-quiz-progress">Câu ${sessions.quizIndex + 1}/${total} · Đúng ${sessions.quizScore}</div>
         <article class="quiz-card st-quiz-card">
           <span class="tag">Quiz chuyên đề</span>
@@ -401,15 +434,100 @@ export function createSpecialTopicsModule(ctx) {
     return `
       <section class="st-practice">
         <a class="back-link" href="#/special-topics/${topic.id}">← ${ctx.escapeHtml(topic.title)}</a>
-        <div class="practice-tabs practice-tabs--4 st-mode-tabs">
-          <a class="practice-tab" href="#/special-topics/${topic.id}">Tài liệu</a>
-          <a class="practice-tab" href="#/special-topics/${topic.id}/flash">Flash study</a>
-          <a class="practice-tab" href="#/special-topics/${topic.id}/quiz">Quiz</a>
-          <a class="practice-tab active" href="#/special-topics/${topic.id}/memory">Memory</a>
-        </div>
+        ${renderModeTabs(topic, "memory")}
         <p class="st-practice-lead">Ghép cặp từ–nghĩa · +15 XP khi hoàn thành</p>
         ${renderMemoryPanel(memory.deck, memory.flipped, memory.matched, memory.moves, memory.won)}
       </section>`;
+  }
+
+  function resetShadowIfNeeded(topicId) {
+    if (sessions.topicId !== topicId) {
+      sessions.shadowIndex = 0;
+      sessions.shadowHideText = false;
+    }
+  }
+
+  function renderShadowing(state, topicId) {
+    const topic = getTopic(topicId);
+    if (!topic) return ctx.notFound("Không tìm thấy chuyên đề.");
+    const lines = getShadowingLines(topic);
+    if (!lines.length) return ctx.notFound("Chuyên đề này chưa có bài shadowing.");
+    resetShadowIfNeeded(topicId);
+    const progress = getTopicProgress(state, topicId);
+
+    if (sessions.shadowIndex >= lines.length) {
+      return `
+        <section class="st-practice">
+          <a class="back-link" href="#/special-topics/${topic.id}">← ${ctx.escapeHtml(topic.title)}</a>
+          <article class="st-quiz-result st-shadowing-complete">
+            <h2>Hoàn thành Shadowing!</h2>
+            <p>Bạn đã luyện ${(progress.shadowingDone || []).length}/${lines.length} câu shadow thành công.</p>
+            <div class="hero-actions">
+              <button class="btn primary" type="button" id="stShadowRestart">Luyện lại từ đầu</button>
+              <a class="btn secondary" href="#/special-topics/${topic.id}/flash">Ôn flashcard</a>
+            </div>
+          </article>
+        </section>`;
+    }
+
+    return `
+      <section class="st-practice">
+        <a class="back-link" href="#/special-topics/${topic.id}">← ${ctx.escapeHtml(topic.title)}</a>
+        ${renderModeTabs(topic, "shadowing")}
+        <p class="st-practice-lead">Shadowing phát âm · +8 XP mỗi câu shadow đúng · ${(progress.shadowingDone || []).length}/${lines.length} đã đạt</p>
+        ${renderShadowingPanel(lines, {
+          index: sessions.shadowIndex,
+          doneIds: progress.shadowingDone || [],
+          hideText: sessions.shadowHideText
+        })}
+      </section>`;
+  }
+
+  function bindShadowing(topicId) {
+    const topic = getTopic(topicId);
+    if (!topic) return;
+    const lines = getShadowingLines(topic);
+    if (!lines.length) return;
+
+    const restart = document.querySelector("#stShadowRestart");
+    if (restart) {
+      restart.addEventListener("click", () => {
+        sessions.shadowIndex = 0;
+        ctx.renderRoute();
+      });
+      return;
+    }
+
+    bindShadowingPanel(document, lines, {
+      onLineSuccess: (line) => {
+        let firstSuccess = false;
+        updateState((state) => {
+          const progress = getTopicProgress(state, topicId);
+          if (!progress.shadowingDone.includes(line.id)) {
+            progress.shadowingDone.push(line.id);
+            firstSuccess = true;
+          }
+          if (progress.shadowingDone.length >= Math.ceil(lines.length * 0.7)) {
+            if (!progress.modesDone.includes("shadowing")) progress.modesDone.push("shadowing");
+          }
+        });
+        if (firstSuccess) awardXp(8, topicId);
+      },
+      onToggleHide: (checked) => {
+        sessions.shadowHideText = checked;
+        ctx.renderRoute();
+      },
+      onPrev: () => {
+        if (sessions.shadowIndex > 0) {
+          sessions.shadowIndex -= 1;
+          ctx.renderRoute();
+        }
+      },
+      onNext: () => {
+        sessions.shadowIndex += 1;
+        ctx.renderRoute();
+      }
+    });
   }
 
   function resetFlashIfNeeded(topicId, topic) {
@@ -598,6 +716,7 @@ export function createSpecialTopicsModule(ctx) {
       sessions.flashDeck = [];
       sessions.quizOrder = [];
       sessions.memory = null;
+      sessions.shadowIndex = 0;
     }
   }
 
@@ -608,9 +727,11 @@ export function createSpecialTopicsModule(ctx) {
     renderFlash,
     renderQuiz,
     renderMemory,
+    renderShadowing,
     bindFlash,
     bindQuiz,
     bindMemory,
+    bindShadowing,
     bindPosterLightbox,
     bindPosterView,
     resetOnLeave

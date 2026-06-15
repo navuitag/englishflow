@@ -70,6 +70,36 @@ export function speakWord(word, options = {}) {
   return speakScript([{ text: word }], { rate: options.rate ?? 0.75, lang: options.lang ?? "en-US" });
 }
 
+/** Shadowing: play model audio, brief pause, then capture learner speech. */
+export function speakThenListen(text, options = {}) {
+  if (!isSpeechSupported()) return Promise.reject(new Error("unsupported"));
+  if (!isRecognitionSupported()) return Promise.reject(new Error("unsupported"));
+
+  stopListening();
+  stopSpeech();
+
+  return new Promise((resolve, reject) => {
+    const utterance = new SpeechSynthesisUtterance(String(text));
+    utterance.lang = options.lang ?? "en-US";
+    utterance.rate = options.rate ?? 0.78;
+
+    utterance.onend = () => {
+      const gap = options.gapMs ?? 400;
+      window.setTimeout(async () => {
+        try {
+          const heard = await listenOnce(options);
+          resolve(heard);
+        } catch (error) {
+          reject(error);
+        }
+      }, gap);
+    };
+
+    utterance.onerror = () => reject(new Error("tts-error"));
+    window.speechSynthesis.speak(utterance);
+  });
+}
+
 function scoreSpokenMatch(spoken, expected) {
   const spokenNorm = normalizeText(spoken).replace(/[.,!?;:]/g, "");
   const expectedNorm = normalizeText(expected).replace(/[.,!?;:]/g, "");

@@ -1,4 +1,4 @@
-const CACHE_NAME = "englishflow-v21";
+const CACHE_NAME = "englishflow-v22";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -46,6 +46,7 @@ const APP_SHELL = [
   "./components/listeningPlayer.js",
   "./components/pronunciationGuide.js",
   "./components/speakingGuide.js",
+  "./components/shadowingPanel.js",
   "./components/writingGuide.js",
   "./components/modal.js",
   "./data/skills.json",

@@ -184,6 +184,9 @@ export function renderRoute() {
     } else if (sub === "memory") {
       content = specialTopics.renderMemory(state, id);
       after = () => specialTopics.bindMemory(id);
+    } else if (sub === "shadowing") {
+      content = specialTopics.renderShadowing(state, id);
+      after = () => specialTopics.bindShadowing(id);
     } else if (sub === "poster") {
       content = specialTopics.renderPosterView(state, id);
       after = () => specialTopics.bindPosterView(id);

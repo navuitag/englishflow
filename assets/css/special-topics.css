@@ -425,6 +425,139 @@ body.st-lightbox-open {
   padding: 16px 18px;
 }
 
+.st-shadowing-promo {
+  margin-bottom: 20px;
+}
+
+.st-shadowing-promo h2 {
+  margin: 0 0 8px;
+}
+
+.st-shadowing-promo p {
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+
+.shadowing-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.sh-progress {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  font-size: 0.85rem;
+  font-weight: 700;
+  gap: 12px;
+}
+
+.sh-progress .progress-track {
+  flex: 1;
+}
+
+.sh-group {
+  color: var(--green);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.sh-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.sh-text {
+  font-size: 1.65rem;
+  font-weight: 800;
+  line-height: 1.35;
+  margin: 0 0 10px;
+}
+
+.sh-text--hidden {
+  letter-spacing: 0.2em;
+}
+
+.sh-hide-note {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0 0 10px;
+}
+
+.sh-hint {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0 0 16px;
+}
+
+.sh-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.sh-hide-toggle {
+  align-items: center;
+  color: var(--muted);
+  display: inline-flex;
+  font-size: 0.9rem;
+  font-weight: 700;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.sh-method {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.sh-feedback {
+  background: #f7fbff;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  margin-top: 14px;
+  padding: 12px;
+  text-align: left;
+}
+
+.sh-feedback.is-good {
+  background: #edf8f4;
+  color: #0f7a4d;
+}
+
+.sh-feedback.is-partial {
+  background: #fff8e8;
+  color: #9a6200;
+}
+
+.sh-feedback.is-warn {
+  background: #fff1f0;
+  color: #b42318;
+}
+
+.sh-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+#shShadow.is-listening {
+  animation: sh-pulse 1s ease-in-out infinite;
+}
+
+@keyframes sh-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
 @media (min-width: 768px) {
   .st-detail-head {
     align-items: start;
