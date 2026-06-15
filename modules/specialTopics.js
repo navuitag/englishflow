@@ -24,8 +24,18 @@ function defaultTopicProgress() {
 
 function getTopicProgress(state, topicId) {
   if (!state.specialTopics) state.specialTopics = {};
-  if (!state.specialTopics[topicId]) state.specialTopics[topicId] = defaultTopicProgress();
-  return state.specialTopics[topicId];
+  const defaults = defaultTopicProgress();
+  if (!state.specialTopics[topicId]) {
+    state.specialTopics[topicId] = { ...defaults };
+    return state.specialTopics[topicId];
+  }
+  const progress = state.specialTopics[topicId];
+  for (const [key, value] of Object.entries(defaults)) {
+    if (progress[key] === undefined) {
+      progress[key] = Array.isArray(value) ? [] : value;
+    }
+  }
+  return progress;
 }
 
 function awardXp(amount, topicId) {
