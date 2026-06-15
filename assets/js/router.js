@@ -187,6 +187,9 @@ export function renderRoute() {
     } else if (sub === "shadowing") {
       content = specialTopics.renderShadowing(state, id);
       after = () => specialTopics.bindShadowing(id);
+    } else if (sub === "drills") {
+      content = specialTopics.renderDrills(state, id);
+      after = () => specialTopics.bindDrills(id);
     } else if (sub === "poster") {
       content = specialTopics.renderPosterView(state, id);
       after = () => specialTopics.bindPosterView(id);

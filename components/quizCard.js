@@ -84,7 +84,7 @@ export function renderQuizCard(question, options = {}) {
   return `
     <article class="quiz-card" data-question-id="${question.id}" data-type="${question.type}">
       <div class="quiz-meta">
-        <span>${options.workbook ? "Bài tập rèn luyện" : (TYPE_LABEL[question.type] || "Bài tập")}${question.source === "sgk" ? ' <span class="tag tag-sgk">SGK</span>' : question.source === "sbt" ? ' <span class="tag tag-sbt">SBT</span>' : ""}</span>
+        <span>${options.workbook ? "Bài tập rèn luyện" : (TYPE_LABEL[question.type] || "Bài tập")}${question.styleLabel ? ` <span class="tag tag-style tag-style--${escapeHtml(question.style || "drill")}">${escapeHtml(question.styleLabel)}</span>` : ""}${question.source === "sgk" ? ' <span class="tag tag-sgk">SGK</span>' : question.source === "sbt" ? ' <span class="tag tag-sbt">SBT</span>' : ""}</span>
         <button class="hint-btn" type="button" data-hint="${escapeHtml(question.hint || "")}">Gợi ý</button>
         ${question.solution && options.workbook ? `<button class="hint-btn solution-btn" type="button" data-solution="${escapeHtml(question.solution)}">Lời giải</button>` : ""}
       </div>

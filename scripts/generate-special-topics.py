@@ -310,6 +310,382 @@ def build_shadowing(order: int, category: str, vocab: list[tuple[str, str]]) -> 
     return lines
 
 
+PLATFORM_STYLES = {
+    "pronunciation": ("elsa", "ELSA Speak · Phát âm"),
+    "speaking": ("mshoa", "MS Hoa · Giao tiếp"),
+    "listening": ("langmaster", "Langmaster · Nghe"),
+    "reading": ("langmaster", "Langmaster · Đọc"),
+    "writing": ("ila", "ILA · Viết"),
+    "grammar": ("ila", "ILA · Ngữ pháp"),
+    "vocabulary": ("langmaster", "Langmaster · Từ vựng"),
+    "exam": ("ila", "ILA · Luyện thi"),
+    "skills": ("langmaster", "Langmaster · Kỹ năng"),
+}
+
+
+def choice_pool(answer: str, vocab, formulas, tips, extra=None) -> list[str]:
+    pool = [answer]
+    for _, vi in vocab:
+        pool.append(vi)
+    for _, formula in formulas:
+        pool.append(formula)
+    for _, body in tips:
+        pool.append(body[:60])
+    if extra:
+        pool.extend(extra)
+    return list(dict.fromkeys([p for p in pool if p and p != answer]))
+
+
+def make_choices(answer: str, pool: list[str]) -> list[str]:
+    opts = list(dict.fromkeys([answer] + [o for o in pool if o and o != answer]))[:4]
+    while len(opts) < 4:
+        opts.append("Không có trong bài")
+    return opts
+
+
+def english_vocab(vocab) -> list[tuple[str, str]]:
+    return [(en, vi) for en, vi in vocab if is_english_shadow_line(en)]
+
+
+def build_exercises(
+    topic_id: str,
+    category: str,
+    title: str,
+    vocab,
+    formulas,
+    tips,
+    sections,
+    shadowing,
+) -> list[dict]:
+    style_id, style_label = PLATFORM_STYLES.get(category, ("langmaster", "Langmaster · Luyện tập"))
+    exercises = []
+    en_vocab = english_vocab(vocab)
+    pool = choice_pool("", vocab, formulas, tips)
+
+    def push(ex: dict):
+        ex.setdefault("style", style_id)
+        ex.setdefault("styleLabel", style_label)
+        exercises.append(ex)
+
+    ex_n = 0
+
+    def next_id() -> str:
+        nonlocal ex_n
+        ex_n += 1
+        return f"{topic_id}_ex{ex_n}"
+
+    # --- ELSA-style pronunciation ---
+    if category == "pronunciation":
+        for en, vi in en_vocab[:3]:
+            push({
+                "id": next_id(),
+                "type": "input",
+                "grammar": "speaking",
+                "question": f"Nói rõ từ/cụm: {en}",
+                "answer": en,
+                "hint": vi,
+                "section": "Phát âm · Shadow",
+                "style": "elsa",
+                "styleLabel": "ELSA Speak · Nói thử",
+            })
+        for en, vi in en_vocab[3:5]:
+            push({
+                "id": next_id(),
+                "type": "listening",
+                "question": "Nghe và chọn nghĩa đúng:",
+                "answer": vi,
+                "choices": make_choices(vi, pool),
+                "listenScript": [{"speaker": "Teacher", "text": en}],
+                "hint": f"Phát âm: {en}",
+                "section": "Nghe · Chọn nghĩa",
+                "style": "elsa",
+                "styleLabel": "ELSA Speak · Nghe–chọn",
+            })
+        for label, body in tips[:2]:
+            push({
+                "id": next_id(),
+                "type": "true_false",
+                "question": f"{label}: {body[:90]}…",
+                "answer": "Đúng",
+                "choices": ["Đúng", "Sai"],
+                "hint": body[:140],
+                "section": "Mẹo phát âm",
+            })
+
+    # --- MS Hoa-style speaking ---
+    elif category == "speaking":
+        lines = [s["text"] for s in shadowing] if shadowing else [en for en, _ in en_vocab[:6]]
+        for line in lines[:3]:
+            push({
+                "id": next_id(),
+                "type": "input",
+                "grammar": "speaking",
+                "question": f"Nói to câu mẫu giao tiếp: {line}",
+                "answer": line.rstrip("."),
+                "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+                "section": "Hội thoại",
+                "style": "mshoa",
+                "styleLabel": "MS Hoa · Nói theo mẫu",
+            })
+        for en, vi in en_vocab[:2]:
+            tokens = re.sub(r"[.!?]", "", en).split()
+            if len(tokens) >= 3:
+                push({
+                    "id": next_id(),
+                    "type": "word_order",
+                    "question": "Sắp xếp thành câu trả lời đúng:",
+                    "answer": " ".join(tokens),
+                    "tokens": tokens,
+                    "hint": vi,
+                    "section": "Sắp xếp câu",
+                    "style": "mshoa",
+                    "styleLabel": "MS Hoa · Sắp xếp",
+                })
+        for en, vi in en_vocab[2:4]:
+            push({
+                "id": next_id(),
+                "type": "multiple_choice",
+                "question": f"Chọn cách diễn đạt phù hợp với: {vi}",
+                "answer": en,
+                "choices": make_choices(en, [e for e, _ in en_vocab if e != en]),
+                "hint": vi,
+                "section": "Chọn câu",
+            })
+
+    # --- Langmaster listening ---
+    elif category == "listening":
+        for en, vi in en_vocab[:4]:
+            push({
+                "id": next_id(),
+                "type": "listening",
+                "question": "Nghe hội thoại và chọn ý đúng:",
+                "answer": vi,
+                "choices": make_choices(vi, pool),
+                "listenScript": [
+                    {"speaker": "A", "text": en},
+                    {"speaker": "B", "text": "That's right."},
+                ],
+                "hint": en,
+                "section": "Bài nghe",
+            })
+        for label, body in tips[:2]:
+            push({
+                "id": next_id(),
+                "type": "true_false",
+                "question": f"Kỹ năng nghe: {body[:85]}…",
+                "answer": "Đúng",
+                "choices": ["Đúng", "Sai"],
+                "hint": body[:120],
+            })
+
+    # --- Langmaster reading ---
+    elif category == "reading":
+        for title_sec, body in sections[:4]:
+            snippet = body[:120] + ("…" if len(body) > 120 else "")
+            push({
+                "id": next_id(),
+                "type": "multiple_choice",
+                "question": f"Đọc đoạn ({title_sec}): ý chính là gì?",
+                "answer": body[:80],
+                "choices": make_choices(body[:80], [b[:80] for _, b in sections if b != body]),
+                "hint": snippet,
+                "section": "Đọc hiểu",
+            })
+        for en, vi in en_vocab[:2]:
+            push({
+                "id": next_id(),
+                "type": "true_false",
+                "question": f'Từ "{en}" có nghĩa: {vi}',
+                "answer": "Đúng",
+                "choices": ["Đúng", "Sai"],
+                "hint": en,
+            })
+
+    # --- ILA writing ---
+    elif category == "writing":
+        for title_f, formula in formulas[:3]:
+            push({
+                "id": next_id(),
+                "type": "input",
+                "question": f"Viết lại công thức/cấu trúc: {title_f}",
+                "answer": formula,
+                "hint": "Kiểm tra thứ tự từ và dấu câu.",
+                "section": "Viết cấu trúc",
+                "style": "ila",
+                "styleLabel": "ILA · Viết",
+            })
+        for label, body in tips[:2]:
+            push({
+                "id": next_id(),
+                "type": "error_detection",
+                "question": "Sửa lỗi trong câu sau",
+                "prompt": body[:100] + " (có thể thiếu/sai dấu câu)",
+                "answer": body[:100],
+                "hint": label,
+                "section": "Sửa lỗi viết",
+            })
+        for en, vi in en_vocab[:2]:
+            push({
+                "id": next_id(),
+                "type": "input",
+                "question": f"Dịch/viết câu tiếng Anh: {vi}",
+                "answer": en,
+                "hint": en,
+            })
+
+    # --- ILA grammar (default heavy) ---
+    elif category == "grammar":
+        for title_f, formula in formulas[:3]:
+            push({
+                "id": next_id(),
+                "type": "multiple_choice",
+                "question": f"Chọn công thức đúng cho {title_f}:",
+                "answer": formula,
+                "choices": make_choices(formula, [
+                    "S + V2",
+                    "S + have/has + V3",
+                    "S + am/is/are + V-ing",
+                    "S + will + V",
+                ]),
+                "hint": title_f,
+                "section": "Công thức",
+                "style": "ila",
+                "styleLabel": "ILA · Ngữ pháp",
+            })
+        for title_f, formula in formulas[3:4]:
+            words = formula.split()
+            if len(words) >= 3:
+                push({
+                    "id": next_id(),
+                    "type": "word_order",
+                    "question": f"Sắp xếp công thức {title_f}:",
+                    "answer": formula,
+                    "tokens": words,
+                    "hint": title_f,
+                })
+        for label, body in tips[:2]:
+            push({
+                "id": next_id(),
+                "type": "true_false",
+                "question": f"{label}: {body[:90]}…",
+                "answer": "Đúng",
+                "choices": ["Đúng", "Sai"],
+                "hint": body[:120],
+            })
+        for en, vi in en_vocab[:2]:
+            push({
+                "id": next_id(),
+                "type": "input",
+                "question": f"Điền từ tiếng Anh: {vi}",
+                "answer": en,
+                "hint": en,
+                "style": "langmaster",
+                "styleLabel": "Langmaster · Từ vựng",
+            })
+
+    # --- Langmaster vocabulary ---
+    elif category == "vocabulary":
+        for en, vi in en_vocab[:5]:
+            push({
+                "id": next_id(),
+                "type": "multiple_choice",
+                "question": f'"{en}" nghĩa là gì?',
+                "answer": vi,
+                "choices": make_choices(vi, pool),
+                "hint": en,
+                "section": "Từ vựng",
+            })
+        for en, vi in en_vocab[5:7]:
+            push({
+                "id": next_id(),
+                "type": "input",
+                "question": f"Viết từ tiếng Anh: {vi}",
+                "answer": en,
+                "hint": en,
+            })
+        for label, body in tips[:1]:
+            push({
+                "id": next_id(),
+                "type": "true_false",
+                "question": f"Mẹo từ vựng: {body[:90]}…",
+                "answer": "Đúng",
+                "choices": ["Đúng", "Sai"],
+                "hint": body[:120],
+            })
+
+    # --- ILA exam ---
+    elif category == "exam":
+        for en, vi in en_vocab[:4]:
+            push({
+                "id": next_id(),
+                "type": "multiple_choice",
+                "question": f"Câu hỏi thi: \"{en}\" = ?",
+                "answer": vi,
+                "choices": make_choices(vi, pool),
+                "hint": "Loại trừ đáp án sai rõ.",
+                "section": "Trắc nghiệm",
+            })
+        for title_f, formula in formulas[:2]:
+            push({
+                "id": next_id(),
+                "type": "input",
+                "question": f"Điền công thức: {title_f}",
+                "answer": formula,
+                "hint": formula,
+            })
+        for label, body in tips[:2]:
+            push({
+                "id": next_id(),
+                "type": "true_false",
+                "question": f"Ôn thi — {label}: {body[:80]}…",
+                "answer": "Đúng",
+                "choices": ["Đúng", "Sai"],
+            })
+
+    # --- skills / fallback ---
+    else:
+        for en, vi in en_vocab[:4]:
+            push({
+                "id": next_id(),
+                "type": "multiple_choice",
+                "question": f'"{en}" — {vi}?',
+                "answer": "Đúng",
+                "choices": ["Đúng", "Sai", "Không chắc", "Bỏ qua"],
+                "hint": en,
+            })
+        for title_sec, body in sections[:2]:
+            push({
+                "id": next_id(),
+                "type": "true_false",
+                "question": f"{title_sec}: {body[:85]}…",
+                "answer": "Đúng",
+                "choices": ["Đúng", "Sai"],
+                "hint": body[:100],
+            })
+        for label, body in tips[:2]:
+            push({
+                "id": next_id(),
+                "type": "input",
+                "question": f"Ghi nhớ ({label}): điền ý chính",
+                "answer": body[:60],
+                "hint": body[:120],
+            })
+
+    # Top-up to at least 6 exercises
+    while len(exercises) < 6 and en_vocab:
+        en, vi = en_vocab[len(exercises) % len(en_vocab)]
+        push({
+            "id": next_id(),
+            "type": "multiple_choice",
+            "question": f"Ôn nhanh: \"{en}\"?",
+            "answer": vi,
+            "choices": make_choices(vi, pool),
+            "hint": title,
+        })
+
+    return exercises[:12]
+
+
 def pick_poster(pdf_path: Path) -> str | None:
     exact = pdf_path.with_suffix(".png")
     if exact.exists():
@@ -341,6 +717,7 @@ def process_pdf(pdf_path: Path) -> dict:
     flashcards = build_flashcards(vocab, formulas, tips, sections)
     quiz = build_quiz(topic_id, vocab, formulas, tips, title_vi)
     shadowing = build_shadowing(order, category, vocab)
+    exercises = build_exercises(topic_id, category, title_vi, vocab, formulas, tips, sections, shadowing)
 
     topic = {
         "id": topic_id,
@@ -354,9 +731,11 @@ def process_pdf(pdf_path: Path) -> dict:
         "poster": poster,
         "flashcards": flashcards,
         "quiz": quiz,
+        "exercises": exercises,
         "stats": {
             "flashCount": len(flashcards),
             "quizCount": len(quiz),
+            "exerciseCount": len(exercises),
             "vocabCount": len(vocab),
             "shadowingCount": len(shadowing),
         },
@@ -370,9 +749,16 @@ def main():
     pdfs = sorted(TOPIC_DIR.glob("*.pdf"), key=lambda p: p.name)
     topics = [process_pdf(p) for p in pdfs]
     shadow_total = sum(len(t.get("shadowing", [])) for t in topics)
+    exercise_total = sum(len(t.get("exercises", [])) for t in topics)
     payload = {
-        "version": 2,
+        "version": 3,
         "generatedFrom": "special-topic/*.pdf",
+        "exerciseStyles": [
+            {"id": "langmaster", "label": "Langmaster", "url": "https://langmaster.edu.vn/"},
+            {"id": "ila", "label": "ILA", "url": "https://ila.edu.vn/"},
+            {"id": "mshoa", "label": "MS Hoa Giao Tiếp", "url": "https://mshoagiaotiep.com/"},
+            {"id": "elsa", "label": "ELSA Speak", "url": "https://vn.elsaspeak.com/"},
+        ],
         "topicCount": len(topics),
         "categories": [
             {"id": k, "label": v}
@@ -385,7 +771,8 @@ def main():
     print(
         f"Wrote {OUT} ({len(topics)} topics, "
         f"{sum(len(t['flashcards']) for t in topics)} flashcards, "
-        f"{shadow_total} shadowing lines)"
+        f"{shadow_total} shadowing lines, "
+        f"{exercise_total} drills)"
     )
 
 

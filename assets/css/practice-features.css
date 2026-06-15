@@ -20,6 +20,30 @@
   --practice-tab-cols: 5;
 }
 
+.practice-tabs--6 {
+  --practice-tab-cols: 3;
+}
+
+.practice-tabs--7 {
+  --practice-tab-cols: 3;
+}
+
+@media (min-width: 720px) {
+  .practice-tabs--6 {
+    --practice-tab-cols: 6;
+  }
+
+  .practice-tabs--7 {
+    --practice-tab-cols: 4;
+  }
+}
+
+@media (min-width: 1024px) {
+  .practice-tabs--7 {
+    --practice-tab-cols: 7;
+  }
+}
+
 .practice-tab {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -578,6 +602,32 @@
 .tag-sbt {
   background: #fff4e5;
   color: #9a5b00;
+}
+
+.tag-style {
+  font-size: 0.72rem;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.tag-style--elsa {
+  background: #e8f5f0;
+  color: #1a7f56;
+}
+
+.tag-style--mshoa {
+  background: #fff4e6;
+  color: #c45d00;
+}
+
+.tag-style--langmaster {
+  background: #e8f0ff;
+  color: #1e4fa8;
+}
+
+.tag-style--ila {
+  background: #f3e8ff;
+  color: #6b21a8;
 }
 
 .quiz-section {

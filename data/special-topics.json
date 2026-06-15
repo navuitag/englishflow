@@ -1,6 +1,28 @@
 {
-  "version": 2,
+  "version": 3,
   "generatedFrom": "special-topic/*.pdf",
+  "exerciseStyles": [
+    {
+      "id": "langmaster",
+      "label": "Langmaster",
+      "url": "https://langmaster.edu.vn/"
+    },
+    {
+      "id": "ila",
+      "label": "ILA",
+      "url": "https://ila.edu.vn/"
+    },
+    {
+      "id": "mshoa",
+      "label": "MS Hoa Giao Tiếp",
+      "url": "https://mshoagiaotiep.com/"
+    },
+    {
+      "id": "elsa",
+      "label": "ELSA Speak",
+      "url": "https://vn.elsaspeak.com/"
+    }
+  ],
   "topicCount": 47,
   "categories": [
     {
@@ -323,9 +345,117 @@
           "hint": "/æ/ mở miệng rộng hơn rất nhiều."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_01_pronunciation-phonetics_ex1",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói rõ từ/cụm: now",
+          "answer": "now",
+          "hint": "Nguyên âm dài",
+          "section": "Phát âm · Shadow",
+          "style": "elsa",
+          "styleLabel": "ELSA Speak · Nói thử"
+        },
+        {
+          "id": "st_01_pronunciation-phonetics_ex2",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói rõ từ/cụm: tree",
+          "answer": "tree",
+          "hint": "Muốn phát âm /θ/:",
+          "section": "Phát âm · Shadow",
+          "style": "elsa",
+          "styleLabel": "ELSA Speak · Nói thử"
+        },
+        {
+          "id": "st_01_pronunciation-phonetics_ex3",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói rõ từ/cụm: watches",
+          "answer": "watches",
+          "hint": "Mẹo thần tốc",
+          "section": "Phát âm · Shadow",
+          "style": "elsa",
+          "styleLabel": "ELSA Speak · Nói thử"
+        },
+        {
+          "id": "st_01_pronunciation-phonetics_ex4",
+          "type": "listening",
+          "question": "Nghe và chọn nghĩa đúng:",
+          "answer": "Đọc /ɪd/",
+          "choices": [
+            "Đọc /ɪd/",
+            "Nguyên âm dài",
+            "Muốn phát âm /θ/:",
+            "Mẹo thần tốc"
+          ],
+          "listenScript": [
+            {
+              "speaker": "Teacher",
+              "text": "opened"
+            }
+          ],
+          "hint": "Phát âm: opened",
+          "section": "Nghe · Chọn nghĩa",
+          "style": "elsa",
+          "styleLabel": "ELSA Speak · Nghe–chọn"
+        },
+        {
+          "id": "st_01_pronunciation-phonetics_ex5",
+          "type": "listening",
+          "question": "Nghe và chọn nghĩa đúng:",
+          "answer": "Mẹo nhớ:",
+          "choices": [
+            "Mẹo nhớ:",
+            "Nguyên âm dài",
+            "Muốn phát âm /θ/:",
+            "Mẹo thần tốc"
+          ],
+          "listenScript": [
+            {
+              "speaker": "Teacher",
+              "text": "needed"
+            }
+          ],
+          "hint": "Phát âm: needed",
+          "section": "Nghe · Chọn nghĩa",
+          "style": "elsa",
+          "styleLabel": "ELSA Speak · Nghe–chọn"
+        },
+        {
+          "id": "st_01_pronunciation-phonetics_ex6",
+          "type": "true_false",
+          "question": "Mẹo: • /iː/ kéo dài miệng cười. • /ɪ/ ngắn, bật nhanh.…",
+          "answer": "Đúng",
+          "choices": [
+            "Đúng",
+            "Sai"
+          ],
+          "hint": "• /iː/ kéo dài miệng cười. • /ɪ/ ngắn, bật nhanh.",
+          "section": "Mẹo phát âm",
+          "style": "elsa",
+          "styleLabel": "ELSA Speak · Phát âm"
+        },
+        {
+          "id": "st_01_pronunciation-phonetics_ex7",
+          "type": "true_false",
+          "question": "Mẹo: /æ/ mở miệng rộng hơn rất nhiều.…",
+          "answer": "Đúng",
+          "choices": [
+            "Đúng",
+            "Sai"
+          ],
+          "hint": "/æ/ mở miệng rộng hơn rất nhiều.",
+          "section": "Mẹo phát âm",
+          "style": "elsa",
+          "styleLabel": "ELSA Speak · Phát âm"
+        }
+      ],
       "stats": {
         "flashCount": 23,
         "quizCount": 10,
+        "exerciseCount": 7,
         "vocabCount": 13,
         "shadowingCount": 15
       },
@@ -714,9 +844,90 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_02_parts-of-speech_ex1",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Từ loại",
+          "answer": "STT",
+          "hint": "STT",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_02_parts-of-speech_ex2",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Chỉ người, vật, địa điểm, ý tưởng",
+          "answer": "Noun",
+          "hint": "Noun",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_02_parts-of-speech_ex3",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Pronoun\"?",
+          "answer": "Thay thế danh từ",
+          "choices": [
+            "Thay thế danh từ",
+            "Từ loại",
+            "Chỉ người, vật, địa điểm, ý tưởng",
+            "Chỉ hành động hoặc trạng thái"
+          ],
+          "hint": "TỪ LOẠI",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_02_parts-of-speech_ex4",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Verb\"?",
+          "answer": "Chỉ hành động hoặc trạng thái",
+          "choices": [
+            "Chỉ hành động hoặc trạng thái",
+            "Từ loại",
+            "Chỉ người, vật, địa điểm, ý tưởng",
+            "Thay thế danh từ"
+          ],
+          "hint": "TỪ LOẠI",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_02_parts-of-speech_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Adjective\"?",
+          "answer": "Bổ nghĩa cho danh từ",
+          "choices": [
+            "Bổ nghĩa cho danh từ",
+            "Từ loại",
+            "Chỉ người, vật, địa điểm, ý tưởng",
+            "Thay thế danh từ"
+          ],
+          "hint": "TỪ LOẠI",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_02_parts-of-speech_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Adverb\"?",
+          "answer": "Bổ nghĩa cho động từ, tính từ hoặc cả câu",
+          "choices": [
+            "Bổ nghĩa cho động từ, tính từ hoặc cả câu",
+            "Từ loại",
+            "Chỉ người, vật, địa điểm, ý tưởng",
+            "Thay thế danh từ"
+          ],
+          "hint": "TỪ LOẠI",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 29,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 23,
         "shadowingCount": 0
       }
@@ -971,9 +1182,90 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_03_basic-sentences-structures_ex1",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Khi dùng",
+          "answer": "The sun rises.",
+          "hint": "The sun rises.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_03_basic-sentences-structures_ex2",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Dấu hiệu",
+          "answer": "They watched TV.",
+          "hint": "They watched TV.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_03_basic-sentences-structures_ex3",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"The soup tastes delicious.\"?",
+          "answer": "Các linking verbs phổ biến:",
+          "choices": [
+            "Các linking verbs phổ biến:",
+            "Khi dùng",
+            "Dấu hiệu",
+            "Có thể đổi thành:"
+          ],
+          "hint": "CẤU TRÚC CÂU CƠ BẢN",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_03_basic-sentences-structures_ex4",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"I told him the truth.\"?",
+          "answer": "Có thể đổi thành:",
+          "choices": [
+            "Có thể đổi thành:",
+            "Khi dùng",
+            "Dấu hiệu",
+            "Các linking verbs phổ biến:"
+          ],
+          "hint": "CẤU TRÚC CÂU CƠ BẢN",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_03_basic-sentences-structures_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"She gave a gift to me.\"?",
+          "answer": "Mẫu 5: S + V + O + C",
+          "choices": [
+            "Mẫu 5: S + V + O + C",
+            "Khi dùng",
+            "Dấu hiệu",
+            "Các linking verbs phổ biến:"
+          ],
+          "hint": "CẤU TRÚC CÂU CƠ BẢN",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_03_basic-sentences-structures_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"The teacher made us happy.\"?",
+          "answer": "Nếu bỏ C:",
+          "choices": [
+            "Nếu bỏ C:",
+            "Khi dùng",
+            "Dấu hiệu",
+            "Các linking verbs phổ biến:"
+          ],
+          "hint": "CẤU TRÚC CÂU CƠ BẢN",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 22,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 16,
         "shadowingCount": 0
       }
@@ -1308,9 +1600,108 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_04_english-tenses_ex1",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "S + V(s/es)",
+          "choices": [
+            "S + V(s/es)",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_04_english-tenses_ex2",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "S + am/is/are + V-ing",
+          "choices": [
+            "S + am/is/are + V-ing",
+            "S + V2",
+            "S + have/has + V3",
+            "S + will + V"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_04_english-tenses_ex3",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "S + have/has + V3",
+          "choices": [
+            "S + have/has + V3",
+            "S + V2",
+            "S + am/is/are + V-ing",
+            "S + will + V"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_04_english-tenses_ex4",
+          "type": "word_order",
+          "question": "Sắp xếp công thức Công thức:",
+          "answer": "S + have/has been + V-ing",
+          "tokens": [
+            "S",
+            "+",
+            "have/has",
+            "been",
+            "+",
+            "V-ing"
+          ],
+          "hint": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_04_english-tenses_ex5",
+          "type": "true_false",
+          "question": "Nguyên tắc vàng: Muốn chọn đúng thì, hãy trả lời hai câu hỏi:…",
+          "answer": "Đúng",
+          "choices": [
+            "Đúng",
+            "Sai"
+          ],
+          "hint": "Muốn chọn đúng thì, hãy trả lời hai câu hỏi:",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_04_english-tenses_ex6",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Quá khứ",
+          "answer": "Present Perfect Continuous",
+          "hint": "Present Perfect Continuous",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_04_english-tenses_ex7",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Tương lai",
+          "answer": "Past Perfect Continuous",
+          "hint": "Past Perfect Continuous",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 31,
         "quizCount": 10,
+        "exerciseCount": 7,
         "vocabCount": 12,
         "shadowingCount": 0
       }
@@ -1735,9 +2126,92 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_05_special-verbs_ex1",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "S + Modal Verb + V",
+          "choices": [
+            "S + Modal Verb + V",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_05_special-verbs_ex2",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "V+O+V",
+          "choices": [
+            "V+O+V",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_05_special-verbs_ex3",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Ý nghĩa",
+          "answer": "Modal",
+          "hint": "Modal",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_05_special-verbs_ex4",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: có thể",
+          "answer": "can",
+          "hint": "can",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_05_special-verbs_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"might\"?",
+          "answer": "có thể",
+          "choices": [
+            "có thể",
+            "Ý nghĩa",
+            "có thể (quá khứ/lịch sự)",
+            "có lẽ/được phép"
+          ],
+          "hint": "NGỮ PHÁP TRỌNG TÂM – ĐỘNG TỪ",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_05_special-verbs_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"must\"?",
+          "answer": "phải",
+          "choices": [
+            "phải",
+            "Ý nghĩa",
+            "có thể",
+            "có thể (quá khứ/lịch sự)"
+          ],
+          "hint": "NGỮ PHÁP TRỌNG TÂM – ĐỘNG TỪ",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 46,
         "quizCount": 10,
+        "exerciseCount": 6,
         "vocabCount": 38,
         "shadowingCount": 0
       }
@@ -2000,9 +2474,91 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_06_comparations_ex1",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "S + be/V + as + adj/adv + as + N/Pronoun",
+          "choices": [
+            "S + be/V + as + adj/adv + as + N/Pronoun",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_06_comparations_ex2",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "So sánh bằng",
+          "choices": [
+            "So sánh bằng",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_06_comparations_ex3",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "Không bằng",
+          "choices": [
+            "Không bằng",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_06_comparations_ex4",
+          "type": "true_false",
+          "question": "Nguyên tắc vàng: Muốn dùng đúng cấu trúc so sánh, trước tiên phải xác định tính từ/trạng từ ngắn hay dài.…",
+          "answer": "Đúng",
+          "choices": [
+            "Đúng",
+            "Sai"
+          ],
+          "hint": "Muốn dùng đúng cấu trúc so sánh, trước tiên phải xác định tính từ/trạng từ ngắn hay dài.",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_06_comparations_ex5",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Ý nghĩa",
+          "answer": "This car is not as expensive as that one.",
+          "hint": "This car is not as expensive as that one.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_06_comparations_ex6",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Không đếm được",
+          "answer": "Less",
+          "hint": "Less",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 19,
         "quizCount": 10,
+        "exerciseCount": 6,
         "vocabCount": 9,
         "shadowingCount": 0
       }
@@ -2282,9 +2838,91 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_07_passive-voice_ex1",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "```text id=\"n71a5q\"",
+          "choices": [
+            "```text id=\"n71a5q\"",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_07_passive-voice_ex2",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Câu bị động (Passive Voice) nhấn mạnh đối tượng chịu tác động của hành động.",
+          "answer": "Tom writes a letter.",
+          "hint": "Tom writes a letter.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_07_passive-voice_ex3",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: --## 5. Quá khứ tiếp diễn",
+          "answer": "The bridge was built.",
+          "hint": "The bridge was built.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_07_passive-voice_ex4",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Uniforms have to be worn.\"?",
+          "answer": "--# VII. Bị động với động từ có hai tân ngữ",
+          "choices": [
+            "--# VII. Bị động với động từ có hai tân ngữ",
+            "Câu bị động (Passive Voice) nhấn mạnh đối tượng chịu tác động của hành động.",
+            "--## 5. Quá khứ tiếp diễn",
+            "--## 7. Tương lai đơn"
+          ],
+          "hint": "NGỮ PHÁP TRỌNG TÂM – CÂU BỊ",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_07_passive-voice_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"She gave me a book.\"?",
+          "answer": "Có hai cách:",
+          "choices": [
+            "Có hai cách:",
+            "Câu bị động (Passive Voice) nhấn mạnh đối tượng chịu tác động của hành động.",
+            "--## 5. Quá khứ tiếp diễn",
+            "--## 7. Tương lai đơn"
+          ],
+          "hint": "NGỮ PHÁP TRỌNG TÂM – CÂU BỊ",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_07_passive-voice_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"I was given a book.\"?",
+          "answer": "Hoặc",
+          "choices": [
+            "Hoặc",
+            "Câu bị động (Passive Voice) nhấn mạnh đối tượng chịu tác động của hành động.",
+            "--## 5. Quá khứ tiếp diễn",
+            "--## 7. Tương lai đơn"
+          ],
+          "hint": "NGỮ PHÁP TRỌNG TÂM – CÂU BỊ",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 24,
         "quizCount": 9,
+        "exerciseCount": 6,
         "vocabCount": 18,
         "shadowingCount": 0
       }
@@ -2529,9 +3167,93 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_08_reported-speech_ex1",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "```text id=\"rs1\" S + said (that) + Clause",
+          "choices": [
+            "```text id=\"rs1\" S + said (that) + Clause",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_08_reported-speech_ex2",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "```text id=\"rs3\" asked + if / whether + Clause",
+          "choices": [
+            "```text id=\"rs3\" asked + if / whether + Clause",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_08_reported-speech_ex3",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "Statement",
+          "choices": [
+            "Statement",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_08_reported-speech_ex4",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Had to (trong nhiều trường hợp)",
+          "answer": "Must",
+          "hint": "Must",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_08_reported-speech_ex5",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: --# X. Câu hỏi WhGiữ nguyên từ để hỏi.",
+          "answer": "She asked whether I was ready.",
+          "hint": "She asked whether I was ready.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_08_reported-speech_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"The day before\"?",
+          "answer": "--# XXIII. Sơ đồ tư duy",
+          "choices": [
+            "--# XXIII. Sơ đồ tư duy",
+            "Had to (trong nhiều trường hợp)",
+            "--# X. Câu hỏi WhGiữ nguyên từ để hỏi.",
+            "--## Phủ định"
+          ],
+          "hint": "NGỮ PHÁP TRỌNG TÂM – CÂU GIÁN",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 16,
         "quizCount": 10,
+        "exerciseCount": 6,
         "vocabCount": 7,
         "shadowingCount": 0
       }
@@ -2834,9 +3556,90 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_09_clauses_ex1",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Mệnh đề phụ (Dependent Clause)",
+          "answer": "I love English.",
+          "hint": "I love English.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_09_clauses_ex2",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: → Phải đi kèm mệnh đề chính.",
+          "answer": "because I was tired",
+          "hint": "because I was tired",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_09_clauses_ex3",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"What he said is true.\"?",
+          "answer": "Làm tân ngữ",
+          "choices": [
+            "Làm tân ngữ",
+            "Mệnh đề phụ (Dependent Clause)",
+            "→ Phải đi kèm mệnh đề chính.",
+            "Làm bổ ngữ"
+          ],
+          "hint": "LIÊN KẾT CÂU – MỆNH ĐỀ",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_09_clauses_ex4",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"I know that she is honest.\"?",
+          "answer": "Làm bổ ngữ",
+          "choices": [
+            "Làm bổ ngữ",
+            "Mệnh đề phụ (Dependent Clause)",
+            "→ Phải đi kèm mệnh đề chính.",
+            "Làm tân ngữ"
+          ],
+          "hint": "LIÊN KẾT CÂU – MỆNH ĐỀ",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_09_clauses_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"The girl who is singing is my sister.\"?",
+          "answer": "Đại từ quan hệ",
+          "choices": [
+            "Đại từ quan hệ",
+            "Mệnh đề phụ (Dependent Clause)",
+            "→ Phải đi kèm mệnh đề chính.",
+            "Làm tân ngữ"
+          ],
+          "hint": "LIÊN KẾT CÂU – MỆNH ĐỀ",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_09_clauses_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"who\"?",
+          "answer": "Người",
+          "choices": [
+            "Người",
+            "Mệnh đề phụ (Dependent Clause)",
+            "→ Phải đi kèm mệnh đề chính.",
+            "Làm tân ngữ"
+          ],
+          "hint": "LIÊN KẾT CÂU – MỆNH ĐỀ",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 30,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 24,
         "shadowingCount": 0
       }
@@ -3129,9 +3932,97 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_10_conditional-sentences_ex1",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Present Simple, Present Simple:",
+          "answer": "If + Present Simple, Present Simple",
+          "choices": [
+            "If + Present Simple, Present Simple",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Present Simple, Present Simple",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_10_conditional-sentences_ex2",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Present Simple, will + V:",
+          "answer": "If + Present Simple, will + V",
+          "choices": [
+            "If + Present Simple, will + V",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Present Simple, will + V",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_10_conditional-sentences_ex3",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Past Simple, would + V:",
+          "answer": "If + Past Simple, would + V",
+          "choices": [
+            "If + Past Simple, would + V",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Past Simple, would + V",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_10_conditional-sentences_ex4",
+          "type": "word_order",
+          "question": "Sắp xếp công thức Past Perfect, would have + V3:",
+          "answer": "If + Past Perfect, would have + V3",
+          "tokens": [
+            "If",
+            "+",
+            "Past",
+            "Perfect,",
+            "would",
+            "have",
+            "+",
+            "V3"
+          ],
+          "hint": "Past Perfect, would have + V3",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_10_conditional-sentences_ex5",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Trong đó:",
+          "answer": "If it rains, I will stay at home.",
+          "hint": "If it rains, I will stay at home.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_10_conditional-sentences_ex6",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Dấu phẩy chỉ dùng khi mệnh đề If đứng trước.",
+          "answer": "You will pass if you study hard.",
+          "hint": "You will pass if you study hard.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 24,
         "quizCount": 10,
+        "exerciseCount": 6,
         "vocabCount": 14,
         "shadowingCount": 0
       }
@@ -3514,9 +4405,96 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_11_wish-subjunctive_ex1",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Past Simple:",
+          "answer": "S + wish(es) + S + Past Simple",
+          "choices": [
+            "S + wish(es) + S + Past Simple",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Past Simple",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_11_wish-subjunctive_ex2",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "S + wish(es) + S + had + V3",
+          "choices": [
+            "S + wish(es) + S + had + V3",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_11_wish-subjunctive_ex3",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "S + wish(es) + S + would + V",
+          "choices": [
+            "S + wish(es) + S + would + V",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_11_wish-subjunctive_ex4",
+          "type": "word_order",
+          "question": "Sắp xếp công thức Past Simple:",
+          "answer": "It's time + S + Past Simple",
+          "tokens": [
+            "It's",
+            "time",
+            "+",
+            "S",
+            "+",
+            "Past",
+            "Simple"
+          ],
+          "hint": "Past Simple",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_11_wish-subjunctive_ex5",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: → Thực tế: Tôi không cao.",
+          "answer": "I wish I were taller.",
+          "hint": "I wish I were taller.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_11_wish-subjunctive_ex6",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Lưu ý",
+          "answer": "They wish they lived near the beach.",
+          "hint": "They wish they lived near the beach.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 39,
         "quizCount": 10,
+        "exerciseCount": 6,
         "vocabCount": 25,
         "shadowingCount": 0
       }
@@ -3784,9 +4762,91 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_12_active-passive_ex1",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "Modal + V",
+          "choices": [
+            "Modal + V",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_12_active-passive_ex2",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Bước 3",
+          "answer": "A letter",
+          "hint": "A letter",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_12_active-passive_ex3",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Bước 4",
+          "answer": "is",
+          "hint": "is",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_12_active-passive_ex4",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"She gave me a book.\"?",
+          "answer": "Có hai cách chuyển:",
+          "choices": [
+            "Có hai cách chuyển:",
+            "Bước 3",
+            "Bước 4",
+            "Bước 5"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_12_active-passive_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"I was given a book.\"?",
+          "answer": "Cách 2",
+          "choices": [
+            "Cách 2",
+            "Bước 3",
+            "Bước 4",
+            "Bước 5"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_12_active-passive_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"English is spoken here.\"?",
+          "answer": "Thông thường bỏ luôn \"by people\".",
+          "choices": [
+            "Thông thường bỏ luôn \"by people\".",
+            "Bước 3",
+            "Bước 4",
+            "Bước 5"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 22,
         "quizCount": 9,
+        "exerciseCount": 6,
         "vocabCount": 15,
         "shadowingCount": 0
       }
@@ -4043,9 +5103,92 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_13_direct-reported_ex1",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "```text id=\"2m7hd1\"",
+          "choices": [
+            "```text id=\"2m7hd1\"",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_13_direct-reported_ex2",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "```text id=\"6cx4vo\"",
+          "choices": [
+            "```text id=\"6cx4vo\"",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_13_direct-reported_ex3",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Bản chất",
+          "answer": "Tom said that he was tired.",
+          "hint": "Tom said that he was tired.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_13_direct-reported_ex4",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: → thường phải lùi một thì.",
+          "answer": "asked",
+          "hint": "asked",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_13_direct-reported_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"He said that he loved his mother.\"?",
+          "answer": "--# VIII. Đổi trạng từ thời gian",
+          "choices": [
+            "--# VIII. Đổi trạng từ thời gian",
+            "Bản chất",
+            "→ thường phải lùi một thì.",
+            "--# VI. Khi KHÔNG cần lùi thì"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_13_direct-reported_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"He told me that he was busy.\"?",
+          "answer": "--# X. Said và Told",
+          "choices": [
+            "--# X. Said và Told",
+            "Bản chất",
+            "→ thường phải lùi một thì.",
+            "--# VI. Khi KHÔNG cần lùi thì"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 18,
         "quizCount": 10,
+        "exerciseCount": 6,
         "vocabCount": 13,
         "shadowingCount": 0
       }
@@ -4300,9 +5443,90 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_14_although-despite_ex1",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: → Trời mưa nhưng chúng tôi vẫn đi ra ngoài.",
+          "answer": "Although it rained, we went out.",
+          "hint": "Although it rained, we went out.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_14_although-despite_ex2",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: --# III. Công thức tổng quát",
+          "answer": "Despite being tired, he worked.",
+          "hint": "Despite being tired, he worked.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_14_although-despite_ex3",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"V-ing\"?",
+          "answer": "Bước 3",
+          "choices": [
+            "Bước 3",
+            "→ Trời mưa nhưng chúng tôi vẫn đi ra ngoài.",
+            "Theo sau là:",
+            "--# III. Công thức tổng quát"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_14_although-despite_ex4",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Even though it was dangerous, he continued.\"?",
+          "answer": "Có thể chuyển:",
+          "choices": [
+            "Có thể chuyển:",
+            "→ Trời mưa nhưng chúng tôi vẫn đi ra ngoài.",
+            "Theo sau là:",
+            "--# III. Công thức tổng quát"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_14_although-despite_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"It's difficult. I like it though.\"?",
+          "answer": "Không thay bằng Despite.",
+          "choices": [
+            "Không thay bằng Despite.",
+            "→ Trời mưa nhưng chúng tôi vẫn đi ra ngoài.",
+            "Theo sau là:",
+            "--# III. Công thức tổng quát"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_14_although-despite_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"In spite of the rain\"?",
+          "answer": "--# XIII. Không dùng",
+          "choices": [
+            "--# XIII. Không dùng",
+            "→ Trời mưa nhưng chúng tôi vẫn đi ra ngoài.",
+            "Theo sau là:",
+            "--# III. Công thức tổng quát"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 22,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 16,
         "shadowingCount": 0
       }
@@ -4553,9 +5777,92 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_15_because-because-of_ex1",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "Because + Subject + Verb",
+          "choices": [
+            "Because + Subject + Verb",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_15_because-because-of_ex2",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "Because of + Noun / Pronoun / V-ing",
+          "choices": [
+            "Because of + Noun / Pronoun / V-ing",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_15_because-because-of_ex3",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Hoặc đổi thành danh từ",
+          "answer": "Because of being happy,",
+          "hint": "Because of being happy,",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_15_because-because-of_ex4",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Đều có thể thay Because trong nhiều trường hợp.",
+          "answer": "As it was late, we left.",
+          "hint": "As it was late, we left.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_15_because-because-of_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Although\"?",
+          "answer": "Chỉ nguyên nhân",
+          "choices": [
+            "Chỉ nguyên nhân",
+            "Là liên từ",
+            "Hoặc đổi thành danh từ",
+            "Đều có thể thay Because trong nhiều trường hợp."
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_15_because-because-of_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Although it rained\"?",
+          "answer": "→ Kết quả hợp lý",
+          "choices": [
+            "→ Kết quả hợp lý",
+            "Là liên từ",
+            "Hoặc đổi thành danh từ",
+            "Đều có thể thay Because trong nhiều trường hợp."
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 17,
         "quizCount": 10,
+        "exerciseCount": 6,
         "vocabCount": 9,
         "shadowingCount": 0
       }
@@ -4859,9 +6166,91 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_16_too-enough_ex1",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "```text id=\"too1\" S + be + too + Adj + to V",
+          "choices": [
+            "```text id=\"too1\" S + be + too + Adj + to V",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_16_too-enough_ex2",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: → Anh ấy quá nhỏ để lái xe.",
+          "answer": "He is too young to drive.",
+          "hint": "He is too young to drive.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_16_too-enough_ex3",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: → Anh ấy đủ lớn để lái xe.",
+          "answer": "He is old enough to drive.",
+          "hint": "He is old enough to drive.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_16_too-enough_ex4",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"She is old enough to vote.\"?",
+          "answer": "--## Với trạng từ",
+          "choices": [
+            "--## Với trạng từ",
+            "→ Anh ấy quá nhỏ để lái xe.",
+            "→ Anh ấy đủ lớn để lái xe.",
+            "--## Với động từ thường"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_16_too-enough_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"He runs fast enough to win.\"?",
+          "answer": "Với danh từ",
+          "choices": [
+            "Với danh từ",
+            "→ Anh ấy quá nhỏ để lái xe.",
+            "→ Anh ấy đủ lớn để lái xe.",
+            "--## Với động từ thường"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_16_too-enough_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"I have enough money to buy it.\"?",
+          "answer": "--# IV. Ý nghĩa đối lập",
+          "choices": [
+            "--# IV. Ý nghĩa đối lập",
+            "→ Anh ấy quá nhỏ để lái xe.",
+            "→ Anh ấy đủ lớn để lái xe.",
+            "--## Với động từ thường"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 28,
         "quizCount": 9,
+        "exerciseCount": 6,
         "vocabCount": 24,
         "shadowingCount": 0
       }
@@ -5092,9 +6481,90 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_17_so-such_ex1",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: → Cô ấy đẹp đến mức mọi người đều ngưỡng mộ.",
+          "answer": "She is so beautiful that everyone admires her.",
+          "hint": "She is so beautiful that everyone admires her.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_17_so-such_ex2",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: --## Với trạng từ",
+          "answer": "He is so tall that he can reach the shelf.",
+          "hint": "He is so tall that he can reach the shelf.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_17_so-such_ex3",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"She is such a kind girl that everyone loves her.\"?",
+          "answer": "--## Với danh từ số nhiều",
+          "choices": [
+            "--## Với danh từ số nhiều",
+            "→ Cô ấy đẹp đến mức mọi người đều ngưỡng mộ.",
+            "--## Với trạng từ",
+            "Với danh từ không đếm được"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_17_so-such_ex4",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"They are such clever students that everyone admires them.\"?",
+          "answer": "Với danh từ không đếm được",
+          "choices": [
+            "Với danh từ không đếm được",
+            "→ Cô ấy đẹp đến mức mọi người đều ngưỡng mộ.",
+            "--## Với trạng từ",
+            "--## Với danh từ số nhiều"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_17_so-such_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"He is such a careful driver that nobody worries.\"?",
+          "answer": "--# VI. Quy trình chuyển So → Such",
+          "choices": [
+            "--# VI. Quy trình chuyển So → Such",
+            "→ Cô ấy đẹp đến mức mọi người đều ngưỡng mộ.",
+            "--## Với trạng từ",
+            "--## Với danh từ số nhiều"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_17_so-such_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"careful driver\"?",
+          "answer": "--## Bước 3",
+          "choices": [
+            "--## Bước 3",
+            "→ Cô ấy đẹp đến mức mọi người đều ngưỡng mộ.",
+            "--## Với trạng từ",
+            "--## Với danh từ số nhiều"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 18,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 12,
         "shadowingCount": 0
       }
@@ -5325,9 +6795,90 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_18_not-only-but-also_ex1",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: → Cô ấy không chỉ thông minh mà còn chăm chỉ.",
+          "answer": "She is not only intelligent but also hardworking.",
+          "hint": "She is not only intelligent but also hardworking.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_18_not-only-but-also_ex2",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: Với danh từ",
+          "answer": "He is not only tall but also handsome.",
+          "hint": "He is not only tall but also handsome.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_18_not-only-but-also_ex3",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"She speaks not only English but also French.\"?",
+          "answer": "--## Với động từ",
+          "choices": [
+            "--## Với động từ",
+            "→ Cô ấy không chỉ thông minh mà còn chăm chỉ.",
+            "Với danh từ",
+            "Với cụm động từ"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_18_not-only-but-also_ex4",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"He not only sings but also dances.\"?",
+          "answer": "Với cụm động từ",
+          "choices": [
+            "Với cụm động từ",
+            "→ Cô ấy không chỉ thông minh mà còn chăm chỉ.",
+            "Với danh từ",
+            "--## Với động từ"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_18_not-only-but-also_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"He not only studies but also works.\"?",
+          "answer": "--## Với động từ to be",
+          "choices": [
+            "--## Với động từ to be",
+            "→ Cô ấy không chỉ thông minh mà còn chăm chỉ.",
+            "Với danh từ",
+            "--## Với động từ"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_18_not-only-but-also_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"She is not only beautiful but also kind.\"?",
+          "answer": "--## Với trợ động từ",
+          "choices": [
+            "--## Với trợ động từ",
+            "→ Cô ấy không chỉ thông minh mà còn chăm chỉ.",
+            "Với danh từ",
+            "--## Với động từ"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 18,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 12,
         "shadowingCount": 0
       }
@@ -5608,9 +7159,93 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_19_either-neither_ex1",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "```text id=\"rule1\"",
+          "choices": [
+            "```text id=\"rule1\"",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_19_either-neither_ex2",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "```text id=\"rule2\" Neither + A + nor + B",
+          "choices": [
+            "```text id=\"rule2\" Neither + A + nor + B",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_19_either-neither_ex3",
+          "type": "multiple_choice",
+          "question": "Chọn công thức đúng cho Công thức:",
+          "answer": "```text id=\"rule3\"",
+          "choices": [
+            "```text id=\"rule3\"",
+            "S + V2",
+            "S + have/has + V3",
+            "S + am/is/are + V-ing"
+          ],
+          "hint": "Công thức",
+          "section": "Công thức",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_19_either-neither_ex4",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: --# V. Hòa hợp động từ",
+          "answer": "Neither Tom nor Mary came.",
+          "hint": "Neither Tom nor Mary came.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_19_either-neither_ex5",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: --# XI. Biến đổi từ Both...and",
+          "answer": "So do I.",
+          "hint": "So do I.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_19_either-neither_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"She doesn't like apples either.\"?",
+          "answer": "--# XV. Neither trong câu khẳng định",
+          "choices": [
+            "--# XV. Neither trong câu khẳng định",
+            "Công thức",
+            "--# V. Hòa hợp động từ",
+            "--# XI. Biến đổi từ Both...and"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 22,
         "quizCount": 10,
+        "exerciseCount": 6,
         "vocabCount": 13,
         "shadowingCount": 0
       }
@@ -5841,9 +7476,90 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_20_both-not-only-but-also_ex1",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: → Tom vừa thông minh vừa chăm chỉ.",
+          "answer": "Tom is both intelligent and hardworking.",
+          "hint": "Tom is both intelligent and hardworking.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_20_both-not-only-but-also_ex2",
+          "type": "input",
+          "question": "Điền từ tiếng Anh: → Tom không chỉ thông minh mà còn chăm chỉ.",
+          "answer": "Tom is not only intelligent but also hardworking.",
+          "hint": "Tom is not only intelligent but also hardworking.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_20_both-not-only-but-also_ex3",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Both Tom and Mary came.\"?",
+          "answer": "Với tính từ",
+          "choices": [
+            "Với tính từ",
+            "→ Tom vừa thông minh vừa chăm chỉ.",
+            "→ Tom không chỉ thông minh mà còn chăm chỉ.",
+            "--## Với động từ"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_20_both-not-only-but-also_ex4",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"She is both kind and beautiful.\"?",
+          "answer": "--## Với động từ",
+          "choices": [
+            "--## Với động từ",
+            "→ Tom vừa thông minh vừa chăm chỉ.",
+            "→ Tom không chỉ thông minh mà còn chăm chỉ.",
+            "Với tính từ"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_20_both-not-only-but-also_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Not only Tom but also Mary came.\"?",
+          "answer": "--## Ví dụ 2",
+          "choices": [
+            "--## Ví dụ 2",
+            "→ Tom vừa thông minh vừa chăm chỉ.",
+            "→ Tom không chỉ thông minh mà còn chăm chỉ.",
+            "Với tính từ"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        },
+        {
+          "id": "st_20_both-not-only-but-also_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"She is not only beautiful but also kind.\"?",
+          "answer": "--## Ví dụ 3",
+          "choices": [
+            "--## Ví dụ 3",
+            "→ Tom vừa thông minh vừa chăm chỉ.",
+            "→ Tom không chỉ thông minh mà còn chăm chỉ.",
+            "Với tính từ"
+          ],
+          "hint": "BIẾN ĐỔI CÂU",
+          "style": "ila",
+          "styleLabel": "ILA · Ngữ pháp"
+        }
+      ],
       "stats": {
         "flashCount": 18,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 13,
         "shadowingCount": 0
       }
@@ -6242,9 +7958,110 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_21_vocabulary-family_ex1",
+          "type": "multiple_choice",
+          "question": "\"family\" nghĩa là gì?",
+          "answer": "gia đình",
+          "choices": [
+            "gia đình",
+            "cha/mẹ",
+            "con gái",
+            "đứa trẻ"
+          ],
+          "hint": "family",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_21_vocabulary-family_ex2",
+          "type": "multiple_choice",
+          "question": "\"parent\" nghĩa là gì?",
+          "answer": "cha/mẹ",
+          "choices": [
+            "cha/mẹ",
+            "gia đình",
+            "con gái",
+            "đứa trẻ"
+          ],
+          "hint": "parent",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_21_vocabulary-family_ex3",
+          "type": "multiple_choice",
+          "question": "\"daughter\" nghĩa là gì?",
+          "answer": "con gái",
+          "choices": [
+            "con gái",
+            "gia đình",
+            "cha/mẹ",
+            "đứa trẻ"
+          ],
+          "hint": "daughter",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_21_vocabulary-family_ex4",
+          "type": "multiple_choice",
+          "question": "\"child\" nghĩa là gì?",
+          "answer": "đứa trẻ",
+          "choices": [
+            "đứa trẻ",
+            "gia đình",
+            "cha/mẹ",
+            "con gái"
+          ],
+          "hint": "child",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_21_vocabulary-family_ex5",
+          "type": "multiple_choice",
+          "question": "\"children\" nghĩa là gì?",
+          "answer": "các con",
+          "choices": [
+            "các con",
+            "gia đình",
+            "cha/mẹ",
+            "con gái"
+          ],
+          "hint": "children",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_21_vocabulary-family_ex6",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: chị/em gái",
+          "answer": "sister",
+          "hint": "sister",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_21_vocabulary-family_ex7",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: anh/chị/em ruột",
+          "answer": "sibling",
+          "hint": "sibling",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
+        "exerciseCount": 7,
         "vocabCount": 40,
         "shadowingCount": 0
       }
@@ -6643,9 +8460,110 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_22_vocabulary-school_ex1",
+          "type": "multiple_choice",
+          "question": "\"love\" nghĩa là gì?",
+          "answer": "yêu thương",
+          "choices": [
+            "yêu thương",
+            "tình cảm",
+            "sự quan tâm",
+            "sự hỗ trợ"
+          ],
+          "hint": "love",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_22_vocabulary-school_ex2",
+          "type": "multiple_choice",
+          "question": "\"affection\" nghĩa là gì?",
+          "answer": "tình cảm",
+          "choices": [
+            "tình cảm",
+            "yêu thương",
+            "sự quan tâm",
+            "sự hỗ trợ"
+          ],
+          "hint": "affection",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_22_vocabulary-school_ex3",
+          "type": "multiple_choice",
+          "question": "\"care\" nghĩa là gì?",
+          "answer": "sự quan tâm",
+          "choices": [
+            "sự quan tâm",
+            "yêu thương",
+            "tình cảm",
+            "sự hỗ trợ"
+          ],
+          "hint": "care",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_22_vocabulary-school_ex4",
+          "type": "multiple_choice",
+          "question": "\"support\" nghĩa là gì?",
+          "answer": "sự hỗ trợ",
+          "choices": [
+            "sự hỗ trợ",
+            "yêu thương",
+            "tình cảm",
+            "sự quan tâm"
+          ],
+          "hint": "support",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_22_vocabulary-school_ex5",
+          "type": "multiple_choice",
+          "question": "\"respect\" nghĩa là gì?",
+          "answer": "sự tôn trọng",
+          "choices": [
+            "sự tôn trọng",
+            "yêu thương",
+            "tình cảm",
+            "sự quan tâm"
+          ],
+          "hint": "respect",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_22_vocabulary-school_ex6",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: sự tin tưởng",
+          "answer": "trust",
+          "hint": "trust",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_22_vocabulary-school_ex7",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: sự thấu hiểu",
+          "answer": "understanding",
+          "hint": "understanding",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
+        "exerciseCount": 7,
         "vocabCount": 40,
         "shadowingCount": 0
       }
@@ -7044,9 +8962,110 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_23_vocabulary-classroom_ex1",
+          "type": "multiple_choice",
+          "question": "\"Literature\" nghĩa là gì?",
+          "answer": "Ngữ văn",
+          "choices": [
+            "Ngữ văn",
+            "Toán",
+            "Vật lý",
+            "Hóa học"
+          ],
+          "hint": "Literature",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_23_vocabulary-classroom_ex2",
+          "type": "multiple_choice",
+          "question": "\"Physics\" nghĩa là gì?",
+          "answer": "Vật lý",
+          "choices": [
+            "Vật lý",
+            "Toán",
+            "Ngữ văn",
+            "Hóa học"
+          ],
+          "hint": "Physics",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_23_vocabulary-classroom_ex3",
+          "type": "multiple_choice",
+          "question": "\"Chemistry\" nghĩa là gì?",
+          "answer": "Hóa học",
+          "choices": [
+            "Hóa học",
+            "Toán",
+            "Ngữ văn",
+            "Vật lý"
+          ],
+          "hint": "Chemistry",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_23_vocabulary-classroom_ex4",
+          "type": "multiple_choice",
+          "question": "\"Biology\" nghĩa là gì?",
+          "answer": "Sinh học",
+          "choices": [
+            "Sinh học",
+            "Toán",
+            "Ngữ văn",
+            "Vật lý"
+          ],
+          "hint": "Biology",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_23_vocabulary-classroom_ex5",
+          "type": "multiple_choice",
+          "question": "\"History\" nghĩa là gì?",
+          "answer": "Lịch sử",
+          "choices": [
+            "Lịch sử",
+            "Toán",
+            "Ngữ văn",
+            "Vật lý"
+          ],
+          "hint": "History",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_23_vocabulary-classroom_ex6",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: Địa lý",
+          "answer": "Geography",
+          "hint": "Geography",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_23_vocabulary-classroom_ex7",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: Giáo dục công dân",
+          "answer": "Civic Education",
+          "hint": "Civic Education",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
+        "exerciseCount": 7,
         "vocabCount": 40,
         "shadowingCount": 0
       }
@@ -7445,9 +9464,110 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_24_vocabulary-jobs_ex1",
+          "type": "multiple_choice",
+          "question": "\"teacher\" nghĩa là gì?",
+          "answer": "giáo viên",
+          "choices": [
+            "giáo viên",
+            "bác sĩ",
+            "y tá",
+            "kỹ sư"
+          ],
+          "hint": "teacher",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_24_vocabulary-jobs_ex2",
+          "type": "multiple_choice",
+          "question": "\"doctor\" nghĩa là gì?",
+          "answer": "bác sĩ",
+          "choices": [
+            "bác sĩ",
+            "giáo viên",
+            "y tá",
+            "kỹ sư"
+          ],
+          "hint": "doctor",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_24_vocabulary-jobs_ex3",
+          "type": "multiple_choice",
+          "question": "\"nurse\" nghĩa là gì?",
+          "answer": "y tá",
+          "choices": [
+            "y tá",
+            "giáo viên",
+            "bác sĩ",
+            "kỹ sư"
+          ],
+          "hint": "nurse",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_24_vocabulary-jobs_ex4",
+          "type": "multiple_choice",
+          "question": "\"engineer\" nghĩa là gì?",
+          "answer": "kỹ sư",
+          "choices": [
+            "kỹ sư",
+            "giáo viên",
+            "bác sĩ",
+            "y tá"
+          ],
+          "hint": "engineer",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_24_vocabulary-jobs_ex5",
+          "type": "multiple_choice",
+          "question": "\"farmer\" nghĩa là gì?",
+          "answer": "nông dân",
+          "choices": [
+            "nông dân",
+            "giáo viên",
+            "bác sĩ",
+            "y tá"
+          ],
+          "hint": "farmer",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_24_vocabulary-jobs_ex6",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: cảnh sát",
+          "answer": "police officer",
+          "hint": "police officer",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_24_vocabulary-jobs_ex7",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: lính cứu hỏa",
+          "answer": "firefighter",
+          "hint": "firefighter",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
+        "exerciseCount": 7,
         "vocabCount": 40,
         "shadowingCount": 0
       }
@@ -7846,9 +9966,110 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_25_vocabulary-travel_ex1",
+          "type": "multiple_choice",
+          "question": "\"travel\" nghĩa là gì?",
+          "answer": "du lịch",
+          "choices": [
+            "du lịch",
+            "chuyến đi",
+            "hành trình",
+            "chuyến tham quan"
+          ],
+          "hint": "travel",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_25_vocabulary-travel_ex2",
+          "type": "multiple_choice",
+          "question": "\"trip\" nghĩa là gì?",
+          "answer": "chuyến đi",
+          "choices": [
+            "chuyến đi",
+            "du lịch",
+            "hành trình",
+            "chuyến tham quan"
+          ],
+          "hint": "trip",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_25_vocabulary-travel_ex3",
+          "type": "multiple_choice",
+          "question": "\"journey\" nghĩa là gì?",
+          "answer": "hành trình",
+          "choices": [
+            "hành trình",
+            "du lịch",
+            "chuyến đi",
+            "chuyến tham quan"
+          ],
+          "hint": "journey",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_25_vocabulary-travel_ex4",
+          "type": "multiple_choice",
+          "question": "\"tour\" nghĩa là gì?",
+          "answer": "chuyến tham quan",
+          "choices": [
+            "chuyến tham quan",
+            "du lịch",
+            "chuyến đi",
+            "hành trình"
+          ],
+          "hint": "tour",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_25_vocabulary-travel_ex5",
+          "type": "multiple_choice",
+          "question": "\"vacation\" nghĩa là gì?",
+          "answer": "kỳ nghỉ",
+          "choices": [
+            "kỳ nghỉ",
+            "du lịch",
+            "chuyến đi",
+            "hành trình"
+          ],
+          "hint": "vacation",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_25_vocabulary-travel_ex6",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: kỳ nghỉ",
+          "answer": "holiday",
+          "hint": "holiday",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_25_vocabulary-travel_ex7",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: chuyến dã ngoại",
+          "answer": "excursion",
+          "hint": "excursion",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
+        "exerciseCount": 7,
         "vocabCount": 40,
         "shadowingCount": 0
       }
@@ -8247,9 +10468,110 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_26_vocabulary-environment_ex1",
+          "type": "multiple_choice",
+          "question": "\"environment\" nghĩa là gì?",
+          "answer": "môi trường",
+          "choices": [
+            "môi trường",
+            "thiên nhiên",
+            "rừng",
+            "rừng nhiệt đới"
+          ],
+          "hint": "environment",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_26_vocabulary-environment_ex2",
+          "type": "multiple_choice",
+          "question": "\"nature\" nghĩa là gì?",
+          "answer": "thiên nhiên",
+          "choices": [
+            "thiên nhiên",
+            "môi trường",
+            "rừng",
+            "rừng nhiệt đới"
+          ],
+          "hint": "nature",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_26_vocabulary-environment_ex3",
+          "type": "multiple_choice",
+          "question": "\"forest\" nghĩa là gì?",
+          "answer": "rừng",
+          "choices": [
+            "rừng",
+            "môi trường",
+            "thiên nhiên",
+            "rừng nhiệt đới"
+          ],
+          "hint": "forest",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_26_vocabulary-environment_ex4",
+          "type": "multiple_choice",
+          "question": "\"jungle\" nghĩa là gì?",
+          "answer": "rừng nhiệt đới",
+          "choices": [
+            "rừng nhiệt đới",
+            "môi trường",
+            "thiên nhiên",
+            "rừng"
+          ],
+          "hint": "jungle",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_26_vocabulary-environment_ex5",
+          "type": "multiple_choice",
+          "question": "\"mountain\" nghĩa là gì?",
+          "answer": "núi",
+          "choices": [
+            "núi",
+            "môi trường",
+            "thiên nhiên",
+            "rừng"
+          ],
+          "hint": "mountain",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_26_vocabulary-environment_ex6",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: sông",
+          "answer": "river",
+          "hint": "river",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_26_vocabulary-environment_ex7",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: đại dương",
+          "answer": "ocean",
+          "hint": "ocean",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
+        "exerciseCount": 7,
         "vocabCount": 40,
         "shadowingCount": 0
       }
@@ -8450,9 +10772,110 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_27_vocabulary-technology_ex1",
+          "type": "multiple_choice",
+          "question": "\"software\" nghĩa là gì?",
+          "answer": "phần mềm",
+          "choices": [
+            "phần mềm",
+            "phần cứng",
+            "tải xuống",
+            "tải lên"
+          ],
+          "hint": "software",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_27_vocabulary-technology_ex2",
+          "type": "multiple_choice",
+          "question": "\"hardware\" nghĩa là gì?",
+          "answer": "phần cứng",
+          "choices": [
+            "phần cứng",
+            "phần mềm",
+            "tải xuống",
+            "tải lên"
+          ],
+          "hint": "hardware",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_27_vocabulary-technology_ex3",
+          "type": "multiple_choice",
+          "question": "\"download\" nghĩa là gì?",
+          "answer": "tải xuống",
+          "choices": [
+            "tải xuống",
+            "phần mềm",
+            "phần cứng",
+            "tải lên"
+          ],
+          "hint": "download",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_27_vocabulary-technology_ex4",
+          "type": "multiple_choice",
+          "question": "\"upload\" nghĩa là gì?",
+          "answer": "tải lên",
+          "choices": [
+            "tải lên",
+            "phần mềm",
+            "phần cứng",
+            "tải xuống"
+          ],
+          "hint": "upload",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_27_vocabulary-technology_ex5",
+          "type": "multiple_choice",
+          "question": "\"online\" nghĩa là gì?",
+          "answer": "trực tuyến",
+          "choices": [
+            "trực tuyến",
+            "phần mềm",
+            "phần cứng",
+            "tải xuống"
+          ],
+          "hint": "online",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_27_vocabulary-technology_ex6",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: ngoại tuyến",
+          "answer": "offline",
+          "hint": "offline",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_27_vocabulary-technology_ex7",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: Tri thức chỉ cách một cú nhấp chuột.",
+          "answer": "Knowledge is only a click away.",
+          "hint": "Knowledge is only a click away.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 13,
         "quizCount": 8,
+        "exerciseCount": 7,
         "vocabCount": 12,
         "shadowingCount": 0
       }
@@ -8851,9 +11274,110 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_28_vocabulary-health_ex1",
+          "type": "multiple_choice",
+          "question": "\"head\" nghĩa là gì?",
+          "answer": "đầu",
+          "choices": [
+            "đầu",
+            "mặt",
+            "mắt",
+            "mũi"
+          ],
+          "hint": "head",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_28_vocabulary-health_ex2",
+          "type": "multiple_choice",
+          "question": "\"face\" nghĩa là gì?",
+          "answer": "mặt",
+          "choices": [
+            "mặt",
+            "đầu",
+            "mắt",
+            "mũi"
+          ],
+          "hint": "face",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_28_vocabulary-health_ex3",
+          "type": "multiple_choice",
+          "question": "\"eye\" nghĩa là gì?",
+          "answer": "mắt",
+          "choices": [
+            "mắt",
+            "đầu",
+            "mặt",
+            "mũi"
+          ],
+          "hint": "eye",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_28_vocabulary-health_ex4",
+          "type": "multiple_choice",
+          "question": "\"nose\" nghĩa là gì?",
+          "answer": "mũi",
+          "choices": [
+            "mũi",
+            "đầu",
+            "mặt",
+            "mắt"
+          ],
+          "hint": "nose",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_28_vocabulary-health_ex5",
+          "type": "multiple_choice",
+          "question": "\"mouth\" nghĩa là gì?",
+          "answer": "miệng",
+          "choices": [
+            "miệng",
+            "đầu",
+            "mặt",
+            "mắt"
+          ],
+          "hint": "mouth",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_28_vocabulary-health_ex6",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: răng",
+          "answer": "tooth",
+          "hint": "tooth",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_28_vocabulary-health_ex7",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: cánh tay",
+          "answer": "arm",
+          "hint": "arm",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
+        "exerciseCount": 7,
         "vocabCount": 40,
         "shadowingCount": 0
       }
@@ -9271,9 +11795,110 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_29_vocabulary-sports_ex1",
+          "type": "multiple_choice",
+          "question": "\"basketball\" nghĩa là gì?",
+          "answer": "bóng rổ",
+          "choices": [
+            "bóng rổ",
+            "bóng đá",
+            "bóng chuyền",
+            "cầu lông"
+          ],
+          "hint": "basketball",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_29_vocabulary-sports_ex2",
+          "type": "multiple_choice",
+          "question": "\"volleyball\" nghĩa là gì?",
+          "answer": "bóng chuyền",
+          "choices": [
+            "bóng chuyền",
+            "bóng đá",
+            "bóng rổ",
+            "cầu lông"
+          ],
+          "hint": "volleyball",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_29_vocabulary-sports_ex3",
+          "type": "multiple_choice",
+          "question": "\"badminton\" nghĩa là gì?",
+          "answer": "cầu lông",
+          "choices": [
+            "cầu lông",
+            "bóng đá",
+            "bóng rổ",
+            "bóng chuyền"
+          ],
+          "hint": "badminton",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_29_vocabulary-sports_ex4",
+          "type": "multiple_choice",
+          "question": "\"tennis\" nghĩa là gì?",
+          "answer": "quần vợt",
+          "choices": [
+            "quần vợt",
+            "bóng đá",
+            "bóng rổ",
+            "bóng chuyền"
+          ],
+          "hint": "tennis",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_29_vocabulary-sports_ex5",
+          "type": "multiple_choice",
+          "question": "\"table tennis\" nghĩa là gì?",
+          "answer": "bóng bàn",
+          "choices": [
+            "bóng bàn",
+            "bóng đá",
+            "bóng rổ",
+            "bóng chuyền"
+          ],
+          "hint": "table tennis",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_29_vocabulary-sports_ex6",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: bóng chày",
+          "answer": "baseball",
+          "hint": "baseball",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_29_vocabulary-sports_ex7",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: bóng bầu dục",
+          "answer": "rugby",
+          "hint": "rugby",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 47,
         "quizCount": 9,
+        "exerciseCount": 7,
         "vocabCount": 40,
         "shadowingCount": 0
       }
@@ -9672,9 +12297,110 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_30_vocabulary-festivals_ex1",
+          "type": "multiple_choice",
+          "question": "\"festival\" nghĩa là gì?",
+          "answer": "lễ hội",
+          "choices": [
+            "lễ hội",
+            "lễ kỷ niệm",
+            "nghi lễ",
+            "sự kiện"
+          ],
+          "hint": "festival",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_30_vocabulary-festivals_ex2",
+          "type": "multiple_choice",
+          "question": "\"celebration\" nghĩa là gì?",
+          "answer": "lễ kỷ niệm",
+          "choices": [
+            "lễ kỷ niệm",
+            "lễ hội",
+            "nghi lễ",
+            "sự kiện"
+          ],
+          "hint": "celebration",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_30_vocabulary-festivals_ex3",
+          "type": "multiple_choice",
+          "question": "\"ceremony\" nghĩa là gì?",
+          "answer": "nghi lễ",
+          "choices": [
+            "nghi lễ",
+            "lễ hội",
+            "lễ kỷ niệm",
+            "sự kiện"
+          ],
+          "hint": "ceremony",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_30_vocabulary-festivals_ex4",
+          "type": "multiple_choice",
+          "question": "\"event\" nghĩa là gì?",
+          "answer": "sự kiện",
+          "choices": [
+            "sự kiện",
+            "lễ hội",
+            "lễ kỷ niệm",
+            "nghi lễ"
+          ],
+          "hint": "event",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_30_vocabulary-festivals_ex5",
+          "type": "multiple_choice",
+          "question": "\"carnival\" nghĩa là gì?",
+          "answer": "lễ hội hóa trang",
+          "choices": [
+            "lễ hội hóa trang",
+            "lễ hội",
+            "lễ kỷ niệm",
+            "nghi lễ"
+          ],
+          "hint": "carnival",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_30_vocabulary-festivals_ex6",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: diễu hành",
+          "answer": "parade",
+          "hint": "parade",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_30_vocabulary-festivals_ex7",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: hội chợ",
+          "answer": "fair",
+          "hint": "fair",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
+        "exerciseCount": 7,
         "vocabCount": 40,
         "shadowingCount": 0
       }
@@ -10073,9 +12799,110 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_31_vocabulary-animals_ex1",
+          "type": "multiple_choice",
+          "question": "\"animal\" nghĩa là gì?",
+          "answer": "động vật",
+          "choices": [
+            "động vật",
+            "động vật hoang dã",
+            "loài",
+            "động vật có vú"
+          ],
+          "hint": "animal",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_31_vocabulary-animals_ex2",
+          "type": "multiple_choice",
+          "question": "\"wildlife\" nghĩa là gì?",
+          "answer": "động vật hoang dã",
+          "choices": [
+            "động vật hoang dã",
+            "động vật",
+            "loài",
+            "động vật có vú"
+          ],
+          "hint": "wildlife",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_31_vocabulary-animals_ex3",
+          "type": "multiple_choice",
+          "question": "\"species\" nghĩa là gì?",
+          "answer": "loài",
+          "choices": [
+            "loài",
+            "động vật",
+            "động vật hoang dã",
+            "động vật có vú"
+          ],
+          "hint": "species",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_31_vocabulary-animals_ex4",
+          "type": "multiple_choice",
+          "question": "\"mammal\" nghĩa là gì?",
+          "answer": "động vật có vú",
+          "choices": [
+            "động vật có vú",
+            "động vật",
+            "động vật hoang dã",
+            "loài"
+          ],
+          "hint": "mammal",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_31_vocabulary-animals_ex5",
+          "type": "multiple_choice",
+          "question": "\"reptile\" nghĩa là gì?",
+          "answer": "bò sát",
+          "choices": [
+            "bò sát",
+            "động vật",
+            "động vật hoang dã",
+            "loài"
+          ],
+          "hint": "reptile",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_31_vocabulary-animals_ex6",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: lưỡng cư",
+          "answer": "amphibian",
+          "hint": "amphibian",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_31_vocabulary-animals_ex7",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: côn trùng",
+          "answer": "insect",
+          "hint": "insect",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
+        "exerciseCount": 7,
         "vocabCount": 40,
         "shadowingCount": 0
       }
@@ -10474,9 +13301,110 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_32_vocabulaary-transportation_ex1",
+          "type": "multiple_choice",
+          "question": "\"car\" nghĩa là gì?",
+          "answer": "ô tô",
+          "choices": [
+            "ô tô",
+            "xe buýt",
+            "xe đạp",
+            "xe máy"
+          ],
+          "hint": "car",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_32_vocabulaary-transportation_ex2",
+          "type": "multiple_choice",
+          "question": "\"bus\" nghĩa là gì?",
+          "answer": "xe buýt",
+          "choices": [
+            "xe buýt",
+            "ô tô",
+            "xe đạp",
+            "xe máy"
+          ],
+          "hint": "bus",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_32_vocabulaary-transportation_ex3",
+          "type": "multiple_choice",
+          "question": "\"bicycle\" nghĩa là gì?",
+          "answer": "xe đạp",
+          "choices": [
+            "xe đạp",
+            "ô tô",
+            "xe buýt",
+            "xe máy"
+          ],
+          "hint": "bicycle",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_32_vocabulaary-transportation_ex4",
+          "type": "multiple_choice",
+          "question": "\"motorbike\" nghĩa là gì?",
+          "answer": "xe máy",
+          "choices": [
+            "xe máy",
+            "ô tô",
+            "xe buýt",
+            "xe đạp"
+          ],
+          "hint": "motorbike",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_32_vocabulaary-transportation_ex5",
+          "type": "multiple_choice",
+          "question": "\"motorcycle\" nghĩa là gì?",
+          "answer": "mô tô",
+          "choices": [
+            "mô tô",
+            "ô tô",
+            "xe buýt",
+            "xe đạp"
+          ],
+          "hint": "motorcycle",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_32_vocabulaary-transportation_ex6",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: xe tải",
+          "answer": "truck",
+          "hint": "truck",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_32_vocabulaary-transportation_ex7",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: xe tải nhỏ",
+          "answer": "van",
+          "hint": "van",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
+        "exerciseCount": 7,
         "vocabCount": 40,
         "shadowingCount": 0
       }
@@ -10875,9 +13803,110 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_33_vocabulary-weather_ex1",
+          "type": "multiple_choice",
+          "question": "\"spring\" nghĩa là gì?",
+          "answer": "mùa xuân",
+          "choices": [
+            "mùa xuân",
+            "mùa hè",
+            "mùa thu",
+            "mùa đông"
+          ],
+          "hint": "spring",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_33_vocabulary-weather_ex2",
+          "type": "multiple_choice",
+          "question": "\"summer\" nghĩa là gì?",
+          "answer": "mùa hè",
+          "choices": [
+            "mùa hè",
+            "mùa xuân",
+            "mùa thu",
+            "mùa đông"
+          ],
+          "hint": "summer",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_33_vocabulary-weather_ex3",
+          "type": "multiple_choice",
+          "question": "\"winter\" nghĩa là gì?",
+          "answer": "mùa đông",
+          "choices": [
+            "mùa đông",
+            "mùa xuân",
+            "mùa hè",
+            "mùa thu"
+          ],
+          "hint": "winter",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_33_vocabulary-weather_ex4",
+          "type": "multiple_choice",
+          "question": "\"dry season\" nghĩa là gì?",
+          "answer": "mùa khô",
+          "choices": [
+            "mùa khô",
+            "mùa xuân",
+            "mùa hè",
+            "mùa thu"
+          ],
+          "hint": "dry season",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_33_vocabulary-weather_ex5",
+          "type": "multiple_choice",
+          "question": "\"rainy season\" nghĩa là gì?",
+          "answer": "mùa mưa",
+          "choices": [
+            "mùa mưa",
+            "mùa xuân",
+            "mùa hè",
+            "mùa thu"
+          ],
+          "hint": "rainy season",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_33_vocabulary-weather_ex6",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: nắng",
+          "answer": "sunny",
+          "hint": "sunny",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_33_vocabulary-weather_ex7",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: nhiều mây",
+          "answer": "cloudy",
+          "hint": "cloudy",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
+        "exerciseCount": 7,
         "vocabCount": 40,
         "shadowingCount": 0
       }
@@ -11217,9 +14246,102 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_34_reading-skills_ex1",
+          "type": "multiple_choice",
+          "question": "Đọc đoạn (I. Tổng quan): ý chính là gì?",
+          "answer": "Đọc hiểu không phải là dịch từng từ, mà là tìm đúng thông tin trong thời gian ng",
+          "choices": [
+            "Đọc hiểu không phải là dịch từng từ, mà là tìm đúng thông tin trong thời gian ng",
+            "Mục đích • Hiểu nội dung tổng quát. • Xác định chủ đề. • Không đọc từng từ. 1 Cá",
+            "Mục đích Tìm thông tin cụ thể. Ví dụ: • tên • ngày tháng • số liệu • địa điểm • ",
+            "ngữ cảnh) Không cần từ điển Ví dụ: The desert is arid. It rarely rains. \"rarely "
+          ],
+          "hint": "Đọc hiểu không phải là dịch từng từ, mà là tìm đúng thông tin trong thời gian ngắn nhất. Quy trình đọc hiệu quả Read Tit…",
+          "section": "Đọc hiểu",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Đọc"
+        },
+        {
+          "id": "st_34_reading-skills_ex2",
+          "type": "multiple_choice",
+          "question": "Đọc đoạn (II. Kỹ năng 1 – Skimming (Đọc lướt)): ý chính là gì?",
+          "answer": "Mục đích • Hiểu nội dung tổng quát. • Xác định chủ đề. • Không đọc từng từ. 1 Cá",
+          "choices": [
+            "Mục đích • Hiểu nội dung tổng quát. • Xác định chủ đề. • Không đọc từng từ. 1 Cá",
+            "Đọc hiểu không phải là dịch từng từ, mà là tìm đúng thông tin trong thời gian ng",
+            "Mục đích Tìm thông tin cụ thể. Ví dụ: • tên • ngày tháng • số liệu • địa điểm • ",
+            "ngữ cảnh) Không cần từ điển Ví dụ: The desert is arid. It rarely rains. \"rarely "
+          ],
+          "hint": "Mục đích • Hiểu nội dung tổng quát. • Xác định chủ đề. • Không đọc từng từ. 1 Cách thực hiện Đọc: • Tiêu đề • Câu đầu đo…",
+          "section": "Đọc hiểu",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Đọc"
+        },
+        {
+          "id": "st_34_reading-skills_ex3",
+          "type": "multiple_choice",
+          "question": "Đọc đoạn (III. Kỹ năng 2 – Scanning (Đọc quét)): ý chính là gì?",
+          "answer": "Mục đích Tìm thông tin cụ thể. Ví dụ: • tên • ngày tháng • số liệu • địa điểm • ",
+          "choices": [
+            "Mục đích Tìm thông tin cụ thể. Ví dụ: • tên • ngày tháng • số liệu • địa điểm • ",
+            "Đọc hiểu không phải là dịch từng từ, mà là tìm đúng thông tin trong thời gian ng",
+            "Mục đích • Hiểu nội dung tổng quát. • Xác định chủ đề. • Không đọc từng từ. 1 Cá",
+            "ngữ cảnh) Không cần từ điển Ví dụ: The desert is arid. It rarely rains. \"rarely "
+          ],
+          "hint": "Mục đích Tìm thông tin cụ thể. Ví dụ: • tên • ngày tháng • số liệu • địa điểm • giá tiền 2 Cách làm Không đọc toàn bài. …",
+          "section": "Đọc hiểu",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Đọc"
+        },
+        {
+          "id": "st_34_reading-skills_ex4",
+          "type": "multiple_choice",
+          "question": "Đọc đoạn (IV. Kỹ năng 3 – Context Clues (Đoán nghĩa theo): ý chính là gì?",
+          "answer": "ngữ cảnh) Không cần từ điển Ví dụ: The desert is arid. It rarely rains. \"rarely ",
+          "choices": [
+            "ngữ cảnh) Không cần từ điển Ví dụ: The desert is arid. It rarely rains. \"rarely ",
+            "Đọc hiểu không phải là dịch từng từ, mà là tìm đúng thông tin trong thời gian ng",
+            "Mục đích • Hiểu nội dung tổng quát. • Xác định chủ đề. • Không đọc từng từ. 1 Cá",
+            "Mục đích Tìm thông tin cụ thể. Ví dụ: • tên • ngày tháng • số liệu • địa điểm • "
+          ],
+          "hint": "ngữ cảnh) Không cần từ điển Ví dụ: The desert is arid. It rarely rains. \"rarely rains\" → arid = dry 3 Dấu hiệu Definitio…",
+          "section": "Đọc hiểu",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Đọc"
+        },
+        {
+          "id": "st_34_reading-skills_ex5",
+          "type": "true_false",
+          "question": "Từ \"Because of heavy rain, the road was flooded.\" có nghĩa: Công thức",
+          "answer": "Đúng",
+          "choices": [
+            "Đúng",
+            "Sai"
+          ],
+          "hint": "Because of heavy rain, the road was flooded.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Đọc"
+        },
+        {
+          "id": "st_34_reading-skills_ex6",
+          "type": "true_false",
+          "question": "Từ \"Mary brought an umbrella and wore boots.\" có nghĩa: Có thể suy luận:",
+          "answer": "Đúng",
+          "choices": [
+            "Đúng",
+            "Sai"
+          ],
+          "hint": "Mary brought an umbrella and wore boots.",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Đọc"
+        }
+      ],
       "stats": {
         "flashCount": 34,
         "quizCount": 9,
+        "exerciseCount": 6,
         "vocabCount": 27,
         "shadowingCount": 0
       }
@@ -11444,9 +14566,90 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_35_writing-sentence_ex1",
+          "type": "input",
+          "question": "Dịch/viết câu tiếng Anh: Hiện tại tiếp diễn",
+          "answer": "I play football every day.",
+          "hint": "I play football every day.",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_35_writing-sentence_ex2",
+          "type": "input",
+          "question": "Dịch/viết câu tiếng Anh: Quá khứ đơn",
+          "answer": "I am playing football.",
+          "hint": "I am playing football.",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_35_writing-sentence_ex3",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"I played football yesterday.\"?",
+          "answer": "Tương lai",
+          "choices": [
+            "Tương lai",
+            "Hiện tại tiếp diễn",
+            "Quá khứ đơn",
+            "Tần suất"
+          ],
+          "hint": "KỸ NĂNG VIẾT",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_35_writing-sentence_ex4",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"He speaks slowly.\"?",
+          "answer": "Tần suất",
+          "choices": [
+            "Tần suất",
+            "Hiện tại tiếp diễn",
+            "Quá khứ đơn",
+            "Tương lai"
+          ],
+          "hint": "KỸ NĂNG VIẾT",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_35_writing-sentence_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"and, besides, moreover\"?",
+          "answer": "Đối lập",
+          "choices": [
+            "Đối lập",
+            "Hiện tại tiếp diễn",
+            "Quá khứ đơn",
+            "Tương lai"
+          ],
+          "hint": "KỸ NĂNG VIẾT",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_35_writing-sentence_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"but, however\"?",
+          "answer": "Nguyên nhân",
+          "choices": [
+            "Nguyên nhân",
+            "Hiện tại tiếp diễn",
+            "Quá khứ đơn",
+            "Tương lai"
+          ],
+          "hint": "KỸ NĂNG VIẾT",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        }
+      ],
       "stats": {
         "flashCount": 17,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 11,
         "shadowingCount": 0
       }
@@ -11671,9 +14874,90 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_36_writing-paragraph_ex1",
+          "type": "input",
+          "question": "Dịch/viết câu tiếng Anh: Một đoạn văn tốt thường dài 80–150 từ đối với học sinh THCS.",
+          "answer": "Concluding Sentence",
+          "hint": "Concluding Sentence",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_36_writing-paragraph_ex2",
+          "type": "input",
+          "question": "Dịch/viết câu tiếng Anh: Ví dụ:",
+          "answer": "Conclusion",
+          "hint": "Conclusion",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_36_writing-paragraph_ex3",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"interesting\"?",
+          "answer": "Sai thì",
+          "choices": [
+            "Sai thì",
+            "Một đoạn văn tốt thường dài 80–150 từ đối với học sinh THCS.",
+            "Ví dụ:",
+            "Thiếu liên từ"
+          ],
+          "hint": "KỸ NĂNG VIẾT",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_36_writing-paragraph_ex4",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Yesterday I went.\"?",
+          "answer": "Thiếu liên từ",
+          "choices": [
+            "Thiếu liên từ",
+            "Một đoạn văn tốt thường dài 80–150 từ đối với học sinh THCS.",
+            "Ví dụ:",
+            "Sai thì"
+          ],
+          "hint": "KỸ NĂNG VIẾT",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_36_writing-paragraph_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"and, also, besides\"?",
+          "answer": "Đối lập",
+          "choices": [
+            "Đối lập",
+            "Một đoạn văn tốt thường dài 80–150 từ đối với học sinh THCS.",
+            "Ví dụ:",
+            "Sai thì"
+          ],
+          "hint": "KỸ NĂNG VIẾT",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_36_writing-paragraph_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"but, however\"?",
+          "answer": "Nguyên nhân",
+          "choices": [
+            "Nguyên nhân",
+            "Một đoạn văn tốt thường dài 80–150 từ đối với học sinh THCS.",
+            "Ví dụ:",
+            "Sai thì"
+          ],
+          "hint": "KỸ NĂNG VIẾT",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        }
+      ],
       "stats": {
         "flashCount": 17,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 11,
         "shadowingCount": 0
       }
@@ -11842,9 +15126,90 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_37_writing-essay_ex1",
+          "type": "input",
+          "question": "Dịch/viết câu tiếng Anh: Cách 3",
+          "answer": "Many people believe that...",
+          "hint": "Many people believe that...",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_37_writing-essay_ex2",
+          "type": "input",
+          "question": "Dịch/viết câu tiếng Anh: Cách 4",
+          "answer": "It is undeniable that...",
+          "hint": "It is undeniable that...",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_37_writing-essay_ex3",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"beneficial\"?",
+          "answer": "Sai thì",
+          "choices": [
+            "Sai thì",
+            "Là câu thể hiện ý chính của toàn bài.",
+            "Cách 3",
+            "Cách 4"
+          ],
+          "hint": "KỸ NĂNG VIẾT",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_37_writing-essay_ex4",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Express\"?",
+          "answer": "Nêu ý.",
+          "choices": [
+            "Nêu ý.",
+            "Là câu thể hiện ý chính của toàn bài.",
+            "Cách 3",
+            "Cách 4"
+          ],
+          "hint": "KỸ NĂNG VIẾT",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_37_writing-essay_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Edit\"?",
+          "answer": "Chỉnh sửa.",
+          "choices": [
+            "Chỉnh sửa.",
+            "Là câu thể hiện ý chính của toàn bài.",
+            "Cách 3",
+            "Cách 4"
+          ],
+          "hint": "KỸ NĂNG VIẾT",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        },
+        {
+          "id": "st_37_writing-essay_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Many people believe that...\"?",
+          "answer": "Cách 3",
+          "choices": [
+            "Cách 3",
+            "Là câu thể hiện ý chính của toàn bài.",
+            "Cách 4",
+            "Sai thì"
+          ],
+          "hint": "KỸ NĂNG VIẾT",
+          "style": "ila",
+          "styleLabel": "ILA · Viết"
+        }
+      ],
       "stats": {
         "flashCount": 12,
         "quizCount": 6,
+        "exerciseCount": 6,
         "vocabCount": 6,
         "shadowingCount": 0
       }
@@ -12135,9 +15500,146 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_38_listenning_ex1",
+          "type": "listening",
+          "question": "Nghe hội thoại và chọn ý đúng:",
+          "answer": "Các từ khóa:",
+          "choices": [
+            "Các từ khóa:",
+            "Viết lại:",
+            "Nghe từ đơn.",
+            "Nghe cụm từ."
+          ],
+          "listenScript": [
+            {
+              "speaker": "A",
+              "text": "Yesterday, Mary visited her grandmother in Hanoi by train."
+            },
+            {
+              "speaker": "B",
+              "text": "That's right."
+            }
+          ],
+          "hint": "Yesterday, Mary visited her grandmother in Hanoi by train.",
+          "section": "Bài nghe",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Nghe"
+        },
+        {
+          "id": "st_38_listenning_ex2",
+          "type": "listening",
+          "question": "Nghe hội thoại và chọn ý đúng:",
+          "answer": "Viết lại:",
+          "choices": [
+            "Viết lại:",
+            "Các từ khóa:",
+            "Nghe từ đơn.",
+            "Nghe cụm từ."
+          ],
+          "listenScript": [
+            {
+              "speaker": "A",
+              "text": "She goes to school by bus every day."
+            },
+            {
+              "speaker": "B",
+              "text": "That's right."
+            }
+          ],
+          "hint": "She goes to school by bus every day.",
+          "section": "Bài nghe",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Nghe"
+        },
+        {
+          "id": "st_38_listenning_ex3",
+          "type": "listening",
+          "question": "Nghe hội thoại và chọn ý đúng:",
+          "answer": "Nghe từ đơn.",
+          "choices": [
+            "Nghe từ đơn.",
+            "Các từ khóa:",
+            "Viết lại:",
+            "Nghe cụm từ."
+          ],
+          "listenScript": [
+            {
+              "speaker": "A",
+              "text": "Level 1"
+            },
+            {
+              "speaker": "B",
+              "text": "That's right."
+            }
+          ],
+          "hint": "Level 1",
+          "section": "Bài nghe",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Nghe"
+        },
+        {
+          "id": "st_38_listenning_ex4",
+          "type": "listening",
+          "question": "Nghe hội thoại và chọn ý đúng:",
+          "answer": "Nghe cụm từ.",
+          "choices": [
+            "Nghe cụm từ.",
+            "Các từ khóa:",
+            "Viết lại:",
+            "Nghe từ đơn."
+          ],
+          "listenScript": [
+            {
+              "speaker": "A",
+              "text": "Level 2"
+            },
+            {
+              "speaker": "B",
+              "text": "That's right."
+            }
+          ],
+          "hint": "Level 2",
+          "section": "Bài nghe",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Nghe"
+        },
+        {
+          "id": "st_38_listenning_ex5",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Level 3\"?",
+          "answer": "Nghe câu.",
+          "choices": [
+            "Nghe câu.",
+            "Các từ khóa:",
+            "Viết lại:",
+            "Nghe từ đơn."
+          ],
+          "hint": "KỸ NĂNG NGHE",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Nghe"
+        },
+        {
+          "id": "st_38_listenning_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Level 4\"?",
+          "answer": "Nghe đoạn hội thoại.",
+          "choices": [
+            "Nghe đoạn hội thoại.",
+            "Các từ khóa:",
+            "Viết lại:",
+            "Nghe từ đơn."
+          ],
+          "hint": "KỸ NĂNG NGHE",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Nghe"
+        }
+      ],
       "stats": {
         "flashCount": 28,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 22,
         "shadowingCount": 0
       }
@@ -12410,9 +15912,92 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_39_speaking-self-introduction_ex1",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: friendly",
+          "answer": "friendly",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_39_speaking-self-introduction_ex2",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: active",
+          "answer": "active",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_39_speaking-self-introduction_ex3",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: hardworking",
+          "answer": "hardworking",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_39_speaking-self-introduction_ex4",
+          "type": "multiple_choice",
+          "question": "Chọn cách diễn đạt phù hợp với: chăm chỉ",
+          "answer": "hardworking",
+          "choices": [
+            "hardworking",
+            "friendly",
+            "active",
+            "patient"
+          ],
+          "hint": "chăm chỉ",
+          "section": "Chọn câu",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        },
+        {
+          "id": "st_39_speaking-self-introduction_ex5",
+          "type": "multiple_choice",
+          "question": "Chọn cách diễn đạt phù hợp với: kiên nhẫn",
+          "answer": "patient",
+          "choices": [
+            "patient",
+            "friendly",
+            "active",
+            "hardworking"
+          ],
+          "hint": "kiên nhẫn",
+          "section": "Chọn câu",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        },
+        {
+          "id": "st_39_speaking-self-introduction_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"cheerful\"?",
+          "answer": "vui vẻ",
+          "choices": [
+            "vui vẻ",
+            "thân thiện",
+            "năng động",
+            "chăm chỉ"
+          ],
+          "hint": "KỸ NĂNG NÓI",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        }
+      ],
       "stats": {
         "flashCount": 25,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 19,
         "shadowingCount": 12
       },
@@ -12753,9 +16338,116 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_40_speaking-picture-description_ex1",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: The picture is about students studying in a classroom.",
+          "answer": "The picture is about students studying in a classroom",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_40_speaking-picture-description_ex2",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: The boy is riding a bicycle.",
+          "answer": "The boy is riding a bicycle",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_40_speaking-picture-description_ex3",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: It is sunny and warm.",
+          "answer": "It is sunny and warm",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_40_speaking-picture-description_ex4",
+          "type": "word_order",
+          "question": "Sắp xếp thành câu trả lời đúng:",
+          "answer": "The picture is about students studying in a classroom",
+          "tokens": [
+            "The",
+            "picture",
+            "is",
+            "about",
+            "students",
+            "studying",
+            "in",
+            "a",
+            "classroom"
+          ],
+          "hint": "Bước 2 – Mô tả nhân vật chính",
+          "section": "Sắp xếp câu",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Sắp xếp"
+        },
+        {
+          "id": "st_40_speaking-picture-description_ex5",
+          "type": "word_order",
+          "question": "Sắp xếp thành câu trả lời đúng:",
+          "answer": "The boy is riding a bicycle",
+          "tokens": [
+            "The",
+            "boy",
+            "is",
+            "riding",
+            "a",
+            "bicycle"
+          ],
+          "hint": "Bước 4 – Mô tả bối cảnh",
+          "section": "Sắp xếp câu",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Sắp xếp"
+        },
+        {
+          "id": "st_40_speaking-picture-description_ex6",
+          "type": "multiple_choice",
+          "question": "Chọn cách diễn đạt phù hợp với: Bước 5 – Suy luận",
+          "answer": "It is sunny and warm.",
+          "choices": [
+            "It is sunny and warm.",
+            "The picture is about students studying in a classroom.",
+            "The boy is riding a bicycle.",
+            "It looks like they are enjoying themselves."
+          ],
+          "hint": "Bước 5 – Suy luận",
+          "section": "Chọn câu",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        },
+        {
+          "id": "st_40_speaking-picture-description_ex7",
+          "type": "multiple_choice",
+          "question": "Chọn cách diễn đạt phù hợp với: Bước 6 – Kết luận",
+          "answer": "It looks like they are enjoying themselves.",
+          "choices": [
+            "It looks like they are enjoying themselves.",
+            "The picture is about students studying in a classroom.",
+            "The boy is riding a bicycle.",
+            "It is sunny and warm."
+          ],
+          "hint": "Bước 6 – Kết luận",
+          "section": "Chọn câu",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        }
+      ],
       "stats": {
         "flashCount": 24,
         "quizCount": 8,
+        "exerciseCount": 7,
         "vocabCount": 18,
         "shadowingCount": 12
       },
@@ -13132,9 +16824,92 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_41_speaking-storytelling_ex1",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: arrive",
+          "answer": "arrive",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_41_speaking-storytelling_ex2",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: meet",
+          "answer": "meet",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_41_speaking-storytelling_ex3",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: see",
+          "answer": "see",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_41_speaking-storytelling_ex4",
+          "type": "multiple_choice",
+          "question": "Chọn cách diễn đạt phù hợp với: nhìn thấy",
+          "answer": "see",
+          "choices": [
+            "see",
+            "arrive",
+            "meet",
+            "find"
+          ],
+          "hint": "nhìn thấy",
+          "section": "Chọn câu",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        },
+        {
+          "id": "st_41_speaking-storytelling_ex5",
+          "type": "multiple_choice",
+          "question": "Chọn cách diễn đạt phù hợp với: tìm thấy",
+          "answer": "find",
+          "choices": [
+            "find",
+            "arrive",
+            "meet",
+            "see"
+          ],
+          "hint": "tìm thấy",
+          "section": "Chọn câu",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        },
+        {
+          "id": "st_41_speaking-storytelling_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"help\"?",
+          "answer": "giúp",
+          "choices": [
+            "giúp",
+            "đến",
+            "gặp",
+            "nhìn thấy"
+          ],
+          "hint": "KỸ NĂNG NÓI",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        }
+      ],
       "stats": {
         "flashCount": 30,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 24,
         "shadowingCount": 12
       },
@@ -13451,9 +17226,92 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_42_speaking-giving-opinions_ex1",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: Opinion",
+          "answer": "Opinion",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_42_speaking-giving-opinions_ex2",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: Link",
+          "answer": "Link",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_42_speaking-giving-opinions_ex3",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: important",
+          "answer": "important",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_42_speaking-giving-opinions_ex4",
+          "type": "multiple_choice",
+          "question": "Chọn cách diễn đạt phù hợp với: quan trọng",
+          "answer": "important",
+          "choices": [
+            "important",
+            "Opinion",
+            "Link",
+            "useful"
+          ],
+          "hint": "quan trọng",
+          "section": "Chọn câu",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        },
+        {
+          "id": "st_42_speaking-giving-opinions_ex5",
+          "type": "multiple_choice",
+          "question": "Chọn cách diễn đạt phù hợp với: hữu ích",
+          "answer": "useful",
+          "choices": [
+            "useful",
+            "Opinion",
+            "Link",
+            "important"
+          ],
+          "hint": "hữu ích",
+          "section": "Chọn câu",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        },
+        {
+          "id": "st_42_speaking-giving-opinions_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"beneficial\"?",
+          "answer": "có lợi",
+          "choices": [
+            "có lợi",
+            "Ví dụ:",
+            "quan trọng",
+            "hữu ích"
+          ],
+          "hint": "KỸ NĂNG NÓI",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        }
+      ],
       "stats": {
         "flashCount": 20,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 14,
         "shadowingCount": 12
       },
@@ -13740,9 +17598,92 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_43_speaking-debate-skill_ex1",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: Claim",
+          "answer": "Claim",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_43_speaking-debate-skill_ex2",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: Reason",
+          "answer": "Reason",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_43_speaking-debate-skill_ex3",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: Evidence",
+          "answer": "Evidence",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_43_speaking-debate-skill_ex4",
+          "type": "multiple_choice",
+          "question": "Chọn cách diễn đạt phù hợp với: Đưa ví dụ hoặc minh chứng.",
+          "answer": "Evidence",
+          "choices": [
+            "Evidence",
+            "Claim",
+            "Reason",
+            "Conclusion"
+          ],
+          "hint": "Đưa ví dụ hoặc minh chứng.",
+          "section": "Chọn câu",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        },
+        {
+          "id": "st_43_speaking-debate-skill_ex5",
+          "type": "multiple_choice",
+          "question": "Chọn cách diễn đạt phù hợp với: Kết luận lại.",
+          "answer": "Conclusion",
+          "choices": [
+            "Conclusion",
+            "Claim",
+            "Reason",
+            "Evidence"
+          ],
+          "hint": "Kết luận lại.",
+          "section": "Chọn câu",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        },
+        {
+          "id": "st_43_speaking-debate-skill_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"You're wrong.\"?",
+          "answer": "Hãy nói:",
+          "choices": [
+            "Hãy nói:",
+            "Nêu quan điểm.",
+            "Đưa lý do.",
+            "Đưa ví dụ hoặc minh chứng."
+          ],
+          "hint": "KỸ NĂNG NÓI",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        }
+      ],
       "stats": {
         "flashCount": 15,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 9,
         "shadowingCount": 9
       },
@@ -14011,9 +17952,92 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_44_speaking-short-presentation_ex1",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: Eye Contact",
+          "answer": "Eye Contact",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_44_speaking-short-presentation_ex2",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: Smile",
+          "answer": "Smile",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_44_speaking-short-presentation_ex3",
+          "type": "input",
+          "grammar": "speaking",
+          "question": "Nói to câu mẫu giao tiếp: Gestures",
+          "answer": "Gestures",
+          "hint": "Nghe mẫu trong Shadowing rồi nói theo.",
+          "section": "Hội thoại",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Nói theo mẫu"
+        },
+        {
+          "id": "st_44_speaking-short-presentation_ex4",
+          "type": "multiple_choice",
+          "question": "Chọn cách diễn đạt phù hợp với: Dùng tay vừa phải.",
+          "answer": "Gestures",
+          "choices": [
+            "Gestures",
+            "Eye Contact",
+            "Smile",
+            "Posture"
+          ],
+          "hint": "Dùng tay vừa phải.",
+          "section": "Chọn câu",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        },
+        {
+          "id": "st_44_speaking-short-presentation_ex5",
+          "type": "multiple_choice",
+          "question": "Chọn cách diễn đạt phù hợp với: Đứng thẳng.",
+          "answer": "Posture",
+          "choices": [
+            "Posture",
+            "Eye Contact",
+            "Smile",
+            "Gestures"
+          ],
+          "hint": "Đứng thẳng.",
+          "section": "Chọn câu",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        },
+        {
+          "id": "st_44_speaking-short-presentation_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"In my opinion...\"?",
+          "answer": "Nếu chưa chắc",
+          "choices": [
+            "Nếu chưa chắc",
+            "Nhìn khán giả.",
+            "Mỉm cười tự nhiên.",
+            "Dùng tay vừa phải."
+          ],
+          "hint": "KỸ NĂNG NÓI",
+          "style": "mshoa",
+          "styleLabel": "MS Hoa · Giao tiếp"
+        }
+      ],
       "stats": {
         "flashCount": 15,
         "quizCount": 8,
+        "exerciseCount": 6,
         "vocabCount": 9,
         "shadowingCount": 9
       },
@@ -14468,9 +18492,110 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_45_phrasal-verbs_ex1",
+          "type": "multiple_choice",
+          "question": "\"The plane took off.\" nghĩa là gì?",
+          "answer": "Không cần bổ ngữ phía sau.",
+          "choices": [
+            "Không cần bổ ngữ phía sau.",
+            "Có thể theo sau bởi danh từ hoặc đại từ.",
+            "Không nói:",
+            "tìm kiếm"
+          ],
+          "hint": "The plane took off.",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_45_phrasal-verbs_ex2",
+          "type": "multiple_choice",
+          "question": "\"She turned off the light.\" nghĩa là gì?",
+          "answer": "Có thể theo sau bởi danh từ hoặc đại từ.",
+          "choices": [
+            "Có thể theo sau bởi danh từ hoặc đại từ.",
+            "Không cần bổ ngữ phía sau.",
+            "Không nói:",
+            "tìm kiếm"
+          ],
+          "hint": "She turned off the light.",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_45_phrasal-verbs_ex3",
+          "type": "multiple_choice",
+          "question": "\"Look after the baby.\" nghĩa là gì?",
+          "answer": "Không nói:",
+          "choices": [
+            "Không nói:",
+            "Không cần bổ ngữ phía sau.",
+            "Có thể theo sau bởi danh từ hoặc đại từ.",
+            "tìm kiếm"
+          ],
+          "hint": "Look after the baby.",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_45_phrasal-verbs_ex4",
+          "type": "multiple_choice",
+          "question": "\"look for\" nghĩa là gì?",
+          "answer": "tìm kiếm",
+          "choices": [
+            "tìm kiếm",
+            "Không cần bổ ngữ phía sau.",
+            "Có thể theo sau bởi danh từ hoặc đại từ.",
+            "Không nói:"
+          ],
+          "hint": "look for",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_45_phrasal-verbs_ex5",
+          "type": "multiple_choice",
+          "question": "\"look after\" nghĩa là gì?",
+          "answer": "chăm sóc",
+          "choices": [
+            "chăm sóc",
+            "Không cần bổ ngữ phía sau.",
+            "Có thể theo sau bởi danh từ hoặc đại từ.",
+            "Không nói:"
+          ],
+          "hint": "look after",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_45_phrasal-verbs_ex6",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: tra cứu",
+          "answer": "look up",
+          "hint": "look up",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_45_phrasal-verbs_ex7",
+          "type": "input",
+          "question": "Viết từ tiếng Anh: nhìn",
+          "answer": "look at",
+          "hint": "look at",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 46,
         "quizCount": 8,
+        "exerciseCount": 7,
         "vocabCount": 40,
         "shadowingCount": 0
       }
@@ -14620,9 +18745,107 @@
           "hint": ""
         }
       ],
+      "exercises": [
+        {
+          "id": "st_46_idioms_ex1",
+          "type": "multiple_choice",
+          "question": "\"Real Situation\" nghĩa là gì?",
+          "answer": "Ví dụ:",
+          "choices": [
+            "Ví dụ:",
+            "Nghĩa bóng hoàn chỉnh",
+            "Không dùng cho đồ rẻ.",
+            "Không đổi thành"
+          ],
+          "hint": "Real Situation",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_46_idioms_ex2",
+          "type": "multiple_choice",
+          "question": "\"Phrasal Verbs\" nghĩa là gì?",
+          "answer": "Nghĩa bóng hoàn chỉnh",
+          "choices": [
+            "Nghĩa bóng hoàn chỉnh",
+            "Ví dụ:",
+            "Không dùng cho đồ rẻ.",
+            "Không đổi thành"
+          ],
+          "hint": "Phrasal Verbs",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_46_idioms_ex3",
+          "type": "multiple_choice",
+          "question": "\"Cost an arm and a leg\" nghĩa là gì?",
+          "answer": "Không dùng cho đồ rẻ.",
+          "choices": [
+            "Không dùng cho đồ rẻ.",
+            "Ví dụ:",
+            "Nghĩa bóng hoàn chỉnh",
+            "Không đổi thành"
+          ],
+          "hint": "Cost an arm and a leg",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_46_idioms_ex4",
+          "type": "multiple_choice",
+          "question": "\"Break the ice\" nghĩa là gì?",
+          "answer": "Không đổi thành",
+          "choices": [
+            "Không đổi thành",
+            "Ví dụ:",
+            "Nghĩa bóng hoàn chỉnh",
+            "Không dùng cho đồ rẻ."
+          ],
+          "hint": "Break the ice",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_46_idioms_ex5",
+          "type": "multiple_choice",
+          "question": "\"I was nervous, so my teacher told a joke to break the ice.\" nghĩa là gì?",
+          "answer": "Quy tắc Nhóm",
+          "choices": [
+            "Quy tắc Nhóm",
+            "Ví dụ:",
+            "Nghĩa bóng hoàn chỉnh",
+            "Không dùng cho đồ rẻ."
+          ],
+          "hint": "I was nervous, so my teacher told a joke to break the ice.",
+          "section": "Từ vựng",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        },
+        {
+          "id": "st_46_idioms_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"Real Situation\"?",
+          "answer": "Ví dụ:",
+          "choices": [
+            "Ví dụ:",
+            "Nghĩa bóng hoàn chỉnh",
+            "Không dùng cho đồ rẻ.",
+            "Không đổi thành"
+          ],
+          "hint": "THÀNH NGỮ",
+          "style": "langmaster",
+          "styleLabel": "Langmaster · Từ vựng"
+        }
+      ],
       "stats": {
         "flashCount": 11,
         "quizCount": 5,
+        "exerciseCount": 6,
         "vocabCount": 5,
         "shadowingCount": 0
       }
@@ -14842,9 +19065,100 @@
           "hint": "Xem lại phần công thức trong tài liệu."
         }
       ],
+      "exercises": [
+        {
+          "id": "st_47_exam-taking-strategies_ex1",
+          "type": "multiple_choice",
+          "question": "Câu hỏi thi: \"every day, usually, often, always\" = ?",
+          "answer": "Hiện tại đơn",
+          "choices": [
+            "Hiện tại đơn",
+            "Hiện tại tiếp diễn",
+            "Quá khứ đơn",
+            "Tương lai đơn"
+          ],
+          "hint": "Loại trừ đáp án sai rõ.",
+          "section": "Trắc nghiệm",
+          "style": "ila",
+          "styleLabel": "ILA · Luyện thi"
+        },
+        {
+          "id": "st_47_exam-taking-strategies_ex2",
+          "type": "multiple_choice",
+          "question": "Câu hỏi thi: \"now, at the moment, right now, currently\" = ?",
+          "answer": "Hiện tại tiếp diễn",
+          "choices": [
+            "Hiện tại tiếp diễn",
+            "Hiện tại đơn",
+            "Quá khứ đơn",
+            "Tương lai đơn"
+          ],
+          "hint": "Loại trừ đáp án sai rõ.",
+          "section": "Trắc nghiệm",
+          "style": "ila",
+          "styleLabel": "ILA · Luyện thi"
+        },
+        {
+          "id": "st_47_exam-taking-strategies_ex3",
+          "type": "multiple_choice",
+          "question": "Câu hỏi thi: \"yesterday, last week, ago, in 2023\" = ?",
+          "answer": "Quá khứ đơn",
+          "choices": [
+            "Quá khứ đơn",
+            "Hiện tại đơn",
+            "Hiện tại tiếp diễn",
+            "Tương lai đơn"
+          ],
+          "hint": "Loại trừ đáp án sai rõ.",
+          "section": "Trắc nghiệm",
+          "style": "ila",
+          "styleLabel": "ILA · Luyện thi"
+        },
+        {
+          "id": "st_47_exam-taking-strategies_ex4",
+          "type": "multiple_choice",
+          "question": "Câu hỏi thi: \"tomorrow, next week, soon\" = ?",
+          "answer": "Tương lai đơn",
+          "choices": [
+            "Tương lai đơn",
+            "Hiện tại đơn",
+            "Hiện tại tiếp diễn",
+            "Quá khứ đơn"
+          ],
+          "hint": "Loại trừ đáp án sai rõ.",
+          "section": "Trắc nghiệm",
+          "style": "ila",
+          "styleLabel": "ILA · Luyện thi"
+        },
+        {
+          "id": "st_47_exam-taking-strategies_ex5",
+          "type": "input",
+          "question": "Điền công thức: Công thức",
+          "answer": "Introduction",
+          "hint": "Introduction",
+          "style": "ila",
+          "styleLabel": "ILA · Luyện thi"
+        },
+        {
+          "id": "st_47_exam-taking-strategies_ex6",
+          "type": "multiple_choice",
+          "question": "Ôn nhanh: \"when, while\"?",
+          "answer": "Quá khứ đơn / Quá khứ tiếp diễn",
+          "choices": [
+            "Quá khứ đơn / Quá khứ tiếp diễn",
+            "Hiện tại đơn",
+            "Hiện tại tiếp diễn",
+            "Quá khứ đơn"
+          ],
+          "hint": "Exam taking Strategies",
+          "style": "ila",
+          "styleLabel": "ILA · Luyện thi"
+        }
+      ],
       "stats": {
         "flashCount": 14,
         "quizCount": 9,
+        "exerciseCount": 6,
         "vocabCount": 13,
         "shadowingCount": 0
       }

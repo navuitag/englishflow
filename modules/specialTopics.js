@@ -4,12 +4,18 @@ import { renderFlashcardPanel, bindFlashcardImages } from "../components/flashca
 import { renderMemoryPanel } from "../components/memoryPanel.js";
 import { xpForAnswer } from "./gamification.js";
 import { bindShadowingPanel, renderShadowingPanel } from "../components/shadowingPanel.js";
+import { renderQuizCard } from "../components/quizCard.js";
+import { validateAnswer } from "./quizEngine.js";
+import { bindSpeechInput } from "./speech.js";
+import { bindListeningPlayer } from "../components/listeningPlayer.js";
 
 function defaultTopicProgress() {
   return {
     knownCards: [],
     quizBest: 0,
     memoryBest: null,
+    exerciseBest: 0,
+    exercisesDone: [],
     shadowingDone: [],
     modesDone: [],
     xp: 0
@@ -149,8 +155,19 @@ export function createSpecialTopicsModule(ctx) {
     quizOrder: [],
     memory: null,
     shadowIndex: 0,
-    shadowHideText: false
+    shadowHideText: false,
+    exerciseIndex: 0,
+    exerciseScore: 0,
+    exerciseOrder: []
   };
+
+  function getExercises(topic) {
+    return topic?.exercises || [];
+  }
+
+  function topicHasDrills(topic) {
+    return getExercises(topic).length > 0;
+  }
 
   function getShadowingLines(topic) {
     if (topic?.shadowing?.length) return topic.shadowing;
@@ -169,7 +186,9 @@ export function createSpecialTopicsModule(ctx) {
   }
 
   function modeTabCount(topic) {
-    return topicSupportsShadowing(topic) ? 6 : 5;
+    let count = 6;
+    if (topicSupportsShadowing(topic)) count += 1;
+    return count;
   }
 
   function renderModeTabs(topic, active) {
@@ -178,9 +197,10 @@ export function createSpecialTopicsModule(ctx) {
     return `
       <div class="practice-tabs practice-tabs--${count} st-mode-tabs">
         <a class="practice-tab${active === "hub" ? " active" : ""}" href="#/special-topics/${topic.id}">Tài liệu</a>
-        <a class="practice-tab${active === "poster" ? " active" : ""}" href="#/special-topics/${topic.id}/poster">Infographic gốc</a>
+        <a class="practice-tab${active === "poster" ? " active" : ""}" href="#/special-topics/${topic.id}/poster">Infographic</a>
         ${shadow ? `<a class="practice-tab${active === "shadowing" ? " active" : ""}" href="#/special-topics/${topic.id}/shadowing">Shadowing</a>` : ""}
-        <a class="practice-tab${active === "flash" ? " active" : ""}" href="#/special-topics/${topic.id}/flash">Flash study</a>
+        <a class="practice-tab${active === "drills" ? " active" : ""}" href="#/special-topics/${topic.id}/drills">Luyện tập</a>
+        <a class="practice-tab${active === "flash" ? " active" : ""}" href="#/special-topics/${topic.id}/flash">Flash</a>
         <a class="practice-tab${active === "quiz" ? " active" : ""}" href="#/special-topics/${topic.id}/quiz">Quiz</a>
         <a class="practice-tab${active === "memory" ? " active" : ""}" href="#/special-topics/${topic.id}/memory">Memory</a>
       </div>`;
@@ -205,7 +225,13 @@ export function createSpecialTopicsModule(ctx) {
     const modes = progress.modesDone.length;
     const shadowTotal = getShadowingLines(topic).length;
     const shadowDone = (progress.shadowingDone || []).length;
-    return { known, total, modes, xp: progress.xp, quizBest: progress.quizBest, shadowDone, shadowTotal };
+    const exerciseTotal = getExercises(topic).length;
+    const exerciseDone = (progress.exercisesDone || []).length;
+    return {
+      known, total, modes, xp: progress.xp, quizBest: progress.quizBest,
+      shadowDone, shadowTotal, exerciseDone, exerciseTotal,
+      exerciseBest: progress.exerciseBest || 0
+    };
   }
 
   function renderCatalog(state) {
@@ -231,7 +257,7 @@ export function createSpecialTopicsModule(ctx) {
               <h3>${ctx.escapeHtml(topic.title)}</h3>
               ${topic.titleEn ? `<p class="st-topic-en">${ctx.escapeHtml(topic.titleEn)}</p>` : ""}
               <div class="progress-track"><span style="width:${pct}%"></span></div>
-              <p class="st-topic-meta">${summary.known}/${summary.total} thẻ · Quiz cao ${summary.quizBest}%${summary.shadowTotal ? ` · Shadow ${summary.shadowDone}/${summary.shadowTotal}` : ""} · ${summary.modes}/4 chế độ</p>
+              <p class="st-topic-meta">${summary.known}/${summary.total} thẻ · ${summary.exerciseDone}/${summary.exerciseTotal} bài tập · Quiz ${summary.quizBest}%</p>
             </div>
           </a>`;
       }).join("");
@@ -251,7 +277,7 @@ export function createSpecialTopicsModule(ctx) {
         <div>
           <span class="eyebrow">47 chuyên đề THCS</span>
           <h1>Chuyên đề tiếng Anh</h1>
-          <p>Flashcard, quiz, memory game, shadowing phát âm và tài liệu PDF/infographic — ôn ngữ pháp, từ vựng, kỹ năng nghe–nói–đọc–viết.</p>
+          <p>Flashcard, quiz, memory, shadowing và bài tập đa dạng (Langmaster · ILA · MS Hoa · ELSA) — ôn THCS toàn diện.</p>
           <div class="hero-actions">
             <a class="btn primary" href="#/special-topics/${topics[0]?.id || ""}">Bắt đầu chuyên đề 1</a>
           </div>
@@ -283,12 +309,20 @@ export function createSpecialTopicsModule(ctx) {
           <div class="st-detail-stats">
             <article><strong>${summary.known}/${summary.total}</strong><span>Thẻ đã nhớ</span></article>
             <article><strong>${summary.quizBest}%</strong><span>Quiz tốt nhất</span></article>
+            <article><strong>${summary.exerciseDone}/${summary.exerciseTotal}</strong><span>Bài tập</span></article>
+            <article><strong>${summary.exerciseBest}%</strong><span>Điểm luyện tập</span></article>
             <article><strong>${summary.shadowTotal ? `${summary.shadowDone}/${summary.shadowTotal}` : "—"}</strong><span>Shadowing</span></article>
             <article><strong>${summary.xp}</strong><span>XP chuyên đề</span></article>
           </div>
         </div>
 
         ${renderModeTabs(topic, "hub")}
+
+        <article class="st-drills-promo card-panel">
+          <h2>Luyện tập đa dạng</h2>
+          <p>${summary.exerciseTotal} bài theo phong cách <strong>Langmaster</strong>, <strong>ILA</strong>, <strong>MS Hoa Giao Tiếp</strong>, <strong>ELSA Speak</strong> — trắc nghiệm, nghe, nói, sắp xếp câu, sửa lỗi.</p>
+          <a class="btn primary" href="#/special-topics/${topic.id}/drills">Làm bài tập</a>
+        </article>
 
         ${topicSupportsShadowing(topic) ? `
           <article class="st-shadowing-promo card-panel">
@@ -440,13 +474,6 @@ export function createSpecialTopicsModule(ctx) {
       </section>`;
   }
 
-  function resetShadowIfNeeded(topicId) {
-    if (sessions.topicId !== topicId) {
-      sessions.shadowIndex = 0;
-      sessions.shadowHideText = false;
-    }
-  }
-
   function renderShadowing(state, topicId) {
     const topic = getTopic(topicId);
     if (!topic) return ctx.notFound("Không tìm thấy chuyên đề.");
@@ -481,6 +508,194 @@ export function createSpecialTopicsModule(ctx) {
           hideText: sessions.shadowHideText
         })}
       </section>`;
+  }
+
+  function resetShadowIfNeeded(topicId) {
+    if (sessions.topicId !== topicId) {
+      sessions.shadowIndex = 0;
+      sessions.shadowHideText = false;
+    }
+  }
+
+  function resetDrillsIfNeeded(topicId, topic) {
+    if (sessions.topicId !== topicId || !sessions.exerciseOrder.length) {
+      sessions.topicId = topicId;
+      sessions.exerciseOrder = getExercises(topic).slice().sort(() => Math.random() - 0.5);
+      sessions.exerciseIndex = 0;
+      sessions.exerciseScore = 0;
+    }
+  }
+
+  function renderDrills(state, topicId) {
+    const topic = getTopic(topicId);
+    if (!topic) return ctx.notFound("Không tìm thấy chuyên đề.");
+    const exercises = getExercises(topic);
+    if (!exercises.length) return ctx.notFound("Chuyên đề này chưa có bài luyện tập.");
+    resetDrillsIfNeeded(topicId, topic);
+    const total = sessions.exerciseOrder.length;
+
+    if (sessions.exerciseIndex >= total) {
+      const pct = Math.round((sessions.exerciseScore / total) * 100);
+      return `
+        <section class="st-practice">
+          <a class="back-link" href="#/special-topics/${topic.id}">← ${ctx.escapeHtml(topic.title)}</a>
+          ${renderModeTabs(topic, "drills")}
+          <article class="st-quiz-result">
+            <h2>Hoàn thành luyện tập!</h2>
+            <p class="st-quiz-score">${sessions.exerciseScore}/${total} câu đúng · ${pct}%</p>
+            <p>${pct >= 80 ? "Xuất sắc! Bạn đã nắm chắc chuyên đề này." : pct >= 50 ? "Khá tốt — thử lại hoặc ôn flashcard nhé." : "Đọc lại tài liệu rồi làm lại bài tập."}</p>
+            <div class="hero-actions">
+              <button class="btn primary" type="button" id="stDrillRetry">Làm lại</button>
+              <a class="btn secondary" href="#/special-topics/${topic.id}/flash">Ôn flashcard</a>
+            </div>
+          </article>
+        </section>`;
+    }
+
+    const exercise = sessions.exerciseOrder[sessions.exerciseIndex];
+    const progress = getTopicProgress(state, topicId);
+    const doneCount = (progress.exercisesDone || []).length;
+
+    return `
+      <section class="st-practice">
+        <a class="back-link" href="#/special-topics/${topic.id}">← ${ctx.escapeHtml(topic.title)}</a>
+        ${renderModeTabs(topic, "drills")}
+        <p class="st-practice-lead">Luyện tập đa dạng · Câu ${sessions.exerciseIndex + 1}/${total} · Đúng ${sessions.exerciseScore} · Đã hoàn thành ${doneCount}/${exercises.length}</p>
+        ${renderQuizCard(exercise, { workbook: true })}
+      </section>`;
+  }
+
+  function showDrillFeedback(correct, exercise, topicId) {
+    const card = document.querySelector(".quiz-card");
+    const panel = card?.querySelector(".feedback-panel");
+    if (!panel) return;
+
+    if (correct) {
+      sessions.exerciseScore += 1;
+      awardXp(xpForAnswer(true), topicId);
+      updateState((state) => {
+        const progress = getTopicProgress(state, topicId);
+        if (!progress.exercisesDone.includes(exercise.id)) {
+          progress.exercisesDone.push(exercise.id);
+        }
+      });
+      panel.innerHTML = `<strong>Chính xác! +${xpForAnswer(true)} XP</strong>`;
+    } else {
+      panel.innerHTML = `
+        <strong>Chưa đúng</strong>
+        <p>Đáp án: ${ctx.escapeHtml(exercise.answer)}</p>
+        ${exercise.hint ? `<p>${ctx.escapeHtml(exercise.hint)}</p>` : ""}`;
+    }
+    panel.hidden = false;
+
+    card?.querySelectorAll(".choice-btn, .answer-input, .answer-form button, .builder-actions button").forEach((el) => {
+      el.disabled = true;
+    });
+
+    setTimeout(() => {
+      sessions.exerciseIndex += 1;
+      if (sessions.exerciseIndex >= sessions.exerciseOrder.length) {
+        const pct = Math.round((sessions.exerciseScore / sessions.exerciseOrder.length) * 100);
+        updateState((state) => {
+          const progress = getTopicProgress(state, topicId);
+          progress.exerciseBest = Math.max(progress.exerciseBest || 0, pct);
+          if (pct >= 60 && !progress.modesDone.includes("drills")) {
+            progress.modesDone.push("drills");
+          }
+        });
+      }
+      ctx.renderRoute();
+    }, correct ? 650 : 1100);
+  }
+
+  function handleDrillAnswer(answer, exercise, topicId) {
+    showDrillFeedback(validateAnswer(answer, exercise), exercise, topicId);
+  }
+
+  function bindDrillCard(card, exercise, topicId) {
+    const builder = card.querySelector(".builder");
+    if (!builder) return;
+    const target = builder.querySelector(".builder-target");
+
+    const refresh = () => {
+      builder.querySelectorAll(".word-chip").forEach((chip) => {
+        chip.classList.toggle("used", chip.dataset.used === "true");
+      });
+    };
+
+    builder.querySelectorAll(".word-chip").forEach((chip) => {
+      chip.addEventListener("click", () => {
+        if (chip.dataset.used === "true") return;
+        chip.dataset.used = "true";
+        const placed = document.createElement("button");
+        placed.type = "button";
+        placed.className = "word-chip placed";
+        placed.textContent = chip.dataset.token;
+        placed.addEventListener("click", () => {
+          chip.dataset.used = "false";
+          placed.remove();
+          refresh();
+        });
+        target.append(placed);
+        refresh();
+      });
+    });
+
+    builder.querySelector('[data-action="reset"]')?.addEventListener("click", () => {
+      target.innerHTML = "";
+      builder.querySelectorAll(".word-chip").forEach((chip) => { chip.dataset.used = "false"; });
+      refresh();
+    });
+
+    builder.querySelector('[data-action="check"]')?.addEventListener("click", () => {
+      const sentence = [...target.querySelectorAll(".word-chip")].map((node) => node.textContent).join(" ");
+      handleDrillAnswer(sentence, exercise, topicId);
+    });
+  }
+
+  function bindDrills(topicId) {
+    const retry = document.querySelector("#stDrillRetry");
+    if (retry) {
+      retry.addEventListener("click", () => {
+        sessions.exerciseOrder = [];
+        sessions.exerciseIndex = 0;
+        sessions.exerciseScore = 0;
+        ctx.renderRoute();
+      });
+      return;
+    }
+
+    const exercise = sessions.exerciseOrder[sessions.exerciseIndex];
+    if (!exercise) return;
+
+    const card = document.querySelector(".quiz-card");
+    bindListeningPlayer(document);
+    bindSpeechInput(document);
+
+    card?.querySelectorAll(".choice-btn").forEach((button) => {
+      button.addEventListener("click", () => handleDrillAnswer(button.dataset.answer, exercise, topicId));
+    });
+
+    const form = card?.querySelector(".answer-form");
+    if (form) {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        handleDrillAnswer(new FormData(form).get("answer"), exercise, topicId);
+      });
+    }
+
+    if (card) bindDrillCard(card, exercise, topicId);
+
+    card?.querySelectorAll(".hint-btn").forEach((button) => {
+      if (button.classList.contains("solution-btn")) return;
+      button.addEventListener("click", () => {
+        const hint = button.dataset.hint;
+        const panel = card?.querySelector(".feedback-panel");
+        if (!hint || !panel) return;
+        panel.hidden = false;
+        panel.innerHTML = `<p><strong>Gợi ý:</strong> ${ctx.escapeHtml(hint)}</p>`;
+      });
+    });
   }
 
   function bindShadowing(topicId) {
@@ -717,6 +932,7 @@ export function createSpecialTopicsModule(ctx) {
       sessions.quizOrder = [];
       sessions.memory = null;
       sessions.shadowIndex = 0;
+      sessions.exerciseOrder = [];
     }
   }
 
@@ -728,10 +944,12 @@ export function createSpecialTopicsModule(ctx) {
     renderQuiz,
     renderMemory,
     renderShadowing,
+    renderDrills,
     bindFlash,
     bindQuiz,
     bindMemory,
     bindShadowing,
+    bindDrills,
     bindPosterLightbox,
     bindPosterView,
     resetOnLeave

@@ -113,6 +113,7 @@
   margin: 16px 0 20px;
 }
 
+.st-mode-tabs + .st-drills-promo.card-panel,
 .st-mode-tabs + .st-shadowing-promo.card-panel {
   margin-top: 4px;
 }
@@ -427,6 +428,24 @@ body.st-lightbox-open {
   justify-content: space-between;
   margin-bottom: 24px;
   padding: 16px 18px;
+}
+
+.st-drills-promo.card-panel {
+  background: linear-gradient(135deg, #eef4ff, #f8f5ff);
+  border-color: rgba(59, 99, 210, 0.28);
+  box-shadow: var(--shadow);
+  margin: 8px 0 20px;
+  padding: 20px 22px;
+}
+
+.st-drills-promo h2 {
+  margin: 0 0 10px;
+}
+
+.st-drills-promo p {
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0 0 16px;
 }
 
 .st-shadowing-promo.card-panel {
