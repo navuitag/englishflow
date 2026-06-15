@@ -110,7 +110,11 @@
 }
 
 .st-mode-tabs {
-  margin: 16px 0 24px;
+  margin: 16px 0 20px;
+}
+
+.st-mode-tabs + .st-shadowing-promo.card-panel {
+  margin-top: 4px;
 }
 
 .st-material-grid {
@@ -425,17 +429,26 @@ body.st-lightbox-open {
   padding: 16px 18px;
 }
 
-.st-shadowing-promo {
-  margin-bottom: 20px;
+.st-shadowing-promo.card-panel {
+  background: linear-gradient(135deg, #edf8f4, #f8fbfe);
+  border-color: rgba(32, 163, 107, 0.28);
+  box-shadow: var(--shadow);
+  margin: 8px 0 28px;
+  padding: 20px 22px;
 }
 
 .st-shadowing-promo h2 {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
 }
 
 .st-shadowing-promo p {
   color: var(--muted);
-  margin: 0 0 14px;
+  line-height: 1.55;
+  margin: 0 0 16px;
+}
+
+.st-shadowing-promo .btn {
+  margin-top: 2px;
 }
 
 .shadowing-panel {
