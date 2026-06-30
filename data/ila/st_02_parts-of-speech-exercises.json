@@ -1,0 +1,952 @@
+{
+  "topicId": "st_02_parts-of-speech",
+  "source": "ila",
+  "sourceUrl": "https://ila.edu.vn/bai-tap-ve-tu-loai-trong-tieng-anh",
+  "sourceTitle": "60+ bài tập từ loại trong tiếng Anh (ILA)",
+  "exercises": [
+    {
+      "id": "st_02_parts-of-speech_ila_01",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 1: Xác định loại từ",
+      "question": "She (runs) every morning — \"runs\" là từ loại gì?",
+      "choices": ["Động từ", "Danh từ", "Tính từ", "Trạng từ"],
+      "answer": "Động từ",
+      "hint": "runs diễn tả hành động của chủ ngữ she.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_02",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 1: Xác định loại từ",
+      "question": "The (blue) sky looks beautiful — \"blue\" là từ loại gì?",
+      "choices": ["Tính từ", "Danh từ", "Động từ", "Trạng từ"],
+      "answer": "Tính từ",
+      "hint": "blue bổ nghĩa cho danh từ sky.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_03",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 1: Xác định loại từ",
+      "question": "They enjoy (playing) football — \"playing\" là từ loại gì?",
+      "choices": ["Danh từ (gerund)", "Động từ", "Tính từ", "Giới từ"],
+      "answer": "Danh từ (gerund)",
+      "hint": "playing đứng sau enjoy như tân ngữ.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_04",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 1: Xác định loại từ",
+      "question": "He is (very) tall — \"very\" là từ loại gì?",
+      "choices": ["Trạng từ", "Tính từ", "Liên từ", "Đại từ"],
+      "answer": "Trạng từ",
+      "hint": "very bổ nghĩa cho tính từ tall.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_05",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 1: Xác định loại từ",
+      "question": "The cat is sleeping (peacefully) — \"peacefully\" là từ loại gì?",
+      "choices": ["Trạng từ", "Tính từ", "Danh từ", "Giới từ"],
+      "answer": "Trạng từ",
+      "hint": "peacefully mô tả cách thức hành động sleeping.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_06",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 1: Xác định loại từ",
+      "question": "This is a (beautiful) flower — \"beautiful\" là từ loại gì?",
+      "choices": ["Tính từ", "Trạng từ", "Danh từ", "Động từ"],
+      "answer": "Tính từ",
+      "hint": "beautiful bổ nghĩa cho flower.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_07",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 1: Xác định loại từ",
+      "question": "He can (swim) very fast — \"swim\" là từ loại gì?",
+      "choices": ["Động từ", "Danh từ", "Trạng từ", "Tính từ"],
+      "answer": "Động từ",
+      "hint": "swim là động từ nguyên mẫu sau modal can.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_08",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 1: Xác định loại từ",
+      "question": "We visited a (museum) yesterday — \"museum\" là từ loại gì?",
+      "choices": ["Danh từ", "Động từ", "Tính từ", "Trạng từ"],
+      "answer": "Danh từ",
+      "hint": "museum là danh từ chỉ địa điểm.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_09",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 1: Xác định loại từ",
+      "question": "She spoke (quietly) to avoid waking the baby — \"quietly\" là từ loại gì?",
+      "choices": ["Trạng từ", "Tính từ", "Danh từ", "Liên từ"],
+      "answer": "Trạng từ",
+      "hint": "quietly mô tả cách nói.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_10",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 1: Xác định loại từ",
+      "question": "The (students) are doing their homework — \"students\" là từ loại gì?",
+      "choices": ["Danh từ", "Động từ", "Tính từ", "Đại từ"],
+      "answer": "Danh từ",
+      "hint": "students là chủ ngữ của câu.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_11",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 2: Phân loại từ",
+      "question": "The (fast) car drove (quickly) down the (busy) street — \"fast\" là từ loại gì?",
+      "choices": ["Tính từ", "Trạng từ", "Danh từ", "Động từ"],
+      "answer": "Tính từ",
+      "hint": "fast bổ nghĩa cho car.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_12",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 2: Phân loại từ",
+      "question": "The (fast) car drove (quickly) down the (busy) street — \"quickly\" là từ loại gì?",
+      "choices": ["Trạng từ", "Tính từ", "Danh từ", "Giới từ"],
+      "answer": "Trạng từ",
+      "hint": "quickly mô tả cách lái xe.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_13",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 2: Phân loại từ",
+      "question": "The (dog) barked (loudly) at the (stranger) outside — \"dog\" là từ loại gì?",
+      "choices": ["Danh từ", "Trạng từ", "Tính từ", "Động từ"],
+      "answer": "Danh từ",
+      "hint": "dog là chủ ngữ.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_14",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 2: Phân loại từ",
+      "question": "The (young) boy ran (happily) to his (mother) — \"young\" là từ loại gì?",
+      "choices": ["Tính từ", "Trạng từ", "Danh từ", "Động từ"],
+      "answer": "Tính từ",
+      "hint": "young bổ nghĩa cho boy.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_15",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 2: Phân loại từ",
+      "question": "The (teacher) explained the lesson (clearly) to the (students) — \"clearly\" là từ loại gì?",
+      "choices": ["Trạng từ", "Tính từ", "Danh từ", "Liên từ"],
+      "answer": "Trạng từ",
+      "hint": "clearly mô tả cách giải thích.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_16",
+      "type": "word_order",
+      "section": "ILA · Bài 3: Sắp xếp câu",
+      "question": "Sắp xếp thành câu hỏi hoàn chỉnh: classes / start / When / usually / your / ?",
+      "tokens": ["classes", "start", "When", "usually", "your", "?"],
+      "answer": "When do your classes usually start?",
+      "hint": "Câu hỏi Wh-: When + do + S + V + ...",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_17",
+      "type": "word_order",
+      "section": "ILA · Bài 3: Sắp xếp câu",
+      "question": "Sắp xếp: birthday / her / be / When / celebrated / will / ?",
+      "tokens": ["birthday", "her", "be", "When", "celebrated", "will", "?"],
+      "answer": "When will her birthday be celebrated?",
+      "hint": "When + will + S + be + V3 ...",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_18",
+      "type": "word_order",
+      "section": "ILA · Bài 3: Sắp xếp câu",
+      "question": "Sắp xếp: from / New York / How / to / get / Miami / can / I / ?",
+      "tokens": ["from", "New York", "How", "to", "get", "Miami", "can", "I", "?"],
+      "answer": "How can I get from New York to Miami?",
+      "hint": "How can + S + V ...",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_19",
+      "type": "word_order",
+      "section": "ILA · Bài 3: Sắp xếp câu",
+      "question": "Sắp xếp: do / weekends / What / on / you / usually / ?",
+      "tokens": ["do", "weekends", "What", "on", "you", "usually", "?"],
+      "answer": "What do you usually do on weekends?",
+      "hint": "What + do + S + usually + V ...",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_20",
+      "type": "word_order",
+      "section": "ILA · Bài 3: Sắp xếp câu",
+      "question": "Sắp xếp: go / summer / you / Where / did / last / ?",
+      "tokens": ["go", "summer", "you", "Where", "did", "last", "?"],
+      "answer": "Where did you go last summer?",
+      "hint": "Where + did + S + V ...",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_21",
+      "type": "word_order",
+      "section": "ILA · Bài 3: Sắp xếp câu",
+      "question": "Sắp xếp: beautiful / a / She / is / girl",
+      "tokens": ["beautiful", "a", "She", "is", "girl"],
+      "answer": "She is a beautiful girl",
+      "alternatives": ["She is a beautiful girl."],
+      "hint": "S + be + a + Adj + N",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_22",
+      "type": "word_order",
+      "section": "ILA · Bài 3: Sắp xếp câu",
+      "question": "Sắp xếp: always / early / He / to / work / goes",
+      "tokens": ["always", "early", "He", "to", "work", "goes"],
+      "answer": "He always goes to work early",
+      "alternatives": ["He always goes to work early."],
+      "hint": "S + adv + V + ...",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_23",
+      "type": "input",
+      "section": "ILA · Bài 4: Biến đổi từ (Word Form)",
+      "question": "She dances _______________ on stage. (graceful)",
+      "answer": "gracefully",
+      "hint": "Cần trạng từ bổ nghĩa cho động từ dances.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_24",
+      "type": "input",
+      "section": "ILA · Bài 4: Biến đổi từ (Word Form)",
+      "question": "The _______________ cat is sleeping. (lazy)",
+      "answer": "lazy",
+      "hint": "Tính từ bổ nghĩa cho danh từ cat.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_25",
+      "type": "input",
+      "section": "ILA · Bài 4: Biến đổi từ (Word Form)",
+      "question": "He speaks _______________ in English class. (confident)",
+      "answer": "confidently",
+      "hint": "Trạng từ: confident → confidently.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_26",
+      "type": "input",
+      "section": "ILA · Bài 4: Biến đổi từ (Word Form)",
+      "question": "The students are listening _______________ to the teacher. (attentive)",
+      "answer": "attentively",
+      "hint": "Trạng từ: attentive → attentively.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_27",
+      "type": "input",
+      "section": "ILA · Bài 4: Biến đổi từ (Word Form)",
+      "question": "The movie was so _______________ that we cried. (touch)",
+      "answer": "touching",
+      "hint": "Tính từ: touch → touching.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_28",
+      "type": "input",
+      "section": "ILA · Bài 4: Biến đổi từ (Word Form)",
+      "question": "The cat _______________ ran across the street. (quick)",
+      "answer": "quickly",
+      "hint": "Trạng từ: quick → quickly.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_29",
+      "type": "input",
+      "section": "ILA · Bài 4: Biến đổi từ (Word Form)",
+      "question": "I need to buy some _______________ vegetables from the market. (fresh)",
+      "answer": "fresh",
+      "hint": "Tính từ bổ nghĩa cho vegetables.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_30",
+      "type": "input",
+      "section": "ILA · Bài 4: Biến đổi từ (Word Form)",
+      "question": "The children were _______________ in the park. (play)",
+      "answer": "playing",
+      "hint": "Thì quá khứ tiếp diễn: were + V-ing.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_31",
+      "type": "input",
+      "section": "ILA · Bài 4: Biến đổi từ (Word Form)",
+      "question": "She has a _______________ voice and often sings in the choir. (beauty)",
+      "answer": "beautiful",
+      "hint": "Tính từ: beauty → beautiful.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_32",
+      "type": "input",
+      "section": "ILA · Bài 4: Biến đổi từ (Word Form)",
+      "question": "The large dog barked _______________. (loud)",
+      "answer": "loudly",
+      "hint": "Trạng từ: loud → loudly.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_33",
+      "type": "input",
+      "section": "ILA · Bài 5: Đại từ",
+      "question": "Shyam is my brother. ______ study in the same class.",
+      "answer": "We",
+      "hint": "Đại từ chủ ngữ số nhiều.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_34",
+      "type": "input",
+      "section": "ILA · Bài 5: Đại từ",
+      "question": "Between Ritu and me, ______ am the younger one.",
+      "answer": "I",
+      "hint": "Đại từ chủ ngữ ngôi thứ nhất.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_35",
+      "type": "input",
+      "section": "ILA · Bài 5: Đại từ",
+      "question": "Do you see this book with my name on it? It is ______.",
+      "answer": "mine",
+      "hint": "Đại từ sở hữu (possessive pronoun).",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_36",
+      "type": "input",
+      "section": "ILA · Bài 5: Đại từ",
+      "question": "Miss Gwen is our new class teacher. ______ is very sweet.",
+      "answer": "She",
+      "hint": "Đại từ chủ ngữ ngôi thứ ba số ít.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_37",
+      "type": "input",
+      "section": "ILA · Bài 5: Đại từ",
+      "question": "While cutting vegetables, Mitu cut ______.",
+      "answer": "herself",
+      "hint": "Đại từ phản thân.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_38",
+      "type": "input",
+      "section": "ILA · Bài 6: Trạng từ",
+      "question": "We have seen this before. — Trạng từ trong câu là gì?",
+      "answer": "before",
+      "hint": "before chỉ thời gian.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_39",
+      "type": "input",
+      "section": "ILA · Bài 6: Trạng từ",
+      "question": "The postman comes to her daily. — Trạng từ trong câu là gì?",
+      "answer": "daily",
+      "hint": "daily chỉ tần suất.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_40",
+      "type": "input",
+      "section": "ILA · Bài 6: Trạng từ",
+      "question": "My brother writes clearly. — Trạng từ trong câu là gì?",
+      "answer": "clearly",
+      "hint": "clearly mô tả cách viết.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_41",
+      "type": "input",
+      "section": "ILA · Bài 6: Trạng từ",
+      "question": "The army fought bravely. — Trạng từ trong câu là gì?",
+      "answer": "bravely",
+      "hint": "bravely mô tả cách chiến đấu.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_42",
+      "type": "input",
+      "section": "ILA · Bài 6: Trạng từ",
+      "question": "The mangoes are almost ripe. — Trạng từ trong câu là gì?",
+      "answer": "almost",
+      "hint": "almost chỉ mức độ.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_43",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 7: Chọn loại từ gạch chân",
+      "question": "She ate a delicious apple. — \"delicious\" là từ loại gì?",
+      "choices": ["Tính từ", "Danh từ", "Động từ", "Trạng từ"],
+      "answer": "Tính từ",
+      "hint": "delicious bổ nghĩa cho apple.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_44",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 7: Chọn loại từ gạch chân",
+      "question": "He quickly ran to the store. — \"quickly\" là từ loại gì?",
+      "choices": ["Trạng từ", "Danh từ", "Động từ", "Giới từ"],
+      "answer": "Trạng từ",
+      "hint": "quickly bổ nghĩa cho ran.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_45",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 7: Chọn loại từ gạch chân",
+      "question": "The cat under the table is sleeping. — \"under\" là từ loại gì?",
+      "choices": ["Giới từ", "Danh từ", "Động từ", "Tính từ"],
+      "answer": "Giới từ",
+      "hint": "under chỉ vị trí.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_46",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 7: Chọn loại từ gạch chân",
+      "question": "I enjoy reading books in my free time. — \"books\" là từ loại gì?",
+      "choices": ["Danh từ", "Động từ", "Đại từ", "Tính từ"],
+      "answer": "Danh từ",
+      "hint": "books là tân ngữ của enjoy.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_47",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 7: Chọn loại từ gạch chân",
+      "question": "I went to the store and bought milk. — \"and\" là từ loại gì?",
+      "choices": ["Liên từ", "Giới từ", "Động từ", "Tính từ"],
+      "answer": "Liên từ",
+      "hint": "and nối hai mệnh đề/hành động.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_48",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 7: Chọn loại từ gạch chân",
+      "question": "She sings well for her age. — \"well\" là từ loại gì?",
+      "choices": ["Trạng từ", "Danh từ", "Tính từ", "Giới từ"],
+      "answer": "Trạng từ",
+      "hint": "well bổ nghĩa cho sings.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_49",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 7: Chọn loại từ gạch chân",
+      "question": "They walked through the forest. — \"through\" là từ loại gì?",
+      "choices": ["Giới từ", "Tính từ", "Danh từ", "Động từ"],
+      "answer": "Giới từ",
+      "hint": "through chỉ hướng/vị trí.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_50",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 7: Chọn loại từ gạch chân",
+      "question": "My brother is a teacher. — \"teacher\" là từ loại gì?",
+      "choices": ["Danh từ", "Động từ", "Đại từ", "Trạng từ"],
+      "answer": "Danh từ",
+      "hint": "teacher là danh từ chỉ nghề nghiệp.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_51",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 7: Chọn loại từ gạch chân",
+      "question": "He is very tall. — \"tall\" là từ loại gì?",
+      "choices": ["Tính từ", "Danh từ", "Trạng từ", "Giới từ"],
+      "answer": "Tính từ",
+      "hint": "tall bổ nghĩa sau linking verb is.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_52",
+      "type": "error_detection",
+      "section": "ILA · Bài 8: Sửa lỗi sai",
+      "question": "Tìm và sửa lỗi sai trong câu sau",
+      "prompt": "The dogs runs quick in the park.",
+      "answer": "The dogs run quickly in the park.",
+      "hint": "Chủ ngữ số nhiều + trạng từ.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_53",
+      "type": "error_detection",
+      "section": "ILA · Bài 8: Sửa lỗi sai",
+      "question": "Tìm và sửa lỗi sai trong câu sau",
+      "prompt": "She has so many informations about the event.",
+      "answer": "She has so much information about the event.",
+      "hint": "information là danh từ không đếm được.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_54",
+      "type": "error_detection",
+      "section": "ILA · Bài 8: Sửa lỗi sai",
+      "question": "Tìm và sửa lỗi sai trong câu sau",
+      "prompt": "He want to eats pizza for dinner.",
+      "answer": "He wants to eat pizza for dinner.",
+      "hint": "Chủ ngữ he → wants; to + V nguyên mẫu.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_55",
+      "type": "error_detection",
+      "section": "ILA · Bài 8: Sửa lỗi sai",
+      "question": "Tìm và sửa lỗi sai trong câu sau",
+      "prompt": "There is several cars parked outside.",
+      "answer": "There are several cars parked outside.",
+      "hint": "several cars → động từ số nhiều are.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_56",
+      "type": "error_detection",
+      "section": "ILA · Bài 8: Sửa lỗi sai",
+      "question": "Tìm và sửa lỗi sai trong câu sau",
+      "prompt": "The students are learn English at the moment.",
+      "answer": "The students are learning English at the moment.",
+      "hint": "Thì hiện tại tiếp diễn: are + V-ing.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_57",
+      "type": "error_detection",
+      "section": "ILA · Bài 8: Sửa lỗi sai",
+      "question": "Tìm và sửa lỗi sai trong câu sau",
+      "prompt": "I bought a lot of new furnitures for my living room.",
+      "answer": "I bought a lot of new furniture for my living room.",
+      "hint": "furniture không đếm được.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_58",
+      "type": "error_detection",
+      "section": "ILA · Bài 8: Sửa lỗi sai",
+      "question": "Tìm và sửa lỗi sai trong câu sau",
+      "prompt": "She gave me advices on how to improve my writing.",
+      "answer": "She gave me advice on how to improve my writing.",
+      "hint": "advice là danh từ không đếm được.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_59",
+      "type": "error_detection",
+      "section": "ILA · Bài 8: Sửa lỗi sai",
+      "question": "Tìm và sửa lỗi sai trong câu sau",
+      "prompt": "The workers are fixings the broken fence.",
+      "answer": "The workers are fixing the broken fence.",
+      "hint": "are + V-ing (không thêm -s).",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_60",
+      "type": "error_detection",
+      "section": "ILA · Bài 8: Sửa lỗi sai",
+      "question": "Tìm và sửa lỗi sai trong câu sau",
+      "prompt": "The birds sings beautifully in the morning.",
+      "answer": "The birds sing beautifully in the morning.",
+      "hint": "birds số nhiều → sing.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_61",
+      "type": "input",
+      "section": "ILA · Bài 9: Điền từ đoạn văn",
+      "question": "One day, I was walking in the ______ (1) when I saw a ______ (2) cat... — Điền (1)",
+      "answer": "park",
+      "hint": "Danh từ chỉ nơi chống.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_62",
+      "type": "input",
+      "section": "ILA · Bài 9: Điền từ đoạn văn",
+      "question": "Điền (2): ...saw a ______ (2) cat sitting on a fence.",
+      "answer": "black",
+      "hint": "Tính từ mô tả màu sắc.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_63",
+      "type": "input",
+      "section": "ILA · Bài 9: Điền từ đoạn văn",
+      "question": "Điền (4): It looked so ______ (4) that I decided to approach it slowly.",
+      "answer": "lonely",
+      "hint": "Tính từ mô tả cảm giác.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_64",
+      "type": "input",
+      "section": "ILA · Bài 9: Điền từ đoạn văn",
+      "question": "Điền (5): ...the cat suddenly stood up and started to ______ (5) away.",
+      "answer": "run",
+      "hint": "Động từ nguyên mẫu sau to.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_65",
+      "type": "input",
+      "section": "ILA · Bài 9: Điền từ đoạn văn",
+      "question": "Điền (9): ...sat down to play a ______ (9) melody.",
+      "answer": "beautiful",
+      "hint": "Tính từ bổ nghĩa melody.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_66",
+      "type": "input",
+      "section": "ILA · Bài 9: Điền từ đoạn văn",
+      "question": "Điền (10): The cat sat next to me, purring ______ (10) as I played.",
+      "answer": "contentedly",
+      "hint": "Trạng từ mô tả cách rên.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_67",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 10: Chọn từ đúng",
+      "question": "She is a __________ student.",
+      "choices": ["hardworking", "hardly", "hard work", "work hard"],
+      "answer": "hardworking",
+      "hint": "Cần tính từ trước danh từ student.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_68",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 10: Chọn từ đúng",
+      "question": "Please pass me the __________.",
+      "choices": ["salt", "sweet", "salty", "sweetly"],
+      "answer": "salt",
+      "hint": "Danh từ sau the.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_69",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 10: Chọn từ đúng",
+      "question": "I have __________ finished my homework.",
+      "choices": ["just", "already", "yet", "still"],
+      "answer": "just",
+      "alternatives": ["already"],
+      "hint": "ILA đáp án: just (cũng có thể already tùy ngữ cảnh).",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_70",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 10: Chọn từ đúng",
+      "question": "The weather is __________ today.",
+      "choices": ["sunny", "snowing", "sun", "snow"],
+      "answer": "sunny",
+      "hint": "Tính từ sau is.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_71",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 10: Chọn từ đúng",
+      "question": "He __________ a bike to work every day.",
+      "choices": ["rides", "ride", "riding", "rode"],
+      "answer": "rides",
+      "hint": "He + V(s) ở thì hiện tại đơn.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_72",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 10: Chọn từ đúng",
+      "question": "She is a talented __________.",
+      "choices": ["painter", "piano", "paint", "painting"],
+      "answer": "painter",
+      "hint": "Danh từ chỉ người (nghề nghiệp).",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_73",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 10: Chọn từ đúng",
+      "question": "They __________ to the beach last weekend.",
+      "choices": ["went", "go", "goes", "going"],
+      "answer": "went",
+      "hint": "last weekend → quá khứ đơn.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_74",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 10: Chọn từ đúng",
+      "question": "The restaurant serves delicious __________.",
+      "choices": ["food", "foot", "feed", "foods"],
+      "answer": "food",
+      "hint": "food thường không đếm được.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_75",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 11: Xác định từ loại trong câu",
+      "question": "Wow, that movie was incredibly exciting! — \"Wow\" là từ loại gì?",
+      "choices": ["Thán từ", "Trạng từ", "Liên từ", "Đại từ"],
+      "answer": "Thán từ",
+      "hint": "Wow thể hiện cảm xúc.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_76",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 11: Xác định từ loại trong câu",
+      "question": "She runs quickly to the store before it closes. — \"quickly\" là từ loại gì?",
+      "choices": ["Trạng từ", "Tính từ", "Giới từ", "Danh từ"],
+      "answer": "Trạng từ",
+      "hint": "quickly bổ nghĩa runs.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_77",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 11: Xác định từ loại trong câu",
+      "question": "I want to go to the park, but I have too much homework. — \"but\" là từ loại gì?",
+      "choices": ["Liên từ", "Giới từ", "Trạng từ", "Đại từ"],
+      "answer": "Liên từ",
+      "hint": "but nối hai mệnh đề.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_78",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 11: Xác định từ loại trong câu",
+      "question": "The children played outside after school. — \"after\" là từ loại gì?",
+      "choices": ["Giới từ", "Liên từ", "Trạng từ", "Danh từ"],
+      "answer": "Giới từ",
+      "hint": "after + school (cụm danh từ).",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_79",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 11: Xác định từ loại trong câu",
+      "question": "John and Mary went to the beach because it was sunny. — \"because\" là từ loại gì?",
+      "choices": ["Liên từ", "Giới từ", "Trạng từ", "Thán từ"],
+      "answer": "Liên từ",
+      "hint": "because giới thiệu mệnh đề nguyên nhân.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_80",
+      "type": "multiple_choice",
+      "section": "ILA · Bài 11: Xác định từ loại trong câu",
+      "question": "Hey, can you help me with this box? — \"Hey\" là từ loại gì?",
+      "choices": ["Thán từ", "Liên từ", "Đại từ", "Giới từ"],
+      "answer": "Thán từ",
+      "hint": "Hey gọi sự chú ý.",
+      "style": "ila",
+      "styleLabel": "ILA · Ngữ pháp"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "st_02_parts-of-speech_ila_q01",
+      "type": "mcq",
+      "prompt": "She (runs) every morning — \"runs\" là từ loại gì?",
+      "answer": "Động từ",
+      "options": ["Động từ", "Danh từ", "Tính từ", "Trạng từ"],
+      "hint": "runs diễn tả hành động."
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_q02",
+      "type": "mcq",
+      "prompt": "The (blue) sky looks beautiful — \"blue\" là từ loại gì?",
+      "answer": "Tính từ",
+      "options": ["Tính từ", "Danh từ", "Động từ", "Trạng từ"],
+      "hint": "blue bổ nghĩa sky."
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_q03",
+      "type": "mcq",
+      "prompt": "He is (very) tall — \"very\" là từ loại gì?",
+      "answer": "Trạng từ",
+      "options": ["Trạng từ", "Tính từ", "Liên từ", "Đại từ"],
+      "hint": "very bổ nghĩa tall."
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_q04",
+      "type": "mcq",
+      "prompt": "She ate a delicious apple. — \"delicious\" là từ loại gì?",
+      "answer": "Tính từ",
+      "options": ["Tính từ", "Danh từ", "Động từ", "Trạng từ"],
+      "hint": "delicious bổ nghĩa apple."
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_q05",
+      "type": "mcq",
+      "prompt": "The cat under the table is sleeping. — \"under\" là từ loại gì?",
+      "answer": "Giới từ",
+      "options": ["Giới từ", "Danh từ", "Động từ", "Tính từ"],
+      "hint": "under chỉ vị trí."
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_q06",
+      "type": "mcq",
+      "prompt": "I went to the store and bought milk. — \"and\" là từ loại gì?",
+      "answer": "Liên từ",
+      "options": ["Liên từ", "Giới từ", "Động từ", "Tính từ"],
+      "hint": "and nối hai hành động."
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_q07",
+      "type": "mcq",
+      "prompt": "Câu đúng sau khi sửa lỗi: The dogs runs quick in the park.",
+      "answer": "The dogs run quickly in the park.",
+      "options": [
+        "The dogs run quickly in the park.",
+        "The dog runs quickly in the park.",
+        "The dogs runs quickly in the park.",
+        "The dogs run quick in the park."
+      ],
+      "hint": "dogs số nhiều; quickly là trạng từ."
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_q08",
+      "type": "mcq",
+      "prompt": "She dances _______________ on stage. (graceful)",
+      "answer": "gracefully",
+      "options": ["gracefully", "graceful", "grace", "gracefulness"],
+      "hint": "Trạng từ bổ nghĩa dances."
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_q09",
+      "type": "mcq",
+      "prompt": "Shyam is my brother. ______ study in the same class.",
+      "answer": "We",
+      "options": ["We", "They", "He", "I"],
+      "hint": "Đại từ chủ ngữ số nhiều."
+    },
+    {
+      "id": "st_02_parts-of-speech_ila_q10",
+      "type": "mcq",
+      "prompt": "Wow, that movie was incredibly exciting! — \"Wow\" là từ loại gì?",
+      "answer": "Thán từ",
+      "options": ["Thán từ", "Trạng từ", "Liên từ", "Đại từ"],
+      "hint": "Wow thể hiện cảm xúc."
+    }
+  ]
+}

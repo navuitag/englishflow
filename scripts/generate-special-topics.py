@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TOPIC_DIR = ROOT / "special-topic"
 OUT = ROOT / "data" / "special-topics.json"
+ILA_OVERRIDES_DIR = ROOT / "data" / "ila"
 
 CATEGORY_RULES = [
     ("pronunciation", re.compile(r"pronunciation|phonetic", re.I)),
@@ -745,9 +746,36 @@ def process_pdf(pdf_path: Path) -> dict:
     return topic
 
 
+def apply_topic_overrides(topics: list[dict]) -> list[dict]:
+    """Merge hand-authored exercise packs (e.g. ILA) into generated topics."""
+    if not ILA_OVERRIDES_DIR.is_dir():
+        return topics
+    by_id = {topic["id"]: topic for topic in topics}
+    for path in sorted(ILA_OVERRIDES_DIR.glob("*.json")):
+        override = json.loads(path.read_text(encoding="utf-8"))
+        topic_id = override.get("topicId")
+        if not topic_id or topic_id not in by_id:
+            continue
+        topic = by_id[topic_id]
+        if override.get("exercises"):
+            topic["exercises"] = override["exercises"]
+            topic.setdefault("stats", {})["exerciseCount"] = len(override["exercises"])
+        if override.get("quiz"):
+            topic["quiz"] = override["quiz"]
+            topic.setdefault("stats", {})["quizCount"] = len(override["quiz"])
+        if override.get("sourceUrl"):
+            topic["exerciseSource"] = {
+                "id": override.get("source", "ila"),
+                "url": override["sourceUrl"],
+                "title": override.get("sourceTitle", ""),
+            }
+    return topics
+
+
 def main():
     pdfs = sorted(TOPIC_DIR.glob("*.pdf"), key=lambda p: p.name)
     topics = [process_pdf(p) for p in pdfs]
+    topics = apply_topic_overrides(topics)
     shadow_total = sum(len(t.get("shadowing", [])) for t in topics)
     exercise_total = sum(len(t.get("exercises", [])) for t in topics)
     payload = {
